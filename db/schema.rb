@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_06_09_124401) do
+ActiveRecord::Schema[7.1].define(version: 2025_06_09_190638) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -42,6 +42,49 @@ ActiveRecord::Schema[7.1].define(version: 2025_06_09_124401) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "matches", force: :cascade do |t|
+    t.boolean "saved"
+    t.integer "rating"
+    t.string "recipe_name"
+    t.string "recipe_description"
+    t.bigint "user_id", null: false
+    t.bigint "music_suggestion_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["music_suggestion_id"], name: "index_matches_on_music_suggestion_id"
+    t.index ["user_id"], name: "index_matches_on_user_id"
+  end
+
+  create_table "music_suggestions", force: :cascade do |t|
+    t.string "name"
+    t.string "image_url"
+    t.string "genre"
+    t.string "artists", array: true
+    t.text "tracklist"
+    t.string "preview_url"
+    t.boolean "album"
+    t.string "spotify_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "recipes", force: :cascade do |t|
+    t.string "name"
+    t.integer "difficulty"
+    t.string "food_type"
+    t.string "image_url"
+    t.string "ingredients"
+    t.integer "portion_size"
+    t.text "instructions"
+    t.string "cuisine"
+    t.integer "duration"
+    t.text "description"
+    t.bigint "match_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["match_id"], name: "index_recipes_on_match_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -50,10 +93,15 @@ ActiveRecord::Schema[7.1].define(version: 2025_06_09_124401) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "first_name"
+    t.string "last_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "matches", "music_suggestions"
+  add_foreign_key "matches", "users"
+  add_foreign_key "recipes", "matches"
 end
