@@ -4,6 +4,13 @@ class Match < ApplicationRecord
   has_one :recipe
   after_create :create_recipe_from_seed
 
+  def generate_final_match
+    @food_type_selection    = params[:food_type_selection]
+    @difficulty_selection   = params[:difficulty_selection]
+    @music_genres_selection = params[:music_genres]
+    @music_format_selection = params[:music_format_selection]
+  end
+  
   private
 
   def create_recipe_from_seed

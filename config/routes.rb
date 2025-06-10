@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "recipes#index"
   get "users/:id", to: "users#about", as: :about_user
-  resources :matches, only: %i[index show create update destroy] do
+  resources :matches, only: [:index, :show, :create, :update, :destroy] do
     member do
       patch :save
       patch :unsave

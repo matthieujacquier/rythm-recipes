@@ -3,61 +3,51 @@
 
   <div data-controller="form">
     <%= form_tag generate_match_path, method: :post do %>
-
-      <!-- Step 1 -->
-      <div data-form-target="step">
-        <h3>What would you like to cook today?</h3>
-        <% ['Meat', 'Vegan', 'Vegetarian', 'Fish', 'Shuffle'].each do |type| %>
-          <label>
-            <%= radio_button_tag :food_type_selection, type, false, class: 'food-type' %> <%= type %>
-          </label>
-        <% end %>
-
-        <div id="shuffle_alert" style="display:none; margin-top: 1rem;">
-          🎲 Shuffle selected! We'll surprise you with a random recipe.
-        </div>
-
-        <%= button_tag "Next", type: :button,
-            data: { action: "click->form#goToNext", next_step: "1" } %>
-      </div>
-
-      <!-- Step 2 -->
-      <div data-form-target="step" class="d-none">
-        <h3>What should the difficulty be?</h3>
-        <% ['Easy', 'Medium', 'Hard'].each do |difficulty| %>
-          <label>
-            <%= radio_button_tag :difficulty_selection, difficulty %> <%= difficulty %>
-          </label>
-        <% end %>
-
-        <%= button_tag "Previous", type: :button,
-            data: { action: "click->form#goToPrevious", previous_step: "0" } %>
-        <%= button_tag "Next", type: :button,
-            data: { action: "click->form#goToNext", next_step: "2" } %>
-      </div>
-
-      <!-- Step 3 -->
-      <div data-form-target="step" class="d-none">
-        <h3>What music genres do you want?</h3>
-        <% ['Pop', 'Rock', 'Jazz', 'Electronic', 'Shuffle'].each do |genre| %>
-          <label>
-            <%= check_box_tag "music_genres[]", genre %> <%= genre %>
-          </label>
-        <% end %>
-
-        <h3>Do you prefer an album or a playlist?</h3>
-        <% ['Album', 'Playlist'].each do |format| %>
-          <label>
-            <%= radio_button_tag :music_format_selection, format %> <%= format %>
-          </label>
-        <% end %>
-
-        <%= button_tag "Previous", type: :button,
-            data: { action: "click->form#goToPrevious", previous_step: "1" } %>
-
-        <%= submit_tag "Find My Rhythm & Recipe!" %>
-      </div>
-
+  <!-- Step 1 -->
+  <div data-form-target="step">
+    <h3>What would you like to cook today?</h3>
+    <% ['Meat', 'Vegan', 'Vegetarian', 'Fish', 'Shuffle'].each do |type| %>
+      <label>
+        <%= radio_button_tag :food_type_selection, type, false,
+            class: 'food-type',
+            data: { action: "change->form#goToStep", next_step: "1" } %> <%= type %>
+      </label>
     <% end %>
+
+    <div id="shuffle_alert" style="display:none; margin-top: 1rem;">
+      🎲 Shuffle selected! We'll surprise you.
+    </div>
+  </div>
+
+  <!-- Step 2 -->
+  <div data-form-target="step" class="d-none">
+    <h3>What should the difficulty be?</h3>
+    <% ['Easy', 'Medium', 'Hard'].each do |level| %>
+      <label>
+        <%= radio_button_tag :difficulty_selection, level, false,
+            data: { action: "change->form#goToStep", next_step: "2" } %> <%= level %>
+      </label>
+    <% end %>
+  </div>
+
+  <!-- Step 3 -->
+  <div data-form-target="step" class="d-none">
+    <h3>Select music genres:</h3>
+    <% ['Pop', 'Rock', 'Jazz', 'Electronic', 'Shuffle'].each do |genre| %>
+      <label>
+        <%= check_box_tag "music_genres[]", genre %> <%= genre %>
+      </label>
+    <% end %>
+
+    <h3>Album or Playlist?</h3>
+    <% ['Album', 'Playlist'].each do |format| %>
+      <label>
+        <%= radio_button_tag :music_format_selection, format %> <%= format %>
+      </label>
+    <% end %>
+
+    <%= submit_tag "Find My Rhythm & Recipe!" %>
+  </div>
+<% end %>
   </div>
 </div>
