@@ -10,11 +10,11 @@ class SpotifyClient
   end
 
   def search_album(query)
-    response = self.class.get('/search', { #ask for explanation
-      headers: auth_header, #where are the auth_header defined?
+    response = SpotifyClient.get('/search', {
+      headers: auth_header,
       query: {
         q: query,
-        type: 'album', #ask if this limits the search to only receive the album part of the json or if it's something else
+        type: 'album',
         limit: 1
       }
     })
@@ -27,8 +27,8 @@ class SpotifyClient
     response.parsed_response['albums']['items'].first
   end
 
-  def search_playlist(query) 
-  response = self.class.get('/search', {
+  def search_playlist(query)
+  response = SpotifyClient.get('/search', {
     headers: auth_header,
     query: {
       q: query,

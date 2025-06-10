@@ -31,6 +31,7 @@ GENRES.each do |genre|
     #album is an array of ashes. For each hash, we iterate an return an array with .map which only returns the name (there are other available parameters such as artist_id)
     tracklist: album['href'],
     preview_url: nil,
+    #nil for now. Will update later once I look at the embedding
     album: true
   )
 
@@ -50,8 +51,9 @@ GENRES.each do |genre|
     name: playlist['name'],
     image_url: playlist['images'][0]['url'],
     genre: genre,
-    artists: [playlist.dig('owner', 'display_name') || "Various Artists"],
-    tracklist: playlist.dig('tracks', 'href'),
+    #the playlist search doesn't returns artists directly. Putting a placeholder for now
+    artists: ["Various Artists"],
+    tracklist: playlist['href'],
     preview_url: nil,
     album: false
   )
@@ -59,6 +61,7 @@ GENRES.each do |genre|
   puts "Saved playlist: #{music_suggestion.name} (#{genre})"
 end
 
+#turns MusicSuggestion object into an array. So that we can sample over it
 music_suggestions = MusicSuggestion.all.to_a
 
 puts "Seeding users..."
@@ -104,7 +107,7 @@ puts "Created #{User.count} users"
 
 
 puts "Seeding matches..."
-matches = 5.times.map do #explain the .map
+matches = 5.times.map do
   Match.create!(
     saved: [true, false].sample,
     rating: rand(1..5),
@@ -123,14 +126,14 @@ puts "Seeding recipes..."
     name: "Pasta Primavera #{i + 1}",
     difficulty: rand(1..5),
     food_type: ["Vegan", "Vegetarian", "Meat", "Seafood", "Dessert"].sample,
-    image_url: "https://example.com/recipe#{i + 1}.jpg",
+    image_url: "url",
     ingredients: "Tomatoes, Pasta, Basil",
-    portion_size: 2,
+    portion_size: 4,
     instructions: "Boil pasta. Add sauce. Mix.",
     cuisine: ["Italian", "French", "Indian", "Mexican"].sample,
     duration: rand(60..180),
     description: "A fresh and vibrant pasta dish.",
-    match: matches[i]
+    match: matches.sample
   )
 end
 

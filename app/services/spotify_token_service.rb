@@ -11,7 +11,7 @@ class SpotifyTokenService
 
   def fetch_access_token
     auth = Base64.strict_encode64("#{@client_id}:#{@client_secret}")
-    response = self.class.post('/api/token',
+    response = SpotifyTokenService.post('/api/token',
       headers: {
         'Authorization' => "Basic #{auth}",
         'Content-Type' => 'application/x-www-form-urlencoded'
