@@ -1,115 +1,63 @@
-<h1>Welcome to Rhythm and Recipes.</h1>
+<div class="container">
+  <h2>Find your Rhythm & Recipe</h2>
 
-<form action="/generate_final_match" method="post">
-  <h2>What would you like to cook today?</h2>
-  <div class="food_type_options">
-    <label>
-      <input type="radio" name="food_type_selection" value="Meat" id="food_meat">Meat
-    </label>
-    <label>
-      <input type="radio" name="food_type_selection" value="Vegan" id="food_vegan">Vegan
-    </label>
-    <label>
-      <input type="radio" name="food_type_selection" value="Vegetarian" id="food_vegetarian">Meat
-    </label>
-    <label>
-      <input type="radio" name="food_type_selection" value="Fish" id="food_fish">Fish
-    </label>
-      <input type="radio" name="food_type_selection" value="Shuffle" id="food_shuffle">Shuffle
-    </label>
-    </div>
+  <div data-controller="form">
+    <%= form_tag generate_match_path, method: :post do %>
 
+      <!-- Step 1 -->
+      <div data-form-target="step">
+        <h3>What would you like to cook today?</h3>
+        <% ['Meat', 'Vegan', 'Vegetarian', 'Fish', 'Shuffle'].each do |type| %>
+          <label>
+            <%= radio_button_tag :food_type_selection, type, false, class: 'food-type' %> <%= type %>
+          </label>
+        <% end %>
 
-  <h2>What should the difficulty be?</h2>
-  <div class="difficulty-options">
-    <label>
-      <input type="radio" name="difficulty_selection" value="Easy">Easy
-    </label>
-    <label>
-      <input type="radio" name="difficulty_selection" value="Medium">Medium
-    </label>
-    <label>
-      <input type="radio" name="difficulty_selection" value="Hard">Hard
-    </label>
+        <div id="shuffle_alert" style="display:none; margin-top: 1rem;">
+          🎲 Shuffle selected! We'll surprise you with a random recipe.
+        </div>
+
+        <%= button_tag "Next", type: :button,
+            data: { action: "click->form#goToNext", next_step: "1" } %>
+      </div>
+
+      <!-- Step 2 -->
+      <div data-form-target="step" class="d-none">
+        <h3>What should the difficulty be?</h3>
+        <% ['Easy', 'Medium', 'Hard'].each do |difficulty| %>
+          <label>
+            <%= radio_button_tag :difficulty_selection, difficulty %> <%= difficulty %>
+          </label>
+        <% end %>
+
+        <%= button_tag "Previous", type: :button,
+            data: { action: "click->form#goToPrevious", previous_step: "0" } %>
+        <%= button_tag "Next", type: :button,
+            data: { action: "click->form#goToNext", next_step: "2" } %>
+      </div>
+
+      <!-- Step 3 -->
+      <div data-form-target="step" class="d-none">
+        <h3>What music genres do you want?</h3>
+        <% ['Pop', 'Rock', 'Jazz', 'Electronic', 'Shuffle'].each do |genre| %>
+          <label>
+            <%= check_box_tag "music_genres[]", genre %> <%= genre %>
+          </label>
+        <% end %>
+
+        <h3>Do you prefer an album or a playlist?</h3>
+        <% ['Album', 'Playlist'].each do |format| %>
+          <label>
+            <%= radio_button_tag :music_format_selection, format %> <%= format %>
+          </label>
+        <% end %>
+
+        <%= button_tag "Previous", type: :button,
+            data: { action: "click->form#goToPrevious", previous_step: "1" } %>
+
+        <%= submit_tag "Find My Rhythm & Recipe!" %>
+      </div>
+
+    <% end %>
   </div>
-
-  <h2>Now let's move on to music. What genres would you like to listen to?</h2>
-  <p>You can choose multiple genres, or 'Shuffle' for a surprise!</p>
-  <div class="genre-options">
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Pop">Pop
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Rock">Rock
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Hip-Hop">Hip-Hop
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Rap">Rap
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="R&B">R&B
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Indie">Indie
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Electronic">Electronic
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Dance">Dance
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Alternative">Alternative
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Jazz">Jazz
-    </label>
-    <label>
-          <input type="checkbox" name="music_genres[]" value="Classical">Classical
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Folk">Folk
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Country">Country
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Metal">Metal
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Punk">Punk
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Blues">Blues
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Reggae">Reggae
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Soul">Soul
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Funk">Funk
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Techno">Techno
-    </label>
-    <label>
-        <input type="checkbox" name="music_genres[]" value="Shuffle" id="music_shuffle">Shuffle
-    </label>
 </div>
-
-<h2>Do you want to listen to an album or playlist?</h2>
-  <div class="album-playlist-options">
-  <label>
-    <input type="radio" name="music_format_selection" value="Album">Album
-  </label>
-  <label>
-    <input type="radio" name="music_format_selection" value="Playlist">Playlist
-  </label>
-  </div>
-  
-<input type="submit" value="Find My Rhythm & Recipe!">
-</form>

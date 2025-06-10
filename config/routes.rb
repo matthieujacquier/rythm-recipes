@@ -1,17 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
-<<<<<<< HEAD
-  root to: "matches#index"
-=======
   root to: "recipes#index"
   get "users/:id", to: "users#about", as: :about_user
-  resources :matches, only: :show do
+  resources :matches, only: %i[index show create update destroy] do
     member do
       patch :save
       patch :unsave
     end
   end
->>>>>>> master
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -21,5 +17,4 @@ Rails.application.routes.draw do
   get "match_results", to: "matches#match_results", as: :match_results
   # Defines the root path route ("/")
   # root "posts#index"
-  resources :matches, only: %i[index show create update destroy]
 end
