@@ -7,7 +7,7 @@ class RecipeGenerator
   def call
     response = OpenAIClient.chat(
       parameters: {
-        model: "gpt-3.5-turbo",
+        model: "gpt-4o",
         temperature: 0.7,
         messages: [
           { role: "system", content: "You are a professional chef and creative assistant generating detailed recipes." },
