@@ -16,7 +16,9 @@ class RecipeGenerator
       }
     )
 
-    JSON.parse(response.dig("choices", 0, "message", "content"))
+    raw_json = response["choices"][0]["message"]["content"]
+    parsed_recipe = JSON.parse(raw_json)
+    return parsed_recipe
   end
 
   private
