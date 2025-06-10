@@ -1,0 +1,115 @@
+<h1>Welcome to Rhythm and Recipes.</h1>
+
+<form action="/generate_final_match" method="post">
+  <h2>What would you like to cook today?</h2>
+  <div class="food_type_options">
+    <label>
+      <input type="radio" name="food_type_selection" value="Meat" id="food_meat">Meat
+    </label>
+    <label>
+      <input type="radio" name="food_type_selection" value="Vegan" id="food_vegan">Vegan
+    </label>
+    <label>
+      <input type="radio" name="food_type_selection" value="Vegetarian" id="food_vegetarian">Meat
+    </label>
+    <label>
+      <input type="radio" name="food_type_selection" value="Fish" id="food_fish">Fish
+    </label>
+      <input type="radio" name="food_type_selection" value="Shuffle" id="food_shuffle">Shuffle
+    </label>
+    </div>
+
+
+  <h2>What should the difficulty be?</h2>
+  <div class="difficulty-options">
+    <label>
+      <input type="radio" name="difficulty_selection" value="Easy">Easy
+    </label>
+    <label>
+      <input type="radio" name="difficulty_selection" value="Medium">Medium
+    </label>
+    <label>
+      <input type="radio" name="difficulty_selection" value="Hard">Hard
+    </label>
+  </div>
+
+  <h2>Now let's move on to music. What genres would you like to listen to?</h2>
+  <p>You can choose multiple genres, or 'Shuffle' for a surprise!</p>
+  <div class="genre-options">
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Pop">Pop
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Rock">Rock
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Hip-Hop">Hip-Hop
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Rap">Rap
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="R&B">R&B
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Indie">Indie
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Electronic">Electronic
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Dance">Dance
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Alternative">Alternative
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Jazz">Jazz
+    </label>
+    <label>
+          <input type="checkbox" name="music_genres[]" value="Classical">Classical
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Folk">Folk
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Country">Country
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Metal">Metal
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Punk">Punk
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Blues">Blues
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Reggae">Reggae
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Soul">Soul
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Funk">Funk
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Techno">Techno
+    </label>
+    <label>
+        <input type="checkbox" name="music_genres[]" value="Shuffle" id="music_shuffle">Shuffle
+    </label>
+</div>
+
+<h2>Do you want to listen to an album or playlist?</h2>
+  <div class="album-playlist-options">
+  <label>
+    <input type="radio" name="music_format_selection" value="Album">Album
+  </label>
+  <label>
+    <input type="radio" name="music_format_selection" value="Playlist">Playlist
+  </label>
+  </div>
+  
+<input type="submit" value="Find My Rhythm & Recipe!">
+</form>
