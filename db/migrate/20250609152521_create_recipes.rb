@@ -5,9 +5,9 @@ class CreateRecipes < ActiveRecord::Migration[7.1]
       t.integer :difficulty
       t.string :type
       t.string :image_url
-      t.string :ingredients
+      t.jsonb :ingredients, default: []
       t.integer :portion_size
-      t.text :instructions
+      t.jsonb :instructions, default: []
       t.string :cuisine
       t.integer :duration
       t.text :description

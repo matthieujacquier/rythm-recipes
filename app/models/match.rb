@@ -6,19 +6,27 @@ class Match < ApplicationRecord
 
   private
 
-  def create_recipe_from_seed
-    Recipe.create!(
-      name: recipe_name,
-      difficulty: rand(1..5),
-      food_type: ["Vegan", "Vegetarian", "Meat", "Seafood", "Dessert"].sample,
-      image_url: "url",
-      ingredients: "Tomatoes, Pasta, Basil",
-      portion_size: 4,
-      instructions: "Boil pasta. Add sauce. Mix.",
-      cuisine: ["Italian", "French", "Indian", "Mexican"].sample,
-      duration: rand(60..180),
-      description: recipe_description,
-      match: self
-    )
-  end
+def create_recipe_from_seed
+  Recipe.create!(
+    name: recipe_name,
+    difficulty: rand(1..3),
+    food_type: ["Vegan", "Vegetarian", "Meat", "Fish"].sample,
+    image_url: "url",
+    ingredients: [
+      { name: "Tomatoes", quantity: "200g" },
+      { name: "Pasta", quantity: "300g" },
+      { name: "Basil", quantity: "10g" }
+    ],
+    portion_size: 4,
+    instructions: [
+      { title: "Boil Pasta", description: "Cook pasta in salted water until al dente." },
+      { title: "Prepare Sauce", description: "Chop tomatoes and simmer with basil." },
+      { title: "Combine", description: "Mix pasta with sauce and serve hot." }
+    ],
+    cuisine: ["Italian", "French", "Indian", "Mexican"].sample,
+    duration: rand(60..180),
+    description: recipe_description,
+    match: self
+  )
+end
 end
