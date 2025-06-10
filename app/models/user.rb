@@ -5,4 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :matches
   has_many :recipes, through: :matches
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end
