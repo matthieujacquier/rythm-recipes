@@ -106,37 +106,20 @@ users = [user1, user2, user3, user4, user5]
 puts "Created #{User.count} users"
 
 
-puts "Seeding matches..."
-matches = 5.times.map do
+puts "Seeding matches and recipes..."
+
+matches = 5.times.map do |i|
   Match.create!(
     saved: [true, false].sample,
     rating: rand(1..5),
-    recipe_name: "Delicious Dish #{rand(100)}",
+    recipe_name: "Delicious Dish #{i + 1}",
     recipe_description: "A tasty treat you’ll love.",
     user: users.sample,
     music_suggestion: music_suggestions.sample
   )
 end
 
-puts "Created #{Match.count} Matches"
+puts "Created #{Match.count} Matches and their associated Recipes"
 
-puts "Seeding recipes..."
-5.times do |i|
-  Recipe.create!(
-    name: "Pasta Primavera #{i + 1}",
-    difficulty: rand(1..5),
-    food_type: ["Vegan", "Vegetarian", "Meat", "Seafood", "Dessert"].sample,
-    image_url: "url",
-    ingredients: "Tomatoes, Pasta, Basil",
-    portion_size: 4,
-    instructions: "Boil pasta. Add sauce. Mix.",
-    cuisine: ["Italian", "French", "Indian", "Mexican"].sample,
-    duration: rand(60..180),
-    description: "A fresh and vibrant pasta dish.",
-    match: matches.sample
-  )
-end
-
-puts "Created #{Recipe.count} Recipes"
 
 puts "Seeding complete!"
