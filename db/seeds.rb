@@ -1,7 +1,65 @@
+require 'open-uri'
+
 Recipe.delete_all
 Match.delete_all
 User.delete_all
 MusicSuggestion.delete_all
+
+puts "Defining genres"
+
+GENRES = [
+  'Pop', 'Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie',
+  'Electronic', 'Dance', 'Alternative', 'Jazz', 'Classical',
+  'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae', 'Soul', 'Funk', 'Techno'
+]
+
+spotify = SpotifyClient.new
+
+GENRES.each do |genre|
+  puts "Fetching album for genre: #{genre}"
+
+  album = spotify.search_album(genre)
+  next unless album
+
+  music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: album['id'])
+  music_suggestion.update!(
+    name: album['name'],
+    image_url: album['images'][0]['url'],
+    #this ensure we get the first image if there are several
+    genre: genre,
+    artists: album['artists'].map { |name| name['name'] },
+    #album is an array of ashes. For each hash, we iterate an return an array with .map which only returns the name (there are other available parameters such as artist_id)
+    tracklist: album['href'],
+    preview_url: nil,
+    album: true
+  )
+
+  puts "Saved: #{music_suggestion.name} (#{genre})"
+end
+
+puts "Fetching playlists..."
+
+GENRES.each do |genre|
+  puts "Fetching playlist for genre: #{genre}"
+
+  playlist = spotify.search_playlist(genre)
+  next unless playlist
+
+  music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: playlist['id'])
+  music_suggestion.update!(
+    name: playlist['name'],
+    image_url: playlist['images'][0]['url'],
+    genre: genre,
+    artists: [playlist.dig('owner', 'display_name') || "Various Artists"],
+    tracklist: playlist.dig('tracks', 'href'),
+    preview_url: nil,
+    album: false
+  )
+
+  puts "Saved playlist: #{music_suggestion.name} (#{genre})"
+end
+
+music_suggestions = MusicSuggestion.all.to_a
 
 puts "Seeding users..."
 
@@ -44,31 +102,16 @@ users = [user1, user2, user3, user4, user5]
 
 puts "Created #{User.count} users"
 
-puts "Seeding music suggestions..."
-music_suggestions = 5.times.map do |i|
-  MusicSuggestion.create!(
-    name: "Chill Beats Vol. #{i + 1}",
-    image_url: "https://example.com/image#{i + 1}.jpg",
-    genre: ["Lo-fi", "Jazz", "Rock", "Pop", "Classical"].sample,
-    artists: ["Artist A", "Artist B", "Artist C"],
-    tracklist: "Track 1\nTrack 2\nTrack 3",
-    preview_url: "https://spotify.com/preview#{i + 1}",
-    album: [true, false].sample,
-    spotify_id: "spotify_id_#{i + 1}"
-  )
-end
-
-puts "Created #{MusicSuggestion.count} Music Suggestions"
 
 puts "Seeding matches..."
-matches = 5.times.map do |i|
+matches = 5.times.map do #explain the .map
   Match.create!(
     saved: [true, false].sample,
     rating: rand(1..5),
-    recipe_name: "Delicious Dish #{i + 1}",
+    recipe_name: "Delicious Dish #{rand(100)}",
     recipe_description: "A tasty treat you’ll love.",
-    user: users[i],
-    music_suggestion: music_suggestions[i]
+    user: users.sample,
+    music_suggestion: music_suggestions.sample
   )
 end
 
@@ -79,13 +122,13 @@ puts "Seeding recipes..."
   Recipe.create!(
     name: "Pasta Primavera #{i + 1}",
     difficulty: rand(1..5),
-    food_type: ["Vegan", "Vegetarian", "Meat", "Seafood", "Dessert"].sample, # replace `type`
+    food_type: ["Vegan", "Vegetarian", "Meat", "Seafood", "Dessert"].sample,
     image_url: "https://example.com/recipe#{i + 1}.jpg",
     ingredients: "Tomatoes, Pasta, Basil",
     portion_size: 2,
     instructions: "Boil pasta. Add sauce. Mix.",
     cuisine: ["Italian", "French", "Indian", "Mexican"].sample,
-    duration: rand(10..60),
+    duration: rand(60..180),
     description: "A fresh and vibrant pasta dish.",
     match: matches[i]
   )
