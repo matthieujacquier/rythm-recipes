@@ -1,4 +1,15 @@
 class MatchesController < ApplicationController
+
+  def index
+    @recipes = Recipe.limit(4)
+    @music_suggestions = MusicSuggestion.all
+  end
+
+  def create
+    @recipe = Recipe.find(params[:recipe_id])
+    @match = Match.new(recipe: @recipe, user: current_user) #Creates a new match with the current user and the selected recipe.
+  end
+
   def show
     @match = Match.find(params[:id])
   end
