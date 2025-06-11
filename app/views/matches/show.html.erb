@@ -1,7 +1,6 @@
 <div class="container-fluid mt-5">
   <div class="row justify-content-center">
     <div class="col-10 d-flex justify-content-between">
-
       <div>
         <h1><%= @match.recipe.name %></h1>
         <div class="d-flex mb-2">
@@ -69,13 +68,11 @@
         <p><%= ingredient %></p>
       <% end %>
     </div>
-    <div class="col-5">
+    <div class="col-6">
       <h2>Instructions</h2>
       <% @match.recipe.instructions.split("\n").each do |instruction| %>
         <p><%= instruction %></p>
       <% end %>
     </div>
-    <div class="col-3"></div>
-</div>
-</div>
+  </div>
 </div>
