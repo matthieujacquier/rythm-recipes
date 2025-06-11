@@ -106,20 +106,63 @@ users = [user1, user2, user3, user4, user5]
 puts "Created #{User.count} users"
 
 
-puts "Seeding matches and recipes..."
+puts "Seeding matches..."
 
-matches = 5.times.map do |i|
-  Match.create!(
-    saved: [true, false].sample,
-    rating: rand(1..5),
-    recipe_name: "Delicious Dish #{i + 1}",
-    recipe_description: "A tasty treat you’ll love.",
-    user: users.sample,
+match1 =  Match.create!(
+    recipe_name: "Shrimp Scampi Meets Salsa Verde",
+    recipe_description: "This shrimp pasta with cilantro and lime is spicy, citrusy, and bold.",
+    user: user1,
     music_suggestion: music_suggestions.sample
   )
-end
+
+match2 = Match.create!(
+    recipe_name: "Pasta chi Vruoccoli Arriminati",
+    recipe_description: "Cauliflower cooked down into a savory-sweet sauce with Sicilian staples: anchovies, pine nuts, raisins, saffron, and toasted breadcrumbs.",
+    user: user2,
+    music_suggestion: music_suggestions.sample
+  )
+
+match3 = Match.create!(
+    recipe_name: "Avocado Toast With Mango, Chili Powder, and Mint",
+    recipe_description: "Juicy, tart mangoes are surprisingly excellent at cutting through the richness of the avocado in this open-faced sandwich.",
+    user: user3,
+    music_suggestion: music_suggestions.sample
+  )
+
+match4 = Match.create!(
+    recipe_name: "Pasta ai Funghi",
+    recipe_description: "Shallots, garlic, white wine, and Parmesan bring out the earthy flavors of mushrooms in this comforting all-weather pasta.",
+    user: user4,
+    music_suggestion: music_suggestions.sample
+  )
+
+match5 = Match.create!(
+    recipe_name: "Garlic Fried Rice Recipe",
+    recipe_description: "A perfect accompaniment to chicken adobo, or any other super-savory, super-saucy food.",
+    user: user5,
+    music_suggestion: music_suggestions.sample
+  )
 
 puts "Created #{Match.count} Matches and their associated Recipes"
 
+puts "Seeding recipes..."
+
+# 5.times do |i|
+#   Recipe.create!(
+#     name: "Pasta Primavera #{i + 1}",
+#     difficulty: rand(1..5),
+#     food_type: ["Vegan", "Vegetarian", "Meat", "Seafood", "Dessert"].sample,
+#     image_url: "url",
+#     ingredients: "Tomatoes, Pasta, Basil",
+#     portion_size: 4,
+#     instructions: "Boil pasta. Add sauce. Mix.",
+#     cuisine: ["Italian", "French", "Indian", "Mexican"].sample,
+#     duration: rand(60..180),
+#     description: "A fresh and vibrant pasta dish.",
+#     match: matches.sample
+#   )
+# end
+
+puts "Created #{Recipe.count} Recipes"
 
 puts "Seeding complete!"

@@ -1,75 +1,81 @@
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-12 d-flex justify-content-between">
+<div class="container-fluid mt-5">
+  <div class="row justify-content-center">
+    <div class="col-10 d-flex justify-content-between">
+
       <div>
         <h1><%= @match.recipe.name %></h1>
-        <p>Match created by: <%= @match.user.first_name %>
-      </div>
-      <div>
+        <div class="d-flex mb-2">
         <div>
           <% if @match.saved? %>
-            <%= link_to "Remove this match from saved", unsave_match_path, data: {turbo_method: "patch"}, class: "btn btn-info" %>
+            <%= link_to "Remove this match from saved", unsave_match_path, data: {turbo_method: "patch"}, class: "btn btn-warning" %>
           <% else %>
-            <%= link_to "Save this match", save_match_path, data: {turbo_method: "patch"}, class: "btn btn-primary" %>
+            <%= link_to "Save this match", save_match_path, data: {turbo_method: "patch"}, class: "btn btn-success" %>
           <% end %>
         </div>
-        <div class="mt-1" data-controller="matches">
+
+        <div class="ms-3" data-controller="matches">
           <input type="hidden" value="<%= match_url(@match) %>" data-matches-target="source">
-          <a class="btn btn-primary" id="copyBtn" data-action="matches#copy"><i class="fa-solid fa-share"></i> Share your cooking experience</a>
+          <a class="btn btn-info" id="copyBtn" data-action="matches#copy"><i class="fa-solid fa-share"></i> Share your cooking experience</a>
         </div>
+
+      </div>
+        <p>Match created by: <%= @match.user.full_name %>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-10 justify-content-between d-flex">
+      <div>
+
+        <img class="recipe_image" src="<%= @match.recipe.image_url %>" alt="">
+
+        <div class="d-flex detail-bubbles mt-3">
+          <p class="details">Difficulty: <%= @match.recipe.difficulty %></p>
+          <p class="details">Food Type: <%= @match.recipe.food_type %></p>
+          <p class="details">Cuisine: <%= @match.recipe.cuisine %></p>
+          <p class="details">Duration: ~<%= @match.recipe.duration %> min.</p>
+          <p class="details">Portion Size: <%= @match.recipe.portion_size %></p>
+
+      </div>
+      </div>
+
+      <div class="spotify_player position-sticky">
+        <% if @match.music_suggestion.present? %>
+          <% embed_type = @match.music_suggestion.album ? "album" : "playlist" %>
+          <% embed_url = "https://open.spotify.com/embed/#{embed_type}/#{@match.music_suggestion.spotify_id}" %>
+
+          <iframe class="" style="border-radius:12px;"
+                  src="<%= embed_url %>?utm_source=generator&theme=0"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy">
+          </iframe>
+        <% else %>
+          <p>No Spotify match available.</p>
+        <% end %>
       </div>
     </div>
-  </div>
-  <div class="row justify-content-between">
-    <div class="col-4">
-      <img style="width: 100%" src="https://images.services.kitchenstories.io/w7kIw5bZaJP6rgq3Zj_HOouUq_U=/3840x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2572-picnic-final-photo-4x3.jpg" alt="Pasta Primavera">
-    </div>
-    <div class="col-4" style="align-content: flex-end">
+    <div class="col-10 justify-content-between d-flex mt-5">
 
-      <p>Difficulty: <%= @match.recipe.difficulty %></p>
-      <p>Food Type: <%= @match.recipe.food_type %></p>
-      <p>Cuisine: <%= @match.recipe.cuisine %></p>
-      <p>Duration: ~<%= @match.recipe.duration %> min.</p>
-      <p>Portion Size: <%= @match.recipe.portion_size %></p>
-    </div>
-    <div class="col-4 sticky-top" style="position:sticky;">
-      <% if @match.music_suggestion.present? %>
-        <% embed_type = @match.music_suggestion.album ? "album" : "playlist" %>
-        <% embed_url = "https://open.spotify.com/embed/#{embed_type}/#{@match.music_suggestion.spotify_id}" %>
-
-        <iframe style="border-radius:12px;"
-                src="<%= embed_url %>?utm_source=generator"
-                width="100%"
-                height="200%"
-                frameborder="0"
-                allowfullscreen
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy">
-        </iframe>
-      <% else %>
-        <p>No Spotify match available.</p>
-      <% end %>
-</div>
-  </div>
-  <div class="row justify-content-between">
-  <div class="row mt-5">
     <div class="col-2">
-      <p>Ingredients: <%= @match.recipe.ingredients %></p>
+      <h2>Ingredients</h2>
+      <% @match.recipe.ingredients.split("\n").each do |ingredient| %>
+        <p><%= ingredient %></p>
+      <% end %>
     </div>
-    <div class="col-6">
-      <p>Instructions: <%= @match.recipe.instructions %></p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloremque neque suscipit provident nihil inventore recusandae, vel temporibus maiores explicabo? Harum repudiandae non similique ipsum alias incidunt at earum quas?
-      Eos, rem error! Et, rerum eum? Dicta, facilis. Magni at possimus illum unde, nisi voluptate asperiores esse voluptates iure suscipit quae inventore maxime, quam harum cum, autem dicta aperiam repellat.
-      Blanditiis obcaecati non vero provident aspernatur repellat facilis exercitationem molestiae quas soluta aperiam quia natus quod quo inventore, asperiores eius doloremque. Eum quia, reprehenderit repellendus illum impedit necessitatibus eveniet explicabo!
-      Laudantium repudiandae ipsam dolores aut placeat sit accusantium delectus cupiditate expedita quibusdam illo, consectetur facere sunt facilis explicabo molestiae blanditiis illum quae? Eius dolor reiciendis sit, natus animi fugiat molestias!
-      Explicabo magni nisi commodi rem in eaque at minima aspernatur doloribus porro ab, quam dicta ullam. Voluptate nam reiciendis laborum minima. Repellat modi, tempora enim minima quia cumque officia numquam.
-      Dolorem, facere. Dolore molestias voluptates animi! In saepe molestias dolore tenetur repellat possimus eum vitae ipsum ratione, cupiditate veritatis iusto eveniet. Dolorum accusantium quis explicabo! Sunt suscipit corporis accusamus adipisci.
-      Quaerat recusandae mollitia adipisci facilis eum facere ut nesciunt excepturi dignissimos totam animi, atque repellendus veniam. Odio libero voluptas omnis, illo tenetur saepe eveniet facere molestias provident sed, magnam quam!
-      Aspernatur labore sed saepe soluta cum magni, quae corporis sunt praesentium delectus perferendis quod nam est nihil sint natus consectetur suscipit quam cupiditate culpa quaerat. Quisquam accusantium repellat laborum facere.
-      Minus, tenetur labore suscipit repudiandae dignissimos est voluptatibus tempora cumque atque, sunt distinctio omnis quaerat id dolorem? Itaque, in, perspiciatis nulla laudantium temporibus sequi delectus, dolore fugit architecto mollitia unde?
-      Saepe, dolorum. Animi enim consequuntur, laudantium veniam possimus dolore similique labore magnam repudiandae, unde minus porro quo accusamus quasi ducimus adipisci perferendis voluptatum. Inventore esse molestias perspiciatis iusto cupiditate ducimus?
-      Repudiandae nihil excepturi at harum expedita ducimus hic pariatur dolorem similique suscipit rerum nobis dignissimos inventore, laborum nemo vitae explicabo officiis non. Obcaecati itaque laudantium tenetur consectetur corrupti odit illum.
-      Nihil eveniet in sapiente, eaque, itaque accusamus at, nemo delectus molestias distinctio beatae eligendi saepe fugiat quos nam doloremque deserunt quae cumque enim perferendis sunt? Dolorem ducimus eos rerum quia?</p>
+    <div class="col-5">
+      <h2>Instructions</h2>
+      <% @match.recipe.instructions.split("\n").each do |instruction| %>
+        <p><%= instruction %></p>
+      <% end %>
     </div>
-  </div>
+    <div class="col-3"></div>
+</div>
+</div>
 </div>
