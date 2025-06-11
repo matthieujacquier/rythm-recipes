@@ -22,8 +22,6 @@
   </div>
 </div>
 
-
-
 <div class="d-none card-container">
   <h1>Which recipe would you like to select?</h1>
     <% @recipes.each do |recipe| %>
@@ -42,7 +40,6 @@
 
   <div data-controller="form">
     <%= form_tag generate_match_path, method: :post do %>
-
 
 
   <div data-form-target="step">

@@ -14,11 +14,6 @@ class MatchesController < ApplicationController
     #end
   end
 
-  def create
-    @recipe = Recipe.find(params[:recipe_id])
-    @match = Match.new(recipe: @recipe, user: current_user)
-  end
-
   def show
     @match = Match.find(params[:id])
   end
