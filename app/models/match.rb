@@ -10,7 +10,8 @@ class Match < ApplicationRecord
     @music_genres_selection = params[:music_genres]
     @music_format_selection = params[:music_format_selection]
   end
-  
+
+
   private
 
   def create_recipe_from_seed
@@ -28,4 +29,5 @@ class Match < ApplicationRecord
       match: self
     )
   end
+
 end

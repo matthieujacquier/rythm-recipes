@@ -2,13 +2,13 @@
   <h2>Find your Rhythm & Recipe</h2>
 
   <div data-controller="form">
-    <%= form_tag generate_match_path, method: :post, data: { turbo: false } do %>
+    <%= form_tag generate_match_path, method: :post do %>
 
 
 
   <div data-form-target="step">
     <h3>What would you like to cook today?</h3>
-    <% ['Meat', 'Vegan', 'Vegetarian', 'Fish', 'Shuffle'].each do |type| %>
+    <% ['Meat', 'Vegan', 'Vegetarian', 'Seafood', 'Shuffle'].each do |type| %>
   <label>
     <%= radio_button_tag :food_type_selection, type, false,
           data: { action: "change->form#goToStep", step: "1" } %> <%= type %>
