@@ -6,11 +6,12 @@ class MatchesController < ApplicationController
 
     genre = GENRES.sample if genre == "surprise me"
 
-    if genre.present?
-    @music_suggestions = MusicSuggestion.where(genre: genre).sample(3)
-    else
-    @music_suggestions = []
-    end
+    @music_suggestions = MusicSuggestion.limit(3)
+    #if genre.present?
+    #@music_suggestions = MusicSuggestion.where(genre: genre).sample(3)
+    #else
+    #@music_suggestions = []
+    #end
   end
 
   def create
