@@ -2,15 +2,16 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "recipes#index"
   get "users/:id", to: "users#about", as: :about_user
-  resources :matches, only: :show do
-    member do
-      patch :save
-      patch :unsave
-    end
-    collection do
-      get 'music_suggestions'
-    end
+  resources :matches, only: [:show, :index] do
+  member do
+    patch :save
+    patch :unsave
   end
+  collection do
+    get :music_suggestions
+  end
+  end
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

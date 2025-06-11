@@ -2,12 +2,20 @@ class MatchesController < ApplicationController
 
   def index
     @recipes = Recipe.limit(4)
-    @music_suggestions = MusicSuggestion.all
+    genre = params[:genre]
+
+    genre = GENRES.sample if genre == "surprise me"
+
+    if genre.present?
+    @music_suggestions = MusicSuggestion.where(genre: genre).sample(3)
+    else
+    @music_suggestions = []
+    end
   end
 
   def create
     @recipe = Recipe.find(params[:recipe_id])
-    @match = Match.new(recipe: @recipe, user: current_user) #Creates a new match with the current user and the selected recipe.
+    @match = Match.new(recipe: @recipe, user: current_user)
   end
 
   def show

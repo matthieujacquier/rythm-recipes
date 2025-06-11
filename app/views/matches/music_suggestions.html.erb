@@ -1,28 +1,23 @@
-<div class="container mt-4">
-    <div class="card-container">
-      <% @suggested_albums_or_playlists.each do |music_item| %> <%# Iterating through each music item %>
+<div class="container">
+  <h2 class="text-center text-white mb-4">Which recipe would you like to select?</h2>
+  <div class="card-container">
+    <% if @music_suggestions.present? %>
+      <% @music_suggestions.each do |music| %>
         <div class="card-product">
-          <div class="card-category" style="background-image: url('<%= music_item.image_url.presence || 'https://images.unsplash.com/photo-1498030999511-992d99d39366?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' %>');">
-            <h3><%= music_item.name %></h3>
-          </div>
+          <%= music.image_url%>
           <div class="card-product-infos">
-            <p><strong>Artist(s):</strong> <%= music_item.artists_display %></p>
-            <p><strong>Type:</strong> <%= music_item.album ? 'Album' : 'Playlist' %></p>
-
-            <%= link_to "Select this #{music_item.album ? 'Album' : 'Playlist'}",
-                        create_with_music_matches_path(music_id: music_item.id),
-                        method: :post,
-                        class: "btn btn-primary"
-            %>
+            <h2><%= music.title %></h2>
+            <p><%= music.artists.join(', ') %></p>
           </div>
         </div>
       <% end %>
-    </div>
-  <% else %>
-    <p class="text-center">No music suggestions available at the moment. Please run your seed file or check your Spotify connection!</p>
-  <% end %>
+    <% else %>
+      <p>No music suggestions available at the moment.</p>
+    <% end %>
+  </div>
 
-  <div class="text-center mt-5">
-    <%= link_to "Back to Home", root_path, class: "btn btn-outline-secondary" %>
+  <div class="text-center mt-4">
+    <%= button_to "Load more recipes", music_suggestions_path(genre: params[:genre]), method: :get %>
+  </div>
   </div>
 </div>
