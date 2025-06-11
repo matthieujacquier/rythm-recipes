@@ -33,7 +33,7 @@ class SpotifyClient
     query: {
       q: query,
       type: 'playlist',
-      limit: 1
+      limit: 5
     }
   })
 
@@ -42,8 +42,31 @@ class SpotifyClient
     return nil
   end
 
-  response.parsed_response['playlists']['items'].first
+  playlists_data = response.parsed_response.dig('playlists', 'items')
+  return nil unless playlists_data.is_a?(Array)
+
+  valid_playlists = []
+
+  playlists_data.each do |playlist|
+    next unless playlist && playlist['id']
+
+    details = SpotifyClient.get("/playlists/#{playlist['id']}", headers: auth_header)
+    next unless details.success?
+
+    if details.parsed_response.dig('tracks', 'total').to_i > 8
+      valid_playlists << details.parsed_response
+    end
+  end
+
+  if valid_playlists.any?
+    return valid_playlists.sample
+  else
+    puts "No suitable playlist found for '#{query}' with more than 8 tracks."
+    return nil
+  end
 end
+
+
 
   private
 

@@ -10,13 +10,14 @@ class RecipeGenerator
         model: "gpt-4o",
         temperature: 0.7,
         messages: [
-          { role: "system", content: "You are a professional chef and creative assistant generating detailed recipes." },
+          { role: "system", content: "You are an online cooking blogger and you share detailed food recipes online."},
           { role: "user", content: prompt }
         ]
       }
     )
 
     raw_json = response["choices"][0]["message"]["content"]
+    clean_json = raw_json.gsub(/\A```json\s*|\s*```\Z/, '')
     parsed_recipe = JSON.parse(raw_json)
     return parsed_recipe
   end
@@ -24,29 +25,31 @@ class RecipeGenerator
   private
 
   def prompt
-    <<~PROMPT
-      Generate a JSON object for a recipe based on the following inputs:
+  <<~PROMPT
+    Generate a valid JSON object for a cooking recipe based on the following inputs:
 
-      - Difficulty: #{@difficulty}
-      - Food Type: #{@food_type}
+    - "difficulty": "#{@difficulty}" (one of: 1, 2, 3)
+    - "food_type": "#{@food_type}" (one of: meat, vegetarian, vegan, fish)
 
-      The JSON should include:
-      {
-        "name": string (e.g. "Creamy Vegan Mushroom Risotto"),
-        "ingredients": [
-          { "name": "ingredient name", "quantity": "amount in grams or unit" }
-        ],
-        "portion_size": 4,
-        "instructions": [
-          { "title": "Step 1 title", "description": "Step 1 instruction" },
-          { "title": "Step 2 title", "description": "Step 2 instruction" }
-        ],
-        "cuisine": "Cuisine type",
-        "duration": integer (in minutes),
-        "description": "Short subtitle description"
-      }
+    The recipe must follow this exact structure:
 
-      Do not include image_url or match_id. Return only valid JSON, no markdown.
-    PROMPT
-  end
+    {
+      "name": "Example Recipe Name",
+      "ingredients": [
+        { "name": "Ingredient 1", "quantity": "amount in grams or unit" }
+      ],
+      "portion_size": 4,
+      "instructions": [
+        { "title": "Step 1 title", "description": "Step 1 instruction" }
+      ],
+      "cuisine": "Cuisine type (e.g., Italian, Indian, French)",
+      "duration": 45,
+      "description": "Short, enticing one-sentence description of the dish"
+    }
+
+    Easy (1) recipes shoud take less time (duration) than harder ones (3).
+    Return only valid JSON with no extra text or markdown. Begin the response with `{` and end with `}`.
+  PROMPT
+end
+
 end
