@@ -53,12 +53,14 @@
 
 
 
-    <h3>Album or Playlist?</h3>
-    <% ['Album', 'Playlist'].each do |format| %>
-      <label>
-        <%= radio_button_tag :music_format_selection, format %> <%= format %>
-      </label>
-    <% end %>
+    <div data-form-target="musicFormat" class="d-none">
+  <h3>Album or Playlist?</h3>
+  <% ['Album', 'Playlist'].each do |format| %>
+    <label>
+      <%= radio_button_tag :music_format_selection, format %> <%= format %>
+    </label>
+  <% end %>
+</div>
 
      <%= button_tag "← Go Back", type: :button,
       data: { action: "click->form#goToStep", step: "1" } %>

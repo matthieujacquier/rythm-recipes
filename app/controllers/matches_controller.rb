@@ -42,4 +42,5 @@ class MatchesController < ApplicationController
   else
     redirect_to root_path, alert: "Please complete the form first."
   end
+  end
 end
