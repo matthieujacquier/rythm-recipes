@@ -1,5 +1,19 @@
 class MatchesController < ApplicationController
 
+  def index
+    @recipes = Recipe.limit(4)
+    genre = params[:genre]
+
+    genre = GENRES.sample if genre == "surprise me"
+
+    @music_suggestions = MusicSuggestion.limit(3)
+    #if genre.present?
+    #@music_suggestions = MusicSuggestion.where(genre: genre).sample(3)
+    #else
+    #@music_suggestions = []
+    #end
+  end
+
   def show
     @match = Match.find(params[:id])
   end
