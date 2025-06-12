@@ -1,3 +1,3 @@
 class Recipe < ApplicationRecord
-  belongs_to :match
+  belongs_to :match, optional: true
 end
