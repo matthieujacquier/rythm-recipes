@@ -7,13 +7,13 @@ class SpotifyClient
     @access_token = token_service.fetch_access_token
   end
 
-  def search_album(query)
+  def search_album(query) #calling it 3 times to be able to select the first that will match the criterias of track_count & artist_name
   response = SpotifyClient.get('/search', {
     headers: auth_header,
     query: {
       q: query,
       type: 'album',
-      limit: 5
+      limit: 3
     }
   })
 
@@ -35,7 +35,7 @@ class SpotifyClient
     details = SpotifyClient.get("/albums/#{album['id']}", headers: auth_header)
     next unless details.success?
 
-    track_count = details.parsed_response.dig('tracks', 'items')&.size.to_i #detail
+    track_count = details.parsed_response.dig('tracks', 'items')&.size.to_i
 
     if track_count > 6 #skips Single Albums
       valid_albums << details.parsed_response
@@ -66,7 +66,8 @@ end
     return nil
   end
 
-  response.parsed_response['playlists']['items'].first
+  response.parsed_response.dig('playlists','items')&.first #the .first doesn't really make sense here because I'm only calling with a limit of 1 right ?
+  #equivalent to response.parsed_response['playlists']['items'].first but returns nil instead of errors if it doesn't find a match for playlist & items.
 end
 
   private

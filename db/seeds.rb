@@ -31,7 +31,7 @@ GENRES.each do |genre|
     #album is an array of ashes. For each hash, we iterate an return an array with .map which only returns the name (there are other available parameters such as artist_id)
     tracklist: album['href'],
     preview_url: nil,
-    #nil for now. Will update later once I look at the embedding
+    #will not be used. I guess we can delete it from the table? 
     album: true
   )
 
