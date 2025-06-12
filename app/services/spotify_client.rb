@@ -1,5 +1,3 @@
-# app/services/spotify_client.rb
-
 class SpotifyClient
   include HTTParty
   base_uri 'https://api.spotify.com/v1'
@@ -10,22 +8,48 @@ class SpotifyClient
   end
 
   def search_album(query)
-    response = SpotifyClient.get('/search', {
-      headers: auth_header,
-      query: {
-        q: query,
-        type: 'album',
-        limit: 1
-      }
-    })
+  response = SpotifyClient.get('/search', {
+    headers: auth_header,
+    query: {
+      q: query,
+      type: 'album',
+      limit: 5
+    }
+  })
 
-    unless response.success?
-      puts "Spotify API error for '#{query}': #{response.body}"
-      return nil
-    end
-
-    response.parsed_response['albums']['items'].first
+  unless response.success?
+    puts "Spotify API error for '#{query}': #{response.body}"
+    return nil
   end
+
+  albums_data = response.parsed_response.dig('albums', 'items') #find the items array inside the album json response
+  return nil unless albums_data.is_a?(Array) #safeguarding against the use case where albums_data is not an array (e.g weird response from Spotify API)
+
+  valid_albums = []
+
+  albums_data.each do |album|
+    next unless album && album['id'] #safeguards against objects that could miss the album id (which is necessary to trigger the API call below - prevents errors)
+    artist_names = album['artists'].map { |a| a['name'] }
+    next if artist_names == ['Various Artists'] #skips Various Artists because I saw weird uses cases where Albums were actualluy kind of playlists. Especially for the Classical genre
+
+    details = SpotifyClient.get("/albums/#{album['id']}", headers: auth_header)
+    next unless details.success?
+
+    track_count = details.parsed_response.dig('tracks', 'items')&.size.to_i #detail
+
+    if track_count > 6 #skips Single Albums
+      valid_albums << details.parsed_response
+    end
+  end
+
+  if valid_albums.any?
+    return valid_albums.sample
+  else
+    puts "No suitable album found for '#{query}' with more than 6 tracks."
+    return nil
+  end
+end
+
 
   def search_playlist(query)
   response = SpotifyClient.get('/search', {
@@ -33,7 +57,7 @@ class SpotifyClient
     query: {
       q: query,
       type: 'playlist',
-      limit: 5
+      limit: 1
     }
   })
 
@@ -42,31 +66,8 @@ class SpotifyClient
     return nil
   end
 
-  playlists_data = response.parsed_response.dig('playlists', 'items')
-  return nil unless playlists_data.is_a?(Array)
-
-  valid_playlists = []
-
-  playlists_data.each do |playlist|
-    next unless playlist && playlist['id']
-
-    details = SpotifyClient.get("/playlists/#{playlist['id']}", headers: auth_header)
-    next unless details.success?
-
-    if details.parsed_response.dig('tracks', 'total').to_i > 8
-      valid_playlists << details.parsed_response
-    end
-  end
-
-  if valid_playlists.any?
-    return valid_playlists.sample
-  else
-    puts "No suitable playlist found for '#{query}' with more than 8 tracks."
-    return nil
-  end
+  response.parsed_response['playlists']['items'].first
 end
-
-
 
   private
 

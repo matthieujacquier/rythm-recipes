@@ -17,7 +17,6 @@ class RecipeGenerator
     )
 
     raw_json = response["choices"][0]["message"]["content"]
-    clean_json = raw_json.gsub(/\A```json\s*|\s*```\Z/, '')
     parsed_recipe = JSON.parse(raw_json)
     return parsed_recipe
   end
@@ -28,7 +27,7 @@ class RecipeGenerator
   <<~PROMPT
     Generate a valid JSON object for a cooking recipe based on the following inputs:
 
-    - "difficulty": "#{@difficulty}" (one of: 1, 2, 3)
+    - "difficulty": "#{@difficulty}" (one of: Easy, Medium, Hard)
     - "food_type": "#{@food_type}" (one of: meat, vegetarian, vegan, fish)
 
     The recipe must follow this exact structure:
@@ -47,7 +46,7 @@ class RecipeGenerator
       "description": "Short, enticing one-sentence description of the dish"
     }
 
-    Easy (1) recipes shoud take less time (duration) than harder ones (3).
+    Easy recipes shoud take less time (duration) than Median and Hard ones (3).
     Return only valid JSON with no extra text or markdown. Begin the response with `{` and end with `}`.
   PROMPT
 end

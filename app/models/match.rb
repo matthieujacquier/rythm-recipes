@@ -17,7 +17,7 @@ class Match < ApplicationRecord
 def create_recipe_from_seed
   Recipe.create!(
     name: recipe_name,
-    difficulty: rand(1..3),
+    difficulty: ["Easy", "Medium", "Hard"].sample,
     food_type: ["Vegan", "Vegetarian", "Meat", "Fish"].sample,
     image_url: "url",
     ingredients: [
