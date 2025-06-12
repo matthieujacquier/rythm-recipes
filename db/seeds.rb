@@ -10,7 +10,7 @@ puts "Defining genres"
 GENRES = [
   'Pop', 'Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie',
   'Electronic', 'Dance', 'Alternative', 'Jazz', 'Classical',
-  'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae', 'Soul', 'Funk', 'Techno'
+  'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae', 'Soul', 'Funk', 'Techno', 'Afro'
 ]
 
 spotify = SpotifyClient.new
@@ -31,7 +31,7 @@ GENRES.each do |genre|
     #album is an array of ashes. For each hash, we iterate an return an array with .map which only returns the name (there are other available parameters such as artist_id)
     tracklist: album['href'],
     preview_url: nil,
-    #nil for now. Will update later once I look at the embedding
+    #will not be used. I guess we can delete it from the table? 
     album: true
   )
 
@@ -66,40 +66,46 @@ music_suggestions = MusicSuggestion.all.to_a
 
 puts "Seeding users..."
 
+user5 = User.create(
+  email: "matthieu@example.com",
+  password: "password123",
+  first_name: "Matthieu",
+  last_name: "Rap",
+  admin: true
+)
+
 user1 = User.create(
   email: "sam@example.com",
   password: "password123",
   first_name: "Sam",
-  last_name: "Techno"
+  last_name: "Techno",
+  admin: true
 )
 
 user2 = User.create(
   email: "marta@example.com",
   password: "password123",
   first_name: "Marta",
-  last_name: "Rock"
+  last_name: "Rock",
+  admin: true
 )
 
 user3 = User.create(
   email: "pelin@example.com",
   password: "password123",
   first_name: "Pelin",
-  last_name: "Jazz"
+  last_name: "Jazz",
+  admin: true
 )
 
 user4 = User.create(
   email: "sneha@example.com",
   password: "password123",
   first_name: "Sneha",
-  last_name: "Reggae"
+  last_name: "Reggae",
+  admin: true
 )
 
-user5 = User.create(
-  email: "matthieu@example.com",
-  password: "password123",
-  first_name: "Matthieu",
-  last_name: "Rap"
-)
 
 users = [user1, user2, user3, user4, user5]
 

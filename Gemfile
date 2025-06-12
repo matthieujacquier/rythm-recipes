@@ -14,7 +14,9 @@ gem "pg", "~> 1.1"
 gem "cloudinary"
 
 gem 'httparty'
-
+gem 'ruby-openai'
+gem "solid_queue"
+gem "mission_control-jobs"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 

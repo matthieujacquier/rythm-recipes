@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+
   devise_for :users
-  root to: "recipes#index"
+
+  authenticate :user, ->(u) { u.admin? } do
+    mount MissionControl::Jobs::Engine, at: "/jobs"
+  end
+
+  root to: "pages#home"
   get "users/:id", to: "users#about", as: :about_user
   resources :matches, only: [:index, :show, :create, :update, :destroy] do
     member do
@@ -9,7 +15,7 @@ Rails.application.routes.draw do
     end
     collection do
       get :music_suggestions
-  end
+    end
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -22,6 +28,7 @@ Rails.application.routes.draw do
   get 'recipe_suggestions', to: 'matches#recipe_suggestions', as: 'recipe_suggestions'
   get 'music_suggestions', to: 'matches#music_suggestions', as: 'music_suggestions'
 
+  post 'generate_recipe', to: 'recipes#generate'
   # Defines the root path route ("/")
   # root "posts#index"
 end
