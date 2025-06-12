@@ -79,6 +79,4 @@ test:
 #
 production:
   <<: *default
-  database: rythm_recipes_production
-  username: rythm_recipes
-  password: <%= ENV["RYTHM_RECIPES_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>

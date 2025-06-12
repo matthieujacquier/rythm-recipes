@@ -13,7 +13,7 @@ export default class extends Controller {
     const inputName = event.target.name;
 
     if (inputName === "food_type_selection" && selectedValue === "Shuffle") {
-      const foodOptions = ["Meat", "Vegan", "Vegetarian", "Fish"];
+      const foodOptions = ["Meat", "Vegan", "Vegetarian", "Seafood"];
       const randomFood = foodOptions[Math.floor(Math.random() * foodOptions.length)];
       const foodInput = document.querySelector(`input[name="food_type_selection"][value="${randomFood}"]`);
       if (foodInput) foodInput.checked = true;
@@ -32,7 +32,7 @@ export default class extends Controller {
           input.checked = false;
         });
 
-        const genreOptions = ["Pop", "Rock", "Hip-Hop", "Rap", "R&B", "Indie", "Electronic", "Dance", "Alternative", "Jazz", "Classical", "Folk", "Country", "Metal", "Punk", "Blues", "Reggae", "Soul", "Funk", "Techno"];
+        const genreOptions = ["Pop", "Rock", "Hip-Hop", "Rap", "R&B", "Indie", "Electronic", "Dance", "Alternative", "Jazz", "Classical", "Folk", "Country", "Metal", "Punk", "Blues", "Reggae", "Soul", "Funk", "Techno", "Afro"];
         const randomGenre = genreOptions[Math.floor(Math.random() * genreOptions.length)];
         const genreInput = document.querySelector(`input[name="music_genres[]"][value="${randomGenre}"]`);
         if (genreInput) genreInput.checked = true;
