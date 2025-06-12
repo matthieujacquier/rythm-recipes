@@ -17,7 +17,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  width: auto;
+  gap: 20px;
   padding: 40px 20px;
   min-height: 55px;
   background-position: center;
@@ -106,18 +107,17 @@
   text-align: left;
 }
 
-.card-product-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+.selectable-card {
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card-product-link * {
-  text-decoration: none !important;
+.selectable-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.card-product.selected-recipe {
-  outline: 3px solid red;
-  box-shadow: 0 0 15px rgba(0, 255, 127, 0.6);
-  transform: translateY(-2px) scale(1.02);
+.selectable-card.selected {
+  border: 2px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }

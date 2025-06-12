@@ -1,9 +1,45 @@
-<h2>Debug Params</h2>
+<%# <h2>Debug Params</h2>
 <pre><%= debug params %></pre>
-<h2>Your Rhythm & Recipe Results</h2>
+<%# <h2>Your Rhythm & Recipe Results</h2> %>
 
 
-<p><strong>Food Type:</strong> <%= @selected_food %></p>
-<p><strong>Difficulty:</strong> <%= @difficulty %></p>
-<p><strong>Genres:</strong> <%= @genres.join(", ") %></p>
-<p><strong>Format:</strong> <%= @format %></p>
+<%# <p><strong>Food Type:</strong> <%= @selected_food %></p>
+<%# <p><strong>Difficulty:</strong> <%= @difficulty %></p>
+<%# <p><strong>Genres:</strong> <%= @genres.join(", ") %></p>
+<%# <p><strong>Format:</strong> <%= @format %></p>
+
+<%# <h3>Music Suggestions</h3>
+<div class="card-container">
+  <% if @music_suggestions.present? %>
+    <%# <% @music_suggestions.each do |music| %>
+      <%# <div class="card-product"> %>
+        <%# <img src="<%= music.image_url %>
+        <%# <div class="card-product-infos"> %>
+          <%# <h2><%= music.name %></h2>
+          <%# <p><%= music.artists.join(', ') %></p>
+        <%# </div>
+      </div>
+    <% end %>
+  <%# <% else %>
+    <%# <p>No music suggestions available at the moment.</p>
+  <% end %>
+<%# </div> %>
+
+<%# <div class="container">
+  <h3>Recipe Suggestions</h3>
+  <div class="card-container">
+    <% if @recipes.present? %>
+      <%# <% @recipes.each do |recipe| %>
+        <%# <div class="card-product"> %>
+          <%# <div class="card-category" style="background-image: url('https://images.unsplash.com/photo-1611270629569-8b357cb88da9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"> %>
+            <%# <%= recipe.name %>
+          <%# </div> %>
+          <%# <div class="card-product-infos"> %>
+            <%# <p><%= recipe.description %></p>
+          <%# </div> %>
+        <%# </div> %>
+      <%# <% end %>
+    <%# <% else %>
+      <%# <p>No recipe suggestions available at the moment.</p> %>
+    <%# <% end %>
+  <%# </div> %>

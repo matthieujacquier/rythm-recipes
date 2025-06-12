@@ -19,6 +19,9 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
   post "generate_match", to: "matches#generate", as: :generate_match
   get "match_results", to: "matches#match_results", as: :match_results
+  get 'recipe_suggestions', to: 'matches#recipe_suggestions', as: 'recipe_suggestions'
+  get 'music_suggestions', to: 'matches#music_suggestions', as: 'music_suggestions'
+
   # Defines the root path route ("/")
   # root "posts#index"
 end

@@ -1,23 +1,31 @@
-<div class="container">
-  <h2 class="text-center text-white mb-4">Which recipe would you like to select?</h2>
-  <div class="card-container">
-    <% if @music_suggestions.present? %>
-      <% @music_suggestions.each do |music| %>
-        <div class="card-product">
-          <%= music.image_url%>
-          <div class="card-product-infos">
-            <h2><%= music.title %></h2>
-            <p><%= music.artists.join(', ') %></p>
-          </div>
+<div class="container" data-controller="music-suggestions">
+  <h1 class="text-center mt-5">Your Music Suggestions</h1>
+  <div class="row justify-content-center gy-4">
+    <% @music_suggestions.each do |music| %>
+      <div class="col-md-4 spotify_player">
+        <div class="selectable-card p-2"
+             data-music-suggestions-target="card"
+             data-action="click->music-suggestions#select"
+             data-id="<%= music.spotify_id %>">
+          <% embed_type = music.album ? "album" : "playlist" %>
+          <% embed_url = "https://open.spotify.com/embed/#{embed_type}/#{music.spotify_id}" %>
+
+          <iframe class="spotify-embed" style="border-radius:12px;"
+                  src="<%= embed_url %>?utm_source=generator&theme=0"
+                  width="100%"
+                  height="380"
+                  frameborder="0"
+                  allowfullscreen
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy">
+          </iframe>
         </div>
-      <% end %>
-    <% else %>
-      <p>No music suggestions available at the moment.</p>
+      </div>
     <% end %>
   </div>
-
-  <div class="text-center mt-4">
-    <%= button_to "Load more recipes", music_suggestions_path(genre: params[:genre]), method: :get %>
-  </div>
+    <div class="text-center mt-4">
+    <%= link_to "Select your recipe!", "recipe_suggestions_path",
+      class: "btn btn-primary disabled",
+      data: { music_suggestions_target: "button" } %>
   </div>
 </div>

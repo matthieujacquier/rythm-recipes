@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="text-center mt-5">Your Music Suggestions</h1>
+<div data-controller="recipe-suggestions">
+  <div class="row justify-content-center">
+    <% @recipes.each do |recipe| %>
+      <div class="col-md-2 mb-2 d-flex align-items-stretch">
+        <div
+          class="card w-100 selectable-card"
+          data-id="<%= recipe.id %>"
+          data-action="click->recipe-suggestions#select"
+          data-recipe-suggestions-target="card"
+        >
+          <div class="card-header text-center fw-bold">
+            <%= recipe.name %>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?q=80&w=1887&auto=format&fit=crop"
+            class="card-img-top"
+            alt="<%= recipe.name %>">
+          <div class="card-body">
+            <p class="card-text"><%= recipe.description %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="text-center mt-4">
+  <%= link_to "Find your match!", match_path(1),
+      class: "btn btn-primary disabled",
+      id: "match-button",
+      data: { recipe_suggestions_target: "button" } %>
+</div>
+</div>
+</div>
