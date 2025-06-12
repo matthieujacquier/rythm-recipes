@@ -7,13 +7,13 @@ class SpotifyClient
     @access_token = token_service.fetch_access_token
   end
 
-  def search_album(query) #calling it 3 times to be able to select the first that will match the criterias of track_count & artist_name
+  def search_album(query)
   response = SpotifyClient.get('/search', {
     headers: auth_header,
     query: {
       q: query,
       type: 'album',
-      limit: 3
+      limit: 3 #limiting to 3 instead of 5
     }
   })
 
@@ -22,23 +22,24 @@ class SpotifyClient
     return nil
   end
 
-  albums_data = response.parsed_response.dig('albums', 'items') #find the items array inside the album json response
-  return nil unless albums_data.is_a?(Array) #safeguarding against the use case where albums_data is not an array (e.g weird response from Spotify API)
+  albums_data = response.parsed_response.dig('albums', 'items') #create a variable with the parsed response to iterate and apply conditions to it
+  return nil unless albums_data.is_a?(Array) #safeguards if somewhat doesn't return an array
 
   valid_albums = []
 
   albums_data.each do |album|
-    next unless album && album['id'] #safeguards against objects that could miss the album id (which is necessary to trigger the API call below - prevents errors)
-    artist_names = album['artists'].map { |a| a['name'] }
-    next if artist_names == ['Various Artists'] #skips Various Artists because I saw weird uses cases where Albums were actualluy kind of playlists. Especially for the Classical genre
+    next unless album && album['id'] #safeguard to ensure we have an id to avoid errors
 
-    details = SpotifyClient.get("/albums/#{album['id']}", headers: auth_header)
-    next unless details.success?
+    album_details = SpotifyClient.get("/albums/#{album['id']}", headers: auth_header)
+    next unless album_details.success?
 
-    track_count = details.parsed_response.dig('tracks', 'items')&.size.to_i
+    album_data = album_details.parsed_response
+    artist_names = album_data['artists'].map { |a| a['name'] }
+    track_count = album_data.dig('tracks', 'items')&.size.to_i #counts the number of items into the track object
 
-    if track_count > 6 #skips Single Albums
-      valid_albums << details.parsed_response
+    # Only accept if both conditions are met
+    if artist_names != ['Various Artists'] && track_count > 6
+      valid_albums << album_data
     end
   end
 
@@ -49,6 +50,7 @@ class SpotifyClient
     return nil
   end
 end
+
 
 
   def search_playlist(query)
