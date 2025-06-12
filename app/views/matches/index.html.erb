@@ -82,7 +82,7 @@
     <h3>Select music genres:</h3>
     <% ['Pop', 'Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie', 'Electronic', 'Dance', 'Alternative',
      'Jazz', 'Classical', 'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae',
-     'Soul', 'Funk', 'Techno', 'Shuffle'].each do |genre| %>
+     'Soul', 'Funk', 'Techno', 'Afro', 'Shuffle'].each do |genre| %>
   <label>
     <%= check_box_tag "music_genres[]", genre, false,
       data: { action: "change->form#goToStep", step: "2" } %> <%= genre %>
