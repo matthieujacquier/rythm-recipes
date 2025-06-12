@@ -13,9 +13,11 @@ class ApifyImages
 
     uri = URI("https://api.apify.com/v2/actor-tasks/#{task_id}/run-sync-get-dataset-items?token=#{token}&format=json&clean=true&limit=1")
 
-    body = { query: @query }.to_json
+    body = {
+      queries: [@query],
+      maxResultsPerQuery: 1
+    }.to_json
     headers = { "Content-Type" => "application/json" }
-
     response = Net::HTTP.post(uri, body, headers)
     puts "🚀 Run response: #{response.body}"
 
