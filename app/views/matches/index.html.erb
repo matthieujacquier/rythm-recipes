@@ -58,18 +58,22 @@
 
 
 
-  <div data-form-target="step" class="d-none">
-    <h3>What should the difficulty be?</h3>
-    <% ['Easy', 'Medium', 'Hard'].each do |level| %>
-      <label>
-        <%= radio_button_tag :difficulty_selection, level, false,
-              data: { action: "change->form#goToStep", step: "2" } %> <%= level %>
-        </label>
-      <% end %>
+<div data-controller="recipe" data-form-target="step" class="d-none">
+  <h3>What should the difficulty be?</h3>
+  <% ['Easy', 'Medium', 'Hard'].each do |level| %>
+    <label>
+      <%= radio_button_tag :difficulty_selection, level, false,
+            data: {
+              action: "change->form#goToStep change->recipe#triggerJob",
+              step: "2"
+            } %> <%= level %>
+    </label>
+  <% end %>
 
-      <%= button_tag "← Go Back", type: :button,
-          data: { action: "click->form#goToStep", step: "0" } %>
-  </div>
+  <%= button_tag "← Go Back", type: :button,
+      data: { action: "click->form#goToStep", step: "0" } %>
+</div>
+
 
 
 
