@@ -4,7 +4,6 @@ export default class extends Controller {
   static targets = ["step", "shuffleOutput", "genreShuffleOutput", "musicFormat"];
 
   connect() {
-    console.log("✅ form_controller connected");
   }
 
   goToStep(event) {

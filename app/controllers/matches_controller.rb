@@ -31,30 +31,38 @@ class MatchesController < ApplicationController
   end
 
   def generate
-  Rails.logger.debug "🎯 Params received in generate: #{params.inspect}"
+    Rails.logger.debug "🎯 Params received in generate: #{params.inspect}"
 
-  session[:match_data] = {
-    food_type: params[:food_type_selection],
-    difficulty: params[:difficulty_selection],
-    genres: params[:music_genres],
-    format: params[:music_format_selection]
-  }
+    session[:match_data] = {
+      food_type: params[:food_type_selection],
+      difficulty: params[:difficulty_selection],
+      genres: params[:music_genres],
+      format: params[:music_format_selection]
+    }
 
-  Rails.logger.debug "💾 Stored in session: #{session[:match_data].inspect}"
+    Rails.logger.debug "💾 Stored in session: #{session[:match_data].inspect}"
 
-  redirect_to match_results_path
+    # redirect_to match_results_path
+    redirect_to music_suggestions_matches_path
   end
 
   def match_results
-  Rails.logger.debug "📦 Session data in match_results: #{session[:match_data].inspect}"
+    Rails.logger.debug "📦 Session data in match_results: #{session[:match_data].inspect}"
 
-  if session[:match_data].present?
-    @selected_food = session[:match_data][:food_type]
-    @difficulty = session[:match_data][:difficulty]
-    @genres = session[:match_data][:genres] || []
-    @format = session[:match_data][:format]
-  else
-    redirect_to root_path, alert: "Please complete the form first."
+    # if session[:match_data].present?
+      @selected_food = session[:match_data]["food_type"]
+      @difficulty = session[:match_data]["difficulty"]
+      @genres = session[:match_data]["genres"]
+      @format = session[:match_data]["format"]
+    # else
+    #   redirect_to root_path, alert: "Please complete the form first."
+    # end
   end
+
+  def music_suggestions
+
+    @genres = session[:match_data]["genres"]
+    @format = session[:match_data]["format"]
+    @music_suggestions = MusicSuggestion.where(genre: @genres)
   end
 end

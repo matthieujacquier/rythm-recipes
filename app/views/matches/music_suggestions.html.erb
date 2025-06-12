@@ -6,7 +6,7 @@
         <div class="card-product">
           <%= music.image_url%>
           <div class="card-product-infos">
-            <h2><%= music.title %></h2>
+            <h2><%= music.name %></h2>
             <p><%= music.artists.join(', ') %></p>
           </div>
         </div>
@@ -17,7 +17,7 @@
   </div>
 
   <div class="text-center mt-4">
-    <%= button_to "Load more recipes", music_suggestions_path(genre: params[:genre]), method: :get %>
+    <%# <%= button_to "Load more recipes", music_suggestions_path(genre: params[:genre]), method: :get %> %>
   </div>
   </div>
 </div>

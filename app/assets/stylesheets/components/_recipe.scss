@@ -4,7 +4,8 @@
 }
 
 .details {
-  background: rgba(255, 183, 0, 0.5);
+  background: $info;
+  color: $gray;
   padding: 8px 16px;
   border-radius: 25px;
 }
