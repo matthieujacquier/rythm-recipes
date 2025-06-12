@@ -11,7 +11,7 @@ export default class extends Controller {
 
     if (!foodType) return;
 
-    fetch('matches/generate_recipe', {
+    fetch('/generate_recipe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
