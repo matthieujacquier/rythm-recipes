@@ -61,7 +61,6 @@ class MatchesController < ApplicationController
 
     Rails.logger.debug "💾 Stored in session: #{session[:match_data].inspect}"
 
-    # redirect_to match_results_path
     redirect_to music_suggestions_matches_path
   end
 

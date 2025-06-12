@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   root to: "pages#home"
   get "users/:id", to: "users#about", as: :about_user
   post "generate_match", to: "matches#generate", as: :generate_match
-  # get "match_results", to: "matches#match_results", as: :match_results
   post 'matches/select_music', to: 'matches#select_music', as: :select_music_matches
   get 'matches/recipe_selection', to: 'matches#recipe_selection', as: :recipe_selection_matches
   resources :matches, only: [:index, :show, :create, :update, :destroy] do

@@ -4,12 +4,14 @@ export default class extends Controller {
   static targets = ["food", "difficulty"]
 
   triggerJob(event) {
+    console.log("testing");
+
     const difficulty = event.target.value;
     const foodType = document.querySelector('input[name="food_type_selection"]:checked')?.value;
 
     if (!foodType) return;
 
-    fetch('/generate_recipe', {
+    fetch('matches/generate_recipe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
