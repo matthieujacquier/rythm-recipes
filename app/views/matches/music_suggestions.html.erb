@@ -1,3 +1,5 @@
+ <pre><%= session[:match_data].pretty_inspect %></pre>
+
 <div class="container">
   <h2 class="text-center mb-4">Which <%= @format == "album" ? "playlist" : "album" %> would you like to select?</h2>
   <turbo-frame id="music_suggestions">

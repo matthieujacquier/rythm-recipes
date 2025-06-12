@@ -52,18 +52,17 @@
       <h3>Album or Playlist?</h3>
       <% ['Album', 'Playlist'].each do |format| %>
         <label class="option-card">
-          <%= radio_button_tag :music_format_selection, format,
+          <%= radio_button_tag :music_format_selection, format, false,
+            data: { action: "change->form#submit" },
             class: "hidden-radio" %>
-            <span class="hidden-radio"><%= format %></span>
+            <span class="option-label"><%= format %></span>
         </label>
       <% end %>
+
+      <%= button_tag "← Go Back", type: :button,
+      data: { action: "click->form#goToStep", step: "1" } %>
     </div>
 
-    <%= button_tag "← Go Back", type: :button,
-      data: { action: "click->form#goToStep", step: "1" } %>
-
-    <%= submit_tag "Find My Rhythm & Recipe!" %>
-  </div>
   <% end %>
   </div>
 </div>
