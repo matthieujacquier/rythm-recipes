@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     mount MissionControl::Jobs::Engine, at: "/jobs"
   end
 
-  root to: "recipes#index"
+  root to: "pages#home"
   get "users/:id", to: "users#about", as: :about_user
   resources :matches, only: [:index, :show, :create, :update, :destroy] do
     member do
