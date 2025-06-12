@@ -14,6 +14,24 @@ class MatchesController < ApplicationController
     #end
   end
 
+  def create
+     @music = MusicSuggestion.find(session[:match_data]["selected_music_id"])
+    @recipe_data = Recipe.find(14)
+
+    @match = Match.new(
+      user: current_user,
+      music_suggestion: @music,
+      recipe_name: @recipe_data.name,
+      recipe_description: @recipe_data.description
+    )
+
+    @match.recipe = Recipe.find(14)
+
+    @match.save!
+
+    redirect_to match_path(@match)
+  end
+
   def show
     @match = Match.find(params[:id])
   end
@@ -38,6 +56,7 @@ class MatchesController < ApplicationController
       difficulty: params[:difficulty_selection],
       genres: params[:music_genres],
       format: params[:music_format_selection]
+
     }
 
     Rails.logger.debug "💾 Stored in session: #{session[:match_data].inspect}"
@@ -52,8 +71,8 @@ class MatchesController < ApplicationController
     # if session[:match_data].present?
       @selected_food = session[:match_data]["food_type"]
       @difficulty = session[:match_data]["difficulty"]
-      @genres = session[:match_data]["genres"]
-      @format = session[:match_data]["format"]
+      # @genres = session[:match_data]["genres"]
+      # @format = session[:match_data]["format"]
     # else
     #   redirect_to root_path, alert: "Please complete the form first."
     # end
@@ -63,6 +82,23 @@ class MatchesController < ApplicationController
 
     @genres = session[:match_data]["genres"]
     @format = session[:match_data]["format"]
-    @music_suggestions = MusicSuggestion.where(genre: @genres)
+    if @format == "Album"
+      @albums_by_genre = MusicSuggestion.where(genre: @genres, album: true).sample(3)
+      @music_suggestions = @albums_by_genre.sample(3)
+    elsif @format == "Playlist"
+      @playlists_by_genre = MusicSuggestion.where(genre: @genres, album: false)
+      @music_suggestions = @playlists_by_genre.sample(3)
+    end
+  end
+
+  def select_music
+    session[:match_data][:selected_music_id] = params[:music_suggestion_id]
+    redirect_to recipe_selection_matches_path
+  end
+
+  def recipe_selection
+    @selected_food = session[:match_data]["food_type"]
+    @difficulty = session[:match_data]["difficulty"]
+    @recipes = Recipe.where(food_type: @selected_food, difficulty: @difficulty).sample(4)
   end
 end
