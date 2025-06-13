@@ -23,7 +23,6 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["card", "button"]
   connect() {
-    console.log("music_suggestions Stimulus controller connected")
     this.selectedCardId = null
   }
   select(event) {

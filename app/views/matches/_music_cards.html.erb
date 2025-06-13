@@ -1,5 +1,5 @@
 <div class="container" data-controller="music-suggestions">
-  <h1 class="text-center mt-5">Your Music Suggestions</h1>
+  
   <div class="row justify-content-center gy-4">
     <% @music_suggestions.each do |music| %>
       <div class="col-md-4 spotify_player">
@@ -24,6 +24,6 @@
     <% end %>
   </div>
     <div class="text-center mt-4">
-    <%= link_to "Select your recipe!", "recipe_suggestions",
+    <%= link_to "Select your recipe!", recipe_suggestions_matches_path,
       class: "btn btn-primary disabled",
       data: { music_suggestions_target: "button" } %>
