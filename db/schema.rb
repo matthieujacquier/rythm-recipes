@@ -73,9 +73,9 @@ ActiveRecord::Schema[7.1].define(version: 2025_06_12_100037) do
     t.string "difficulty"
     t.string "food_type"
     t.string "image_url"
-    t.jsonb "ingredients", default: []
+    t.string "ingredients"
     t.integer "portion_size"
-    t.jsonb "instructions", default: []
+    t.text "instructions"
     t.string "cuisine"
     t.integer "duration"
     t.text "description"
