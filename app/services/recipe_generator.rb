@@ -48,6 +48,7 @@ class RecipeGenerator
     }
 
     Easy recipes shoud take less time (duration) than Median and Hard ones (3).
+    Make sure to generate a unique and different recipe for each request. Ensure that the recipes have diverse ingredients, names, and preparation methods.
     Return only valid JSON with no extra text or markdown. Begin the response with `{` and end with `}`.
   PROMPT
   end

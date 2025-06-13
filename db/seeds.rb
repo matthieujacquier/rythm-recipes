@@ -8,36 +8,35 @@ MusicSuggestion.delete_all
 puts "Defining genres"
 
 GENRES = [
-  'Pop'#,
-  # 'Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie',
-  # 'Electronic', 'Dance', 'Alternative', 'Jazz', 'Classical',
-  # 'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae', 'Soul', 'Funk', 'Techno', 'Afro'
+  'Pop','Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie',
+  'Electronic', 'Dance', 'Alternative', 'Jazz', 'Classical',
+  'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae', 'Soul', 'Funk', 'Techno', 'Afro'
 ]
 
 spotify = SpotifyClient.new
 
-# GENRES.each do |genre|
-#   puts "Fetching album for genre: #{genre}"
+ GENRES.each do |genre|
+   puts "Fetching album for genre: #{genre}"
 
-#   album = spotify.search_album(genre)
-#   next unless album
+   album = spotify.search_album(genre)
+   next unless album
 
-#   music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: album['id'])
-#   music_suggestion.update!(
-#     name: album['name'],
-#     image_url: album['images'][0]['url'],
-#     #this ensure we get the first image if there are several
-#     genre: genre,
-#     artists: album['artists'].map { |name| name['name'] },
-#     #album is an array of ashes. For each hash, we iterate an return an array with .map which only returns the name (there are other available parameters such as artist_id)
-#     tracklist: album['href'],
-#     preview_url: nil,
-#     #will not be used. I guess we can delete it from the table?
-#     album: true
-#   )
+   music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: album['id'])
+   music_suggestion.update!(
+     name: album['name'],
+     image_url: album['images'][0]['url'],
+     #this ensure we get the first image if there are several
+     genre: genre,
+     artists: album['artists'].map { |name| name['name'] },
+     #album is an array of ashes. For each hash, we iterate an return an array with .map which only returns the name (there are other available parameters such as artist_id)
+     tracklist: album['href'],
+     preview_url: nil,
+     #will not be used. I guess we can delete it from the table?
+     album: true
+   )
 
-#   puts "Saved: #{music_suggestion.name} (#{genre})"
-# end
+   puts "Saved: #{music_suggestion.name} (#{genre})"
+ end
 
 puts "Fetching playlists..."
 
@@ -114,39 +113,49 @@ puts "Created #{User.count} users"
 
 puts "Seeding recipes..."
 
-food_types = ["meat", "fish", "vegan", "vegetarian"]
-difficulties = ["easy", "medium", "hard"]
+food_types = ["meat"]#, "fish", "vegan", "vegetarian"]
+difficulties = ["easy"]#, "medium", "hard"]
+
 
 food_types.each do |food_type|
   difficulties.each do |difficulty|
-    3.times do
-    recipe_data = RecipeGenerator.new(difficulty: difficulty, food_type: food_type).call
+    10.times do
+      recipe_data = RecipeGenerator.new(difficulty: difficulty, food_type: food_type).call
 
-    recipe_name = recipe_data["name"]
-    recipe_description = recipe_data["description"]
-    ingredients = recipe_data["ingredients"].map { |ingredient| "#{ingredient['name']}: #{ingredient['quantity']}" }.join("\n")
-    instructions = recipe_data["instructions"].map { |step| "#{step['title']}: #{step['description']}" }.join("\n")
-    image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfVIA847VmwQhxr9tTJ_75DyS91XNn1bLHwA&s"
+      recipe_name = recipe_data["name"]
+      recipe_description = recipe_data["description"]
+      ingredients = recipe_data["ingredients"]
+      instructions = recipe_data["instructions"]
+      image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfVIA847VmwQhxr9tTJ_75DyS91XNn1bLHwA&s"
 
-  # Create the recipe in the database
-  Recipe.create!(
-    name: recipe_name,
-    difficulty: difficulty,
-    food_type: food_type,
-    image_url: image_url,
-    ingredients: ingredients,
-    portion_size: 4,
-    instructions: instructions,
-    cuisine: recipe_data["cuisine"],
-    duration: recipe_data["duration"],
-    description: recipe_description,
-    match_id: nil
-  )
+      existing_recipe = Recipe.find_by(name: recipe_name)
+      if existing_recipe
+        puts "Skipping duplicate recipe: #{recipe_name}"
+        next
+      end
 
+
+      # Create the recipe in the database
+      Recipe.create!(
+        name: recipe_name,
+        difficulty: difficulty,
+        food_type: food_type,
+        image_url: image_url,
+        ingredients: ingredients,
+        portion_size: 4,
+        instructions: instructions,
+        cuisine: recipe_data["cuisine"],
+        duration: recipe_data["duration"],
+        description: recipe_description
+      )
       puts "Created Recipe: #{recipe_name} (#{food_type}, #{difficulty})"
     end
   end
 end
+
+puts "Seeding complete!"
+
+
 
 # puts "Seeding matches..."
 
@@ -214,9 +223,6 @@ end
 #   )
 
 # puts "Created #{Match.count} Matches"
-
-puts "Seeding complete!"
-
 
 
 # Recipe.create!(

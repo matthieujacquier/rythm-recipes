@@ -1,4 +1,16 @@
-ActiveRecord::Schema[7.1].define(version: 2025_06_12_100037) do
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of Active Record to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# This file is the source Rails uses to define your schema when running `bin/rails
+# db:schema:load`. When creating a new database, `bin/rails db:schema:load` tends to
+# be faster and is potentially less error prone than running all of your
+# migrations from scratch. Old migrations may fail to apply correctly if those
+# migrations use external dependencies or application code.
+#
+# It's strongly recommended that you check this file into your version control system.
+
+ActiveRecord::Schema[7.1].define(version: 2025_06_13_113350) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -39,7 +51,9 @@ ActiveRecord::Schema[7.1].define(version: 2025_06_12_100037) do
     t.bigint "music_suggestion_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "recipe_id"
     t.index ["music_suggestion_id"], name: "index_matches_on_music_suggestion_id"
+    t.index ["recipe_id"], name: "index_matches_on_recipe_id"
     t.index ["user_id"], name: "index_matches_on_user_id"
   end
 
@@ -61,13 +75,13 @@ ActiveRecord::Schema[7.1].define(version: 2025_06_12_100037) do
     t.string "difficulty"
     t.string "food_type"
     t.string "image_url"
-    t.string "ingredients"
+    t.jsonb "ingredients", default: []
     t.integer "portion_size"
-    t.text "instructions"
+    t.jsonb "instructions", default: []
     t.string "cuisine"
     t.integer "duration"
     t.text "description"
-    t.bigint "match_id", null: false
+    t.bigint "match_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["match_id"], name: "index_recipes_on_match_id"
@@ -212,6 +226,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_06_12_100037) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "matches", "music_suggestions"
+  add_foreign_key "matches", "recipes"
   add_foreign_key "matches", "users"
   add_foreign_key "recipes", "matches"
   add_foreign_key "solid_queue_blocked_executions", "solid_queue_jobs", column: "job_id", on_delete: :cascade
