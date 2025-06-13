@@ -24,8 +24,8 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
   post "generate_match", to: "matches#generate", as: :generate_match
+  get  "recipe_suggestions", to: "matches#recipe_suggestions", as: 'recipe_suggestions'
   get "match_results", to: "matches#match_results", as: :match_results
-  get 'recipe_suggestions', to: 'matches#recipe_suggestions', as: 'recipe_suggestions'
   get 'music_suggestions', to: 'matches#music_suggestions', as: 'music_suggestions'
 
   post 'generate_recipe', to: 'recipes#generate'
