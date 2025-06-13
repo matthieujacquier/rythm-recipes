@@ -1,7 +1,7 @@
 class Match < ApplicationRecord
   belongs_to :user
   belongs_to :music_suggestion
-  has_one :recipe
+  belongs_to :recipe, optional: true
   # after_create :create_recipe_from_seed
 
   def generate_final_match

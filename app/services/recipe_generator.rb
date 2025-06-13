@@ -28,7 +28,7 @@ class RecipeGenerator
   <<~PROMPT
     Generate a valid JSON object for a cooking recipe based on the following inputs:
 
-    - "difficulty": "#{@difficulty}" (one of: Easy, Medium, Hard)
+    - "difficulty": "#{@difficulty}" (one of: easy, medium, hard)
     - "food_type": "#{@food_type}" (one of: meat, vegetarian, vegan, fish)
 
     The recipe must follow this exact structure:
