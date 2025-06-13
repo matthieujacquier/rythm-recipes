@@ -77,9 +77,6 @@ export default class extends Controller {
 
   submit() {
   this.element.querySelector("form").submit();
-  setTimeout(() => {
-          window.location.href = response.url
-        }, 200)
 }
 
   toggleMusicFormatDisplay() {
