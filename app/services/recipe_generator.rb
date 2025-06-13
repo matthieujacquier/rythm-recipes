@@ -17,7 +17,8 @@ class RecipeGenerator
     )
 
     raw_json = response["choices"][0]["message"]["content"]
-    parsed_recipe = JSON.parse(raw_json)
+    cleaned_json = raw_json.gsub(/\A```json\s*|\A```\s*|```$/, '').strip
+    parsed_recipe = JSON.parse(cleaned_json)
     return parsed_recipe
   end
 
@@ -49,6 +50,5 @@ class RecipeGenerator
     Easy recipes shoud take less time (duration) than Median and Hard ones (3).
     Return only valid JSON with no extra text or markdown. Begin the response with `{` and end with `}`.
   PROMPT
-end
-
+  end
 end
