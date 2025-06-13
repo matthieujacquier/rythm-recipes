@@ -1,23 +1,12 @@
+ <pre><%= session[:match_data].pretty_inspect %></pre>
+
 <div class="container">
-  <h2 class="text-center text-white mb-4">Which recipe would you like to select?</h2>
-  <div class="card-container">
-    <% if @music_suggestions.present? %>
-      <% @music_suggestions.each do |music| %>
-        <div class="card-product">
-          <%= music.image_url%>
-          <div class="card-product-infos">
-            <h2><%= music.title %></h2>
-            <p><%= music.artists.join(', ') %></p>
-          </div>
-        </div>
-      <% end %>
-    <% else %>
-      <p>No music suggestions available at the moment.</p>
-    <% end %>
-  </div>
+  <h2 class="text-center mb-4">Which <%= @format == "album" ? "playlist" : "album" %> would you like to select?</h2>
+  <turbo-frame id="music_suggestions">
+    <%= render partial: "music_cards", locals: { suggestions: @suggestions } %>
+  </turbo-frame>
 
   <div class="text-center mt-4">
-    <%= button_to "Load more recipes", music_suggestions_path(genre: params[:genre]), method: :get %>
-  </div>
+    <%= button_to "Shuffle selection", music_suggestions_matches_path, method: :get, class: "btn btn-primary" %>
   </div>
 </div>

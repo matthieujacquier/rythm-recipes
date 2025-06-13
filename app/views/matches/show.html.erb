@@ -6,15 +6,15 @@
         <div class="d-flex mb-2">
         <div>
           <% if @match.saved? %>
-            <%= link_to "Remove this match from saved", unsave_match_path, data: {turbo_method: "patch"}, class: "btn btn-warning" %>
+            <%= link_to "Remove this match from saved", unsave_match_path, data: {turbo_method: "patch"}, class: "btn btn-warning text-light" %>
           <% else %>
-            <%= link_to "Save this match", save_match_path, data: {turbo_method: "patch"}, class: "btn btn-success" %>
+            <%= link_to "Save this match", save_match_path, data: {turbo_method: "patch"}, class: "btn btn-success text-light" %>
           <% end %>
         </div>
 
         <div class="ms-3" data-controller="matches">
           <input type="hidden" value="<%= match_url(@match) %>" data-matches-target="source">
-          <a class="btn btn-info" id="copyBtn" data-action="matches#copy"><i class="fa-solid fa-share"></i> Share your cooking experience</a>
+          <a class="btn btn-primary text-light" id="copyBtn" data-action="matches#copy"><i class="fa-solid fa-share"></i> Share your cooking experience</a>
         </div>
 
       </div>
@@ -27,7 +27,7 @@
 
   <div class="row justify-content-center">
     <div class="col-10 justify-content-between d-flex">
-      <div>
+      <div class="col-6">
 
         <img class="recipe_image" src="<%= @match.recipe.image_url %>" alt="">
 
@@ -38,10 +38,10 @@
           <p class="details">Duration: ~<%= @match.recipe.duration %> min.</p>
           <p class="details">Portion Size: <%= @match.recipe.portion_size %></p>
 
-      </div>
+        </div>
       </div>
 
-      <div class="spotify_player position-sticky">
+      <div class="col-4">
         <% if @match.music_suggestion.present? %>
           <% embed_type = @match.music_suggestion.album ? "album" : "playlist" %>
           <% embed_url = "https://open.spotify.com/embed/#{embed_type}/#{@match.music_suggestion.spotify_id}" %>
@@ -75,4 +75,5 @@
       <% end %>
     </div>
   </div>
+</div>
 </div>

@@ -1,0 +1,19 @@
+<div data-controller="select-card" class="card-container">
+  <% if @music_suggestions.present? %>
+    <% @music_suggestions.each do |music| %>
+        <div class="card-product"
+          data-select-card-target="card"
+          data-id="<%= music.id %>"
+          data-route="<%= select_music_matches_path %>"
+          data-action="click->select-card#select">
+          <img src="<%= music.image_url%>" alt="<%= music.name %>">
+          <div class="card-product-infos">
+            <h2><%= music.name %></h2>
+            <p><%= music.artists.join(', ') %></p>
+          </div>
+        </div>
+      <% end %>
+    <% else %>
+      <p>No music suggestions available at the moment.</p>
+  <% end %>
+</div>

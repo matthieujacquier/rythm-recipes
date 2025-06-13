@@ -116,8 +116,8 @@
   text-decoration: none !important;
 }
 
-.card-product.selected-recipe {
-  outline: 3px solid red;
-  box-shadow: 0 0 15px rgba(0, 255, 127, 0.6);
-  transform: translateY(-2px) scale(1.02);
+.selected-card {
+  outline: 3px solid $red;
+  box-shadow: 0 0 15px $red;
+  transform: translateY(-2px) scale(1.05);
 }

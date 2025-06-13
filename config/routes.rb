@@ -8,6 +8,10 @@ Rails.application.routes.draw do
 
   root to: "pages#home"
   get "users/:id", to: "users#about", as: :about_user
+  post "generate_match", to: "matches#generate", as: :generate_match
+  post 'generate_recipe', to: 'recipes#generate'
+  post 'matches/select_music', to: 'matches#select_music', as: :select_music_matches
+  get 'matches/recipe_selection', to: 'matches#recipe_selection', as: :recipe_selection_matches
   resources :matches, only: [:index, :show, :create, :update, :destroy] do
     member do
       patch :save
@@ -23,9 +27,7 @@ Rails.application.routes.draw do
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
-  post "generate_match", to: "matches#generate", as: :generate_match
-  get "match_results", to: "matches#match_results", as: :match_results
-  post 'generate_recipe', to: 'recipes#generate'
+
   # Defines the root path route ("/")
   # root "posts#index"
 end
