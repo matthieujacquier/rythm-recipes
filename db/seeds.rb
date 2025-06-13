@@ -1,7 +1,6 @@
 require 'open-uri'
-
-Recipe.delete_all
 Match.delete_all
+Recipe.delete_all
 User.delete_all
 MusicSuggestion.delete_all
 
