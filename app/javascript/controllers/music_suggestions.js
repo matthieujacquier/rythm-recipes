@@ -4,7 +4,6 @@ export default class extends Controller {
   static targets = ["card", "button"]
 
   connect() {
-    console.log("music_suggestions Stimulus controller connected")
     this.selectedCardId = null
   }
 
@@ -20,6 +19,7 @@ export default class extends Controller {
     this.buttonTarget.classList.remove("disabled")
 
     // Inject ID into form
+    
     const hiddenInput = document.getElementById("music-suggestion-id")
     hiddenInput.value = this.selectedCardId
 
