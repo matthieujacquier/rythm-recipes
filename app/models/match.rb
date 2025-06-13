@@ -2,7 +2,7 @@ class Match < ApplicationRecord
   belongs_to :user
   belongs_to :music_suggestion
   has_one :recipe
-  after_create :create_recipe_from_seed
+  # after_create :create_recipe_from_seed
 
   def generate_final_match
     @food_type_selection    = params[:food_type_selection]

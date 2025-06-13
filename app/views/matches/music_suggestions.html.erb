@@ -1,31 +1,12 @@
-<div class="container" data-controller="music-suggestions">
-  <h1 class="text-center mt-5">Your Music Suggestions</h1>
-  <div class="row justify-content-center gy-4">
-    <% @music_suggestions.each do |music| %>
-      <div class="col-md-4 spotify_player">
-        <div class="selectable-card p-2"
-             data-music-suggestions-target="card"
-             data-action="click->music-suggestions#select"
-             data-id="<%= music.spotify_id %>">
-          <% embed_type = music.album ? "album" : "playlist" %>
-          <% embed_url = "https://open.spotify.com/embed/#{embed_type}/#{music.spotify_id}" %>
+<pre><%= session[:match_data].pretty_inspect %></pre>
 
-          <iframe class="spotify-embed" style="border-radius:12px;"
-                  src="<%= embed_url %>?utm_source=generator&theme=0"
-                  width="100%"
-                  height="380"
-                  frameborder="0"
-                  allowfullscreen
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy">
-          </iframe>
-        </div>
-      </div>
-    <% end %>
-  </div>
-    <div class="text-center mt-4">
-    <%= link_to "Select your recipe!", "recipe_suggestions",
-      class: "btn btn-primary disabled",
-      data: { music_suggestions_target: "button" } %>
+<div class="container">
+  <h2 class="text-center mb-4">Which <%= @format == "album" ? "playlist" : "album" %> would you like to select?</h2>
+  <turbo-frame id="music_suggestions">
+    <%= render partial: "music_cards", locals: { suggestions: @suggestions } %>
+  </turbo-frame>
+
+  <div class="text-center mt-4">
+    <%= button_to "Shuffle selection", music_suggestions_matches_path, method: :get, class: "btn btn-primary" %>
   </div>
 </div>

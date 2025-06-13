@@ -137,3 +137,9 @@
   border: 2px solid #260b03;
   box-shadow: 0 0 10px rgba(21, 7, 1, 0.841);
 }
+
+.selected-card {
+  outline: 3px solid $red;
+  box-shadow: 0 0 15px $red;
+  transform: translateY(-2px) scale(1.05);
+}
