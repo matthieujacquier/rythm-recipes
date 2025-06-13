@@ -64,6 +64,38 @@ class MatchesController < ApplicationController
     redirect_to music_suggestions_matches_path
   end
 
+  def recipe_suggestions
+    Rails.logger.debug "🔍 Params in recipe_suggestions: #{params.inspect}"
+    Rails.logger.debug "📦 Session data in recipe_suggestions: #{session[:match_data].inspect}"
+    if session[:match_data].present?
+      @selected_food = session[:match_data][:food_type]
+      @difficulty = session[:match_data][:difficulty]
+      if @selected_food.present? && @difficulty.present?
+        @recipes = Recipe.where(food_type: @selected_food, difficulty: @difficulty).limit(4)
+      else
+        @recipes = Recipe.limit(4)
+      end
+    else
+      redirect_to root_path, alert: "Please complete the form first."
+    end
+  end
+
+
+  def music_suggestions
+    Rails.logger.debug "🎶 Params in music_suggestions: #{params.inspect}"
+    Rails.logger.debug "📦 Session data in music_suggestions: #{session[:match_data].inspect}"
+    if session[:match_data].present?
+      @genres = session[:match_data][:genres] || []
+      if @genres.present?
+        @music_suggestions = MusicSuggestion.where(genre: @genres).sample(3)
+      else
+        @music_suggestions = MusicSuggestion.limit(3)
+      end
+    else
+      redirect_to root_path, alert: "Please complete the form first."
+    end
+  end
+
   def match_results
     Rails.logger.debug "📦 Session data in match_results: #{session[:match_data].inspect}"
 
