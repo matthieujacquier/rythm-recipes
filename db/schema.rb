@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_06_13_113350) do
+ActiveRecord::Schema[7.1].define(version: 2025_06_13_124357) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -81,10 +81,8 @@ ActiveRecord::Schema[7.1].define(version: 2025_06_13_113350) do
     t.string "cuisine"
     t.integer "duration"
     t.text "description"
-    t.bigint "match_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["match_id"], name: "index_recipes_on_match_id"
   end
 
   create_table "solid_queue_blocked_executions", force: :cascade do |t|
@@ -228,7 +226,6 @@ ActiveRecord::Schema[7.1].define(version: 2025_06_13_113350) do
   add_foreign_key "matches", "music_suggestions"
   add_foreign_key "matches", "recipes"
   add_foreign_key "matches", "users"
-  add_foreign_key "recipes", "matches"
   add_foreign_key "solid_queue_blocked_executions", "solid_queue_jobs", column: "job_id", on_delete: :cascade
   add_foreign_key "solid_queue_claimed_executions", "solid_queue_jobs", column: "job_id", on_delete: :cascade
   add_foreign_key "solid_queue_failed_executions", "solid_queue_jobs", column: "job_id", on_delete: :cascade
