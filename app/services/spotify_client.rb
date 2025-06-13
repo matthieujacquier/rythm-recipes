@@ -68,7 +68,7 @@ end
     return nil
   end
 
-  response.parsed_response.dig('playlists','items')&.first 
+  response.parsed_response.dig('playlists','items')&.first
   #equivalent to response.parsed_response['playlists']['items'].first but returns nil instead of errors if it doesn't find a match for playlist & items.
 end
 
