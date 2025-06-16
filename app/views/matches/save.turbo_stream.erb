@@ -1,0 +1,8 @@
+<%= turbo_stream.replace "save_button_#{@match.id}" do %>
+  <%= turbo_frame_tag "save_button_#{@match.id}" do %>
+    <%= link_to "Remove this match from saved",
+                unsave_match_path(@match),
+                data: { turbo_method: :patch },
+                class: "btn btn-warning text-light" %>
+  <% end %>
+<% end %>
