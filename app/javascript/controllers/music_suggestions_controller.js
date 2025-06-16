@@ -4,9 +4,6 @@ export default class extends Controller {
   static targets = ["card", "button"]
 
   connect() {
-    console.log(this.Card);
-    console.log(this.CardId);
-
     this.selectedCardId = null
   }
 
