@@ -8,25 +8,26 @@ class MatchesController < ApplicationController
   end
 
   def create
-  session[:match_data][:selected_recipe_id] = params[:recipe_id]
+    session[:match_data][:selected_recipe_id] = params[:recipe_id]
 
-  @music = MusicSuggestion.find(session[:match_data]["selected_music_id"])
-  @recipe = Recipe.find(params[:recipe_id]) # or session[:match_data]["selected_recipe_id"]
+    @music = MusicSuggestion.find(session[:match_data]["selected_music_id"])
+    @recipe = Recipe.find(params[:recipe_id]) # or session[:match_data]["selected_recipe_id"]
 
-  @match = Match.new(
-    user: current_user,
-    music_suggestion: @music,
-    recipe: @recipe,
-    recipe_name: @recipe.name,
-    recipe_description: @recipe.description
-  )
+    @match = Match.new(
+      user: current_user,
+      music_suggestion: @music,
+      recipe: @recipe,
+      recipe_name: @recipe.name,
+      recipe_description: @recipe.description
+    )
 
-  if @match.save
-    redirect_to match_path(@match)
-  else
-    redirect_to recipe_suggestions_matches_path, alert: "Could not create match."
+    if @match.save
+      redirect_to match_path(@match)
+    else
+      redirect_to recipe_suggestions_matches_path, alert: "Could not create match."
+    end
+
   end
-end
 
 
   def show
@@ -56,13 +57,14 @@ end
   end
 
   def match_results
-      @selected_food = session[:match_data]["food_type"]
-      @difficulty = session[:match_data]["difficulty"]
+    @selected_food = session[:match_data]["food_type"]
+    @difficulty = session[:match_data]["difficulty"]
   end
 
   def music_suggestions
     @genres = session[:match_data]["genres"]
     @format = session[:match_data]["format"]
+
     if @format == "Album"
       @albums_by_genre = MusicSuggestion.where(genre: @genres, album: true).sample(3)
       @music_suggestions = @albums_by_genre.sample(3)
@@ -70,6 +72,7 @@ end
       @playlists_by_genre = MusicSuggestion.where(genre: @genres, album: false)
       @music_suggestions = @playlists_by_genre.sample(3)
     end
+
   end
 
   def select_music
@@ -84,4 +87,5 @@ end
     @recipes = Recipe.where(food_type: @selected_food, difficulty: @difficulty).sample(4)
     session[:match_data]["selected_recipe_id"] = params[:recipe_id]
   end
+
 end

@@ -5,52 +5,51 @@
       <h1>Find your Rhythm & Recipe</h1>
     </div>
 
-      <div data-controller="form">
-        <%= form_tag generate_match_path, method: :post do %>
-
+    <div data-controller="form">
+      <%= form_tag generate_match_path, method: :post do %>
         <div class="option-grid" data-form-target="step">
           <div class="col-10 text-center">
             <h2>What would you like to cook today?</h2>
             <p>Choose one option</p>
             <div class="d-flex flex-wrap justify-content-center form-align-center">
               <% ['Meat', 'Vegan', 'Vegetarian', 'Seafood', 'Shuffle'].each do |type| %>
-              <label class="option-card">
-                <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
-                  data: { action: "click->form#goToStep", step: "1" },
-                  class: "hidden-radio" %>
-              <span class="option-label"><%= type %></span>
-              </label>
-            <% end %>
-            <div data-form-target="shuffleOutput" class="d-none" style="margin-top: 1rem; font-weight: bold;"></div>
+                <label class="option-card">
+                  <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
+                    data: { action: "click->form#goToStep", step: "1" },
+                    class: "hidden-radio" %>
+                  <span class="option-label"><%= type %></span>
+                </label>
+              <% end %>
+              <div data-form-target="shuffleOutput" class="d-none" style="margin-top: 1rem; font-weight: bold;"></div>
             </div>
           </div>
         </div>
 
         <div class="d-none option-grid" data-controller="recipe" data-form-target="step">
           <div class="col-10 text-center">
-          <h2 data-form-target="foodOutput">Change this text</h2>
-          <p>
-          <div class="d-flex flex-wrap justify-content-center form-align-center"><% ['Easy', 'Medium', 'Hard'].each do |level| %>
-            <label class="option-card">
-              <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
-                data: { action: "click->form#goToStep change->recipe#triggerJob", step: "2" },
-                class: "hidden-radio" %>
-              <span class="option-label"><%= level %></span>
-            </label>
-          <% end %>
-          </div>
-          <%= button_tag "← Go Back", type: :button,
+            <h2 data-form-target="foodOutput">Change this text</h2>
+            <p>
+            <div class="d-flex flex-wrap justify-content-center form-align-center">
+              <% ['Easy', 'Medium', 'Hard'].each do |level| %>
+                <label class="option-card">
+                  <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
+                    data: { action: "click->form#goToStep change->recipe#triggerJob", step: "2" },
+                    class: "hidden-radio" %>
+                  <span class="option-label"><%= level %></span>
+                </label>
+              <% end %>
+            </div>
+            <%= button_tag "← Go Back", type: :button,
               data: { action: "click->form#goToStep", step: "0" } %>
-
+          </div>
         </div>
-        </div>
 
-        <div>
-          <% selected_genres = @match_data["genres"] || [] %>
         <div class="d-none option-grid" data-form-target="step" id="genre-step">
+          <% selected_genres = @match_data["genres"] || [] %>
           <div class="col-10 text-center">
             <h2>Select music genres:</h2>
-            <div class="d-flex flex-wrap justify-content-center"><% ['Pop', 'Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie', 'Electronic', 'Dance', 'Alternative',
+            <div class="d-flex flex-wrap justify-content-center">
+              <% ['Pop', 'Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie', 'Electronic', 'Dance', 'Alternative',
               'Jazz', 'Classical', 'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae',
               'Soul', 'Funk', 'Techno', 'Afro', 'Shuffle'].each do |genre| %>
                 <label class="option-card sm">
@@ -61,8 +60,7 @@
                 </label>
               <% end %>
               <%= button_tag "← Go Back", type: :button,
-              data: { action: "click->form#goToStep", step: "1" } %>
-
+                data: { action: "click->form#goToStep", step: "1" } %>
               <div data-form-target="genreShuffleOutput" class="d-none" style="margin-top: 1rem; font-weight: bold;"></div>
             </div>
           </div>
@@ -75,16 +73,11 @@
               <%= radio_button_tag :music_format_selection, format, @match_data["format"] == format,
                 data: { action: "click->form#submit" },
                 class: "hidden-radio" %>
-                <span class="option-label"><%= format %></span>
+              <span class="option-label"><%= format %></span>
             </label>
           <% end %>
-
-
         </div>
-        </div>
-
       <% end %>
-      </div>
     </div>
   </div>
 </div>
