@@ -17,9 +17,10 @@ spotify = SpotifyClient.new
  GENRES.each do |genre|
    puts "Fetching album for genre: #{genre}"
 
-   album = spotify.search_album(genre)
-   next unless album
+   albums = spotify.search_albums(genre)
+   next unless albums.present?
 
+   albums.each do |album|
    music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: album['id'])
    music_suggestion.update!(
      name: album['name'],
@@ -34,17 +35,20 @@ spotify = SpotifyClient.new
      album: true
    )
 
-   puts "Saved: #{music_suggestion.name} (#{genre})"
- end
+    puts "Saved: #{music_suggestion.name} (#{genre})"
+  end
+end
 
 puts "Fetching playlists..."
 
 GENRES.each do |genre|
   puts "Fetching playlist for genre: #{genre}"
 
-  playlist = spotify.search_playlist(genre)
-  next unless playlist
+  playlists = spotify.search_playlists(genre)
+  next unless playlists.present?
 
+  playlists.each do |playlist|
+  next unless playlist.is_a?(Hash) && playlist['id']
   music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: playlist['id'])
   music_suggestion.update!(
     name: playlist['name'],
@@ -56,7 +60,8 @@ GENRES.each do |genre|
     album: false
   )
 
-  puts "Saved playlist: #{music_suggestion.name} (#{genre})"
+    puts "Saved playlist: #{music_suggestion.name} (#{genre})"
+  end
 end
 
 #turns MusicSuggestion object into an array. So that we can sample over it
