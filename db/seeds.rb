@@ -114,12 +114,10 @@ users = [user1, user2, user3, user4, user5]
 
 puts "Created #{User.count} users"
 
-
 puts "Seeding recipes..."
 
-food_types = ["meat"]#, "fish", "vegan", "vegetarian"]
-difficulties = ["easy"]#, "medium", "hard"]
-
+food_types = ["Meat"]#, "seafood", "vegan", "vegetarian"]
+difficulties = ["Easy"]#, "medium", "hard"]
 
 food_types.each do |food_type|
   difficulties.each do |difficulty|
@@ -130,14 +128,14 @@ food_types.each do |food_type|
       recipe_description = recipe_data["description"]
       ingredients = recipe_data["ingredients"]
       instructions = recipe_data["instructions"]
-      image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfVIA847VmwQhxr9tTJ_75DyS91XNn1bLHwA&s"
 
       existing_recipe = Recipe.find_by(name: recipe_name)
       if existing_recipe
         puts "Skipping duplicate recipe: #{recipe_name}"
         next
       end
-
+      image_url = ApifyImages.new(recipe_name).fetch_image_url
+      puts "📸 Image found: #{image_url || 'No image'}"
 
       # Create the recipe in the database
       Recipe.create!(
@@ -160,8 +158,6 @@ end
 food_suggestions = Recipe.all.to_a
 
 puts "Seeding complete!"
-
-
 
 puts "Seeding matches..."
 
