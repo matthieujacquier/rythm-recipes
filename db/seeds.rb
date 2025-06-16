@@ -23,11 +23,11 @@ spotify = SpotifyClient.new
   puts "Fetching albums for genre: #{genre}"
 
   artists_albums.each do |artist_name, album_title|
-    puts "→ Searching album '#{album_title}' by '#{artist_name}'"
+    puts "Searching album '#{album_title}' by '#{artist_name}'"
 
     album_data = spotify.search_album_by_artist_and_title(artist_name, album_title)
     unless album_data
-      puts "⚠️ Album not found: #{album_title} by #{artist_name}"
+      puts "Album not found: #{album_title} by #{artist_name}"
       next
     end
 
@@ -41,7 +41,7 @@ spotify = SpotifyClient.new
       preview_url: nil,
       album: true
     )
-    puts "✅ Saved: #{album_data['name']} (#{genre})"
+    puts "Saved: #{album_data['name']} (#{genre})"
   end
 end
 
