@@ -1,4 +1,5 @@
 require 'open-uri'
+
 Match.delete_all
 Recipe.delete_all
 User.delete_all
@@ -109,8 +110,7 @@ MusicSuggestion.delete_all
 #   admin: true
 # )
 
-
-# users = [user1, user2, user3, user4, user5]
+users = [user1, user2, user3, user4, user5]
 
 # puts "Created #{User.count} users"
 
@@ -148,7 +148,6 @@ puts "Seeding recipes..."
     end
   end
 end
-
 
 food_suggestions = Recipe.all.to_a
 
