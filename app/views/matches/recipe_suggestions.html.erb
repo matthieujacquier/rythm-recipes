@@ -29,10 +29,15 @@
     </div>
 
     <div class="text-center mt-5">
-      <%= link_to "Find your match!", match_path(1),
-        class: "btn btn-lg btn-primary disabled",
-        id: "match-button",
-        data: { recipe_suggestions_target: "button" } %>
+      <%= form_with url: matches_path, method: :post, id: "match-form" do %>
+  <%= hidden_field_tag :recipe_id, "", id: "selected-recipe-id" %>
+  <div class="text-center mt-5">
+    <%= submit_tag "Find your match!",
+      class: "btn btn-lg btn-primary disabled",
+      id: "match-button",
+      data: { recipe_suggestions_target: "button" } %>
+  </div>
+<% end %>
     </div>
   </div>
 </div>

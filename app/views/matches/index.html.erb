@@ -13,7 +13,7 @@
             <h2>What would you like to cook today?</h2>
             <p>Choose one option</p>
             <div class="d-flex flex-wrap justify-content-center form-align-center">
-              <% ['Meat', 'Vegan', 'Vegetarian', 'Seafood', 'Shuffle'].each do |type| %>
+              <% ['meat', 'Vegan', 'Vegetarian', 'Seafood', 'Shuffle'].each do |type| %>
               <label class="option-card">
               <%= radio_button_tag :food_type_selection, type, false,
                 data: { action: "click->form#goToStep", step: "1" },
@@ -30,7 +30,7 @@
           <div class="col-10 text-center">
           <h2 data-form-target="foodOutput">Change this text</h2>
           <p>
-          <div class="d-flex flex-wrap justify-content-center form-align-center"><% ['Easy', 'Medium', 'Hard'].each do |level| %>
+          <div class="d-flex flex-wrap justify-content-center form-align-center"><% ['easy', 'medium', 'hard'].each do |level| %>
             <label class="option-card">
               <%= radio_button_tag :difficulty_selection, level, false,
                 data: { action: "click->form#goToStep change->recipe#triggerJob", step: "2" },

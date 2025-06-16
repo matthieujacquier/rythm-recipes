@@ -7,13 +7,13 @@ class SpotifyClient
     @access_token = token_service.fetch_access_token
   end
 
-  def search_album(query)
+  def search_albums(query, limit: 30)
   response = SpotifyClient.get('/search', {
     headers: auth_header,
     query: {
       q: query,
       type: 'album',
-      limit: 3 #limiting to 3 instead of 5
+      limit: 50
     }
   })
 
@@ -30,6 +30,11 @@ class SpotifyClient
   albums_data.each do |album|
     next unless album && album['id'] #safeguard to ensure we have an id to avoid errors
 
+      if album['name'].to_s.downcase.include?(query.downcase)
+      puts "Skipping album '#{album['name']}' for genre '#{query}' due to name overlap."
+      next
+    end
+
     album_details = SpotifyClient.get("/albums/#{album['id']}", headers: auth_header)
     next unless album_details.success?
 
@@ -43,23 +48,18 @@ class SpotifyClient
     end
   end
 
-  if valid_albums.any?
-    return valid_albums.sample
-  else
-    puts "No suitable album found for '#{query}' with more than 6 tracks."
-    return nil
-  end
+  valid_albums
 end
 
 
 
-  def search_playlist(query)
+  def search_playlists(query)
   response = SpotifyClient.get('/search', {
     headers: auth_header,
     query: {
       q: query,
       type: 'playlist',
-      limit: 1
+      limit: 30
     }
   })
 
@@ -68,8 +68,7 @@ end
     return nil
   end
 
-  response.parsed_response.dig('playlists','items')&.first 
-  #equivalent to response.parsed_response['playlists']['items'].first but returns nil instead of errors if it doesn't find a match for playlist & items.
+  response.parsed_response.dig('playlists','items') || [] #avoids returning nil if not found. Instead returns empty array.
 end
 
   private
