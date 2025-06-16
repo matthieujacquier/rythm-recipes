@@ -3,5 +3,5 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "@popperjs/core"
 import "bootstrap"
-import "controllers/recipe_suggestions_controller"
-import "controllers/music_suggestions_controller";
+import "./controllers/recipe_suggestions_controller"
+import "./controllers/music_suggestions_controller";
