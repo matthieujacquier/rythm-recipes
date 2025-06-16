@@ -69,7 +69,7 @@ end
   end
 
   def select_music
-    session[:match_data] ||= {}  # Prevent nil assignment error
+    session[:match_data] ||= {}
     session[:match_data][:selected_music_id] = params[:music_suggestion_id]
     redirect_to recipe_suggestions_matches_path
   end
@@ -78,6 +78,6 @@ end
     @selected_food = session[:match_data]["food_type"]
     @difficulty = session[:match_data]["difficulty"]
     @recipes = Recipe.where(food_type: @selected_food, difficulty: @difficulty).sample(4)
-    session[:match_data][:selected_recipe_id] = params[:recipe_id]
+    session[:match_data]["selected_recipe_id"] = params[:recipe_id]
   end
 end

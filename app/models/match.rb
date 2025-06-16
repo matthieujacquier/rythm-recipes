@@ -1,7 +1,6 @@
 class Match < ApplicationRecord
   belongs_to :user
   belongs_to :music_suggestion
-
   belongs_to :recipe
 
   def generate_final_match
