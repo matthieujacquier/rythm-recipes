@@ -69,6 +69,7 @@ end
   end
 
   def select_music
+    session[:match_data] ||= {}  # Prevent nil assignment error
     session[:match_data][:selected_music_id] = params[:music_suggestion_id]
     redirect_to recipe_suggestions_matches_path
   end
