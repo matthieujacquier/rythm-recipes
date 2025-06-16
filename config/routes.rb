@@ -11,8 +11,9 @@ Rails.application.routes.draw do
   get "users/:id", to: "users#about", as: :about_user
   post "generate_match", to: "matches#generate", as: :generate_match
   post 'generate_recipe', to: 'recipes#generate'
-  # get 'matches/recipe_selection', to: 'matches#recipe_selection', as: :recipe_selection_matches
-  resources :matches, only: [:index, :create, :show] do
+  get 'matches/recipe_suggestions', to: 'matches#recipe_suggestions', as: :recipe_suggestions_matches
+  get 'matches/recipe_selection', to: 'matches#recipe_selection', as: :recipe_selection_matches
+  resources :matches, only: [:index, :show, :create] do
     member do
       patch :save
       patch :unsave

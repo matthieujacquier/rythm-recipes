@@ -22,6 +22,42 @@
 
             <div class="card-body">
               <p class="card-text small text-muted"><%= recipe.description %></p>
+              <button
+                class="btn btn-primary ingredients"
+                data-controller="modal"
+                data-action="click->modal#open"
+                data-modal-id="ingredientsModal<%= recipe.id %>">
+                View Ingredients
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal"
+          id="ingredientsModal<%= recipe.id %>"
+          data-controller="modal"
+          data-modal-target="modal"
+          aria-hidden="true"
+          tabindex="-1"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title"><%= recipe.name %> Ingredients</h5>
+                <button type="button" class="btn-close" data-action="modal#close" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <% recipe.ingredients.split("\n").each do |ingredient| %>
+                    <li><%= ingredient %></li>
+                  <% end %>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-action="modal#close">Close</button>
+              </div>
             </div>
           </div>
         </div>
@@ -30,14 +66,15 @@
 
     <div class="text-center mt-5">
       <%= form_with url: matches_path, method: :post, id: "match-form" do %>
-  <%= hidden_field_tag :recipe_id, "", id: "selected-recipe-id" %>
-  <div class="text-center mt-5">
-    <%= submit_tag "Find your match!",
-      class: "btn btn-lg btn-primary disabled",
-      id: "match-button",
-      data: { recipe_suggestions_target: "button" } %>
-  </div>
-<% end %>
+        <%= hidden_field_tag :recipe_id, "", id: "selected-recipe-id" %>
+        <%# Uncomment if needed:
+        <div class="text-center mt-5">
+          <%= submit_tag "Find your match!",
+            class: "btn btn-lg btn-primary disabled",
+            id: "match-button",
+            data: { recipe_suggestions_target: "button" } %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
