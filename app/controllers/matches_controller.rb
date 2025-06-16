@@ -84,7 +84,11 @@ class MatchesController < ApplicationController
   def recipe_suggestions
     @selected_food = session[:match_data]["food_type"]
     @difficulty = session[:match_data]["difficulty"]
-    @recipes = Recipe.where(food_type: @selected_food, difficulty: @difficulty).sample(4)
+    @recipes = Recipe.where(
+      "LOWER(food_type) = ? AND LOWER(difficulty) = ?",
+      @selected_food.downcase,
+      @difficulty.downcase
+    ).sample(4)
     session[:match_data]["selected_recipe_id"] = params[:recipe_id]
   end
 
