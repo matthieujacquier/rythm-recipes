@@ -1,3 +1,6 @@
 require 'openai'
 
-OpenAIClient = OpenAI::Client.new(access_token: ENV.fetch("OPENAI_API_KEY"))
+OpenAIClient = OpenAI::Client.new(
+  access_token: ENV['OPENAI_API_KEY'],
+  request_timeout: 120
+)

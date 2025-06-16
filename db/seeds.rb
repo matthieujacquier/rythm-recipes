@@ -1,7 +1,11 @@
 require 'open-uri'
+require 'json'
+
+file_path = Rails.root.join('db', 'album_seeds.json')
+albums_by_genre = JSON.parse(File.read(file_path))
 
 Match.delete_all
-Recipe.delete_all
+# Recipe.delete_all
 User.delete_all
 MusicSuggestion.delete_all
 
@@ -15,28 +19,29 @@ GENRES = [
 
 spotify = SpotifyClient.new
 
- GENRES.each do |genre|
-   puts "Fetching album for genre: #{genre}"
+ albums_by_genre.each do |genre, artists_albums|
+  puts "Fetching albums for genre: #{genre}"
 
-   albums = spotify.search_albums(genre)
-   next unless albums.present?
+  artists_albums.each do |artist_name, album_title|
+    puts "Searching album '#{album_title}' by '#{artist_name}'"
 
-   albums.each do |album|
-   music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: album['id'])
-   music_suggestion.update!(
-     name: album['name'],
-     image_url: album['images'][0]['url'],
-     #this ensure we get the first image if there are several
-     genre: genre,
-     artists: album['artists'].map { |name| name['name'] },
-     #album is an array of ashes. For each hash, we iterate an return an array with .map which only returns the name (there are other available parameters such as artist_id)
-     tracklist: album['href'],
-     preview_url: nil,
-     #will not be used. I guess we can delete it from the table?
-     album: true
-   )
+    album_data = spotify.search_album_by_artist_and_title(artist_name, album_title)
+    unless album_data
+      puts "Album not found: #{album_title} by #{artist_name}"
+      next
+    end
 
-    puts "Saved: #{music_suggestion.name} (#{genre})"
+    music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: album_data['id'])
+    music_suggestion.update!(
+      name: album_data['name'],
+      image_url: album_data['images'][0]['url'],
+      genre: genre,
+      artists: album_data['artists'].map { |a| a['name'] },
+      tracklist: album_data['href'],
+      preview_url: nil,
+      album: true
+    )
+    puts "Saved: #{album_data['name']} (#{genre})"
   end
 end
 
@@ -114,58 +119,57 @@ users = [user1, user2, user3, user4, user5]
 
 puts "Created #{User.count} users"
 
-puts "Seeding recipes..."
+# puts "Seeding recipes..."
 
-food_types = ["Meat"]#, "Seafood", "Vegan", "Vegetarian"]
-difficulties = ["Easy"]#, "Medium", "Hard"]
+# ["easy", "medium", "hard"].each do |difficulty|
+#   ["meat", "vegetarian", "vegan", "seafood"].each do |food_type|
+#     puts "🔄 Generating recipes for: #{difficulty.capitalize} / #{food_type.capitalize}"
+#     begin
+#       recipes = RecipeGenerator.new(difficulty: difficulty, food_type: food_type).call
 
-food_types.each do |food_type|
-  difficulties.each do |difficulty|
-    1.times do
+#       recipes.each do |recipe_data|
+#         begin
+#           recipe_name = recipe_data["name"]
+#           next if Recipe.exists?(name: recipe_name)
 
-      recipe_data = RecipeGenerator.new(difficulty: difficulty, food_type: food_type).call
+#           image_url = ApifyImages.new(recipe_name).fetch_image_url
 
-      recipe_name = recipe_data["name"]
-      recipe_description = recipe_data["description"]
-      ingredients = recipe_data["ingredients"]
-      instructions = recipe_data["instructions"]
+#           Recipe.create!(
+#             name: recipe_name,
+#             difficulty: difficulty,
+#             food_type: food_type,
+#             image_url: image_url,
+#             ingredients: recipe_data["ingredients"],
+#             portion_size: 4,
+#             instructions: recipe_data["instructions"],
+#             cuisine: recipe_data["cuisine"],
+#             duration: recipe_data["duration"],
+#             description: recipe_data["description"]
+#           )
 
-      existing_recipe = Recipe.find_by(name: recipe_name)
-      if existing_recipe
-        puts "Skipping duplicate recipe: #{recipe_name}"
-        next
-      end
-      image_url = ApifyImages.new(recipe_name).fetch_image_url
-      puts "📸 Image found: #{image_url || 'No image'}"
+#           puts "✅ Created: #{recipe_name}"
+#         rescue => e
+#           puts "⚠️ Failed to create recipe: #{e.message}"
+#         end
+#       end
+#     rescue => e
+#       puts "⚠️ Failed for #{difficulty}/#{food_type}: #{e.message}"
+#     end
+#   end
+# end
 
-      # Create the recipe in the database
-      Recipe.create!(
-        name: recipe_name,
-        difficulty: difficulty,
-        food_type: food_type,
-        image_url: image_url,
-        ingredients: ingredients,
-        portion_size: 4,
-        instructions: instructions,
-        cuisine: recipe_data["cuisine"],
-        duration: recipe_data["duration"],
-        description: recipe_description
-      )
-      puts "Created Recipe: #{Recipe.last.name} (#{food_type}, #{difficulty})"
-    end
-  end
-end
 
-food_suggestions = Recipe.all.to_a
+# food_suggestions = Recipe.all.to_a
+
 
 puts "Seeding complete!"
 
-puts "Seeding matches..."
+# puts "Seeding matches..."
 
-match1 =  Match.create!(
-recipe_name: "Shrimp Scampi Meets Salsa Verde",
-recipe_description: "This shrimp pasta with cilantro and lime is spicy, citrusy, and bold.",
-user: user1,
-music_suggestion: music_suggestions.sample,
-recipe: food_suggestions.sample
-)
+# match1 =  Match.create!(
+# recipe_name: "Shrimp Scampi Meets Salsa Verde",
+# recipe_description: "This shrimp pasta with cilantro and lime is spicy, citrusy, and bold.",
+# user: user1,
+# music_suggestion: music_suggestions.sample,
+# recipe: food_suggestions.sample
+# )
