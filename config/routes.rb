@@ -10,7 +10,6 @@ Rails.application.routes.draw do
 
   get "users/:id", to: "users#about", as: :about_user
   post "generate_match", to: "matches#generate", as: :generate_match
-  post 'generate_recipe', to: 'recipes#generate'
   # get 'matches/recipe_selection', to: 'matches#recipe_selection', as: :recipe_selection_matches
   resources :matches, only: [:index, :create, :show] do
     member do
@@ -19,8 +18,8 @@ Rails.application.routes.draw do
     end
     collection do
       get :music_suggestions
-      post :select_music
       get :recipe_suggestions
+      post :select_music
     end
   end
 

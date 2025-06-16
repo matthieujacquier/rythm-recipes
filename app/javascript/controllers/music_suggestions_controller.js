@@ -4,6 +4,9 @@ export default class extends Controller {
   static targets = ["card", "button"]
 
   connect() {
+    console.log(this.Card);
+    console.log(this.CardId);
+
     this.selectedCardId = null
   }
 
@@ -19,11 +22,12 @@ export default class extends Controller {
     this.buttonTarget.classList.remove("disabled")
 
     // Inject ID into form
-    
+
     const hiddenInput = document.getElementById("music-suggestion-id")
     hiddenInput.value = this.selectedCardId
 
     // Submit form immediately
     document.getElementById("music-selection-form").submit()
   }
+
 }
