@@ -1,6 +1,12 @@
 class MatchesController < ApplicationController
 
   def index
+    def index
+      if params[:reset] == "true"
+        session.delete(:match_data)
+      end
+      @match_data = session[:match_data] || {}
+    end
   end
 
   def create

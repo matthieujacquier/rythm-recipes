@@ -1,4 +1,4 @@
-
+<% @match_data ||= {} %>
 <div class="container">
   <div class="row">
     <div class="col-12 text-center my-5">
@@ -15,9 +15,9 @@
             <div class="d-flex flex-wrap justify-content-center form-align-center">
               <% ['Meat', 'Vegan', 'Vegetarian', 'Seafood', 'Shuffle'].each do |type| %>
               <label class="option-card">
-              <%= radio_button_tag :food_type_selection, type, false,
-                data: { action: "click->form#goToStep", step: "1" },
-                class: "hidden-radio" %>
+                <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
+                  data: { action: "click->form#goToStep", step: "1" },
+                  class: "hidden-radio" %>
               <span class="option-label"><%= type %></span>
               </label>
             <% end %>
@@ -32,7 +32,7 @@
           <p>
           <div class="d-flex flex-wrap justify-content-center form-align-center"><% ['Easy', 'Medium', 'Hard'].each do |level| %>
             <label class="option-card">
-              <%= radio_button_tag :difficulty_selection, level, false,
+              <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
                 data: { action: "click->form#goToStep change->recipe#triggerJob", step: "2" },
                 class: "hidden-radio" %>
               <span class="option-label"><%= level %></span>
@@ -46,14 +46,15 @@
         </div>
 
         <div>
-        <div class="d-none option-grid" data-form-target="step">
+          <% selected_genres = @match_data["genres"] || [] %>
+        <div class="d-none option-grid" data-form-target="step" id="genre-step">
           <div class="col-10 text-center">
             <h2>Select music genres:</h2>
             <div class="d-flex flex-wrap justify-content-center"><% ['Pop', 'Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie', 'Electronic', 'Dance', 'Alternative',
               'Jazz', 'Classical', 'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae',
               'Soul', 'Funk', 'Techno', 'Afro', 'Shuffle'].each do |genre| %>
                 <label class="option-card sm">
-                  <%= check_box_tag "music_genres[]", genre, false,
+                  <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
                   <span class="option-label sm"><%= genre %></span>
@@ -71,7 +72,7 @@
           <h2>Album or Playlist?</h2>
           <% ['Album', 'Playlist'].each do |format| %>
             <label class="option-card">
-              <%= radio_button_tag :music_format_selection, format, false,
+              <%= radio_button_tag :music_format_selection, format, @match_data["format"] == format,
                 data: { action: "click->form#submit" },
                 class: "hidden-radio" %>
                 <span class="option-label"><%= format %></span>
