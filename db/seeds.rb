@@ -116,8 +116,8 @@ puts "Created #{User.count} users"
 
 puts "Seeding recipes..."
 
-difficulties = ["Easy", "Medium", "Hard"]
-food_types = ["Vegan", "Vegetarian", "Meat", "Seafood"]
+food_types = ["Meat"]#, "seafood", "vegan", "vegetarian"]
+difficulties = ["Easy"]#, "medium", "hard"]
 
 food_types.each do |food_type|
   difficulties.each do |difficulty|
