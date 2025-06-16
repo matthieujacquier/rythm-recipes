@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   post "generate_match", to: "matches#generate", as: :generate_match
   post 'generate_recipe', to: 'recipes#generate'
   post 'matches/select_music', to: 'matches#select_music', as: :select_music_matches
-  get 'matches/recipe_selection', to: 'matches#recipe_selection', as: :recipe_selection_matches
+  get 'matches/recipe_suggestions', to: 'matches#recipe_suggestions', as: :recipe_selection_matches
   resources :matches, only: [:index, :show, :create, :update, :destroy] do
     member do
       patch :save
