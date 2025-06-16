@@ -6,7 +6,7 @@
         <div class="selectable-card p-2"
              data-music-suggestions-target="card"
              data-action="click->music-suggestions#select"
-             data-id="<%= music.spotify_id %>">
+             data-id="<%= music.id %>">
           <% embed_type = music.album ? "album" : "playlist" %>
           <% embed_url = "https://open.spotify.com/embed/#{embed_type}/#{music.spotify_id}" %>
 
@@ -30,9 +30,14 @@
     <% end %>
 
 <!-- visible button to trigger form submission -->
-<%= button_tag "Select your recipe!",
-      class: "btn btn-primary disabled",
+<%= button_tag "Select your music choice!",
+      class: "d-none",
       id: "submit-music-selection",
       data: { music_suggestions_target: "button" } %>
+      <div class="text-center mt-4">
+
+</div>
+<%= link_to "← Go Back", matches_path(step: 2), class: "btn btn-secondary", data: { turbo: false } %>
     </div>
+
   </div>

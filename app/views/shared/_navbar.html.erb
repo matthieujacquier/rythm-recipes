@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to matches_path, class: "navbar-brand" do %>
+    <%= link_to matches_path(reset: true), class: "navbar-brand" do %>
       <%= image_tag "https://seenbysam.com/rhythm-n-recipes/rnr_logo.png" %>
     <% end %>
 
@@ -12,7 +12,7 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Create a new match", matches_path, class: "nav-link" %>
+            <%= link_to "Create a new match", matches_path(reset: true), class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "Messages", "#", class: "nav-link" %>
