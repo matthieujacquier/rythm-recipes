@@ -7,6 +7,28 @@ class SpotifyClient
     @access_token = token_service.fetch_access_token
   end
 
+
+  def search_album_by_artist_and_title(artist_name, album_title)
+  response = SpotifyClient.get('/search', {
+    headers: auth_header,
+    query: {
+      q: "album:\"#{album_title}\" artist:\"#{artist_name}\"",
+      type: 'album',
+      limit: 1
+    }
+  })
+
+  return nil unless response.success?
+  items = response.parsed_response.dig('albums', 'items')
+  return nil unless items.is_a?(Array) && items.any?
+
+  album_id = items.first['id']
+  album_details = SpotifyClient.get("/albums/#{album_id}", headers: auth_header)
+  return nil unless album_details.success?
+
+  album_details.parsed_response
+end
+
   def search_albums(query, limit: 30)
   response = SpotifyClient.get('/search', {
     headers: auth_header,
