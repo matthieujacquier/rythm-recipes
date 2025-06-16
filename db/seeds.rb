@@ -1,4 +1,5 @@
 require 'open-uri'
+
 Match.delete_all
 Recipe.delete_all
 User.delete_all
@@ -109,19 +110,19 @@ user4 = User.create(
   admin: true
 )
 
-
 users = [user1, user2, user3, user4, user5]
 
 puts "Created #{User.count} users"
 
 puts "Seeding recipes..."
 
-food_types = ["Meat"]#, "seafood", "vegan", "vegetarian"]
-difficulties = ["Easy"]#, "medium", "hard"]
+food_types = ["Meat"]#, "Seafood", "Vegan", "Vegetarian"]
+difficulties = ["Easy"]#, "Medium", "Hard"]
 
 food_types.each do |food_type|
   difficulties.each do |difficulty|
     1.times do
+
       recipe_data = RecipeGenerator.new(difficulty: difficulty, food_type: food_type).call
 
       recipe_name = recipe_data["name"]
@@ -150,7 +151,7 @@ food_types.each do |food_type|
         duration: recipe_data["duration"],
         description: recipe_description
       )
-      puts "Created Recipe: #{recipe_name} (#{food_type}, #{difficulty})"
+      puts "Created Recipe: #{Recipe.last.name} (#{food_type}, #{difficulty})"
     end
   end
 end

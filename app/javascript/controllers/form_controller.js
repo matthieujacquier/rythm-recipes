@@ -4,6 +4,19 @@ export default class extends Controller {
   static targets = ["step", "shuffleOutput", "foodOutput", "genreShuffleOutput", "musicFormat"];
 
   connect() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const stepIndex = parseInt(urlParams.get("step"), 10);
+
+    if (!isNaN(stepIndex)) {
+      this.showStep(stepIndex);
+    } else {
+      this.showStep(0);
+    }
+
+    const formatInput = document.querySelector('input[name="music_format_selection"]:checked');
+    if (formatInput && this.hasMusicFormatTarget) {
+      this.musicFormatTarget.classList.remove("d-none");
+    }
   }
 
   goToStep(event) {
@@ -19,11 +32,12 @@ export default class extends Controller {
     this.musicFormatTarget.classList.add("d-none");
   }
 
-  // Update food description if selected
-  if (selectedFood && this.hasFoodOutputTarget) {
-    this.foodOutputTarget.innerHTML = `Alright, we're gonna cook a ${selectedFood} dish.<br>How difficult should the preparation be?`;
+  // Reselecting difficulty — trigger visibility check for music format
+  if (inputName === "difficulty_selection") {
+    this.toggleMusicFormatDisplay();
   }
 
+  // Shuffle logic (unchanged)
   if (inputName === "food_type_selection" && selectedValue === "Shuffle") {
     const foodOptions = ["Meat", "Vegan", "Vegetarian", "Seafood"];
     const randomFood = foodOptions[Math.floor(Math.random() * foodOptions.length)];
@@ -42,6 +56,7 @@ export default class extends Controller {
     }
   }
 
+  // Genre shuffle logic (unchanged)
   else if (inputName === "music_genres[]") {
     if (selectedValue === "Shuffle" && event.target.checked) {
       document.querySelectorAll('input[name="music_genres[]"]').forEach(input => {
