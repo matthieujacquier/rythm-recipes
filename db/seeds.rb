@@ -1,7 +1,7 @@
 require 'open-uri'
 require 'json'
 
-file_path = Rails.root.join('db', 'album_seeds.json')
+file_path = Rails.root.join('db', 'album_desc_seeds.json')
 albums_by_genre = JSON.parse(File.read(file_path))
 
 Match.delete_all
@@ -19,10 +19,12 @@ GENRES = [
 
 spotify = SpotifyClient.new
 
- albums_by_genre.each do |genre, artists_albums|
-  puts "Fetching albums for genre: #{genre}"
+albums_by_genre.each do |album_info|
+    genre = album_info["genre"]
+    artist_name = album_info["artist"]
+    album_title = album_info["album"]
+    description = album_info["description"]
 
-  artists_albums.each do |artist_name, album_title|
     puts "Searching album '#{album_title}' by '#{artist_name}'"
 
     album_data = spotify.search_album_by_artist_and_title(artist_name, album_title)
@@ -39,10 +41,10 @@ spotify = SpotifyClient.new
       artists: album_data['artists'].map { |a| a['name'] },
       tracklist: album_data['href'],
       preview_url: nil,
-      album: true
+      album: true,
+      description: description
     )
     puts "Saved: #{album_data['name']} (#{genre})"
-  end
 end
 
 puts "Fetching playlists..."

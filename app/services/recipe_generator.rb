@@ -26,7 +26,7 @@ end
 
   def prompt
   <<~PROMPT
-    Generate a valid JSON array containing 4 unique and diverse cooking recipes for:
+    Generate a valid JSON array containing 8 unique and diverse cooking recipes for:
 
     - difficulty: "#{@difficulty}" (one of: easy, medium, hard)
     - food_type: "#{@food_type}" (one of: meat, vegetarian, vegan, seafood)

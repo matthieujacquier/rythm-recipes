@@ -10,7 +10,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="d-flex flex-column min-vh-100">
+  <body class="<%= "#{controller_name}-#{action_name}" %>">
 <% unless controller_name == 'pages' && action_name == 'home' %>
   <%= render 'shared/navbar' %>
 <% end %>

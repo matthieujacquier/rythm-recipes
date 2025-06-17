@@ -1,0 +1,37 @@
+body.matches-index {
+  background-image: asset-url('red.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent !important;
+}
+
+body.matches-music_suggestions {
+  background-image: asset-url('yellow.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent !important;
+}
+
+body.matches-recipe_suggestions {
+  background-image: asset-url('red.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent !important;
+}
+
+body.matches-show {
+  background-image: asset-url('green.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent !important;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

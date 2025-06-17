@@ -40,14 +40,15 @@
 
 .selectable-card {
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 15px;
+
 }
 
 .selectable-card:hover {
-  transform: translateY(-6px);
-  z-index: 10;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 
 .selectable-card.selected {
