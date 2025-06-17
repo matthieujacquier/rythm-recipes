@@ -55,6 +55,32 @@ export default class extends Controller {
       }
     }
 
+    handleShuffleClick(event) {
+      event.preventDefault();
+
+      const foodOptions = ["Meat", "Vegan", "Vegetarian", "Seafood"];
+      const randomFood = foodOptions[Math.floor(Math.random() * foodOptions.length)];
+      this.selectedShuffle = randomFood;
+
+      // ❌ Uncheck all current selections (including Shuffle)
+      document.querySelectorAll('input[name="food_type_selection"]').forEach(input => {
+        input.checked = false;
+      });
+
+      // ✅ Check the randomly selected one
+      const selectedInput = document.querySelector(`input[name="food_type_selection"][value="${randomFood}"]`);
+      if (selectedInput) selectedInput.checked = true;
+
+      // 🟣 Update modal content
+      const modalBody = document.getElementById("shuffleModalBody");
+      modalBody.innerText = `We'll surprise you with a ${randomFood} dish!`;
+
+      // 🟣 Show the modal
+      const modal = new bootstrap.Modal(document.getElementById("shuffleModal"));
+      modal.show();
+    }
+
+
     // Genre shuffle logic (unchanged)
     else if (inputName === "music_genres[]") {
       if (selectedValue === "Shuffle" && event.target.checked) {
