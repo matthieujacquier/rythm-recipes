@@ -136,4 +136,25 @@ export default class extends Controller {
     });
   }
 
+  confirmShuffle() {
+    if (!this.selectedShuffle) return;
+
+    // Set the checked value again to ensure state
+    const foodInput = document.querySelector(`input[name="food_type_selection"][value="${this.selectedShuffle}"]`);
+    if (foodInput) foodInput.checked = true;
+
+    // Update the next step prompt
+    if (this.hasFoodOutputTarget) {
+      this.foodOutputTarget.innerHTML =
+        `Alright, we're gonna cook a ${this.selectedShuffle} dish.<br>How difficult should the preparation be?`;
+    }
+
+    // Close the modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById("shuffleModal"));
+    if (modal) modal.hide();
+
+    // Advance to the next step
+    this.showStep(1);
+  }
+
 }
