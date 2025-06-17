@@ -7,7 +7,6 @@ h2 {font-weight: 400;}
   align-items: center;
 }
 
-/* Layout grid */
 .option-grid {
   display: flex;
   flex-wrap: wrap;
@@ -17,12 +16,6 @@ h2 {font-weight: 400;}
   margin-top: 24px;
 }
 
-/* Visually hide real radio buttons */
-.hidden-radio {
-  display: none;
-}
-
-/* The box */
 .option-card {
   display: flex;
   align-items: center;
@@ -36,20 +29,13 @@ h2 {font-weight: 400;}
   transition: all 0.2s ease-in-out;
   text-align: center;
   background-color: $info;
-  margin: 16px 16px;
+  margin: 16px;
   transition-duration: 5ms;
-}
-
-.sm {
-  height: 40px;
-  font-size: 18px !important;
-  border-radius: 25px;
-  align-content: center;
 }
 
 .option-card:hover {
   border-color: $gray;
-  border: 3px;
+  border-width: 3px;
   background-color: $orange;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
@@ -60,9 +46,15 @@ h2 {font-weight: 400;}
   color: $gray;
 }
 
-/* Selected state */
-.hidden-radio:checked + .option-label {
-  color: white;
+.sm {
+  height: 40px;
+  font-size: 18px !important;
+  border-radius: 25px;
+  align-content: center;
+}
+
+.hidden-radio {
+  display: none;
 }
 
 .hidden-radio:checked + .option-label,
@@ -70,124 +62,4 @@ h2 {font-weight: 400;}
   background-color: $orange;
   color: white;
   border-color: $orange;
-}
-
-/* food type selection */
-
-.option-step-wrapper {
-  .option-grid {
-    gap: 32px;
-    margin-top: 32px;
-  }
-
-  .option-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    border: 2px solid #ccc;
-    background-color: $info;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    margin: 16px;
-    text-align: center;
-    padding: 0;
-    position: relative;
-
-    &.meat:hover {
-      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-      background: #88A65E;
-    }
-
-    &.vegan:hover {
-      clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
-      background: #3B8686;
-    }
-
-&.vegetarian:hover {
-  --s: 200px;
-  width: var(--s);
-  aspect-ratio: 1;
-
-  background: #77DD77;
-
-  $g: radial-gradient(50% 50%, #000 99%, #0000 101%) no-repeat;
-
-  mask:
-    calc(50% + var(--s)*0.375) calc(50% + var(--s)*0.071) #{$g},
-    calc(50% + var(--s)*0.241) calc(50% + var(--s)*0.296) #{$g},
-    calc(50% + var(--s)*-0.005) calc(50% + var(--s)*0.381) #{$g},
-    calc(50% + var(--s)*-0.249) calc(50% + var(--s)*0.289) #{$g},
-    calc(50% + var(--s)*-0.377) calc(50% + var(--s)*0.061) #{$g},
-    calc(50% + var(--s)*-0.328) calc(50% + var(--s)*-0.195) #{$g},
-    calc(50% + var(--s)*-0.125) calc(50% + var(--s)*-0.36) #{$g},
-    calc(50% + var(--s)*0.135)  calc(50% + var(--s)*-0.357) #{$g},
-    calc(50% + var(--s)*0.333)  calc(50% + var(--s)*-0.186) #{$g},
-    radial-gradient(calc(var(--s)*0.425), #000 99%, #0000 101%) subtract,
-    calc(50% + var(--s)*0.414)  calc(50% + var(--s)*0.247) #{$g},
-    calc(50% + var(--s)*0.159)  calc(50% + var(--s)*0.455) #{$g},
-    calc(50% + var(--s)*-0.171) calc(50% + var(--s)*0.451) #{$g},
-    calc(50% + var(--s)*-0.421) calc(50% + var(--s)*0.235) #{$g},
-    calc(50% + var(--s)*-0.474) calc(50% + var(--s)*-0.09) #{$g},
-    calc(50% + var(--s)*-0.305) calc(50% + var(--s)*-0.374) #{$g},
-    calc(50% + var(--s)*0.007)  calc(50% + var(--s)*-0.482) #{$g},
-    calc(50% + var(--s)*0.315)  calc(50% + var(--s)*-0.365) #{$g},
-    calc(50% + var(--s)*0.476)  calc(50% + var(--s)*-0.077) #{$g};
-}
-
-    &.seafood:hover {
-      clip-path: polygon(0 0, calc(100% - 70px) 0, 100% 100%, 0 100%);
-      background: #C44D58;
-    }
-
-    &.shuffle:hover {
-      mask:
-        calc(50% + 135px) 50% var(--g),
-        calc(50% + 95px) calc(50% + 95px) var(--g),
-        calc(50%) calc(50% + 135px) var(--g),
-        calc(50% - 95px) calc(50% + 95px) var(--g),
-        calc(50% - 135px) 50% var(--g),
-        calc(50% - 95px) calc(50% - 95px) var(--g),
-        calc(50%) calc(50% - 135px) var(--g),
-        calc(50% + 95px) calc(50% - 95px) var(--g),
-        radial-gradient(125px,#000 99%,#0000 101%) subtract;
-      background: #FFA500;
-    }
-
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-
-  .option-icon {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    display: block;
-    transition: transform 0.2s ease;
-  }
-
-  .option-card:hover .option-icon {
-    transform: scale(1.1);
-  }
-
-  .option-label {
-    font-size: 14px;
-    font-weight: 300;
-    color: $gray;
-  }
-
-  .hidden-radio {
-    display: none;
-  }
-
-  .hidden-radio:checked + .option-label,
-  .option-card:has(.hidden-radio:checked) {
-    background-color: $orange;
-    color: white;
-    border-color: $orange;
-  }
 }
