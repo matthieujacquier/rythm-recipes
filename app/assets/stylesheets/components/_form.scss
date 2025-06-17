@@ -7,7 +7,6 @@ h2 {font-weight: 400;}
   align-items: center;
 }
 
-/* Layout grid */
 .option-grid {
   display: flex;
   flex-wrap: wrap;
@@ -17,12 +16,6 @@ h2 {font-weight: 400;}
   margin-top: 24px;
 }
 
-/* Visually hide real radio buttons */
-.hidden-radio {
-  display: none;
-}
-
-/* The box */
 .option-card {
   display: flex;
   align-items: center;
@@ -36,23 +29,15 @@ h2 {font-weight: 400;}
   transition: all 0.2s ease-in-out;
   text-align: center;
   background-color: $info;
-  margin: 16px 16px;
+  margin: 16px;
   transition-duration: 5ms;
 }
 
-.sm {
-    height: 40px;
-    font-size: 18px !important;
-    border-radius: 25px;
-    align-content: center;
-  }
-
 .option-card:hover {
   border-color: $gray;
-  border: 3px;
+  border-width: 3px;
   background-color: $orange;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .option-label {
@@ -61,9 +46,15 @@ h2 {font-weight: 400;}
   color: $gray;
 }
 
-/* Selected state — use input:checked + sibling selector */
-.hidden-radio:checked + .option-label {
-  color: white;
+.sm {
+  height: 40px;
+  font-size: 18px !important;
+  border-radius: 25px;
+  align-content: center;
+}
+
+.hidden-radio {
+  display: none;
 }
 
 .hidden-radio:checked + .option-label,

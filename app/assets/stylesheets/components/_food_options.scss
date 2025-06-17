@@ -1,0 +1,232 @@
+// SCSS for Food Type Option Buttons
+
+.option-step-wrapper {
+  .option-grid {
+    gap: 32px;
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .option-card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: $info;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin: 16px;
+    transform-origin: center;
+    will-change: transform;
+
+    &:hover {
+      transform: scale(1.10);
+      border: none;
+    }
+
+    .option-icon {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      transition: transform 0.5s ease;
+      z-index: 1;
+    }
+
+    &:hover .option-icon {
+      transform: scale(1.1);
+    }
+
+    .option-label {
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      font-size: 15px;
+      font-weight: 450;
+      text-align: center;
+      transition: opacity 0.2s ease;
+      z-index: 2;
+    }
+
+    &:hover .option-label {
+      opacity: 1;
+    }
+
+    &:has(.hidden-radio:checked) .option-label {
+      opacity: 1;
+    }
+  }
+
+  // Vegan
+  .option-card.vegan {
+    border-radius: 50%;
+    clip-path: none;
+    background-color: $info;
+
+    &:hover {
+      border-radius: 0;
+      clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+      background: #68ad3e;
+      transform: scale(1.05);
+    }
+  }
+
+  .option-card.vegan:has(.hidden-radio:checked) {
+    border-radius: 0;
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+    background: #68ad3e;
+    transform: scale(1.05);
+  }
+
+  // Meat
+  .option-card.meat:hover {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background: #e9c228;
+    transform: scale(1.10);
+  }
+
+  .option-card.meat:has(.hidden-radio:checked) {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background: #e9c228;
+    transform: scale(1.10);
+  }
+
+  // Vegetarian
+  .option-card.vegetarian:hover {
+    border-radius: 0;
+    --o: calc(50% * tan(-22.5deg));
+    clip-path: polygon(
+      var(--o) 50%,
+      50% var(--o),
+      calc(100% - var(--o)) 50%,
+      50% calc(100% - var(--o))
+    );
+    background: #f09423;
+    transform: scale(1.10);
+  }
+
+  .option-card.vegetarian:has(.hidden-radio:checked) {
+    border-radius: 0;
+    --o: calc(50% * tan(-22.5deg));
+    clip-path: polygon(
+      var(--o) 50%,
+      50% var(--o),
+      calc(100% - var(--o)) 50%,
+      50% calc(100% - var(--o))
+    );
+    background: #f09423;
+    transform: scale(1.10);
+  }
+
+  // Seafood
+  .option-card.seafood:hover {
+    clip-path: shape(
+      from 87.45% 45.02%,
+      curve to 92.48% 56.45% with 90.99% 50.00%,
+      curve to 92.05% 69.35% with 93.97% 62.91%,
+      curve to 82.42% 77.15% with 90.14% 75.80%,
+      curve to 71.01% 83.22% with 74.69% 78.49%,
+      curve to 61.91% 91.53% with 67.33% 87.95%,
+      curve to 49.74% 96.95% with 56.49% 95.12%,
+      curve to 38.70% 91.46% with 42.99% 98.79%,
+      curve to 25.99% 85.79% with 34.41% 84.13%,
+      curve to 15.38% 80.54% with 17.56% 87.44%,
+      curve to 14.30% 66.90% with 13.20% 73.65%,
+      curve to 13.33% 55.08% with 15.41% 60.16%,
+      curve to 11.20% 44.30% with 11.25% 50.00%,
+      curve to 11.95% 32.32% with 11.14% 38.59%,
+      curve to 16.84% 21.25% with 12.75% 26.06%,
+      curve to 27.31% 15.38% with 20.92% 16.44%,
+      curve to 38.83% 11.12% with 33.70% 14.32%,
+      curve to 50.39% 5.23% with 43.95% 7.93%,
+      curve to 62.85% 5.60% with 56.83% 2.53%,
+      curve to 72.70% 14.03% with 68.88% 8.67%,
+      curve to 79.11% 24.51% with 76.53% 19.39%,
+      curve to 82.80% 34.84% with 81.69% 29.63%,
+      curve to 87.45% 45.02% with 83.91% 40.04%
+    );
+    background: #91b9e2;
+    transform: scale(1.10);
+  }
+
+  .option-card.seafood:has(.hidden-radio:checked) {
+    clip-path: shape(
+      from 87.45% 45.02%,
+      curve to 92.48% 56.45% with 90.99% 50.00%,
+      curve to 92.05% 69.35% with 93.97% 62.91%,
+      curve to 82.42% 77.15% with 90.14% 75.80%,
+      curve to 71.01% 83.22% with 74.69% 78.49%,
+      curve to 61.91% 91.53% with 67.33% 87.95%,
+      curve to 49.74% 96.95% with 56.49% 95.12%,
+      curve to 38.70% 91.46% with 42.99% 98.79%,
+      curve to 25.99% 85.79% with 34.41% 84.13%,
+      curve to 15.38% 80.54% with 17.56% 87.44%,
+      curve to 14.30% 66.90% with 13.20% 73.65%,
+      curve to 13.33% 55.08% with 15.41% 60.16%,
+      curve to 11.20% 44.30% with 11.25% 50.00%,
+      curve to 11.95% 32.32% with 11.14% 38.59%,
+      curve to 16.84% 21.25% with 12.75% 26.06%,
+      curve to 27.31% 15.38% with 20.92% 16.44%,
+      curve to 38.83% 11.12% with 33.70% 14.32%,
+      curve to 50.39% 5.23% with 43.95% 7.93%,
+      curve to 62.85% 5.60% with 56.83% 2.53%,
+      curve to 72.70% 14.03% with 68.88% 8.67%,
+      curve to 79.11% 24.51% with 76.53% 19.39%,
+      curve to 82.80% 34.84% with 81.69% 29.63%,
+      curve to 87.45% 45.02% with 83.91% 40.04%
+    );
+    background: #91b9e2;
+    transform: scale(1.10);
+  }
+
+  // Shuffle
+  .option-card.shuffle:hover,
+  .option-card.shuffle:has(.hidden-radio:checked) {
+    mask: radial-gradient(40px at 40px 40px, #0000 98%, #000) -40px -40px;
+    background: #bb97d2;
+    border-radius: 0;
+    transform: scale(1.10);
+  }
+
+  // Hidden input
+  .hidden-radio {
+    display: none;
+  }
+}
+
+// Layout structure
+.option-layout-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.option-layout {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0px;
+
+  .option-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    &.center {
+      justify-content: center;
+    }
+  }
+}

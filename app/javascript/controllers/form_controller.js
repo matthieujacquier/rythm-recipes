@@ -47,7 +47,6 @@ export default class extends Controller {
       alert("Thank you for trusting us! We'll surprise you with a " + randomFood + " dish!");
 
       if (this.hasShuffleOutputTarget) {
-        this.shuffleOutputTarget.innerText = `🎲 Your surprise food type is: ${randomFood}`;
         this.shuffleOutputTarget.classList.remove("d-none");
       }
 
@@ -110,5 +109,5 @@ export default class extends Controller {
       step.classList.toggle("d-none", i !== index);
     });
   }
-  
+
 }
