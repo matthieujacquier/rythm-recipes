@@ -164,7 +164,7 @@ puts "Created #{User.count} users"
 # food_suggestions = Recipe.all.to_a
 
 
-puts "Seeding complete!"
+# puts "Seeding complete!"
 
 # puts "Seeding matches..."
 
