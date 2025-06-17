@@ -71,15 +71,17 @@
     <div class="col-10 justify-content-between d-flex mt-5">
 
     <div class="col-2">
+    <% ingredients = JSON.parse(@match.recipe.ingredients.gsub('=>', ':')) rescue [] %>
       <h2>Ingredients</h2>
-      <% @match.recipe.ingredients.split("\n").each do |ingredient| %>
-        <p><%= ingredient %></p>
+      <% ingredients.each do |ingredient| %>
+        <p><%= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
       <% end %>
     </div>
     <div class="col-6">
+    <% instructions = JSON.parse(@match.recipe.instructions.gsub('=>', ':')) rescue [] %>
       <h2>Instructions</h2>
-      <% @match.recipe.instructions.split("\n").each do |instruction| %>
-        <p><%= instruction %></p>
+      <% instructions.each do |instruction| %>
+        <p><%= "#{instruction['title']} - #{instruction['description']}" %></p>
       <% end %>
     </div>
   </div>

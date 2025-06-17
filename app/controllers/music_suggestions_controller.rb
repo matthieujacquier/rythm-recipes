@@ -1,3 +1,2 @@
 class MusicSuggestionsController < ApplicationController
-
 end

@@ -1,50 +1,53 @@
-<pre><%= session[:match_data].pretty_inspect %></pre>
+<%# <pre><%= session[:match_data].pretty_inspect</pre> %>
 
 <div class="card-container mt-5 mb-3">
   <h1 class="text-center mb-5">Which recipe would you like to select?</h1>
 
   <div data-controller="recipe-suggestions">
-    <div class="cards row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center">
-      <% @recipes.each do |recipe| %>
-        <div class="col d-flex">
-          <div
-            class="card selectable-card shadow-sm w-100"
-            data-id="<%= recipe.id %>"
-            data-action="click->recipe-suggestions#select"
-            data-recipe-suggestions-target="card"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?q=80&w=1887&auto=format&fit=crop"
-              class="card-img"
-              alt="<%= recipe.name %>">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+  <% @recipes.each do |recipe| %>
+    <div class="col">
+      <div
+        class="card selectable-card"
+        data-id="<%= recipe.id %>"
+        data-action="click->recipe-suggestions#select"
+        data-recipe-suggestions-target="card"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?q=80&w=1887&auto=format&fit=crop"
+          class="card-img"
+          alt="<%= recipe.name %>">
 
-            <div class="recipe-name">
-              <%= recipe.name %>
-            </div>
-
-            <div class="card-body">
-              <p class="card-text small text-muted"><%= recipe.description %></p>
-            </div>
-            <% ingredients = JSON.parse(recipe.ingredients.gsub('=>', ':')) rescue [] %>
-            <div class="card-ingredients" tabindex="0">
-              <h5>Ingredients</h5>
-              <ul>
-                <% ingredients.each do |ingredient| %>
-                  <li><%= "#{ingredient['quantity']} #{ingredient['name']}" %></li>
-                <% end %>
-              </ul>
-            </div>
-          </div>
-          <%end %>
+        <div class="recipe-name">
+          <%= recipe.name %>
         </div>
+
+        <div class="card-body">
+          <p class="card-text"><%= recipe.description %></p>
+        </div>
+
+        <% ingredients = JSON.parse(recipe.ingredients.gsub('=>', ':')) rescue [] %>
+        <div class="card-ingredients">
+          <h5>Ingredients</h5>
+          <ul>
+            <% ingredients.each do |ingredient| %>
+              <li><%= "#{ingredient['quantity']} #{ingredient['name']}" %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
 
       <div class="text-center mt-5">
         <%= form_with url: matches_path, method: :post, id: "match-form" do %>
           <%= hidden_field_tag :recipe_id, "", id: "selected-recipe-id" %>
 
           <div class="text-center mt-5">
-            <%= submit_tag("Find your match!",
-              class: "btn btn-lg btn-primary disabled",
+            <%= submit_tag("Let's Cook!",
+              class: "button disabled",
               id: "match-button",
               data: { recipe_suggestions_target: "button" }) %>
           </div>
@@ -53,7 +56,7 @@
     </div>
 
     <div class="text-center mt-4">
-      <%= link_to "← Go Back", music_suggestions_matches_path, class: "btn btn-secondary" %>
+      <%= link_to "← Go Back", music_suggestions_matches_path, class: "button" %>
     </div>
   </div>
 </div>

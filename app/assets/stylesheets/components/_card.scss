@@ -1,12 +1,15 @@
 .card{
-  border-style: dashed;
-  border-color: brown;
   align-items: center;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.4em;
+  border: 3px solid black;
+  box-shadow: 0.1em 0.1em;
 }
 
 .recipe-name {
   height: 30px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   font-family: "Rubik", sans-serif;
   color: black;
@@ -48,13 +51,14 @@
 }
 
 .selectable-card.selected {
-  border: 2px solid #260b03;
+  border: 7px solid #166a16;
 }
 
 .selected-card {
   outline: 3px solid $red;
   box-shadow: 0 0 15px $red;
   transform: translateY(-2px) scale(1.05);
+  width: 100%;
 }
 
 .card-ingredients {
@@ -71,18 +75,48 @@
   transition: opacity 0.3s ease-in-out;
   flex-direction: column;
   backdrop-filter: blur(8px);
-  font-size: 12px;
+  font-size: 16px;
   align-items: center;
 }
 
+.view-recipe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: rgba(11, 82, 23, 0.873);
+  padding: 10px;
+  overflow-y: auto;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+  font-size: 20px;
+  align-items: center;
+  height: 60px;
+}
+
+.view-recipe a {
+  text-decoration: none;
+  color: white;
+}
+
 .card-ingredients h5 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
 
 }
 
 .selectable-card:hover .card-ingredients {
+  display: flex;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.selectable-card:hover .view-recipe {
   display: flex;
   pointer-events: auto;
   opacity: 1;
@@ -96,3 +130,48 @@
     background: rgba(156, 163, 175, 0.7);
     border-radius: 3px;
   }
+
+.button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.25em 0.25em;
+  background-color: white;
+}
+
+.button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.saved-recipe-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.saved-recipe-list .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.saved-recipe-list .button {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 90%;
+}
