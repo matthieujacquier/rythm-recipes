@@ -1,108 +1,108 @@
 <% @match_data ||= {} %>
-
-<div class="container-fluid">
-  <div class="row justify-content-center align-items-stretch" style="min-height: 100vh;">
-
-    <!-- Left Illustration aligned to bottom -->
-    <div class="col-md-2 d-none pb-5 d-md-flex flex-column justify-content-center align-items-center">
-      <%= image_tag "quesadilla.png", alt: "Left Illustration", class: "img-fluid side-illustration mb-4" %>
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center my-5">
+      <h1>Find your Rhythm & Recipe</h1>
     </div>
-
-    <!-- Main Content -->
-    <div class="col-md-8 d-flex flex-column justify-content-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center my-5">
-            <h1>Find your Rhythm & Recipe</h1>
-          </div>
-
-          <div data-controller="form">
-            <%= form_tag generate_match_path, method: :post do %>
-
-              <!-- Step 0: Food Type Selection -->
-              <div class="option-grid" data-form-target="step">
-                <div class="col-10 text-center">
-                  <h2>What would you like to cook today?</h2>
-                  <p>Choose one option</p>
-                  <div class="d-flex flex-wrap justify-content-center form-align-center">
-                    <% ['Meat', 'Vegan', 'Vegetarian', 'Seafood', 'Shuffle'].each do |type| %>
-                      <label class="option-card">
-                        <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
-                          data: { action: "click->form#goToStep", step: "1" },
-                          class: "hidden-radio" %>
-                        <span class="option-label"><%= type %></span>
-                      </label>
-                    <% end %>
-                    <div data-form-target="shuffleOutput" class="d-none mt-3 fw-bold"></div>
-                  </div>
+    <div data-controller="form">
+      <%= form_tag generate_match_path, method: :post do %>
+        <!--Food Type Selection -->
+        <div class="option-step-wrapper" data-form-target="step">
+          <div class="col-12 text-center">
+            <h2>What would you like to cook today?</h2>
+            <p>Choose one option</p>
+            <div class="option-layout-wrapper">
+              <div class="option-layout">
+                <div class="option-column left">
+                  <% ['Vegan', 'Vegetarian'].each do |type| %>
+                    <label class="option-card <%= type.downcase %>">
+                      <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
+                        data: { action: "click->form#goToStep", step: "1" },
+                        class: "hidden-radio" %>
+                      <img src="/assets/icons/<%= type.downcase %>.png" alt="<%= type %>" class="option-icon" />
+                      <span class="option-label"><%= type %></span>
+                    </label>
+                  <% end %>
                 </div>
-              </div>
-
-              <!-- Step 1: Difficulty -->
-              <div class="d-none option-grid" data-controller="recipe" data-form-target="step">
-                <div class="col-10 text-center">
-                  <h2 data-form-target="foodOutput">Change this text</h2>
-                  <div class="d-flex flex-wrap justify-content-center form-align-center">
-                    <% ['Easy', 'Medium', 'Hard'].each do |level| %>
-                      <label class="option-card">
-                        <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
-                          data: { action: "click->form#goToStep", step: "2" },
-                          class: "hidden-radio" %>
-                        <span class="option-label"><%= level %></span>
-                      </label>
-                    <% end %>
-                  </div>
-                  <%= button_tag "← Go Back", type: :button,
-                    data: { action: "click->form#goToStep", step: "0" } %>
-                </div>
-              </div>
-
-              <!-- Step 2: Genre Selection -->
-              <div class="d-none option-grid" data-form-target="step" id="genre-step">
-                <% selected_genres = @match_data["genres"] || [] %>
-                <div class="col-10 text-center">
-                  <h2>Select music genres:</h2>
-                  <div class="d-flex flex-wrap justify-content-center">
-                    <% ['Pop', 'Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie', 'Electronic', 'Dance', 'Alternative',
-                    'Jazz', 'Classical', 'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae',
-                    'Soul', 'Funk', 'Techno', 'Afro', 'Shuffle'].each do |genre| %>
-                      <label class="option-card sm">
-                        <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
-                          data: { action: "click->form#goToStep", step: "2" },
-                          class: "hidden-radio" %>
-                        <span class="option-label sm"><%= genre %></span>
-                      </label>
-                    <% end %>
-                    <%= button_tag "← Go Back", type: :button,
-                      data: { action: "click->form#goToStep", step: "1" } %>
-                    <div data-form-target="genreShuffleOutput" class="d-none mt-3 fw-bold"></div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Step 3: Music Format -->
-              <div class="d-none option-grid" data-form-target="musicFormat">
-                <h2>Album or Playlist?</h2>
-                <% ['Album', 'Playlist'].each do |format| %>
-                  <label class="option-card">
-                    <%= radio_button_tag :music_format_selection, format, @match_data["format"] == format,
-                      data: { action: "click->form#submit" },
+                <div class="option-column center">
+                  <% type = "Shuffle" %>
+                  <label class="option-card <%= type.downcase %>">
+                    <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
+                      data: { action: "click->form#goToStep", step: "1" },
                       class: "hidden-radio" %>
-                    <span class="option-label"><%= format %></span>
+                    <img src="/assets/icons/<%= type.downcase %>.png" alt="<%= type %>" class="option-icon" />
+                    <span class="option-label"><%= type %></span>
                   </label>
-                <% end %>
+                </div>
+                <div class="option-column right">
+                  <% ['Meat', 'Seafood'].each do |type| %>
+                    <label class="option-card <%= type.downcase %>">
+                      <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
+                        data: { action: "click->form#goToStep", step: "1" },
+                        class: "hidden-radio" %>
+                      <img src="/assets/icons/<%= type.downcase %>.png" alt="<%= type %>" class="option-icon" />
+                      <span class="option-label"><%= type %></span>
+                    </label>
+                  <% end %>
+                </div>
               </div>
-
-            <% end %>
+              <div data-form-target="shuffleOutput" class="d-none mt-3 fw-bold"></div>
+            </div>
           </div>
         </div>
-      </div>
+        <!-- Difficulty -->
+        <div class="d-none option-grid" data-controller="recipe" data-form-target="step">
+          <div class="col-10 text-center">
+            <h2 data-form-target="foodOutput">Choose the difficulty of the dish:</h2>
+            <div class="d-flex flex-wrap justify-content-center form-align-center">
+              <% ['Easy', 'Medium', 'Hard'].each do |level| %>
+                <label class="option-card">
+                  <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
+                    data: { action: "click->form#goToStep", step: "2" },
+                    class: "hidden-radio" %>
+                  <span class="option-label"><%= level %></span>
+                </label>
+              <% end %>
+            </div>
+            <%= button_tag "← Go Back", type: :button, class: "btn-back",
+              data: { action: "click->form#goToStep", step: "0" } %>
+          </div>
+        </div>
+        <!-- Genre Selection -->
+        <div class="d-none option-grid" data-form-target="step" id="genre-step">
+          <% selected_genres = @match_data["genres"] || [] %>
+          <div class="col-10 text-center">
+            <h2>Select music genres:</h2>
+            <div class="d-flex flex-wrap justify-content-center">
+              <% ['Pop', 'Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie', 'Electronic', 'Dance', 'Alternative',
+                  'Jazz', 'Classical', 'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae',
+                  'Soul', 'Funk', 'Techno', 'Afro', 'Shuffle'].each do |genre| %>
+                <label class="option-card sm">
+                  <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
+                    data: { action: "click->form#goToStep", step: "2" },
+                    class: "hidden-radio" %>
+                  <span class="option-label sm"><%= genre %></span>
+                </label>
+              <% end %>
+              <%= button_tag "← Go Back", type: :button, class: "btn-back",
+                data: { action: "click->form#goToStep", step: "1" } %>
+              <div data-form-target="genreShuffleOutput" class="d-none mt-3 fw-bold"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Album or Playlist -->
+        <div class="d-none option-grid" data-form-target="musicFormat">
+          <h2>Album or Playlist?</h2>
+          <% ['Album', 'Playlist'].each do |format| %>
+            <label class="option-card">
+              <%= radio_button_tag :music_format_selection, format, @match_data["format"] == format,
+                data: { action: "click->form#submit" },
+                class: "hidden-radio" %>
+              <span class="option-label"><%= format %></span>
+            </label>
+          <% end %>
+        </div>
+      <% end %>
     </div>
-
-    <!-- Right Illustration aligned to top -->
-    <div class="col-md-2 d-none pb-5 d-md-flex flex-column justify-content-center align-items-center">
-      <%= image_tag "burger.png", alt: "Right Illustration", class: "img-fluid side-illustration mt-4" %>
-    </div>
-
   </div>
 </div>
