@@ -4,9 +4,9 @@
     <% @music_suggestions.each do |music| %>
       <div class="col-md-4 spotify_player">
         <div class="selectable-card p-2"
-             data-music-suggestions-target="card"
-             data-action="click->music-suggestions#select"
-             data-id="<%= music.id %>">
+            data-music-suggestions-target="card"
+            data-action="click->music-suggestions#select"
+            data-id="<%= music.id %>">
           <% embed_type = music.album ? "album" : "playlist" %>
           <% embed_url = "https://open.spotify.com/embed/#{embed_type}/#{music.spotify_id}" %>
 
@@ -19,6 +19,8 @@
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                   loading="lazy">
           </iframe>
+          <h6 class="text-center mt-1">A few words</h6>
+         <p class="mt-2 p-2"> <%= music.description %></p>
         </div>
       </div>
     <% end %>
