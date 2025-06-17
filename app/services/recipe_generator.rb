@@ -4,34 +4,35 @@ class RecipeGenerator
     @food_type = food_type
   end
 
-  def call
-    response = OpenAIClient.chat(
-      parameters: {
-        model: "gpt-4o",
-        temperature: 0.7,
-        messages: [
-          { role: "system", content: "You are an online cooking blogger and you share detailed food recipes online."},
-          { role: "user", content: prompt }
-        ]
-      }
-    )
+ def call
+  response = OpenAIClient.chat(
+    parameters: {
+      model: "gpt-4o",
+      temperature: 0.7,
+      messages: [
+        { role: "system", content: "You are an online cooking blogger and you share detailed food recipes online." },
+        { role: "user", content: prompt }
+      ]
+    }
+  )
 
-    raw_json = response["choices"][0]["message"]["content"]
-    cleaned_json = raw_json.gsub(/\A```json\s*|\A```\s*|```$/, '').strip
-    parsed_recipe = JSON.parse(cleaned_json)
-    return parsed_recipe
-  end
+  raw_json = response["choices"][0]["message"]["content"]
+  cleaned_json = raw_json.gsub(/\A```json\s*|\A```\s*|```$/, '').strip
+  parsed_recipes = JSON.parse(cleaned_json)
+  return parsed_recipes
+end
 
   private
 
   def prompt
   <<~PROMPT
-    Generate a valid JSON object for a cooking recipe based on the following inputs:
+    Generate a valid JSON array containing 8 unique and diverse cooking recipes for:
 
-    - "difficulty": "#{@difficulty}" (one of: easy, medium, hard)
-    - "food_type": "#{@food_type}" (one of: meat, vegetarian, vegan, fish)
+    - difficulty: "#{@difficulty}" (one of: easy, medium, hard)
+    - food_type: "#{@food_type}" (one of: meat, vegetarian, vegan, seafood)
 
-    The recipe must follow this exact structure:
+
+    Each recipe must follow **this exact structure**:
 
     {
       "name": "Example Recipe Name",
@@ -44,12 +45,26 @@ class RecipeGenerator
       ],
       "cuisine": "Cuisine type (e.g., Italian, Indian, French)",
       "duration": 45,
-      "description": "Short, enticing one-sentence description of the dish"
+      "description": "Short, enticing one-sentence description of the dish",
+      "difficulty": "easy",
+      "food_type": "meat"
     }
 
-    Easy recipes shoud take less time (duration) than Median and Hard ones (3).
-    Make sure to generate a unique and different recipe for each request. Ensure that the recipes have diverse ingredients, names, and preparation methods.
-    Return only valid JSON with no extra text or markdown. Begin the response with `{` and end with `}`.
+    Guidelines:
+    - Include the `difficulty` and `food_type` fields in **each recipe object**.
+    - Recipes must be unique in name, ingredients, preparation method, and cuisine.
+    - Difficulty levels affect the duration and complexity:
+      - Easy = 15–45 min
+      - Medium = 45–90 min
+      - Hard = 90+ min or with complex techniques
+    - Use ingredients that are appropriate to the food type:
+      - `meat`: includes poultry, beef, lamb, chicken,  etc.
+      - `vegetarian`: no meat or fish, but can include eggs and dairy
+      - `vegan`: no animal products at all
+      - `seafood`: includes fish, shellfish, and crustaceans
+    - Return **only JSON** — an array of 48 recipe objects. No markdown, no explanations.
+
   PROMPT
-  end
+end
+
 end

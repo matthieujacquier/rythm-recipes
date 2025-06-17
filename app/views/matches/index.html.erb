@@ -66,7 +66,7 @@
               <% ['Easy', 'Medium', 'Hard'].each do |level| %>
                 <label class="option-card">
                   <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
-                    data: { action: "click->form#goToStep change->recipe#triggerJob", step: "2" },
+                    data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
                   <span class="option-label"><%= level %></span>
                 </label>

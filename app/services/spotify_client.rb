@@ -7,48 +7,26 @@ class SpotifyClient
     @access_token = token_service.fetch_access_token
   end
 
-  def search_albums(query, limit: 30)
+
+  def search_album_by_artist_and_title(artist_name, album_title)
   response = SpotifyClient.get('/search', {
     headers: auth_header,
     query: {
-      q: query,
+      q: "album:\"#{album_title}\" artist:\"#{artist_name}\"",
       type: 'album',
-      limit: 50
+      limit: 1
     }
   })
 
-  unless response.success?
-    puts "Spotify API error for '#{query}': #{response.body}"
-    return nil
-  end
+  return nil unless response.success?
+  items = response.parsed_response.dig('albums', 'items')
+  return nil unless items.is_a?(Array) && items.any?
 
-  albums_data = response.parsed_response.dig('albums', 'items') #create a variable with the parsed response to iterate and apply conditions to it
-  return nil unless albums_data.is_a?(Array) #safeguards if somewhat doesn't return an array
+  album_id = items.first['id']
+  album_details = SpotifyClient.get("/albums/#{album_id}", headers: auth_header)
+  return nil unless album_details.success?
 
-  valid_albums = []
-
-  albums_data.each do |album|
-    next unless album && album['id'] #safeguard to ensure we have an id to avoid errors
-
-      if album['name'].to_s.downcase.include?(query.downcase)
-      puts "Skipping album '#{album['name']}' for genre '#{query}' due to name overlap."
-      next
-    end
-
-    album_details = SpotifyClient.get("/albums/#{album['id']}", headers: auth_header)
-    next unless album_details.success?
-
-    album_data = album_details.parsed_response
-    artist_names = album_data['artists'].map { |a| a['name'] }
-    track_count = album_data.dig('tracks', 'items')&.size.to_i #counts the number of items into the track object
-
-    # Only accept if both conditions are met
-    if artist_names != ['Various Artists'] && track_count > 6
-      valid_albums << album_data
-    end
-  end
-
-  valid_albums
+  album_details.parsed_response
 end
 
 
