@@ -1,0 +1,1892 @@
+[
+  {
+    "genre": "Pop",
+    "artist": "Taylor Swift",
+    "album": "Midnights",
+    "description": "A diary under moonlight, 'Midnights' turns insomnia into pop poetry. Swift pens nocturnal confessions with synth-glazed elegance, balancing vulnerability and venom. A glittering late-night scroll through self-doubt, revenge, and romantic rewind."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Dua Lipa",
+    "album": "Future Nostalgia",
+    "description": "Disco balls meet jetpacks. Dua Lipa resurrects groove and thrusts it into the future—tight basslines, assertive vocals, and zero skips. It's confidence in four-on-the-floor form, retro-glam with laser precision. Dance like it’s 2099."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Olivia Rodrigo",
+    "album": "SOUR",
+    "description": "Heartbreak never sounded so catchy. Olivia Rodrigo weaponizes teenage angst with a ballpoint pen and an electric guitar. It’s bitter, vulnerable, and wildly addictive—like scrolling your ex’s feed at 2am but with a killer soundtrack."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Troye Sivan",
+    "album": "Bloom",
+    "description": "Troye’s coming-of-age tale is sensual, soft-lit, and stylishly queer. 'Bloom' is pop with a pulse—lush production, sigh-worthy choruses, and a kind of emotional openness that feels like a handwritten note passed in class."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Tate McRae",
+    "album": "I Used to Think I Could Fly",
+    "description": "Emotional turbulence meets bedroom pop. Tate McRae turns heartbreak into choreography—her voice always on the edge, her lyrics sharp as eyeliner. A crash course in growing pains, built for Gen Z headphones and late-night overthinks."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Rina Sawayama",
+    "album": "SAWAYAMA",
+    "description": "Genre isn’t a boundary—it’s a buffet. Rina mixes metal, R&B, pop, and power ballads into a maximalist, high-gloss rollercoaster. 'SAWAYAMA' is chaotic brilliance with both fangs and finesse."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Conan Gray",
+    "album": "Kid Krow",
+    "description": "Teenage drama distilled into melody. Conan Gray’s 'Kid Krow' is angsty, airy, and TikTok-quotable. It’s heartbreak in lowercase letters, best consumed under a hoodie with headphones on."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Maisie Peters",
+    "album": "You Signed Up for This",
+    "description": "Witty, wordy, and wickedly charming—Maisie Peters turns journal entries into anthems. It’s a pop rom-com of an album, with as many punchlines as heart pangs. You didn’t sign up, but you’ll stay."
+  },
+  {
+    "genre": "Pop",
+    "artist": "BENEE",
+    "album": "Hey u x",
+    "description": "A Gen Z funhouse of alt-pop. BENEE’s debut is quirky, color-splashed chaos with depth beneath the bounce. Think memes with meaning, or TikTok with teeth."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Jeremy Zucker",
+    "album": "love is not dying",
+    "description": "Sadboy deluxe, in hi-def. Zucker crafts soft, melancholy tracks with introspective lyrics and digital hush. 'love is not dying' feels like a whispered confession over lo-fi beats and rainy windows."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Alec Benjamin",
+    "album": "These Two Windows",
+    "description": "Soft-spoken and sharp, Alec Benjamin pens short stories that sing. 'These Two Windows' is delicate, diary-like pop—perfect for overthinkers and open hearts. His voice? A gentle stab."
+  },
+  {
+    "genre": "Pop",
+    "artist": "AURORA",
+    "album": "All My Demons Greeting Me as a Friend",
+    "description": "Ethereal, icy, and emotionally piercing. AURORA’s debut is like a Nordic fairytale with drum machines—mystical, vulnerable, and just a little haunted."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Sody",
+    "album": "I'm Sorry, I'm Not Sorry",
+    "description": "Sody writes like she’s been through all your breakups. Intimate and insistent, this is apology-pop with backbone—clean melodies, clear tears."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Griff",
+    "album": "One Foot in Front of the Other",
+    "description": "Bedroom pop with a backbone. Griff’s debut walks the line between heartbreak and healing, all while sounding like she’s already headlining next summer’s festivals."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Zella Day",
+    "album": "Kicker",
+    "description": "Desert glam and dreamy rebellion. 'Kicker' sways between dusty Americana and cinematic synth-pop, like Lana del Rey caught a gust of tumbleweed and ran with it."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Foo Fighters",
+    "album": "Wasting Light",
+    "description": "Proof that rock still roars in the 2010s. 'Wasting Light' is raw, loud, and analog to the bone—Grohl’s growl meets guitar crunch in a no-skips kind of way."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Arctic Monkeys",
+    "album": "AM",
+    "description": "Cooler than your ex’s leather jacket. 'AM' is midnight swagger, R&B flirtation, and rock riffs rolled into one slinky, sneering package. It struts, it swoons, it seduces."
+  },
+  {
+    "genre": "Rock",
+    "artist": "The Killers",
+    "album": "Hot Fuss",
+    "description": "The sound of eyeliner, dance floors, and heartbreak. 'Hot Fuss' is glam, synth, and desert drama—a debut with no brakes and killer instincts."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Queens of the Stone Age",
+    "album": "Songs for the Deaf",
+    "description": "Desert rock that punches hard and drives weird. Josh Homme’s magnum opus channels fuzz, fury, and FM radio nightmares into one heavy trip."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Greta Van Fleet",
+    "album": "Anthem of the Peaceful Army",
+    "description": "Led Zeppelin cosplay or revival? Doesn’t matter when it sounds this massive. Wailing vocals, stomping riffs, and enough throwback energy to shake a lava lamp."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Royal Blood",
+    "album": "Royal Blood",
+    "description": "Two guys. One bone-crushing sound. This self-titled debut is pure adrenaline—bass riffs so filthy they might need a warning label."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Wolf Alice",
+    "album": "Blue Weekend",
+    "description": "Dreamy one second, devastating the next. 'Blue Weekend' is grunge-polished alt-rock with edge, elegance, and Ellie Rowsell’s voice swinging like a switchblade."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Kaleo",
+    "album": "A/B",
+    "description": "Icelandic blues-rock that smolders. 'A/B' feels like whiskey on snow—gritty, tender, and cinematic enough to soundtrack your next identity crisis."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Nothing But Thieves",
+    "album": "Broken Machine",
+    "description": "Emotionally volatile and sonically explosive. This is stadium-alt with a heart on its sleeve and a distortion pedal under its boot."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Highly Suspect",
+    "album": "Mister Asylum",
+    "description": "Unhinged and unforgettable. 'Mister Asylum' is a cocktail of angst, swagger, and late-night bar fights in audio form."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Band of Skulls",
+    "album": "Baby Darling Doll Face Honey",
+    "description": "Riffs with hips. This debut saunters through garage rock, bluesy hooks, and a whole lot of grit—equal parts sweat and sex appeal."
+  },
+  {
+    "genre": "Rock",
+    "artist": "The Blue Stones",
+    "album": "Black Holes",
+    "description": "Slick and moody, this Canadian duo delivers blues-rock with swagger and smoke. 'Black Holes' hits like a bar fight in slow motion."
+  },
+  {
+    "genre": "Rock",
+    "artist": "The Struts",
+    "album": "Everybody Wants",
+    "description": "Glam is back, baby. This record is glitter-soaked, hip-shaking, and stadium-ready. Imagine Freddie Mercury in skinny jeans and sunglasses."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Starcrawler",
+    "album": "Starcrawler",
+    "description": "Unfiltered punk rock chaos. 'Starcrawler' sounds like it hasn’t brushed its teeth in a week and doesn’t care—thrashing, snarling, and gloriously messy."
+  },
+  {
+    "genre": "Rock",
+    "artist": "The Amazons",
+    "album": "The Amazons",
+    "description": "Punchy, melodic, and festival-built. 'The Amazons' makes modern rock feel young again—like running through fields with a busted amp and big dreams."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Kendrick Lamar",
+    "album": "DAMN.",
+    "description": "Pulitzer-proof that you can mix raw confessionals with radio bangers. It’s Kung Fu Kenny dodging demons and dropping truths, all wrapped in hooks that slap and verses that sting. “Sit down. Be humble.” – the sermon and the slogan."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "J. Cole",
+    "album": "2014 Forest Hills Drive",
+    "description": "Cole takes it back to his roots and keeps it real—no features, no filter. It's a nostalgic blueprint of dreams, heartbreak, and slow-burning greatness. Suburban story meets platinum plaque, bedroom to billboard."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Travis Scott",
+    "album": "ASTROWORLD",
+    "description": "A psychedelic carnival ride through trap’s neon funhouse. Travis warps bass, bends genres, and builds a theme park of sound where chaos meets polish—and Auto-Tune never sleeps. Tickets still sell out."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Cordae",
+    "album": "The Lost Boy",
+    "description": "The prodigy arrives with wisdom beyond his years, mapping self-doubt and ambition across jazzy beats and poignant bars. A debut that doesn’t just knock—it reflects. He may be lost, but the direction’s clear."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Denzel Curry",
+    "album": "TA13OO",
+    "description": "Three acts, one fury. Denzel unpacks pain, rage, and the surreal under Florida sun. From soulful melodies to moshpit madness, it’s a balancing act between darkness and clarity—with his foot always on the gas."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Joey Bada$$",
+    "album": "B4.DA.$$",
+    "description": "A golden-era time capsule cracked open by a 19-year-old prophet. Boom-bap beats and Brooklyn bravado collide in a debut that proves nostalgia’s got new blood—and it’s hungry, lyrical, and laced with soul."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "IDK",
+    "album": "Is He Real?",
+    "description": "Existential bars over club-ready production. IDK wrestles with God, guilt, and greatness, somehow making spiritual crises sound like fire playlists. A skeptical sermon in 14 tracks or less."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Saba",
+    "album": "CARE FOR ME",
+    "description": "Grief spills into poetry on this heart-wrenching, hauntingly beautiful record. Saba turns personal tragedy into sonic therapy—intimate, jazz-tinged, and achingly honest. A hug in album form, but it might break you."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Vince Staples",
+    "album": "Big Fish Theory",
+    "description": "Experimental and elastic, Vince dives into electronica and existential dread. It’s rap for the post-genre world—claustrophobic, bold, and swimming in ideas."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Tierra Whack",
+    "album": "Whack World",
+    "description": "15 songs. 15 minutes. Infinite imagination. Tierra Whack delivers bite-sized brilliance—quirky, colorful, and utterly uncategorizable. It’s a mixtape, a mood board, and a masterpiece."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Injury Reserve",
+    "album": "Injury Reserve",
+    "description": "Industrial beats, internet-age chaos, and uncompromising flows. Injury Reserve made an album that glitches and growls, yet still hits you in the chest."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Duckwrth",
+    "album": "SuperGood",
+    "description": "Funked-up and fresh-squeezed. 'SuperGood' blends swagger, soul, and pop polish into a smoothie of summer anthems. A record that struts and sparkles."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Mick Jenkins",
+    "album": "The Healing Component",
+    "description": "Water, love, and lyrical meditation. Mick Jenkins offers verses like vitamins—smart, smooth, and spiritually attuned. Sip this slow."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Little Simz",
+    "album": "GREY Area",
+    "description": "Simz doesn’t miss. 'GREY Area' hits like a verbal sniper—sharp, soulful, and fearless. Confidence meets craftsmanship with grime-slick finesse."
+  },
+  {
+    "genre": "Hip Hop",
+    "artist": "Leikeli47",
+    "album": "Acrylic",
+    "description": "Hard-hitting beats with nail-salon glam. Leikeli47 is fierce, fun, and fashion-forward, rapping like she owns every room—and she does."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Drake",
+    "album": "Scorpion",
+    "description": "A double album split between flex and feels. Drake juggles dad bars, summer hits, and viral hooks like only he can. Not his tightest work, but still runs laps around the charts."
+  },
+  {
+    "genre": "Rap",
+    "artist": "21 Savage",
+    "album": "I Am > I Was",
+    "description": "Growth in grayscale. 21 ditches some bravado for bruised honesty, mixing whispered menace with surprising introspection. Still savage—just with more depth."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Lil Baby",
+    "album": "My Turn",
+    "description": "Lil Baby clocks in and doesn’t clock out. Relentless, catchy, and smarter than it gets credit for, 'My Turn' cemented him as trap’s most consistent MVP."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Gunna",
+    "album": "WUNNA",
+    "description": "Smooth, submerged, and stylish. Gunna makes drip sound like a lifestyle meditation. 'WUNNA' floats through fashion, flex, and fuzzy 808s."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Freddie Gibbs",
+    "album": "Bandana",
+    "description": "Gangsta rap meets Madlib's crate-digging wizardry. Gibbs delivers surgical flows over woozy, chopped-up soul. 'Bandana' is grimy and glorious."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Benny The Butcher",
+    "album": "Burden of Proof",
+    "description": "East Coast grit with executive polish. Benny spits like the ‘90s never ended—but he’s aiming for mogul status now. Luxury coke rap done right."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Boldy James",
+    "album": "The Price of Tea in China",
+    "description": "Slow burn, sharp detail. Boldy raps like a novelist, sketching scenes of street life over Alchemist’s haunting loops. Quiet fire with big replay value."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Pi'erre Bourne",
+    "album": "The Life of Pi'erre 4",
+    "description": "Bubblegum trap dipped in Auto-Tune. Pi’erre builds candy-coated beats for himself to glide on—vibey, self-contained, and weirdly addictive."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Baby Keem",
+    "album": "The Melodic Blue",
+    "description": "Controlled chaos. Keem flips between juvenile joy and adult angst, experimental flows and meme-worthy madness. Kendrick’s cousin came to play."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Westside Boogie",
+    "album": "Everything's for Sale",
+    "description": "Dark, dense, and emotional. Westside Boogie trades in vulnerability as currency—deft rhymes and unfiltered introspection, wrapped in moody beats."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Fivio Foreign",
+    "album": "B.I.B.L.E.",
+    "description": "Brooklyn drill with gospel overtones. Fivio balances aggression with ambition, delivering bangers with just enough soul-searching to keep you guessing."
+  },
+  {
+    "genre": "Rap",
+    "artist": "NLE Choppa",
+    "album": "Top Shotta",
+    "description": "Adrenaline in audio form. NLE Choppa goes hard and fast—boisterous, bouncy, and built for turning up. Less reflection, more ignition."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Coi Leray",
+    "album": "Trendsetter",
+    "description": "Unapologetically pop-rap. Coi shrugs off haters with melodies and meme energy. 'Trendsetter' is quirky, bold, and internet-native."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Armani Caesar",
+    "album": "The Liz",
+    "description": "Griselda’s First Lady flexes fashion and ferocity. 'The Liz' blends high art and hardcore, giving you neck-snaps and nail art in equal measure."
+  },
+  {
+    "genre": "Rap",
+    "artist": "Kota the Friend",
+    "album": "Everything",
+    "description": "Low-key and life-affirming. Kota offers lo-fi wisdom over warm beats—rap therapy for quiet mornings and self-growth seasons."
+  },
+  {
+    "genre": "R&B",
+    "artist": "SZA",
+    "album": "Ctrl",
+    "description": "Messy, magical, and modern. 'Ctrl' is a confessional stream of vulnerability—side-chick anthems and bedroom overthinks wrapped in hazy production. SZA made self-doubt sound like freedom."
+  },
+  {
+    "genre": "R&B",
+    "artist": "H.E.R.",
+    "album": "H.E.R.",
+    "description": "A slow-burn of smoky vocals and late-night honesty. H.E.R. brings the intimacy of an after-hours voicemail, floating over minimal, moody grooves. Low-key brilliance."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Giveon",
+    "album": "Take Time",
+    "description": "Baritone heartbreak. 'Take Time' is velvet-smooth and tragically elegant—short, sweet, and heavy-lidded. Giveon sings like he’s been through it, but never stopped styling."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Summer Walker",
+    "album": "Over It",
+    "description": "R&B for the emotionally unavailable. Summer Walker spills tea with a shrug—confident, candid, and dangerously catchy. Every lyric sounds like a subtweet with soul."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Jazmine Sullivan",
+    "album": "Heaux Tales",
+    "description": "Voice like a sermon, stories like secrets. Jazmine gives power and pain equal play in this bold, brash, and brilliant exploration of womanhood, shame, and self-worth."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Brent Faiyaz",
+    "album": "Sonder Son",
+    "description": "Toxic, tender, and introspective. Brent whispers truths most won’t say aloud, over lo-fi beats that sound like regret echoing in a studio apartment."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Victoria Monét",
+    "album": "Jaguar",
+    "description": "Velvet funk and space-age sensuality. Monét grooves with precision—every beat sparkles, every vocal glides. R&B’s quiet storm just purred to life."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Alex Isley",
+    "album": "The Beauty of Everything",
+    "description": "Butter-soft vocals with jazz in their veins. Alex Isley is elegance personified—this is soul music for sunsets and slow sips."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Snoh Aalegra",
+    "album": "Ugh, Those Feels Again",
+    "description": "Retro soul dipped in Swedish cool. Snoh’s voice aches gracefully—dreamy, cinematic, and soaked in longing. Like vintage wine for heartbreak."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Lucky Daye",
+    "album": "Painted",
+    "description": "New-school smoothness meets old-school flair. 'Painted' is vibrant, elastic R&B with runs for days and grooves for miles. Lucky Daye showed up in technicolor."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Jorja Smith",
+    "album": "Lost & Found",
+    "description": "A debut that whispers then wails. Jorja’s tone is butter over broken beats, delivering heartbreak with the wisdom of someone twice her age."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Ravyn Lenae",
+    "album": "Crush",
+    "description": "Flirty and futuristic. Ravyn floats above synths like a feather dipped in neon. 'Crush' is what falling in love at a roller rink might sound like."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Mahalia",
+    "album": "Love and Compromise",
+    "description": "UK soul with backbone and bounce. Mahalia’s debut plays like a FaceTime heart-to-heart—funny, frustrated, and fiercely self-aware."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Pink Sweat$",
+    "album": "Volume 1",
+    "description": "Minimalist R&B at its most heart-eyed. Pink Sweat$ trades flex for feels—just falsetto, finger snaps, and a whole lotta sincerity."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Loony",
+    "album": "JOYRiDE",
+    "description": "Laid-back and lush. Loony delivers dreamy vocals over jazzy soul, cruising through love’s highs and hangups with warm confidence."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Phoebe Bridgers",
+    "album": "Punisher",
+    "description": "A ghost in a hoodie with a guitar. 'Punisher' drifts between deadpan humor and crushing heartbreak—sad songs for end-times with clever lyrics and cosmic ache."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Mac DeMarco",
+    "album": "Salad Days",
+    "description": "Slack-rock royalty. 'Salad Days' sounds like a sunburned nap—wobbly guitars, smoked-out vibes, and existential chill. Indie at its most laid-back and lovable."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Clairo",
+    "album": "Immunity",
+    "description": "Bedroom pop grows up. 'Immunity' is tender and textural, filled with queer longing and emotional intelligence. Clairo whispers the things you felt but never said."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Big Thief",
+    "album": "U.F.O.F.",
+    "description": "Earthy and extraterrestrial. Big Thief’s folky intimacy is haunted by mystery—'U.F.O.F.' is a soft whisper with galactic weight. Bon Iver, but from another planet."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Snail Mail",
+    "album": "Lush",
+    "description": "Teenage angst in full bloom. 'Lush' is earnest, emo-tinged guitar pop with melodies that ache and lyrics that cut straight through. Cathartic and timeless."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Japanese Breakfast",
+    "album": "Jubilee",
+    "description": "Grief in technicolor. 'Jubilee' glows with synths and ambition, as Michelle Zauner shifts from sorrow to shimmer. It’s indie-pop ascension with brains and brightness."
+  },
+  {
+    "genre": "Indie",
+    "artist": "The 1975",
+    "album": "A Brief Inquiry into Online Relationships",
+    "description": "Millennial anxiety, auto-tuned and hyper-stylized. It’s pop, it’s indie, it’s jazz, it’s... a digital-age identity crisis wrapped in a Wi-Fi signal."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Soccer Mommy",
+    "album": "Clean",
+    "description": "Drenched in ‘90s nostalgia and bedroom melancholy. 'Clean' feels like flipping through your old diary while blasting The Breeders. Painfully pretty."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Beabadoobee",
+    "album": "Fake It Flowers",
+    "description": "Grunge-pop for the TikTok era. Beabadoobee channels ‘90s distortion and teen heartbreak into fuzzy, diary-core bangers. Nostalgic but fresh-faced."
+  },
+  {
+    "genre": "Indie",
+    "artist": "King Princess",
+    "album": "Cheap Queen",
+    "description": "Cool, queer, and wonderfully messy. 'Cheap Queen' swaggers through glam-pop and ballads alike with camp and confidence. Gender-bending and genre-hopping."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Girl in Red",
+    "album": "if i could make it go quiet",
+    "description": "Bedroom rock goes cinematic. Girl in Red trades lo-fi for arena-size sound—angst, queerness, and vulnerability blasted through fuzzed-out crescendos."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Faye Webster",
+    "album": "Atlanta Millionaires Club",
+    "description": "Languid and lonesome, Faye melts indie, country, and R&B into a sound that's sleepy but sharp. It’s heartbreak in slow motion—with pedal steel."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Arlo Parks",
+    "album": "Collapsed in Sunbeams",
+    "description": "Soft-spoken truths with poetic precision. Arlo Parks makes mental health and heartache sound like art therapy wrapped in honey vocals."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Current Joys",
+    "album": "A Different Age",
+    "description": "Lo-fi existentialism. 'A Different Age' crackles like a dying VHS tape—haunted melodies and barebones production that hits harder than you expect."
+  },
+  {
+    "genre": "Indie",
+    "artist": "Men I Trust",
+    "album": "Oncle Jazz",
+    "description": "Effortlessly cool and endlessly mellow. 'Oncle Jazz' floats through basslines and breathy vocals like a daydream with perfect posture."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "ODESZA",
+    "album": "A Moment Apart",
+    "description": "Cinematic and euphoric. ODESZA crafts festival-ready soundscapes that shimmer with emotion—this is the soundtrack to slow-motion memories."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Flume",
+    "album": "Skin",
+    "description": "Glitchy, grand, and genre-defying. 'Skin' is a digital rollercoaster—drops, blips, and beautiful breakdowns that reshape what electronic pop can be."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Jamie xx",
+    "album": "In Colour",
+    "description": "A love letter to London nightlife. Jamie xx fuses rave nostalgia, steel drums, and late-night melancholy into a rainbow of restraint and rhythm."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Bicep",
+    "album": "Isles",
+    "description": "Hypnotic and heavyweight. 'Isles' pulses with warehouse energy and delicate melancholy—club anthems for introverts and dreamers alike."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Four Tet",
+    "album": "Sixteen Oceans",
+    "description": "Organic meets algorithm. Four Tet weaves ambient textures and minimal grooves into meditative loops that feel both ancient and futuristic."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Bonobo",
+    "album": "Migration",
+    "description": "Globetrotting chill with a heartbeat. Bonobo stitches field recordings and warm electronics into soundtracks for solitary journeys."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Kaytranada",
+    "album": "BUBBA",
+    "description": "Funk-forward and fabulously groovy. Kaytranada fuses house, R&B, and hip-hop with a producer’s precision and a dancer’s intuition."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Tycho",
+    "album": "Awake",
+    "description": "Sonic serenity. Tycho’s 'Awake' paints with ambient textures and post-rock brushstrokes—it’s less an album, more a lucid dream."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Jon Hopkins",
+    "album": "Singularity",
+    "description": "Meditative mayhem. Hopkins balances ambient bliss and pounding techno with surgical intensity—like a rave in deep space."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "SOPHIE",
+    "album": "OIL OF EVERY PEARL'S UN-INSIDES",
+    "description": "Futuristic and fearless. SOPHIE warps pop into alien shapes—harsh, beautiful, and unapologetically ahead of its time."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Floating Points",
+    "album": "Crush",
+    "description": "Twitchy elegance. 'Crush' glides between classical flourishes and acid squelches—intellect and impulse in perfect sync."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Machinedrum",
+    "album": "Human Energy",
+    "description": "High-octane euphoria. Machinedrum blends jungle, juke, and future bass into a hyper-speed love letter to rhythm."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Caribou",
+    "album": "Suddenly",
+    "description": "Left-field but lovable. 'Suddenly' is loopy, tender electronic pop with wonky edges—like a warm hug from a glitchy robot."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Loraine James",
+    "album": "For You and I",
+    "description": "Raw, radical, and deeply personal. Loraine James deconstructs identity and rhythm in a brave collage of noise and nuance."
+  },
+  {
+    "genre": "Electronic",
+    "artist": "Ross From Friends",
+    "album": "Family Portrait",
+    "description": "Lo-fi house with a nostalgic tint. Dusty textures and VHS warmth make 'Family Portrait' feel like dancing in a dream you half-remember."
+  },
+  {
+    "genre": "Dance",
+    "artist": "Calvin Harris",
+    "album": "Funk Wav Bounces Vol. 1",
+    "description": "Groove-laced, sun-soaked, and collaboration-packed. Calvin Harris dials down the BPM and turns up the funk. Summer in audio form."
+  },
+  {
+    "genre": "Dance",
+    "artist": "David Guetta",
+    "album": "7",
+    "description": "A double album split between pop domination and underground aspirations. Big room bangers up front, late-night club vibes out back."
+  },
+  {
+    "genre": "Dance",
+    "artist": "MEDUZA",
+    "album": "Introducing MEDUZA",
+    "description": "Italian house with global swagger. MEDUZA's debut is sleek, hypnotic, and engineered for peak-time playlist glory."
+  },
+  {
+    "genre": "Dance",
+    "artist": "Disclosure",
+    "album": "ENERGY",
+    "description": "An electrified joyride across continents and genres. Disclosure mixes Afro-house, breakbeat, and club classics into an energizing whirl of rhythm."
+  },
+  {
+    "genre": "Dance",
+    "artist": "ZHU",
+    "album": "Generationwhy",
+    "description": "Sultry, shadowy dance pop. ZHU lives at the intersection of mystery and motion—half seduction, half strobe light."
+  },
+  {
+    "genre": "Dance",
+    "artist": "Fred again..",
+    "album": "Actual Life (April 14 - December 17 2020)",
+    "description": "Voicemails turned anthems. Fred again.. blends real-life snippets with house beats for a cathartic diary you can dance to."
+  },
+  {
+    "genre": "Dance",
+    "artist": "SG Lewis",
+    "album": "times",
+    "description": "Studio 54 vibes for the streaming era. 'times' glows with disco, funk, and euphoria—tailor-made for rooftop parties and mirrorball moments."
+  },
+  {
+    "genre": "Dance",
+    "artist": "Purple Disco Machine",
+    "album": "Soulmatic",
+    "description": "Neo-disco done right. Funky basslines, silky grooves, and feel-good finesse. If glitter had a BPM, it’d sound like this."
+  },
+  {
+    "genre": "Dance",
+    "artist": "Joel Corry",
+    "album": "Another Friday Night",
+    "description": "Hook-heavy house with festival fever. Joel Corry delivers dancefloor fuel in tight, bright packages that beg to be replayed."
+  },
+  {
+    "genre": "Dance",
+    "artist": "Duke Dumont",
+    "album": "Duality",
+    "description": "House music with cinematic mood swings. From sweaty club cuts to sunset anthems, Duke Dumont spans the spectrum with flair."
+  },
+  {
+    "genre": "Dance",
+    "artist": "James Hype",
+    "album": "Afraid",
+    "description": "Bassline-driven and bounce-ready. James Hype crafts radio-ready house with a twist—every drop is calibrated for chaos."
+  },
+  {
+    "genre": "Dance",
+    "artist": "KREAM",
+    "album": "Taped Up Heart",
+    "description": "Clean, catchy deep house with pop polish. KREAM keeps the beats tight and the hooks tighter—lowkey emotional bangers."
+  },
+  {
+    "genre": "Dance",
+    "artist": "Dom Dolla",
+    "album": "San Frandisco",
+    "description": "Thumping, cheeky, and club-approved. Dom Dolla’s breakout hit feels like a dancefloor inside joke told through bass."
+  },
+  {
+    "genre": "Dance",
+    "artist": "Chris Lake",
+    "album": "Black Book ID's",
+    "description": "Peak-hour precision. Chris Lake’s ID collection is all bite, bounce, and build-ups—essential gear for any DJ’s arsenal."
+  },
+  {
+    "genre": "Dance",
+    "artist": "Aluna",
+    "album": "Renaissance",
+    "description": "Genre-bending and globally groovy. Aluna brings house, funk, and afrobeat into her orbit—dance music with heart and message."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "Tame Impala",
+    "album": "Currents",
+    "description": "Psychedelia gets a synth-pop makeover. 'Currents' is breakup therapy disguised as dance music—emotional, expansive, and endlessly loopable."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "Lana Del Rey",
+    "album": "Norman Fucking Rockwell!",
+    "description": "Melancholy and millennial malaise. Lana trades drama for poetry and delivers her most nuanced ballads—sad girl summer turned high art."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "Alt-J",
+    "album": "An Awesome Wave",
+    "description": "Weird and wonderful. Alt-J’s debut is a collage of cryptic lyrics, mathy rhythms, and indie folk charm. It shouldn’t work—but it totally does."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "Glass Animals",
+    "album": "Dreamland",
+    "description": "A neon nostalgia trip. 'Dreamland' oozes synths and sugar, chronicling youth, trauma, and memes with surreal, radio-ready sheen."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "The Neighbourhood",
+    "album": "I Love You.",
+    "description": "Black and white aesthetics, grayscale emotions. 'I Love You.' is moody alt-pop dripping with lust, longing, and monochrome cool."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "Arctic Monkeys",
+    "album": "AM",
+    "description": "Cooler than your ex’s leather jacket. 'AM' is midnight swagger, R&B flirtation, and rock riffs rolled into one slinky, sneering package. It struts, it swoons, it seduces."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "Cigarettes After Sex",
+    "album": "Cigarettes After Sex",
+    "description": "Slowcore seduction. Whispered vocals, gauzy guitars, and cinematic longing—this album is one big exhale in slow motion."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "CHVRCHES",
+    "album": "The Bones of What You Believe",
+    "description": "Synth-pop with stadium dreams. CHVRCHES explode with shimmering hooks and sharp edges—like a sugar rush with bite."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "M83",
+    "album": "Hurry Up, We're Dreaming",
+    "description": "Epic and ethereal. A double album that reaches for the stars, mixing childhood wonder with cinematic synths. A dream you can dance to."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "Interpol",
+    "album": "Turn On the Bright Lights",
+    "description": "Post-punk revival never sounded so slick. Interpol’s debut is cold, sharp, and stylish—like wearing sunglasses at night in New York."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "Beach House",
+    "album": "Bloom",
+    "description": "Dream pop at its lushest. 'Bloom' wraps you in reverb and melancholy, a gentle hurricane of organ swells and ghostly grace."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "TV on the Radio",
+    "album": "Dear Science",
+    "description": "Genre-defying and politically sharp. Funk, rock, soul, and synth collide in an album that grooves and growls with purpose."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "Metric",
+    "album": "Fantasies",
+    "description": "Big hooks, big feelings. 'Fantasies' delivers polished alt-rock with synth-pop shimmer and frontwoman firepower to match."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "The xx",
+    "album": "xx",
+    "description": "Minimalism never felt so intimate. Sparse beats, interwoven vocals, and late-night longing—'xx' is a whisper you can’t ignore."
+  },
+  {
+    "genre": "Alternative",
+    "artist": "The War on Drugs",
+    "album": "Lost in the Dream",
+    "description": "Heartland rock filtered through a haze. This album feels like a road trip through memories—widescreen, wistful, and woozy."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Kamasi Washington",
+    "album": "The Epic",
+    "description": "Three hours of spiritual jazz grandeur. Kamasi bridges past and future with cinematic scale, saxophone sermons, and cosmic ambition."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Esperanza Spalding",
+    "album": "Emily's D+Evolution",
+    "description": "Jazz meets theater meets alter ego. Spalding bends genre, melody, and identity into an art-rock kaleidoscope. Wild, weird, and wonderful."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Snarky Puppy",
+    "album": "We Like It Here",
+    "description": "Fusion done with finesse. Snarky Puppy fuses jazz, funk, and groove into instrumental joyrides—tight as a drum, smooth as silk."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Robert Glasper",
+    "album": "Black Radio",
+    "description": "Neo-soul meets jazz virtuosity. Glasper brings R&B stars into his orbit, creating a smooth, cerebral blend that grooves and thinks."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Christian Scott aTunde Adjuah",
+    "album": "Stretch Music",
+    "description": "Genre-stretching, boundary-breaking jazz. Trumpet meets trap in this global, forward-thinking soundscape. High-concept, higher vibes."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Nubya Garcia",
+    "album": "Source",
+    "description": "London jazz renaissance in full flow. Garcia’s sax leads soulful, Afro-Caribbean-inflected explorations—urgent, rich, and rhythmically alive."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Makaya McCraven",
+    "album": "Universal Beings",
+    "description": "Live jazz, chopped and looped. Makaya remixes performances like a hip-hop producer—organic rhythm meets digital wizardry."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "GoGo Penguin",
+    "album": "v2.0",
+    "description": "Post-jazz perfection. Piano, bass, and drums move like algorithms—precise, emotional, and designed for modern melancholy."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Melissa Aldana",
+    "album": "Visions",
+    "description": "A tenor sax voice both fiery and introspective. Aldana blends tradition with raw individuality in a deeply personal statement."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Yussef Kamaal",
+    "album": "Black Focus",
+    "description": "Groove-forward and vibe-heavy. This UK duo builds jazz from broken beats and soulful keys. Think Dilla at a jam session."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Immanuel Wilkins",
+    "album": "Omega",
+    "description": "Urgent and unflinching. Wilkins tackles racial tension and emotional truth with soaring alto lines and intense ensemble interplay."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Shabaka Hutchings",
+    "album": "Wisdom of Elders",
+    "description": "Afro-futurist, spiritually charged, and rhythmically relentless. Shabaka leads a jazz ceremony rooted in deep ancestral grooves."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Hiromi",
+    "album": "Spark",
+    "description": "Virtuosic fireworks on piano. Hiromi blurs classical complexity and jazz improvisation—kinetic, technical, and jaw-dropping."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Tigran Hamasyan",
+    "album": "Mockroot",
+    "description": "Armenian folk meets jazz-metal? Tigran’s virtuosic compositions are feral, beautiful, and fiercely original."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Ambrose Akinmusire",
+    "album": "Origami Harvest",
+    "description": "Spoken word, strings, and trumpet collide. Avant-garde and emotionally raw—jazz poetry in fragmented form."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Ludovico Einaudi",
+    "album": "Divenire",
+    "description": "Minimalism that tugs at the soul. 'Divenire' is delicate, cinematic, and deeply human—modern classical music that feels like a warm exhale."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Max Richter",
+    "album": "Sleep",
+    "description": "An 8-hour ambient lullaby. Richter's opus blurs the line between consciousness and composition—music made for dreaming, not just listening."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Philip Glass",
+    "album": "Glassworks",
+    "description": "Repetition as revelation. This minimalist classic loops and pulses like a thinking machine with a poetic heart."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Hildur Guðnadóttir",
+    "album": "Chernobyl",
+    "description": "Bleak, beautiful, and chilling. Guðnadóttir scores the nuclear fallout with ambient dread and emotional devastation."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Ólafur Arnalds",
+    "album": "re:member",
+    "description": "Strings meet circuitry. Ólafur’s blend of piano and algorithm is intimate, inventive, and quietly epic."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Jóhann Jóhannsson",
+    "album": "Orphée",
+    "description": "Haunting and hushed. Jóhannsson’s farewell album is a chamber-pop requiem steeped in nostalgia and transcendence."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Yuja Wang",
+    "album": "The Berlin Recital",
+    "description": "Virtuosity on fire. Wang dazzles with dexterity and flair, turning the piano into a one-woman orchestra."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Lang Lang",
+    "album": "Piano Book",
+    "description": "From beginner pieces to masterful performance. Lang Lang revisits the songs that shaped him with both reverence and flamboyance."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Hilary Hahn",
+    "album": "Bach: Violin Concertos",
+    "description": "Precision meets poetry. Hahn brings crystalline clarity and warmth to these baroque staples."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Leif Ove Andsnes",
+    "album": "Beethoven: Piano Concertos",
+    "description": "Majestic and meticulous. Andsnes channels Beethoven’s fire and finesse in interpretations both noble and nuanced."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Víkingur Ólafsson",
+    "album": "Debussy - Rameau",
+    "description": "A luminous meeting of eras. Ólafsson makes Debussy sparkle and Rameau dance with featherlight touch and Icelandic cool."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Valentina Lisitsa",
+    "album": "Rachmaninov: Piano Concertos",
+    "description": "Bold and passionate. Lisitsa unleashes the full Romantic drama with fearless fingers and stormy soul."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Seong-Jin Cho",
+    "album": "Chopin: Piano Concerto No. 1",
+    "description": "Elegance incarnate. Cho’s Chopin sings with clarity, control, and a whisper of heartbreak."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Chad Lawson",
+    "album": "You Finally Knew",
+    "description": "Modern classical meets ambient therapy. Lawson’s piano whispers like a lullaby for the anxious heart."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Alice Sara Ott",
+    "album": "Nightfall",
+    "description": "Dusky, dreamy, and intimate. Ott explores Debussy, Satie, and Ravel like candlelight turned into sound."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Iron & Wine",
+    "album": "Our Endless Numbered Days",
+    "description": "Whispers and woodsmoke. Sam Beam’s hushed vocals and fingerpicked guitars make this a quiet triumph of intimacy."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Fleet Foxes",
+    "album": "Fleet Foxes",
+    "description": "Baroque folk for forest-dwellers. Harmonies soar, mandolins shimmer—this is pastoral perfection with poetic heft."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Laura Marling",
+    "album": "Semper Femina",
+    "description": "Witty, wise, and wonderfully intricate. Marling’s songwriting dances between softness and strength—modern folk with spine."
+  },
+  {
+    "genre": "Folk",
+    "artist": "The Tallest Man on Earth",
+    "album": "The Wild Hunt",
+    "description": "Dylan-channeling minimalism. Gravelly voice, nimble guitar, and raw storytelling that howls with heart."
+  },
+  {
+    "genre": "Folk",
+    "artist": "First Aid Kit",
+    "album": "Stay Gold",
+    "description": "Swedish sisters with Americana souls. Lush harmonies and golden melodies steeped in twang and longing."
+  },
+  {
+    "genre": "Folk",
+    "artist": "José González",
+    "album": "Veneer",
+    "description": "Sparse, sincere, and subtly hypnotic. González’s nylon-stringed meditations are a masterclass in musical restraint."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Angus & Julia Stone",
+    "album": "Down the Way",
+    "description": "Dreamy duets with a dash of melancholy. The Stones blend folk-pop ease with ocean breeze nostalgia."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Bonny Light Horseman",
+    "album": "Bonny Light Horseman",
+    "description": "Old folk songs, new skin. This trio revives traditional ballads with modern warmth and haunting harmony."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Gregory Alan Isakov",
+    "album": "Evening Machines",
+    "description": "Stargazing folk with an orchestral pulse. Isakov’s raspy hush and lush arrangements make melancholy feel majestic."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Aoife O'Donovan",
+    "album": "In the Magic Hour",
+    "description": "Elegant and wistful. Aoife’s airy vocals glide through gentle strings and poetic storytelling."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Vance Joy",
+    "album": "Dream Your Life Away",
+    "description": "Ukelele-fueled optimism meets acoustic earnestness. Vance Joy serves festival folk-pop with a heart-on-sleeve smile."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Mandolin Orange",
+    "album": "Tides of a Teardrop",
+    "description": "Tender harmonies and Southern warmth. These quiet songs ache beautifully, like a front porch confession."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Johnny Flynn",
+    "album": "A Larum",
+    "description": "Roguish and literary. Flynn’s British folk brims with charm, fiddle, and a wink toward tradition."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Lisa Hannigan",
+    "album": "Sea Sew",
+    "description": "Delicate and enchanting. Hannigan’s voice floats like seafoam across whimsical, subtly complex folk arrangements."
+  },
+  {
+    "genre": "Folk",
+    "artist": "Hurray for the Riff Raff",
+    "album": "The Navigator",
+    "description": "Folk with a cause. This concept album blends rootsy vibes with punk spirit and fierce cultural storytelling."
+  },
+  {
+    "genre": "Country",
+    "artist": "Chris Stapleton",
+    "album": "Traveller",
+    "description": "A voice like aged bourbon. Stapleton’s debut is a soulful, blues-soaked journey through heartbreak and highways."
+  },
+  {
+    "genre": "Country",
+    "artist": "Kacey Musgraves",
+    "album": "Golden Hour",
+    "description": "Country goes cosmic. Lush, twinkling, and unexpectedly dreamy—Musgraves redefines the genre with grace and glitter."
+  },
+  {
+    "genre": "Country",
+    "artist": "Sturgill Simpson",
+    "album": "A Sailor's Guide to Earth",
+    "description": "Outlaw country meets psychedelic soul. A concept album with horns, heart, and high seas emotion."
+  },
+  {
+    "genre": "Country",
+    "artist": "Tyler Childers",
+    "album": "Purgatory",
+    "description": "Appalachian grit and lyrical wit. Childers tells raw, rustic stories with a voice soaked in moonshine and memory."
+  },
+  {
+    "genre": "Country",
+    "artist": "Morgan Wallen",
+    "album": "Dangerous: The Double Album",
+    "description": "A modern country colossus. 30 tracks of heartbreak, partying, and small-town swagger. Love it or debate it, you’ll hear it everywhere."
+  },
+  {
+    "genre": "Country",
+    "artist": "Margo Price",
+    "album": "Midwest Farmer's Daughter",
+    "description": "Hard truths, harder twang. Price’s breakout is fierce, feminist, and honky-tonk to the bone."
+  },
+  {
+    "genre": "Country",
+    "artist": "Zach Bryan",
+    "album": "American Heartbreak",
+    "description": "DIY heartland poetry. Bryan’s lo-fi charm and emotional candor make this sprawling album a grassroots phenomenon."
+  },
+  {
+    "genre": "Country",
+    "artist": "Brandi Carlile",
+    "album": "By the Way, I Forgive You",
+    "description": "Cathartic and cinematic. Carlile belts forgiveness and fire with folk roots and rock ambition."
+  },
+  {
+    "genre": "Country",
+    "artist": "Cody Jinks",
+    "album": "Lifers",
+    "description": "Honest-to-God outlaw country. No frills, no filter—just gravel-voiced anthems for blue-collar saints."
+  },
+  {
+    "genre": "Country",
+    "artist": "Ashley McBryde",
+    "album": "Girl Going Nowhere",
+    "description": "A Nashville underdog anthem. McBryde’s grit and storytelling carve a path through personal and universal hurdles."
+  },
+  {
+    "genre": "Country",
+    "artist": "Parker McCollum",
+    "album": "Gold Chain Cowboy",
+    "description": "Polished heartbreak with rodeo charm. McCollum walks the line between Texas twang and pop hooks."
+  },
+  {
+    "genre": "Country",
+    "artist": "Lainey Wilson",
+    "album": "Sayin' What I'm Thinkin'",
+    "description": "Retro flair with modern sass. Lainey’s bell bottoms swing through bold, brassy country bangers."
+  },
+  {
+    "genre": "Country",
+    "artist": "Hailey Whitters",
+    "album": "The Dream",
+    "description": "Nostalgic, heartfelt, and hooky. Whitters blends classic country feel with new-school sparkle."
+  },
+  {
+    "genre": "Country",
+    "artist": "Orville Peck",
+    "album": "Pony",
+    "description": "Masked mystique and vintage vibes. Peck croons like a cowboy from a Lynch film—camp, cool, and completely compelling."
+  },
+  {
+    "genre": "Country",
+    "artist": "Jamey Johnson",
+    "album": "That Lonesome Song",
+    "description": "A barstool confessional for old souls. Johnson’s deep voice and deeper pain echo through outlaw tales and regretful ruminations."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Metallica",
+    "album": "Master of Puppets",
+    "description": "Thrash royalty. 'Master of Puppets' is relentless, riff-loaded, and forever in the metal hall of fame. Bow to the puppeteer."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Slipknot",
+    "album": "Iowa",
+    "description": "Chaos incarnate. 'Iowa' is a sonic horror show—vicious, visceral, and masked in pure catharsis."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Gojira",
+    "album": "Magma",
+    "description": "Progressive and pummeling. 'Magma' mixes brutality with grief, crafting metal that mourns as much as it mauls."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Trivium",
+    "album": "Shogun",
+    "description": "Epic in scale and shredding. 'Shogun' is Trivium swinging between myth, melody, and mayhem."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Architects",
+    "album": "Holy Hell",
+    "description": "Pain turned power. A cathartic tribute to loss wrapped in technical fury and arena-sized choruses."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Mastodon",
+    "album": "Crack the Skye",
+    "description": "Metal meets the metaphysical. 'Crack the Skye' is a cosmic trip through prog riffs and mystical sludge."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Lamb of God",
+    "album": "Ashes of the Wake",
+    "description": "Precision-guided aggression. Politics, breakdowns, and pure groove metal muscle."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Ghost",
+    "album": "Meliora",
+    "description": "Satanic pop metal, if you can believe it. Ghost charms with hooks, robes, and riffy religious satire."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Baroness",
+    "album": "Purple",
+    "description": "Heavy with heart. 'Purple' blends sludge, prog, and post-rock into a bruised but beautiful beast."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Power Trip",
+    "album": "Nightmare Logic",
+    "description": "Crossover thrash with teeth. Every riff bites, every beat punches—an instant pit starter."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Deafheaven",
+    "album": "Sunbather",
+    "description": "Black metal meets shoegaze. 'Sunbather' screams into the void, wrapped in pink and drowning in reverb."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Code Orange",
+    "album": "Forever",
+    "description": "Hardcore that glitches and growls. Industrial edges and breakdowns that hit like digital anvils."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Spiritbox",
+    "album": "Eternal Blue",
+    "description": "Melodic, monstrous, and modern. Spiritbox swings from haunting hooks to metalcore mayhem with finesse."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Zeal & Ardor",
+    "album": "Devil Is Fine",
+    "description": "Chain-gang chants meet black metal blast beats. Genre fusion has never sounded so possessed."
+  },
+  {
+    "genre": "Metal",
+    "artist": "Loathe",
+    "album": "I Let It In and It Took Everything",
+    "description": "Atmosphere meets annihilation. Dreamy textures clash with crushing riffs in a post-metal fever dream."
+  },
+  {
+    "genre": "Punk",
+    "artist": "Green Day",
+    "album": "Dookie",
+    "description": "Pop-punk’s messy magnum opus. Catchy, bratty, and bursting with adolescent angst—it made punk arenas feel like garages."
+  },
+  {
+    "genre": "Punk",
+    "artist": "IDLES",
+    "album": "Joy as an Act of Resistance",
+    "description": "Rage meets tenderness. IDLES shout their way through masculinity, politics, and poetry with sweaty catharsis."
+  },
+  {
+    "genre": "Punk",
+    "artist": "Turnstile",
+    "album": "GLOW ON",
+    "description": "Hardcore goes euphoric. Turnstile adds synths, soul, and sunshine to the pit. It hits and it hugs."
+  },
+  {
+    "genre": "Punk",
+    "artist": "FIDLAR",
+    "album": "FIDLAR",
+    "description": "Skate punk meets party crashers. Loud, sloppy, and proud of it—like shotgunning beer on a budget."
+  },
+  {
+    "genre": "Punk",
+    "artist": "The Linda Lindas",
+    "album": "Growing Up",
+    "description": "Teenage kicks with purpose. Riot grrrl meets the schoolyard in this fresh blast of Gen Z punk energy."
+  },
+  {
+    "genre": "Punk",
+    "artist": "The Menzingers",
+    "album": "After the Party",
+    "description": "Punk rock for your quarter-life crisis. Nostalgic, melodic, and full of fading youth anthems."
+  },
+  {
+    "genre": "Punk",
+    "artist": "PUP",
+    "album": "Morbid Stuff",
+    "description": "Self-loathing, shouted loud. Chaotic and cathartic—existential dread rarely sounds this fun."
+  },
+  {
+    "genre": "Punk",
+    "artist": "The Bronx",
+    "album": "The Bronx (IV)",
+    "description": "Raw and rowdy. A punchy barrage of garage-punk swagger with zero filler, just fire."
+  },
+  {
+    "genre": "Punk",
+    "artist": "Frank Carter & The Rattlesnakes",
+    "album": "Blossom",
+    "description": "Snarling punk with a stadium soul. Frank Carter claws through personal hell with stylish fury."
+  },
+  {
+    "genre": "Punk",
+    "artist": "Bad Cop/Bad Cop",
+    "album": "Warriors",
+    "description": "Feminist fire and political bite. These SoCal punks crank out harmonized defiance with pop-punk punch."
+  },
+  {
+    "genre": "Punk",
+    "artist": "White Lung",
+    "album": "Paradise",
+    "description": "Slick, sharp, and blisteringly fast. White Lung tightens the punk coil to a high-gloss whip crack."
+  },
+  {
+    "genre": "Punk",
+    "artist": "Amyl and The Sniffers",
+    "album": "Comfort to Me",
+    "description": "Aussie punk with mullet energy. Raw, raucous, and feral—Amyl growls over pure pub-rock chaos."
+  },
+  {
+    "genre": "Punk",
+    "artist": "Jeff Rosenstock",
+    "album": "WORRY.",
+    "description": "Anxious punk poetry. Hooks, horns, and a sprint through late-capitalist despair with DIY spirit."
+  },
+  {
+    "genre": "Punk",
+    "artist": "The Chats",
+    "album": "High Risk Behaviour",
+    "description": "Fast, filthy, and proudly dumb. The Chats chug beer and riffs with reckless Aussie abandon."
+  },
+  {
+    "genre": "Punk",
+    "artist": "Drug Church",
+    "album": "Cheer",
+    "description": "Grunge-core gruffness meets alt-punk sneer. Sardonic, sludgy, and unexpectedly sharp."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Gary Clark Jr.",
+    "album": "Blak and Blu",
+    "description": "Blues with swagger and a fuzz pedal. Clark fuses tradition and distortion into something raw, righteous, and genre-hopping."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Joe Bonamassa",
+    "album": "Blues of Desperation",
+    "description": "Polished and passionate. Bonamassa turns up the drama with roaring solos and heart-on-sleeve guitar heroics."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Keb' Mo'",
+    "album": "Just Like You",
+    "description": "Easygoing and earnest. This Grammy-winner blends acoustic blues with rootsy charm and real warmth."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Shemekia Copeland",
+    "album": "Outskirts of Love",
+    "description": "Big voice, bigger presence. Copeland delivers gritty blues stories from the edge with soul and power."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Ruthie Foster",
+    "album": "The Phenomenal Ruthie Foster",
+    "description": "Gospel grit meets blues backbone. Ruthie’s vocals burn with conviction and joy—pure uplift."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Christone 'Kingfish' Ingram",
+    "album": "Kingfish",
+    "description": "Blues prodigy with old-soul fire. Kingfish’s debut shreds with feel and wisdom far beyond his years."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Susan Tedeschi",
+    "album": "Just Won't Burn",
+    "description": "A modern classic. Tedeschi’s gritty vocals and fiery guitar riffs brought new heat to the blues revival."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Buddy Guy",
+    "album": "Born to Play Guitar",
+    "description": "Living legend, still electrifying. Guy’s licks are sharp as ever, his stories steeped in soul and swagger."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Tab Benoit",
+    "album": "Medicine",
+    "description": "Swampy and soulful. Benoit’s Louisiana blues cures what ails you—with twang, tone, and truth."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Eric Gales",
+    "album": "Middle of the Road",
+    "description": "Redemption blues. Gales mixes personal struggle with jaw-dropping technique and gritty emotion."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Joanne Shaw Taylor",
+    "album": "Reckless Heart",
+    "description": "Grit, groove, and growl. Taylor brings British bite to the blues, balancing soul and ferocity."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Johnny Lang",
+    "album": "Lie to Me",
+    "description": "Teenage firestarter. Lang’s debut is all blazing solos, raspy vocals, and blues rock with bite."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Marcus King",
+    "album": "El Dorado",
+    "description": "Southern soul with a bluesy core. King’s guitar cries, but it’s that velvet voice that sticks."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Dan Patlansky",
+    "album": "Perfection Kills",
+    "description": "Precision meets passion. Patlansky delivers modern blues rock with searing solos and polished punch."
+  },
+  {
+    "genre": "Blues",
+    "artist": "Ronnie Baker Brooks",
+    "album": "Times Have Changed",
+    "description": "Old school with new grit. Brooks bridges generations of blues with swagger, soul, and Chicago groove."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Bob Marley & The Wailers",
+    "album": "Legend",
+    "description": "The gospel of reggae. Every track a classic, every lyric a mission. Marley’s greatest hits are timeless truth."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Chronixx",
+    "album": "Chronology",
+    "description": "Roots revival with a modern sheen. Chronixx blends classic vibes with conscious cool for a new generation."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Protoje",
+    "album": "Ancient Future",
+    "description": "Dub wisdom meets hip-hop flow. Protoje crafts a bridge between reggae roots and digital rebellion."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Koffee",
+    "album": "Rapture",
+    "description": "Youthful fire, Grammy-winner’s flair. Koffee delivers rapid rhymes, sweet melodies, and uplifting vibes."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Kabaka Pyramid",
+    "album": "Kontraband",
+    "description": "Militant and melodic. Kabaka drops truth bombs over riddims, produced with polished precision by Damian Marley."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Jesse Royal",
+    "album": "Lily of da Valley",
+    "description": "Royal by name, revolutionary by sound. Jesse blends spiritual chants with rebel grooves."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Lila Iké",
+    "album": "The ExPerience",
+    "description": "Sultry, smart, and socially aware. Lila’s voice floats over reggae-soul hybrids with grace and grit."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Alborosie",
+    "album": "Soul Pirate",
+    "description": "Italo-reggae with a dub backbone. Alborosie’s rugged voice and deep grooves nod to the old school with fresh flavor."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Gentleman",
+    "album": "Confidence",
+    "description": "German-born, globally blessed. Gentleman brings smooth vocals and earnest passion to reggae’s heartland."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "SOJA",
+    "album": "Strength to Survive",
+    "description": "Island warmth with an alt-rock pulse. SOJA’s melodic reggae speaks to resilience and revolution."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "The Green",
+    "album": "Marching Orders",
+    "description": "Hawaiian harmonies, deep riddims. The Green’s sound is lush, laid-back, and island-strong."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Groundation",
+    "album": "Hebron Gate",
+    "description": "Jazz meets Jah. Groundation’s complex compositions and spiritual themes elevate roots reggae to the cosmic."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Ziggy Marley",
+    "album": "Fly Rasta",
+    "description": "Legacy alive and flying high. Ziggy adds funk, rock, and optimism to a message still burning bright."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Stick Figure",
+    "album": "World on Fire",
+    "description": "Dub-drenched daydreams. Stick Figure’s hypnotic rhythms and chill vibes are pure sonic sunshine."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Collie Buddz",
+    "album": "Collie Buddz",
+    "description": "Dancehall cool with reggae soul. Buddz blends Caribbean bounce and breezy charm like a seasoned hitmaker."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Leon Bridges",
+    "album": "Coming Home",
+    "description": "Retro but never dusty. Leon Bridges croons like it’s 1965, with warmth that makes old souls swoon."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Anderson .Paak",
+    "album": "Malibu",
+    "description": "Silky, funky, and undeniably cool. Paak blends soul, hip-hop, and beachside breezes into pure West Coast charm."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Alicia Keys",
+    "album": "Songs in A Minor",
+    "description": "A debut drenched in soul and piano magic. Alicia’s voice and keys made hearts and charts melt."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Ari Lennox",
+    "album": "Shea Butter Baby",
+    "description": "Smooth, sensual, and steeped in R&B’s golden warmth. Ari’s voice glides over neo-soul grooves like silk on skin."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Sampha",
+    "album": "Process",
+    "description": "Tender and trembling. Sampha’s voice quivers with vulnerability, blending electronic soul and deep emotion."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Nao",
+    "album": "Saturn",
+    "description": "Cosmic soul with pop sparkle. Nao delivers grooves and falsetto flights that orbit funk and futuristic feels."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Michael Kiwanuka",
+    "album": "Love & Hate",
+    "description": "Expansive and deeply human. Kiwanuka’s fusion of soul, rock, and gospel hits both head and heart."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Yebba",
+    "album": "Dawn",
+    "description": "Every note aches. Yebba’s voice is hauntingly pure, wrapping heartbreak in lush orchestration and gospel glow."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Emily King",
+    "album": "Scenery",
+    "description": "Crystalline and confident. King’s soul-pop storytelling shimmers with precision and personal growth."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Durand Jones & The Indications",
+    "album": "American Love Call",
+    "description": "Classic soul with modern conscience. Jones and crew channel Curtis Mayfield with velvet vocals and righteous fire."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Curtis Harding",
+    "album": "Face Your Fear",
+    "description": "Psychedelic soul swagger. Harding’s grooves echo Motown but bend the rules with stylish urgency."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Celeste",
+    "album": "Not Your Muse",
+    "description": "Timeless and torch-lit. Celeste’s smoky voice and jazz-tinged soul croon like a lost standard reborn."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Joss Stone",
+    "album": "The Soul Sessions",
+    "description": "Blue-eyed soul done right. Stone belts vintage covers with husky fire and youthful conviction."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Allen Stone",
+    "album": "Radius",
+    "description": "Retro soul with a jam-band jolt. Stone brings charisma and vocal chops to groove-laced love songs."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Corinne Bailey Rae",
+    "album": "Corinne Bailey Rae",
+    "description": "Sweet, breezy, and undeniably charming. This debut is light-touch soul with sunshine in every chorus."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Vulfpeck",
+    "album": "Thrill of the Arts",
+    "description": "Minimalist funk, maximum groove. Vulfpeck’s playful tightness makes your head nod and your face smile."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Lettuce",
+    "album": "Crush",
+    "description": "Brassy, bold, and booty-shaking. Lettuce throws down thick grooves with surgical funk precision."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Cory Wong",
+    "album": "The Optimist",
+    "description": "Clean as a whistle, funky as hell. Wong’s guitar chops are tighter than your group chat."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Scary Pockets",
+    "album": "Scary Pockets, Vol. 1",
+    "description": "YouTube funk heroes bring silky covers and slick chops—funky enough to make your smart speaker sweat."
+  },
+  {
+    "genre": "Funk",
+    "artist": "The Dip",
+    "album": "The Dip Delivers",
+    "description": "Soulful swagger and vintage tones. The Dip serves up retro grooves with fresh sincerity."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Parliament-Funkadelic",
+    "album": "Mothership Connection",
+    "description": "Take me to the mothership. This is cosmic funk—wild, weird, and eternally groovy."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Tower of Power",
+    "album": "Tower of Power",
+    "description": "The blueprint for horn-driven funk. Tight rhythms, killer brass, and soul that just won’t quit."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Ghost-Note",
+    "album": "Swagism",
+    "description": "Jazz-funk on warp speed. Snarky alums go wild with beats, bass, and psychedelic pocket science."
+  },
+  {
+    "genre": "Funk",
+    "artist": "The New Mastersounds",
+    "album": "Made for Pleasure",
+    "description": "Slick, smooth, and masterfully played. This British crew channels pure groove energy."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Monophonics",
+    "album": "It's Only Us",
+    "description": "Psych-soul with a side of heartbreak. Gritty vocals and lush arrangements built to sway and sting."
+  },
+  {
+    "genre": "Funk",
+    "artist": "The Motet",
+    "album": "Totem",
+    "description": "Genre-blending funk fusion. The Motet jumps from disco to deep groove without dropping the beat."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Snarky Puppy",
+    "album": "We Like It Here",
+    "description": "Jazz fusion joyride. Impossibly tight and joyously complex—instrumental funk never felt so alive."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Anderson .Paak",
+    "album": "Ventura",
+    "description": "Silky-smooth California soul. Paak delivers retro grooves with modern charisma and undeniable bounce."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Jungle",
+    "album": "For Ever",
+    "description": "Funk dipped in indie gloss. Jungle brings falsetto funk and sleek production with dancefloor ambitions."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Chromeo",
+    "album": "White Women",
+    "description": "Electro-funk seduction. Chromeo’s tongue-in-cheek charm and glossy synths make every track a guilty pleasure."
+  },
+  {
+    "genre": "Techno",
+    "artist": "Charlotte de Witte",
+    "album": "Selected",
+    "description": "Dark, driving, and devastating. de Witte’s techno is no-nonsense and all-nighter ready."
+  },
+  {
+    "genre": "Techno",
+    "artist": "Amelie Lens",
+    "album": "Hypnotized",
+    "description": "Relentless and razor-sharp. Lens crafts peak-time techno with industrial edge and trancey undertones."
+  },
+  {
+    "genre": "Techno",
+    "artist": "Carl Cox",
+    "album": "All Roads Lead to the Dancefloor",
+    "description": "The king of the booth proves he’s still got it. Cox blends techno, house, and big-room energy into a dancefloor manifesto."
+  },
+  {
+    "genre": "Techno",
+    "artist": "Adam Beyer",
+    "album": "Ignition Key",
+    "description": "Drumcode deity at his sleekest. Beyer turns minimal into a pounding, polished thrill ride."
+  },
+  {
+    "genre": "Techno",
+    "artist": "Reinier Zonneveld",
+    "album": "Megacity Servant",
+    "description": "Acid-laced and classically trained. Zonneveld delivers melodic techno that kicks and composes."
+  },
+  {
+    "genre": "Techno",
+    "artist": "Dax J",
+    "album": "Offending Public Morality",
+    "description": "Berlin bunker-ready. Dax J fires industrial techno with dystopian bite and high-octane rage."
+  },
+  {
+    "genre": "Techno",
+    "artist": "Nina Kraviz",
+    "album": "Nina Kraviz",
+    "description": "Moody and mesmerizing. Kraviz’s debut blends minimalist techno with whispered intimacy and hypnotic pulses."
+  },
+  {
+    "genre": "Techno",
+    "artist": "ANNA",
+    "album": "Speicher 101",
+    "description": "Brazilian techno heat. ANNA’s precision and pressure create tracks that throb with authority."
+  },
+  {
+    "genre": "Techno",
+    "artist": "I Hate Models",
+    "album": "L'Âge Des Métamorphoses",
+    "description": "Emotional techno for the end times. I Hate Models mixes beauty and brutality into post-apocalyptic rave bliss."
+  },
+  {
+    "genre": "Techno",
+    "artist": "Maceo Plex",
+    "album": "Solar",
+    "description": "Cosmic and conceptual. Plex explores techno’s dreamy side without losing the dancefloor pulse."
+  },
+  {
+    "genre": "Techno",
+    "artist": "FJAAK",
+    "album": "FJAAK",
+    "description": "Analog anarchists go digital. Berlin’s wildest techno trio brings lo-fi grit and groove with no apologies."
+  },
+  {
+    "genre": "Techno",
+    "artist": "Shlømo",
+    "album": "Mercurial Skin",
+    "description": "Lush, layered, and lethal. Shlømo blends ambiance with aggression in emotional club warfare."
+  },
+  {
+    "genre": "Techno",
+    "artist": "Kobosil",
+    "album": "We Grow, You Decline",
+    "description": "Grey area techno. Kobosil’s sound is as bleak as it is beautiful—post-industrial poetry in motion."
+  },
+  {
+    "genre": "Techno",
+    "artist": "DVS1",
+    "album": "Fabric 96",
+    "description": "Purveyor of pure pressure. DVS1’s mix is deep, dark, and demands to be played loud."
+  },
+  {
+    "genre": "Techno",
+    "artist": "Ellen Allien",
+    "album": "Nost",
+    "description": "Berlin’s techno queen dives into nostalgia. Raw, ravey, and refreshingly human."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Burna Boy",
+    "album": "African Giant",
+    "description": "Pan-African power meets global finesse. Burna fuses Afrobeat, dancehall, and protest into a swaggering statement."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Wizkid",
+    "album": "Made in Lagos",
+    "description": "Smooth and sunlit. Wizkid glides across mellow Afro-fusion rhythms with effortless charm."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Davido",
+    "album": "A Good Time",
+    "description": "Afrobeat energy on high. Davido delivers hooks, heat, and hits with party-starting confidence."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Tiwa Savage",
+    "album": "Celia",
+    "description": "Queen Tiwa blends sultry vocals and rich Afro-pop textures—global sound with a Lagos pulse."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Tems",
+    "album": "For Broken Ears",
+    "description": "Minimal, moody, magnetic. Tems turns vulnerability into a soulful slow burn."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Yemi Alade",
+    "album": "Mama Africa",
+    "description": "High-energy Afro-pop royalty. Yemi Alade’s rhythms and vocal flair command the dancefloor."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Rema",
+    "album": "Rema Compilation",
+    "description": "Genre-defying and Gen Z-fluent. Rema is a sonic chameleon with melodies for days."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Omah Lay",
+    "album": "Get Layd",
+    "description": "Whispered Afro-fusion magic. Omah Lay’s debut is smooth, sultry, and sneakily addictive."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Fireboy DML",
+    "album": "Laughter, Tears & Goosebumps",
+    "description": "Genre-blending emotion trip. Fireboy floats between love, loss, and lit vibes."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Joeboy",
+    "album": "Somewhere Between Beauty & Magic",
+    "description": "Afro-pop done sweet. Joeboy’s melodies stick, his charm does the rest."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Ayra Starr",
+    "album": "19 & Dangerous",
+    "description": "Young, bold, and breaking molds. Ayra Starr’s debut sparkles with confidence and catchy conviction."
+  },
+  {
+    "genre": "Afro",
+    "artist": "CKay",
+    "album": "Boyfriend",
+    "description": "Lo-fi meets Afro-love. CKay’s grooves are vibey, vulnerable, and TikTok-certified."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Mr Eazi",
+    "album": "Life is Eazi, Vol. 1 - Accra To Lagos",
+    "description": "Banku music’s smooth-talking pioneer. Mr Eazi rides mid-tempo beats with international cool."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Sauti Sol",
+    "album": "Midnight Train",
+    "description": "Kenyan soul-pop on a global track. Lush harmonies and polished grooves that feel like sunrise."
+  },
+  {
+    "genre": "Afro",
+    "artist": "Blaqbonez",
+    "album": "Sex Over Love",
+    "description": "Bold, brash, and meme-ready. Blaqbonez’s witty Afro-rap isn’t afraid to break the rules—or the internet."
+  }
+]
