@@ -19,11 +19,11 @@
 
                 <div class="option-column left">
                   <% ['Vegan', 'Vegetarian'].each do |type| %>
-                    <label class="option-card <%= type.downcase %>">
+                    <label class="option-card <%= type %>">
                       <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
                         data: { action: "click->form#goToStep", step: "1" },
                         class: "hidden-radio" %>
-                      <img src="/assets/icons/<%= type.downcase %>.png" alt="<%= type %>" class="option-icon" />
+                      <img src="/assets/icons/<%= type %>.png" alt="<%= type %>" class="option-icon" />
                       <span class="option-label"><%= type %></span>
                     </label>
                   <% end %>
@@ -31,22 +31,22 @@
 
                 <div class="option-column center">
                   <% type = "Shuffle" %>
-                  <label class="option-card <%= type.downcase %>">
+                  <label class="option-card <%= type %>">
                     <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
                       data: { action: "click->form#goToStep", step: "1" },
                       class: "hidden-radio" %>
-                    <img src="/assets/icons/<%= type.downcase %>.png" alt="<%= type %>" class="option-icon" />
+                    <img src="/assets/icons/<%= type %>.png" alt="<%= type %>" class="option-icon" />
                     <span class="option-label"><%= type %></span>
                   </label>
                 </div>
 
                 <div class="option-column right">
                   <% ['Meat', 'Seafood'].each do |type| %>
-                    <label class="option-card <%= type.downcase %>">
+                    <label class="option-card <%= type %>">
                       <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
                         data: { action: "click->form#goToStep", step: "1" },
                         class: "hidden-radio" %>
-                      <img src="/assets/icons/<%= type.downcase %>.png" alt="<%= type %>" class="option-icon" />
+                      <img src="/assets/icons/<%= type %>.png" alt="<%= type %>" class="option-icon" />
                       <span class="option-label"><%= type %></span>
                     </label>
                   <% end %>
