@@ -128,7 +128,14 @@ export default class extends Controller {
     this.stepTargets.forEach((step, i) => {
       step.classList.toggle("d-none", i !== index);
     });
+
+    // Re-render genre preview if returning to genre step
+    if (index === 2) {
+      this.updateGenrePreview();
+      this.toggleMusicFormatDisplay(); // also re-check visibility
+    }
   }
+
 
   confirmShuffle() {
     if (!this.selectedShuffle) return;
@@ -175,46 +182,75 @@ export default class extends Controller {
   }
 
 
-confirmGenreShuffle() {
-  if (!this.selectedGenreShuffle) return;
+  confirmGenreShuffle() {
+    if (!this.selectedGenreShuffle) return;
 
-  // Clear other genre selections
-  document.querySelectorAll('input[name="music_genres[]"]').forEach(input => {
-    input.checked = false;
-  });
+    // Clear other genre selections
+    document.querySelectorAll('input[name="music_genres[]"]').forEach(input => {
+      input.checked = false;
+    });
 
-  const input = document.querySelector(`input[name="music_genres[]"][value="${this.selectedGenreShuffle}"]`);
-  if (input) input.checked = true;
+    const input = document.querySelector(`input[name="music_genres[]"][value="${this.selectedGenreShuffle}"]`);
+    if (input) input.checked = true;
 
-  // Close modal
-  const modal = bootstrap.Modal.getInstance(document.getElementById("genreShuffleModal"));
-  if (modal) modal.hide();
+    // Close modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById("genreShuffleModal"));
+    if (modal) modal.hide();
 
-  this.toggleMusicFormatDisplay();
-  this.updateGenrePreview();
-}
+    this.toggleMusicFormatDisplay();
+    this.updateGenrePreview();
+  }
 
-updateGenrePreview() {
-  const selectedGenres = Array.from(document.querySelectorAll('input[name="music_genres[]"]:checked'))
-    .map(input => input.value);
+  updateGenrePreview() {
+    this.colorClasses = [
+      "bg-warning text-dark",
+      "bg-success text-white",
+      "bg-info text-dark",
+      "bg-primary text-white",
+      "bg-danger text-white",
+      "bg-secondary text-white"
+    ];
 
-  if (this.hasGenrePreviewTarget) {
-    if (selectedGenres.length === 0) {
-      this.genrePreviewTarget.innerHTML = "";
-    } else {
-      this.genrePreviewTarget.innerHTML = `
-        <p class="mb-2 fw-bold">Your selection</p>
-        <div class="d-flex flex-wrap justify-content-center gap-2">
-          ${selectedGenres.map(genre => `
-            <span class="genre-chip badge rounded-pill bg-warning text-dark d-flex align-items-center px-3 py-2">
-              <img src="/assets/icons/music.svg" height="16px" class="me-2" />
-              ${genre}
-            </span>
-          `).join('')}
-        </div>
+    const selectedGenres = Array.from(document.querySelectorAll('input[name="music_genres[]"]:checked'))
+      .map(input => input.value);
+
+    if (this.hasGenrePreviewTarget) {
+      if (selectedGenres.length === 0) {
+        this.genrePreviewTarget.innerHTML = "";
+      } else {
+        this.genrePreviewTarget.innerHTML = `
+  <p class="mb-2 fw-bold">🎵 Your selection</p>
+  <div class="d-flex flex-wrap justify-content-center gap-2">
+    ${selectedGenres.map((genre, i) => {
+      const color = this.colorClasses[i % this.colorClasses.length]; // or use random
+      return `
+        <span
+          class="genre-chip badge rounded-pill d-flex align-items-center px-3 py-2 ${color}"
+          data-action="click->form#removeGenreFromPreview"
+          data-genre="${genre}"
+          style="cursor: pointer;"
+        >
+          <img src="/assets/icons/music.svg" height="16px" class="me-2" />
+          <span class="me-2">${genre}</span>
+          <span class="remove-icon fw-bold" style="font-size: 1.2rem;">×</span>
+        </span>
       `;
+    }).join('')}
+  </div>
+`;
+
+      }
     }
   }
-}
+
+  removeGenreFromPreview(event) {
+    const genre = event.currentTarget.dataset.genre;
+    const checkbox = document.querySelector(`input[name="music_genres[]"][value="${genre}"]`);
+    if (checkbox) {
+      checkbox.checked = false;
+      // Trigger logic as if user clicked it
+      checkbox.dispatchEvent(new Event("click", { bubbles: true }));
+    }
+  }
 
 }
