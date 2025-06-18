@@ -1,31 +1,27 @@
 .btn-back {
-  display: flex;
-  height: 3em;
-  width: 130px;
-  align-items: center;
-  justify-content: center;
-  background-color: lch(97.11% 3.52 79.51 / 0.683);
-  border-radius: 3px;
-  letter-spacing: 1px;
-  transition: all 0.2s linear;
+  background: #fbca1f;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
   cursor: pointer;
-  border: none;
-  background: #ffffffdf;
-
-  svg {
-    margin-right: 5px;
-    margin-left: 5px;
-    font-size: 20px;
-    transition: all 0.4s ease-in;
-  }
+  text-decoration: none;
+  color: black;
+  position: fixed;
+  bottom: 45px;
+  left: 20px;
+  z-index: 999;
 
   &:hover {
-    box-shadow: 9px 9px 33px #ac9d8a, -9px -9px 33px #ffffff;
-    transform: translateY(-2px);
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.25em 0.25em;
+    background-color: white;
+  }
 
-    svg {
-      font-size: 1.2em;
-      transform: translateX(-5px);
-    }
+  &:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
   }
 }
