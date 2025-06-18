@@ -34,13 +34,14 @@
       border: none;
     }
 
-    .option-icon {
-      width: 140px;
-      height: 140px;
-      object-fit: contain;
-      transition: transform 0.5s ease;
-      z-index: 1;
-    }
+  .option-icon {
+    width: 100%;
+    height: 100%;
+    padding: 20%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
 
     &:hover .option-icon {
       transform: scale(1.1);
@@ -70,24 +71,31 @@
 
   // Vegan
   .option-card.vegan {
-    border-radius: 50%;
-    clip-path: none;
-    background-color: $info;
+  border-radius: 50%;
+  background-color: $info;
+  transition: clip-path 0.5s ease, transform 0.3s ease;
+}
 
-    &:hover {
-      border-radius: 0;
-      clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
-      background: #68ad3e;
-      transform: scale(1.05);
-    }
-  }
+.option-card.vegan:hover,
+.option-card.vegan:has(.hidden-radio:checked) {
+  aspect-ratio: 1.009;
+  border-radius: 0;
+  clip-path: shape(
+    from 67.79% 25.02%,
+    curve to 99.41% 61.34% with 80.78% 37.01%/96.34% 47.62%,
+    curve to 80.01% 97.48% with 102.49% 75.05%/93.09% 91.87%,
+    curve to 35.14% 96.27% with 67.02% 103.17%/50.35% 97.65%,
+    curve to 1.72% 91.7% with 19.93% 94.8%/6.08% 97.39%,
+    curve to 4.46% 60.3% with -2.64% 86.09%/2.41% 72.12%,
+    curve to 9.93% 26.66% with 6.51% 48.4%/5.57% 38.65%,
+    curve to 34.12% 0.01% with 14.29% 14.67%/23.94% 0.44%,
+    curve to 67.79% 25.02% with 44.2% -0.42%/54.71% 13.03%,
+    close
+  );
+  background: #68ad3e;
+  transform: scale(1.05);
+}
 
-  .option-card.vegan:has(.hidden-radio:checked) {
-    border-radius: 0;
-    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
-    background: #68ad3e;
-    transform: scale(1.05);
-  }
 
   // Meat
   .option-card.meat:hover {
