@@ -3,7 +3,18 @@ body.matches-index {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: transparent !important;
+}
+
+body.matches-index::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.1);
+  z-index: 2;
+  pointer-events: none;
 }
 
 body.matches-music_suggestions {
