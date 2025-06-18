@@ -47,7 +47,7 @@
 
   &:hover {
     transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.25em 0.25em;
+    box-shadow: 0.2em 0.25em;
     background-color: white;
 
     svg {
@@ -60,4 +60,7 @@
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
   }
+
+
+
 }
