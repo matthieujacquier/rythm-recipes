@@ -327,18 +327,9 @@
     ],
     "cuisine": "Mexican",
     "duration": 40,
-<<<<<<< HEAD
-    "description": "Colorful bell peppers filled with a savory quinoa and black bean mix, topped with melted cheddar.",
-    "created_at": "2025-06-16T13:49:17.170Z",
-    "updated_at": "2025-06-16T13:49:17.170Z"
-  },
-  {
-    "id": 59,
-=======
     "description": "Colorful bell peppers filled with a savory quinoa and black bean mix, topped with melted cheddar."
   },
   {
->>>>>>> master
     "name": "Caprese Salad",
     "difficulty": "easy",
     "food_type": "vegetarian",
