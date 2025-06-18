@@ -21,7 +21,7 @@
                       <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
                         data: { action: "click->form#goToStep", step: "1" },
                         class: "hidden-radio" %>
-                      <img src="/assets/icons/<%= type.downcase %>.png" alt="<%= type %>" class="option-icon" />
+                      <%= image_tag "icons/#{type.downcase}.png", alt: type, class: "option-icon" %>
                       <span class="option-label"><%= type %></span>
                     </label>
                   <% end %>
@@ -32,7 +32,7 @@
                     <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
                       data: { action: "form#handleShuffleClick" },
                       class: "hidden-radio" %>
-                    <img src="/assets/icons/<%= type.downcase %>.png" alt="<%= type %>" class="option-icon" />
+                    <%= image_tag "icons/#{type.downcase}.png", alt: type, class: "option-icon" %>
                     <span class="option-label"><%= type %></span>
                   </label>
                 </div>
@@ -42,7 +42,7 @@
                       <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
                         data: { action: "click->form#goToStep", step: "1" },
                         class: "hidden-radio" %>
-                      <img src="/assets/icons/<%= type.downcase %>.png" alt="<%= type %>" class="option-icon" />
+                      <%= image_tag "icons/#{type.downcase}.png", alt: type, class: "option-icon" %>
                       <span class="option-label"><%= type %></span>
                     </label>
                   <% end %>
@@ -84,14 +84,14 @@
         <div class="d-none option-grid" data-form-target="step" id="genre-step">
           <% selected_genres = @match_data["genres"] || [] %>
           <div class="col-10 text-center">
-            <h2>Select music genres:</h2>
+            <h2>Select at least one music genre</h2>
               <div class="d-flex flex-wrap justify-content-center">
               <div class="mx-2">
                 <% genre = "Pop" %><label class="option-card-genre sm" id="pop">
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -100,7 +100,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -109,7 +109,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -118,7 +118,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -127,7 +127,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -136,7 +136,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -145,7 +145,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -154,7 +154,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -163,7 +163,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -172,7 +172,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -181,7 +181,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -190,7 +190,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -199,7 +199,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -208,7 +208,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -217,7 +217,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -226,7 +226,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -235,7 +235,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -244,7 +244,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -253,7 +253,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -262,7 +262,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -271,7 +271,7 @@
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
 
@@ -281,7 +281,7 @@
                     data: { action: "form#handleGenreShuffleClick" },
                     class: "hidden-radio" %>
                   <span class="option-label sm">
-                    <img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %>
+                    <%= genre %>
                   </span>
                 </label>
               </div>
@@ -298,7 +298,6 @@
         </div>
         <!-- Album or Playlist -->
         <div class="d-none option-grid" data-form-target="musicFormat">
-          <h2>Album or Playlist?</h2>
           <% ['Album', 'Playlist'].each do |format| %>
             <label class="option-card">
               <%= radio_button_tag :music_format_selection, format, false,
@@ -314,15 +313,14 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="shuffleModalLabel">Surprise Dish</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="shuffleModalBody">
               <!-- Will be filled by JS -->
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nope</button>
-              <button type="button" class="btn btn-primary" data-action="form#confirmShuffle">Yes, let's go!</button>
+              <button type="button" class="button" data-bs-dismiss="modal">Change the food type</button>
+              <button type="button" class="button" data-action="form#confirmShuffle">Yes, let's go!</button>
             </div>
           </div>
         </div>

@@ -219,7 +219,7 @@ export default class extends Controller {
         this.genrePreviewTarget.innerHTML = "";
       } else {
         this.genrePreviewTarget.innerHTML = `
-  <p class="mb-2 fw-bold">🎵 Your selection</p>
+  <p class="mb-2 fw-bold">Your selection</p>
   <div class="d-flex flex-wrap justify-content-center gap-2">
     ${selectedGenres.map((genre, i) => {
       const color = this.colorClasses[i % this.colorClasses.length]; // or use random
