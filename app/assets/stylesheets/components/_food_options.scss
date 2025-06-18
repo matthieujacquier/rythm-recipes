@@ -17,7 +17,7 @@
     border-radius: 50%;
     border: none;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    background-color: $info;
+    background-color: $light_gray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +72,8 @@
   .option-card.vegan {
     border-radius: 50%;
     clip-path: none;
-    background-color: $info;
+    background-color: $light_gray;
+    border: 0px;
 
     &:hover {
       border-radius: 0;
@@ -87,6 +88,7 @@
     clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
     background: #68ad3e;
     transform: scale(1.05);
+    border: 0px;
   }
 
   // Meat
@@ -100,6 +102,7 @@
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     background: #e9c228;
     transform: scale(1.10);
+    border: 0px;
   }
 
   // Vegetarian
@@ -127,6 +130,7 @@
     );
     background: #f09423;
     transform: scale(1.10);
+    border: 0px;
   }
 
   // Seafood

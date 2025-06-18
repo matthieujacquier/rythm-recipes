@@ -22,16 +22,21 @@ h2 {font-weight: 400;}
   justify-content: center;
   width: 160px;
   aspect-ratio: 1;
-  border: 2px solid $gray;
   border-radius: 100%;
   gap: 20px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-align: center;
-  background-color: $info;
+  background-color: $light_gray;
   margin: 16px;
   transition: all 0.3s ease-in-out;
   transform-origin: center;
+}
+
+.option-card-genre {
+  cursor: pointer;
+  background-color: $light_gray;
+  margin: 16px;
 }
 
 // .option-card:hover {
@@ -49,9 +54,11 @@ h2 {font-weight: 400;}
 
 .sm {
   height: 40px;
+  width: 100%;
   font-size: 18px !important;
   border-radius: 25px;
   align-content: center;
+  border: 0px !important;
 }
 
 .hidden-radio {
@@ -62,7 +69,7 @@ h2 {font-weight: 400;}
 .option-card:has(.hidden-radio:checked) {
   background-color: $orange;
   color: white;
-  border-color: $orange;
+  border: 2px solid $gray;
 }
 
 $n: 5;
@@ -77,72 +84,118 @@ $n3: 15;
   100% { transform: rotate(0deg); }
 }
 
-#difficulty-easy:hover {
-  border: 0;
-  --r: 45px; /* the radius of the small circles */
-  width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n})));
-  aspect-ratio: 1;
-  $m: (); /* empty variable */
-  /* loop through the number of circles*/
-  @for $i from 1 through ($n) {
-    $m: append($m,
-      radial-gradient(50% 50%,#000 98%,#0000) no-repeat
-      calc(50% + 50%*cos(360deg*#{$i/$n}))
-      calc(50% + 50%*sin(360deg*#{$i/$n}))
-     / calc(2*var(--r)) calc(2*var(--r)),
-    comma);
+#difficulty-easy {
+
+  .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+  background-color: transparent;
+  color: white;
+  border: 0px;
   }
-  mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n})),#0000 calc(var(--r)/tan(180deg/#{$n}) + 1px)),#{$m};
-  background: $green;
-  animation: wiggle 1s ease-in-out infinite;
-  .option-label {
+
+  &:hover {
+    border: 0;
+    --r: 45px; /* the radius of the small circles */
+    width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n})));
+    aspect-ratio: 1;
+    $m: (); /* empty variable */
+    /* loop through the number of circles*/
+    @for $i from 1 through ($n) {
+      $m: append($m,
+        radial-gradient(50% 50%,#000 98%,#0000) no-repeat
+        calc(50% + 50%*cos(360deg*#{$i/$n}))
+        calc(50% + 50%*sin(360deg*#{$i/$n}))
+      / calc(2*var(--r)) calc(2*var(--r)),
+      comma);
+    }
+    mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n})),#0000 calc(var(--r)/tan(180deg/#{$n}) + 1px)),#{$m};
+    background: $green;
+    animation: wiggle 1s ease-in-out infinite;
+
+    .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+      background-color: transparent;
+      color: white;
+      border-color: $green;
+    }
+
+    .option-label {
+      color: white;
+    }
+  }
+}
+#difficulty-medium {
+
+  .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+    background-color: transparent;
     color: white;
+    border: 0px;
+  }
+
+  &:hover {
+    border: 0;
+    --r: 30px; /* the radius of the small circles */
+    width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n2})));
+    aspect-ratio: 1;
+    $m: (); /* empty variable */
+    /* loop through the number of circles*/
+    @for $i from 1 through ($n2) {
+      $m: append($m,
+        radial-gradient(50% 50%,#000 98%,#0000) no-repeat
+        calc(50% + 50%*cos(360deg*#{$i/$n2}))
+        calc(50% + 50%*sin(360deg*#{$i/$n2}))
+      / calc(2*var(--r)) calc(2*var(--r)),
+      comma);
+    }
+    mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n2})),#0000 calc(var(--r)/tan(180deg/#{$n2}) + 1px)),#{$m};
+    background: $orange;
+    animation: wiggle 1s ease-in-out infinite;
+
+    .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+      background-color: transparent;
+      color: white;
+      border-color: $orange;
+    }
+
+    .option-label {
+      color: white;
+    }
   }
 }
 
-#difficulty-medium:hover {
-  border: 0;
-  --r: 30px; /* the radius of the small circles */
-  width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n2})));
-  aspect-ratio: 1;
-  $m: (); /* empty variable */
-  /* loop through the number of circles*/
-  @for $i from 1 through ($n2) {
-    $m: append($m,
-      radial-gradient(50% 50%,#000 98%,#0000) no-repeat
-      calc(50% + 50%*cos(360deg*#{$i/$n2}))
-      calc(50% + 50%*sin(360deg*#{$i/$n2}))
-     / calc(2*var(--r)) calc(2*var(--r)),
-    comma);
-  }
-  mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n2})),#0000 calc(var(--r)/tan(180deg/#{$n2}) + 1px)),#{$m};
-  background: $orange;
-  animation: wiggle 1s ease-in-out infinite;
-  .option-label {
-    color: white;
-  }
-}
+#difficulty-hard {
 
-#difficulty-hard:hover {
-  border: 0;
-  --r: 20px; /* the radius of the small circles */
-  width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n3})));
-  aspect-ratio: 1;
-  $m: (); /* empty variable */
-  /* loop through the number of circles*/
-  @for $i from 1 through ($n3) {
-    $m: append($m,
-      radial-gradient(50% 50%,#000 98%,#0000) no-repeat
-      calc(50% + 50%*cos(360deg*#{$i/$n3}))
-      calc(50% + 50%*sin(360deg*#{$i/$n3}))
-     / calc(2*var(--r)) calc(2*var(--r)),
-    comma);
-  }
-  mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n3})),#0000 calc(var(--r)/tan(180deg/#{$n3}) + 1px)),#{$m};
-  background: $red;
-  animation: wiggle 1s ease-in-out infinite;
-
-  .option-label {
+  .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+    background-color: transparent;
     color: white;
+    border: 0px;
+  }
+
+  &:hover {
+    border: 0;
+    --r: 20px; /* the radius of the small circles */
+    width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n3})));
+    aspect-ratio: 1;
+    $m: (); /* empty variable */
+    /* loop through the number of circles*/
+    @for $i from 1 through ($n3) {
+      $m: append($m,
+        radial-gradient(50% 50%,#000 98%,#0000) no-repeat
+        calc(50% + 50%*cos(360deg*#{$i/$n3}))
+        calc(50% + 50%*sin(360deg*#{$i/$n3}))
+      / calc(2*var(--r)) calc(2*var(--r)),
+      comma);
+    }
+    mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n3})),#0000 calc(var(--r)/tan(180deg/#{$n3}) + 1px)),#{$m};
+    background: $red;
+    animation: wiggle 1s ease-in-out infinite;
+
+    .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+      background-color: transparent;
+      color: white;
+      border-color: $red;
+    }
+
+    .option-label {
+      color: white;
+    }
   }
 }
