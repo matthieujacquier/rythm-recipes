@@ -121,7 +121,7 @@ users = [user1, user2, user3, user4, user5]
 
 puts "Created #{User.count} users"
 
-# puts "Seeding recipes..."
+puts "Seeding recipes..."
 
 # ["easy", "medium", "hard"].each do |difficulty|
 #   ["meat", "vegetarian", "vegan", "seafood"].each do |food_type|
