@@ -30,7 +30,7 @@ h2 {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-align: center;
-  background-color: $light_gray;
+  background-color: $info;
   margin: 16px;
   transition: all 0.3s ease-in-out;
   transform-origin: center;
@@ -38,8 +38,16 @@ h2 {
 
 .option-card-genre {
   cursor: pointer;
-  background-color: $light_gray;
+  background-color: $info;
   margin: 16px;
+  &:hover {
+    background-color: $flashy_yellow;
+  }
+}
+
+.option-card-genre:has(.hidden-radio:checked) {
+  background-color: $flashy_yellow;
+  color: white;
 }
 
 // .option-card:hover {
@@ -58,7 +66,7 @@ h2 {
 .sm {
   height: 40px;
   width: 100%;
-  font-size: 18px !important;
+  font-size: 16px !important;
   border-radius: 25px;
   align-content: center;
   border: 0px !important;
@@ -68,11 +76,10 @@ h2 {
   display: none;
 }
 
-.hidden-radio:checked + .option-label,
+
 .option-card:has(.hidden-radio:checked) {
   background-color: $orange;
   color: white;
-  border: 2px solid $gray;
 }
 
 $n: 5;
@@ -96,7 +103,6 @@ $n3: 15;
   }
 
   &:hover {
-    border: 0;
     --r: 45px; /* the radius of the small circles */
     width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n})));
     aspect-ratio: 1;
