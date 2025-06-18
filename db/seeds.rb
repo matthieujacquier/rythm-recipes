@@ -5,9 +5,9 @@ file_path = Rails.root.join('db', 'album_desc_seeds.json')
 albums_by_genre = JSON.parse(File.read(file_path))
 
 Match.delete_all
-# Recipe.delete_all
+Recipe.delete_all
 User.delete_all
-MusicSuggestion.delete_all
+# MusicSuggestion.delete_all
 
 puts "Defining genres"
 
@@ -121,50 +121,84 @@ users = [user1, user2, user3, user4, user5]
 
 puts "Created #{User.count} users"
 
-# puts "Seeding recipes..."
+puts "Seeding recipes with JSON..."
 
-# ["easy", "medium", "hard"].each do |difficulty|
-#   ["meat", "vegetarian", "vegan", "seafood"].each do |food_type|
-#     puts "🔄 Generating recipes for: #{difficulty.capitalize} / #{food_type.capitalize}"
-#     begin
-#       recipes = RecipeGenerator.new(difficulty: difficulty, food_type: food_type).call
+# Load recipes from JSON file
+file_path = Rails.root.join('db', 'seed_recipes.json')
+seed_recipes = JSON.parse(File.read(file_path))
 
-#       recipes.each do |recipe_data|
-#         begin
-#           recipe_name = recipe_data["name"]
-#           next if Recipe.exists?(name: recipe_name)
+# Seed from JSON file first
+seed_recipes.each do |recipe_data|
+  recipe_name = recipe_data["name"]
+  next if Recipe.exists?(name: recipe_name)
 
-#           image_url = ApifyImages.new(recipe_name).fetch_image_url
+  begin
+    image_url = recipe_data["image_url"] || ApifyImages.new(recipe_name).fetch_image_url
 
-#           Recipe.create!(
-#             name: recipe_name,
-#             difficulty: difficulty,
-#             food_type: food_type,
-#             image_url: image_url,
-#             ingredients: recipe_data["ingredients"],
-#             portion_size: 4,
-#             instructions: recipe_data["instructions"],
-#             cuisine: recipe_data["cuisine"],
-#             duration: recipe_data["duration"],
-#             description: recipe_data["description"]
-#           )
+    Recipe.create!(
+      name: recipe_name,
+      difficulty: recipe_data["difficulty"],
+      food_type: recipe_data["food_type"],
+      image_url: image_url,
+      ingredients: recipe_data["ingredients"],
+      portion_size: recipe_data["portion_size"],
+      instructions: recipe_data["instructions"],
+      cuisine: recipe_data["cuisine"],
+      duration: recipe_data["duration"],
+      description: recipe_data["description"]
+    )
 
-#           puts "✅ Created: #{recipe_name}"
-#         rescue => e
-#           puts "⚠️ Failed to create recipe: #{e.message}"
-#         end
-#       end
-#     rescue => e
-#       puts "⚠️ Failed for #{difficulty}/#{food_type}: #{e.message}"
-#     end
-#   end
-# end
+    puts " Seeded from file: #{recipe_name}"
+  rescue => e
+    puts "⚠️ Failed to seed from file: #{recipe_name} - #{e.message}"
+  end
+end
 
 
-# food_suggestions = Recipe.all.to_a
+puts "Seeding recipes with openAI..."
+
+["easy", "medium", "hard"].each do |difficulty|
+  ["meat", "vegetarian", "vegan", "seafood"].each do |food_type|
+    puts "🔄 Generating recipes for: #{difficulty.capitalize} / #{food_type.capitalize}"
+    begin
+      recipes = RecipeGenerator.new(difficulty: difficulty, food_type: food_type).call
+
+      recipes.each do |recipe_data|
+        begin
+          recipe_name = recipe_data["name"]
+          next if Recipe.exists?(name: recipe_name)
+
+          image_url = ApifyImages.new(recipe_name).fetch_image_url
+
+          Recipe.create!(
+            name: recipe_name,
+            difficulty: difficulty,
+            food_type: food_type,
+            image_url: image_url,
+            ingredients: recipe_data["ingredients"],
+            portion_size: 4,
+            instructions: recipe_data["instructions"],
+            cuisine: recipe_data["cuisine"],
+            duration: recipe_data["duration"],
+            description: recipe_data["description"]
+          )
+
+          puts "✅ Created: #{recipe_name}"
+        rescue => e
+          puts "⚠️ Failed to create recipe: #{e.message}"
+        end
+      end
+    rescue => e
+      puts "⚠️ Failed for #{difficulty}/#{food_type}: #{e.message}"
+    end
+  end
+end
 
 
-# puts "Seeding complete!"
+food_suggestions = Recipe.all.to_a
+
+
+puts "Seeding complete!"
 
 # puts "Seeding matches..."
 
