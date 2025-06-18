@@ -26,11 +26,10 @@
           <p class="card-text"><%= recipe.description %></p>
         </div>
 
-        <% ingredients = JSON.parse(recipe.ingredients.gsub('=>', ':')) rescue [] %>
         <div class="card-ingredients">
           <h5>Ingredients</h5>
           <ul>
-            <% ingredients.each do |ingredient| %>
+            <% recipe.ingredients.each do |ingredient| %>
               <li><%= "#{ingredient['quantity']} #{ingredient['name']}" %></li>
             <% end %>
           </ul>
