@@ -4,19 +4,15 @@
     <div class="col-12 text-center my-5">
       <h1>Find your Rhythm & Recipe</h1>
     </div>
-
     <div data-controller="form">
       <%= form_tag generate_match_path, method: :post do %>
-
         <!--Food Type Selection -->
         <div class="option-step-wrapper" data-form-target="step">
           <div class="col-12 text-center">
             <h2>What would you like to cook today?</h2>
             <p>Choose one option</p>
-
             <div class="option-layout-wrapper">
               <div class="option-layout">
-
                 <div class="option-column left">
                   <% ['Vegan', 'Vegetarian'].each do |type| %>
                     <label class="option-card <%= type.downcase %>">
@@ -28,7 +24,6 @@
                     </label>
                   <% end %>
                 </div>
-
                 <div class="option-column center">
                   <% type = "Shuffle" %>
                   <label class="option-card <%= type.downcase %>">
@@ -39,7 +34,6 @@
                     <span class="option-label"><%= type %></span>
                   </label>
                 </div>
-
                 <div class="option-column right">
                   <% ['Meat', 'Seafood'].each do |type| %>
                     <label class="option-card <%= type.downcase %>">
@@ -51,13 +45,11 @@
                     </label>
                   <% end %>
                 </div>
-
               </div>
               <div data-form-target="shuffleOutput" class="d-none mt-3 fw-bold"></div>
             </div>
           </div>
         </div>
-
         <!-- Difficulty -->
         <div class="d-none option-grid" data-controller="recipe" data-form-target="step">
           <div class="col-10 text-center">
@@ -76,7 +68,6 @@
               data: { action: "click->form#goToStep", step: "0" } %>
           </div>
         </div>
-
         <!-- Genre Selection -->
         <div class="d-none option-grid" data-form-target="step" id="genre-step">
           <% selected_genres = @match_data["genres"] || [] %>
@@ -99,7 +90,6 @@
             </div>
           </div>
         </div>
-
         <!-- Album or Playlist -->
         <div class="d-none option-grid" data-form-target="musicFormat">
           <h2>Album or Playlist?</h2>
@@ -112,7 +102,6 @@
             </label>
           <% end %>
         </div>
-
       <% end %>
     </div>
   </div>
