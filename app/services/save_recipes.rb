@@ -1,6 +1,7 @@
 require_relative '../../config/environment'
 require 'json'
 
+Class SaveRecipes
 recipes = Recipe.all.as_json(except: [:id, :created_at, :updated_at])
 
 File.open("recipes.json", "w") do |f|
@@ -8,3 +9,5 @@ File.open("recipes.json", "w") do |f|
 end
 
 puts "Recipes saved to recipes.json"
+
+end
