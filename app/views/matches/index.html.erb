@@ -57,28 +57,24 @@
           <div class="col-10 text-center">
             <h2 data-form-target="foodOutput">Choose the difficulty of the dish:</h2>
             <div class="d-flex flex-wrap justify-content-center form-align-center">
-
                 <div><% level = "Easy" %><label class="option-card" id="difficulty-easy">
                   <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
                   <span class="option-label"><%= level %></span>
                 </label></div>
-
                 <div><% level = "Medium" %><label class="option-card" id="difficulty-medium">
                   <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
                   <span class="option-label"><%= level %></span>
                 </label></div>
-
                 <div><% level = "Hard" %><label class="option-card" id="difficulty-hard">
                   <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
                   <span class="option-label"><%= level %></span>
                 </label></div>
-
             </div>
             <%= button_tag "← Go Back", type: :button, class: "btn-back",
               data: { action: "click->form#goToStep", step: "0" } %>
@@ -137,9 +133,7 @@
           </div>
         </div>
       </div>
-
       <div class="modal fade" id="genreShuffleModal" tabindex="-1" aria-labelledby="genreShuffleModalLabel" aria-hidden="true">
-
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">

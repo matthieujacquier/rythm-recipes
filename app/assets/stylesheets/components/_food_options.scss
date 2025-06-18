@@ -1,5 +1,13 @@
 // SCSS for Food Type Option Buttons
 
+@keyframes wiggle {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(1deg); }
+  50%  { transform: rotate(-1deg); }
+  75%  { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}
+
 .option-step-wrapper {
   .option-grid {
     gap: 32px;
@@ -15,7 +23,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: none;
+    border: 2px solid $gray;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     background-color: $info;
     display: flex;
@@ -30,8 +38,9 @@
     will-change: transform;
 
     &:hover {
-      transform: scale(1.10);
-      border: none;
+    transform: scale(1.10) rotate(0deg);
+    border: none;
+    animation: wiggle 1s ease-in-out infinite;
     }
 
   .option-icon {
