@@ -72,16 +72,26 @@
 
     <div class="col-2">
       <h2>Ingredients</h2>
-      <% @match.recipe.ingredients.each do |ingredient| %>
-        <p><%= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
-      <% end %>
+      <%# @match.recipe.ingredients.each do |ingredient| %>
+        <%# <p><%#= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
+      <%# end %>
+
+      <% ingredients = @match.recipe.ingredients.is_a?(String) ? JSON.parse(@match.recipe.ingredients) : @match.recipe.ingredients %>
+        <% ingredients.each do |ingredient| %>
+          <p><%= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
+        <% end %>
+
     </div>
     <div class="col-6">
 
       <h2>Instructions</h2>
-      <% @match.recipe.instructions.each do |instruction| %>
-        <p><%= "#{instruction['title']} - #{instruction['description']}" %></p>
-      <% end %>
+      <%# @match.recipe.instructions.each do |instruction| %>
+        <%# <p>= "#{instruction['title']} - #{instruction['description']}"</p> %>
+      <%# end %>
+      <% instructions = @match.recipe.instructions.is_a?(String) ? JSON.parse(@match.recipe.instructions) : @match.recipe.instructions %>
+        <% instructions.each do |instruction| %>
+          <p><%= "#{instruction['title']} - #{instruction['description']}" %></p>
+        <% end %>
     </div>
   </div>
 </div>
