@@ -1,7 +1,9 @@
 .footer {
   background: transparent;
-  padding: 20px 20px 20px !important;
-  padding-top: 120px;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-self: center;
 }
 
 .footer .a {
