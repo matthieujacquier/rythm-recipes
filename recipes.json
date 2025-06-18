@@ -51,18 +51,9 @@
     ],
     "cuisine": "Mediterranean",
     "duration": 40,
-<<<<<<< HEAD
-    "description": "Juicy chicken breasts marinated with herbs and grilled to perfection.",
-    "created_at": "2025-06-16T13:46:33.060Z",
-    "updated_at": "2025-06-16T13:46:33.060Z"
-  },
-  {
-    "id": 55,
-=======
     "description": "Juicy chicken breasts marinated with herbs and grilled to perfection."
   },
   {
->>>>>>> master
     "name": "Beef Stir Fry",
     "difficulty": "easy",
     "food_type": "meat",
@@ -118,18 +109,9 @@
     ],
     "cuisine": "Asian",
     "duration": 30,
-<<<<<<< HEAD
-    "description": "A quick and flavorful beef stir fry with fresh vegetables.",
-    "created_at": "2025-06-16T13:47:27.908Z",
-    "updated_at": "2025-06-16T13:47:27.908Z"
-  },
-  {
-    "id": 56,
-=======
     "description": "A quick and flavorful beef stir fry with fresh vegetables."
   },
   {
->>>>>>> master
     "name": "Honey Garlic Pork Chops",
     "difficulty": "easy",
     "food_type": "meat",
@@ -181,18 +163,9 @@
     ],
     "cuisine": "American",
     "duration": 35,
-<<<<<<< HEAD
-    "description": "Tender pork chops glazed with a sweet and savory honey garlic sauce.",
-    "created_at": "2025-06-16T13:47:46.896Z",
-    "updated_at": "2025-06-16T13:47:46.896Z"
-  },
-  {
-    "id": 57,
-=======
     "description": "Tender pork chops glazed with a sweet and savory honey garlic sauce."
   },
   {
->>>>>>> master
     "name": "Lemon Herb Lamb Chops",
     "difficulty": "easy",
     "food_type": "meat",
@@ -244,18 +217,9 @@
     ],
     "cuisine": "Greek",
     "duration": 30,
-<<<<<<< HEAD
-    "description": "Delicious lamb chops infused with a lemon and herb marinade.",
-    "created_at": "2025-06-16T13:48:09.182Z",
-    "updated_at": "2025-06-16T13:48:09.182Z"
-  },
-  {
-    "id": 58,
-=======
     "description": "Delicious lamb chops infused with a lemon and herb marinade."
   },
   {
->>>>>>> master
     "name": "Vegetarian Stuffed Bell Peppers",
     "difficulty": "easy",
     "food_type": "vegetarian",
@@ -385,18 +349,9 @@
     ],
     "cuisine": "Italian",
     "duration": 15,
-<<<<<<< HEAD
-    "description": "A refreshing Italian salad featuring ripe tomatoes, creamy mozzarella, and fresh basil.",
-    "created_at": "2025-06-16T13:49:37.956Z",
-    "updated_at": "2025-06-16T13:49:37.956Z"
-  },
-  {
-    "id": 67,
-=======
     "description": "A refreshing Italian salad featuring ripe tomatoes, creamy mozzarella, and fresh basil."
   },
   {
->>>>>>> master
     "name": "Thai Coconut Fish Curry",
     "difficulty": "easy",
     "food_type": "seafood",
@@ -448,18 +403,9 @@
     ],
     "cuisine": "Thai",
     "duration": 35,
-<<<<<<< HEAD
-    "description": "Rich and flavorful fish curry made with creamy coconut milk and aromatic Thai spices.",
-    "created_at": "2025-06-16T13:55:11.341Z",
-    "updated_at": "2025-06-16T13:55:11.341Z"
-  },
-  {
-    "id": 60,
-=======
     "description": "Rich and flavorful fish curry made with creamy coconut milk and aromatic Thai spices."
   },
   {
->>>>>>> master
     "name": "Vegetarian Fried Rice",
     "difficulty": "easy",
     "food_type": "vegetarian",
@@ -523,18 +469,9 @@
     ],
     "cuisine": "Chinese",
     "duration": 30,
-<<<<<<< HEAD
-    "description": "A quick and easy vegetarian fried rice, perfect for a midweek dinner.",
-    "created_at": "2025-06-16T13:50:29.020Z",
-    "updated_at": "2025-06-16T13:50:29.020Z"
-  },
-  {
-    "id": 61,
-=======
     "description": "A quick and easy vegetarian fried rice, perfect for a midweek dinner."
   },
   {
->>>>>>> master
     "name": "Vegetarian Tacos",
     "difficulty": "easy",
     "food_type": "vegetarian",
@@ -598,18 +535,9 @@
     ],
     "cuisine": "Mexican",
     "duration": 25,
-<<<<<<< HEAD
-    "description": "A vibrant and zesty vegetarian taco filled with black beans and fresh avocado.",
-    "created_at": "2025-06-16T13:51:06.818Z",
-    "updated_at": "2025-06-16T13:51:06.818Z"
-  },
-  {
-    "id": 62,
-=======
     "description": "A vibrant and zesty vegetarian taco filled with black beans and fresh avocado."
   },
   {
->>>>>>> master
     "name": "Vegan Chickpea Salad",
     "difficulty": "easy",
     "food_type": "vegan",
@@ -669,18 +597,9 @@
     ],
     "cuisine": "Mediterranean",
     "duration": 20,
-<<<<<<< HEAD
-    "description": "A refreshing and protein-rich salad perfect for a light meal.",
-    "created_at": "2025-06-16T13:52:00.582Z",
-    "updated_at": "2025-06-16T13:52:00.582Z"
-  },
-  {
-    "id": 63,
-=======
     "description": "A refreshing and protein-rich salad perfect for a light meal."
   },
   {
->>>>>>> master
     "name": "Vegan Thai Green Curry",
     "difficulty": "easy",
     "food_type": "vegan",
@@ -744,18 +663,9 @@
     ],
     "cuisine": "Thai",
     "duration": 30,
-<<<<<<< HEAD
-    "description": "A fragrant and colorful curry that is both satisfying and delicious.",
-    "created_at": "2025-06-16T13:52:33.584Z",
-    "updated_at": "2025-06-16T13:52:33.584Z"
-  },
-  {
-    "id": 64,
-=======
     "description": "A fragrant and colorful curry that is both satisfying and delicious."
   },
   {
->>>>>>> master
     "name": "Vegan Mexican Tacos",
     "difficulty": "easy",
     "food_type": "vegan",
@@ -815,18 +725,9 @@
     ],
     "cuisine": "Mexican",
     "duration": 25,
-<<<<<<< HEAD
-    "description": "Flavorful and vibrant tacos that are perfect for a quick vegan meal.",
-    "created_at": "2025-06-16T13:53:24.283Z",
-    "updated_at": "2025-06-16T13:53:24.283Z"
-  },
-  {
-    "id": 65,
-=======
     "description": "Flavorful and vibrant tacos that are perfect for a quick vegan meal."
   },
   {
->>>>>>> master
     "name": "Vegan Indian Lentil Soup",
     "difficulty": "easy",
     "food_type": "vegan",
@@ -898,18 +799,9 @@
     ],
     "cuisine": "Indian",
     "duration": 40,
-<<<<<<< HEAD
-    "description": "A warming and nutritious soup with a hint of spice and aromatic flavors.",
-    "created_at": "2025-06-16T13:53:44.219Z",
-    "updated_at": "2025-06-16T13:53:44.219Z"
-  },
-  {
-    "id": 66,
-=======
     "description": "A warming and nutritious soup with a hint of spice and aromatic flavors."
   },
   {
->>>>>>> master
     "name": "Garlic Butter Shrimp Pasta",
     "difficulty": "easy",
     "food_type": "seafood",
@@ -961,18 +853,9 @@
     ],
     "cuisine": "Italian",
     "duration": 30,
-<<<<<<< HEAD
-    "description": "A quick and delicious pasta dish with succulent shrimp and a hint of garlic.",
-    "created_at": "2025-06-16T13:54:53.534Z",
-    "updated_at": "2025-06-16T13:54:53.534Z"
-  },
-  {
-    "id": 68,
-=======
     "description": "A quick and delicious pasta dish with succulent shrimp and a hint of garlic."
   },
   {
->>>>>>> master
     "name": "Spanish Garlic Prawns",
     "difficulty": "easy",
     "food_type": "seafood",
@@ -1024,18 +907,9 @@
     ],
     "cuisine": "Spanish",
     "duration": 25,
-<<<<<<< HEAD
-    "description": "A classic Spanish tapas dish featuring prawns cooked in garlic and olive oil.",
-    "created_at": "2025-06-16T13:55:32.882Z",
-    "updated_at": "2025-06-16T13:55:32.882Z"
-  },
-  {
-    "id": 69,
-=======
     "description": "A classic Spanish tapas dish featuring prawns cooked in garlic and olive oil."
   },
   {
->>>>>>> master
     "name": "Lemon Herb Grilled Salmon",
     "difficulty": "easy",
     "food_type": "seafood",
@@ -1087,18 +961,9 @@
     ],
     "cuisine": "American",
     "duration": 30,
-<<<<<<< HEAD
-    "description": "Juicy grilled salmon with a fresh and zesty lemon herb marinade.",
-    "created_at": "2025-06-16T13:55:53.651Z",
-    "updated_at": "2025-06-16T13:55:53.651Z"
-  },
-  {
-    "id": 70,
-=======
     "description": "Juicy grilled salmon with a fresh and zesty lemon herb marinade."
   },
   {
->>>>>>> master
     "name": "Spicy Korean Beef Stir-Fry",
     "difficulty": "medium",
     "food_type": "meat",
@@ -1158,18 +1023,9 @@
     ],
     "cuisine": "Korean",
     "duration": 60,
-<<<<<<< HEAD
-    "description": "A fiery and savory Korean beef stir-fry that's perfect for spice lovers.",
-    "created_at": "2025-06-16T13:56:49.216Z",
-    "updated_at": "2025-06-16T13:56:49.216Z"
-  },
-  {
-    "id": 71,
-=======
     "description": "A fiery and savory Korean beef stir-fry that's perfect for spice lovers."
   },
   {
->>>>>>> master
     "name": "Moroccan Lamb Tagine",
     "difficulty": "medium",
     "food_type": "meat",
@@ -1229,18 +1085,9 @@
     ],
     "cuisine": "Moroccan",
     "duration": 90,
-<<<<<<< HEAD
-    "description": "A fragrant and hearty lamb tagine, rich in spices and sweetness from apricots.",
-    "created_at": "2025-06-16T13:57:09.004Z",
-    "updated_at": "2025-06-16T13:57:09.004Z"
-  },
-  {
-    "id": 72,
-=======
     "description": "A fragrant and hearty lamb tagine, rich in spices and sweetness from apricots."
   },
   {
->>>>>>> master
     "name": "Italian Chicken Cacciatore",
     "difficulty": "medium",
     "food_type": "meat",
@@ -1300,18 +1147,9 @@
     ],
     "cuisine": "Italian",
     "duration": 75,
-<<<<<<< HEAD
-    "description": "A rustic Italian chicken stew that's rich in flavor and perfect for a cozy meal.",
-    "created_at": "2025-06-16T13:57:28.987Z",
-    "updated_at": "2025-06-16T13:57:28.987Z"
-  },
-  {
-    "id": 73,
-=======
     "description": "A rustic Italian chicken stew that's rich in flavor and perfect for a cozy meal."
   },
   {
->>>>>>> master
     "name": "Mexican Pork Carnitas",
     "difficulty": "medium",
     "food_type": "meat",
@@ -1371,18 +1209,9 @@
     ],
     "cuisine": "Mexican",
     "duration": 90,
-<<<<<<< HEAD
-    "description": "Tender and flavorful pork carnitas with a citrusy twist, perfect for tacos.",
-    "created_at": "2025-06-16T13:57:58.899Z",
-    "updated_at": "2025-06-16T13:57:58.899Z"
-  },
-  {
-    "id": 79,
-=======
     "description": "Tender and flavorful pork carnitas with a citrusy twist, perfect for tacos."
   },
   {
->>>>>>> master
     "name": "Thai Green Curry",
     "difficulty": "medium",
     "food_type": "vegan",
@@ -1458,18 +1287,9 @@
     ],
     "cuisine": "Thai",
     "duration": 70,
-<<<<<<< HEAD
-    "description": "A flavorful vegan curry with aromatic spices and creamy coconut milk.",
-    "created_at": "2025-06-16T14:01:59.449Z",
-    "updated_at": "2025-06-16T14:01:59.449Z"
-  },
-  {
-    "id": 74,
-=======
     "description": "A flavorful vegan curry with aromatic spices and creamy coconut milk."
   },
   {
->>>>>>> master
     "name": "Stuffed Bell Peppers",
     "difficulty": "medium",
     "food_type": "vegetarian",
@@ -1541,18 +1361,9 @@
     ],
     "cuisine": "Mexican",
     "duration": 60,
-<<<<<<< HEAD
-    "description": "Colorful bell peppers stuffed with a flavorful mixture of quinoa, beans, and cheese.",
-    "created_at": "2025-06-16T13:59:17.189Z",
-    "updated_at": "2025-06-16T13:59:17.189Z"
-  },
-  {
-    "id": 75,
-=======
     "description": "Colorful bell peppers stuffed with a flavorful mixture of quinoa, beans, and cheese."
   },
   {
->>>>>>> master
     "name": "Spinach and Ricotta Cannelloni",
     "difficulty": "medium",
     "food_type": "vegetarian",
@@ -1616,18 +1427,9 @@
     ],
     "cuisine": "Italian",
     "duration": 75,
-<<<<<<< HEAD
-    "description": "Delicious baked cannelloni filled with creamy ricotta and fresh spinach.",
-    "created_at": "2025-06-16T13:59:37.414Z",
-    "updated_at": "2025-06-16T13:59:37.414Z"
-  },
-  {
-    "id": 76,
-=======
     "description": "Delicious baked cannelloni filled with creamy ricotta and fresh spinach."
   },
   {
->>>>>>> master
     "name": "Chickpea and Vegetable Tagine",
     "difficulty": "medium",
     "food_type": "vegetarian",
@@ -1703,18 +1505,9 @@
     ],
     "cuisine": "Moroccan",
     "duration": 70,
-<<<<<<< HEAD
-    "description": "A hearty Moroccan tagine packed with chickpeas and vibrant vegetables.",
-    "created_at": "2025-06-16T13:59:59.666Z",
-    "updated_at": "2025-06-16T13:59:59.666Z"
-  },
-  {
-    "id": 77,
-=======
     "description": "A hearty Moroccan tagine packed with chickpeas and vibrant vegetables."
   },
   {
->>>>>>> master
     "name": "Mushroom and Leek Risotto",
     "difficulty": "medium",
     "food_type": "vegetarian",
@@ -1786,18 +1579,9 @@
     ],
     "cuisine": "Italian",
     "duration": 65,
-<<<<<<< HEAD
-    "description": "Rich and creamy risotto with earthy mushrooms and delicate leeks.",
-    "created_at": "2025-06-16T14:00:26.204Z",
-    "updated_at": "2025-06-16T14:00:26.204Z"
-  },
-  {
-    "id": 78,
-=======
     "description": "Rich and creamy risotto with earthy mushrooms and delicate leeks."
   },
   {
->>>>>>> master
     "name": "Mushroom Stroganoff",
     "difficulty": "medium",
     "food_type": "vegan",
@@ -1873,18 +1657,9 @@
     ],
     "cuisine": "Russian",
     "duration": 60,
-<<<<<<< HEAD
-    "description": "A creamy, hearty vegan twist on the classic stroganoff.",
-    "created_at": "2025-06-16T14:01:32.017Z",
-    "updated_at": "2025-06-16T14:01:32.017Z"
-  },
-  {
-    "id": 80,
-=======
     "description": "A creamy, hearty vegan twist on the classic stroganoff."
   },
   {
->>>>>>> master
     "name": "Moroccan Vegetable Tagine",
     "difficulty": "medium",
     "food_type": "vegan",
@@ -1960,18 +1735,9 @@
     ],
     "cuisine": "Moroccan",
     "duration": 75,
-<<<<<<< HEAD
-    "description": "A fragrant Moroccan dish packed with vegetables and exotic spices.",
-    "created_at": "2025-06-16T14:02:30.823Z",
-    "updated_at": "2025-06-16T14:02:30.823Z"
-  },
-  {
-    "id": 81,
-=======
     "description": "A fragrant Moroccan dish packed with vegetables and exotic spices."
   },
   {
->>>>>>> master
     "name": "Vegan Paella",
     "difficulty": "medium",
     "food_type": "vegan",
@@ -2047,18 +1813,9 @@
     ],
     "cuisine": "Spanish",
     "duration": 80,
-<<<<<<< HEAD
-    "description": "A vibrant and colorful vegan paella bursting with flavors.",
-    "created_at": "2025-06-16T14:02:53.236Z",
-    "updated_at": "2025-06-16T14:02:53.236Z"
-  },
-  {
-    "id": 82,
-=======
     "description": "A vibrant and colorful vegan paella bursting with flavors."
   },
   {
->>>>>>> master
     "name": "Seafood Paella",
     "difficulty": "medium",
     "food_type": "seafood",
@@ -2150,18 +1907,9 @@
     ],
     "cuisine": "Spanish",
     "duration": 60,
-<<<<<<< HEAD
-    "description": "A classic Spanish dish bursting with the flavors of the sea.",
-    "created_at": "2025-06-16T14:40:19.812Z",
-    "updated_at": "2025-06-16T14:40:19.812Z"
-  },
-  {
-    "id": 83,
-=======
     "description": "A classic Spanish dish bursting with the flavors of the sea."
   },
   {
->>>>>>> master
     "name": "Grilled Miso Salmon",
     "difficulty": "medium",
     "food_type": "seafood",
@@ -2229,18 +1977,9 @@
     ],
     "cuisine": "Japanese",
     "duration": 50,
-<<<<<<< HEAD
-    "description": "A savory and sweet miso-marinated salmon grilled to perfection.",
-    "created_at": "2025-06-16T14:40:43.303Z",
-    "updated_at": "2025-06-16T14:40:43.303Z"
-  },
-  {
-    "id": 84,
-=======
     "description": "A savory and sweet miso-marinated salmon grilled to perfection."
   },
   {
->>>>>>> master
     "name": "Thai Green Curry with Prawns",
     "difficulty": "medium",
     "food_type": "seafood",
@@ -2308,18 +2047,9 @@
     ],
     "cuisine": "Thai",
     "duration": 55,
-<<<<<<< HEAD
-    "description": "A fragrant and spicy Thai curry with succulent prawns.",
-    "created_at": "2025-06-16T14:41:17.437Z",
-    "updated_at": "2025-06-16T14:41:17.437Z"
-  },
-  {
-    "id": 85,
-=======
     "description": "A fragrant and spicy Thai curry with succulent prawns."
   },
   {
->>>>>>> master
     "name": "New England Clam Chowder",
     "difficulty": "medium",
     "food_type": "seafood",
@@ -2395,18 +2125,9 @@
     ],
     "cuisine": "American",
     "duration": 70,
-<<<<<<< HEAD
-    "description": "A hearty and creamy chowder filled with tender clams and crispy bacon.",
-    "created_at": "2025-06-16T14:41:39.699Z",
-    "updated_at": "2025-06-16T14:41:39.699Z"
-  },
-  {
-    "id": 86,
-=======
     "description": "A hearty and creamy chowder filled with tender clams and crispy bacon."
   },
   {
->>>>>>> master
     "name": "Beef Wellington",
     "difficulty": "hard",
     "food_type": "meat",
@@ -2466,18 +2187,9 @@
     ],
     "cuisine": "British",
     "duration": 120,
-<<<<<<< HEAD
-    "description": "A classic and elegant dish featuring tender beef wrapped in flaky pastry.",
-    "created_at": "2025-06-16T14:42:34.402Z",
-    "updated_at": "2025-06-16T14:42:34.402Z"
-  },
-  {
-    "id": 87,
-=======
     "description": "A classic and elegant dish featuring tender beef wrapped in flaky pastry."
   },
   {
->>>>>>> master
     "name": "Coq au Vin",
     "difficulty": "hard",
     "food_type": "meat",
@@ -2545,18 +2257,9 @@
     ],
     "cuisine": "French",
     "duration": 150,
-<<<<<<< HEAD
-    "description": "A rich and hearty French stew made with chicken and red wine.",
-    "created_at": "2025-06-16T14:42:59.572Z",
-    "updated_at": "2025-06-16T14:42:59.572Z"
-  },
-  {
-    "id": 88,
-=======
     "description": "A rich and hearty French stew made with chicken and red wine."
   },
   {
->>>>>>> master
     "name": "Osso Buco",
     "difficulty": "hard",
     "food_type": "meat",
@@ -2628,18 +2331,9 @@
     ],
     "cuisine": "Italian",
     "duration": 180,
-<<<<<<< HEAD
-    "description": "A sumptuous Italian dish featuring slowly braised veal shanks.",
-    "created_at": "2025-06-16T14:43:19.458Z",
-    "updated_at": "2025-06-16T14:43:19.458Z"
-  },
-  {
-    "id": 89,
-=======
     "description": "A sumptuous Italian dish featuring slowly braised veal shanks."
   },
   {
->>>>>>> master
     "name": "Rogan Josh",
     "difficulty": "hard",
     "food_type": "meat",
@@ -2711,18 +2405,9 @@
     ],
     "cuisine": "Indian",
     "duration": 120,
-<<<<<<< HEAD
-    "description": "A flavorful and aromatic curry made with tender lamb and rich spices.",
-    "created_at": "2025-06-16T14:43:49.092Z",
-    "updated_at": "2025-06-16T14:43:49.092Z"
-  },
-  {
-    "id": 90,
-=======
     "description": "A flavorful and aromatic curry made with tender lamb and rich spices."
   },
   {
->>>>>>> master
     "name": "Stuffed Bell Peppers with Quinoa and Cheese",
     "difficulty": "hard",
     "food_type": "vegetarian",
@@ -2790,18 +2475,9 @@
     ],
     "cuisine": "Mediterranean",
     "duration": 95,
-<<<<<<< HEAD
-    "description": "A hearty dish of bell peppers stuffed with a savory mixture of quinoa and melted cheese.",
-    "created_at": "2025-06-16T14:44:40.867Z",
-    "updated_at": "2025-06-16T14:44:40.867Z"
-  },
-  {
-    "id": 91,
-=======
     "description": "A hearty dish of bell peppers stuffed with a savory mixture of quinoa and melted cheese."
   },
   {
->>>>>>> master
     "name": "Vegetable Lasagna with Homemade Pasta",
     "difficulty": "hard",
     "food_type": "vegetarian",
@@ -2869,18 +2545,9 @@
     ],
     "cuisine": "Italian",
     "duration": 120,
-<<<<<<< HEAD
-    "description": "A classic Italian dish made with fresh homemade pasta and layers of rich vegetable filling.",
-    "created_at": "2025-06-16T14:45:41.171Z",
-    "updated_at": "2025-06-16T14:45:41.171Z"
-  },
-  {
-    "id": 92,
-=======
     "description": "A classic Italian dish made with fresh homemade pasta and layers of rich vegetable filling."
   },
   {
->>>>>>> master
     "name": "Mushroom and Truffle Risotto",
     "difficulty": "hard",
     "food_type": "vegetarian",
@@ -2948,18 +2615,9 @@
     ],
     "cuisine": "Italian",
     "duration": 105,
-<<<<<<< HEAD
-    "description": "An indulgent risotto combining earthy mushrooms and the luxurious aroma of truffle oil.",
-    "created_at": "2025-06-16T14:46:04.236Z",
-    "updated_at": "2025-06-16T14:46:04.236Z"
-  },
-  {
-    "id": 93,
-=======
     "description": "An indulgent risotto combining earthy mushrooms and the luxurious aroma of truffle oil."
   },
   {
->>>>>>> master
     "name": "Eggplant Moussaka",
     "difficulty": "hard",
     "food_type": "vegetarian",
@@ -3027,18 +2685,9 @@
     ],
     "cuisine": "Greek",
     "duration": 130,
-<<<<<<< HEAD
-    "description": "A traditional Greek casserole with layers of eggplant, potatoes, and creamy bechamel.",
-    "created_at": "2025-06-16T14:46:25.773Z",
-    "updated_at": "2025-06-16T14:46:25.773Z"
-  },
-  {
-    "id": 94,
-=======
     "description": "A traditional Greek casserole with layers of eggplant, potatoes, and creamy bechamel."
   },
   {
->>>>>>> master
     "name": "Vegan Mushroom Wellington",
     "difficulty": "hard",
     "food_type": "vegan",
@@ -3102,18 +2751,9 @@
     ],
     "cuisine": "British",
     "duration": 95,
-<<<<<<< HEAD
-    "description": "A luxurious vegan twist on the classic Wellington, perfect for special occasions.",
-    "created_at": "2025-06-16T14:47:30.793Z",
-    "updated_at": "2025-06-16T14:47:30.793Z"
-  },
-  {
-    "id": 95,
-=======
     "description": "A luxurious vegan twist on the classic Wellington, perfect for special occasions."
   },
   {
->>>>>>> master
     "name": "Vegan Biryani",
     "difficulty": "hard",
     "food_type": "vegan",
@@ -3181,18 +2821,9 @@
     ],
     "cuisine": "Indian",
     "duration": 110,
-<<<<<<< HEAD
-    "description": "An aromatic and richly spiced vegan biryani that delights the senses.",
-    "created_at": "2025-06-16T14:47:57.497Z",
-    "updated_at": "2025-06-16T14:47:57.497Z"
-  },
-  {
-    "id": 96,
-=======
     "description": "An aromatic and richly spiced vegan biryani that delights the senses."
   },
   {
->>>>>>> master
     "name": "Vegan Ramen",
     "difficulty": "hard",
     "food_type": "vegan",
@@ -3264,18 +2895,9 @@
     ],
     "cuisine": "Japanese",
     "duration": 100,
-<<<<<<< HEAD
-    "description": "A savory and comforting vegan ramen that's perfect for a cozy night in.",
-    "created_at": "2025-06-16T14:48:18.342Z",
-    "updated_at": "2025-06-16T14:48:18.342Z"
-  },
-  {
-    "id": 97,
-=======
     "description": "A savory and comforting vegan ramen that's perfect for a cozy night in."
   },
   {
->>>>>>> master
     "name": "Bouillabaisse Marseillaise",
     "difficulty": "hard",
     "food_type": "seafood",
@@ -3367,18 +2989,9 @@
     ],
     "cuisine": "French",
     "duration": 120,
-<<<<<<< HEAD
-    "description": "A traditional Provençal seafood stew infused with saffron and aromatic herbs.",
-    "created_at": "2025-06-16T14:57:21.192Z",
-    "updated_at": "2025-06-16T14:57:21.192Z"
-  },
-  {
-    "id": 98,
-=======
     "description": "A traditional Provençal seafood stew infused with saffron and aromatic herbs."
   },
   {
->>>>>>> master
     "name": "Paella de Marisco",
     "difficulty": "hard",
     "food_type": "seafood",
@@ -3470,18 +3083,9 @@
     ],
     "cuisine": "Spanish",
     "duration": 100,
-<<<<<<< HEAD
-    "description": "A rich and flavorful Spanish rice dish loaded with fresh seafood.",
-    "created_at": "2025-06-16T14:57:48.983Z",
-    "updated_at": "2025-06-16T14:57:48.983Z"
-  },
-  {
-    "id": 99,
-=======
     "description": "A rich and flavorful Spanish rice dish loaded with fresh seafood."
   },
   {
->>>>>>> master
     "name": "Cioppino",
     "difficulty": "hard",
     "food_type": "seafood",
@@ -3573,18 +3177,9 @@
     ],
     "cuisine": "Italian-American",
     "duration": 110,
-<<<<<<< HEAD
-    "description": "A hearty and rustic seafood stew with a tomato and wine base, perfect for a cozy meal.",
-    "created_at": "2025-06-16T14:58:11.177Z",
-    "updated_at": "2025-06-16T14:58:11.177Z"
-  },
-  {
-    "id": 100,
-=======
     "description": "A hearty and rustic seafood stew with a tomato and wine base, perfect for a cozy meal."
   },
   {
->>>>>>> master
     "name": "Lobster Thermidor",
     "difficulty": "hard",
     "food_type": "seafood",
@@ -3660,12 +3255,6 @@
     ],
     "cuisine": "French",
     "duration": 95,
-<<<<<<< HEAD
-    "description": "A luxurious French dish featuring lobster in a creamy mustard sauce, baked to perfection.",
-    "created_at": "2025-06-16T14:58:33.617Z",
-    "updated_at": "2025-06-16T14:58:33.617Z"
-=======
     "description": "A luxurious French dish featuring lobster in a creamy mustard sauce, baked to perfection."
->>>>>>> master
   }
 ]
