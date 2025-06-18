@@ -28,7 +28,7 @@
                 </div>
                 <div class="option-column center">
                   <% type = "Shuffle" %>
-                  <label class="option-card <%= type.downcase %>" id="smaller">
+                  <label class="option-card <%= type.downcase %>">
                     <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
                       data: { action: "form#handleShuffleClick" },
                       class: "hidden-radio" %>
