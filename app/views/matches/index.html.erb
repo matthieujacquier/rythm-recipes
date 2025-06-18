@@ -281,17 +281,23 @@
 
               <div class="mx-2">
                 <% genre = "Shuffle" %><label class="option-card-genre sm" id="shuffle">
-                  <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
-                    data: { action: "click->form#goToStep", step: "2" },
+                  <%= check_box_tag "genre_shuffle_temp", "1", false,
+                    data: { action: "form#handleGenreShuffleClick" },
                     class: "hidden-radio" %>
-                  <span class="option-label sm"><img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %></span>
+                  <span class="option-label sm">
+                    <img src="/assets/icons/music.svg" height="20px" class="me-2"><%= genre %>
+                  </span>
                 </label>
               </div>
+
+
+
 
               <%= button_tag "← Go Back", type: :button, class: "btn-back",
                 data: { action: "click->form#goToStep", step: "1" } %>
               <div data-form-target="genreShuffleOutput" class="d-none mt-3 fw-bold"></div>
             </div>
+            <div data-form-target="genrePreview" class="genre-preview mt-4 text-center"></div>
           </div>
         </div>
         <!-- Album or Playlist -->

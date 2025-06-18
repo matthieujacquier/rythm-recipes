@@ -50,12 +50,12 @@ h2 {
   color: white;
 }
 
-// .option-card:hover {
-//   border-color: $gray;
-//   border-width: 3px;
-//   background-color: $orange;
-//   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-// }
+.option-card:hover {
+  border-color: $gray;
+  border-width: 3px;
+  background-color: $orange;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
 
 .option-label {
   font-size: 24px;
@@ -227,4 +227,20 @@ $n3: 15;
 .form-content .text-center.my-5 {
   margin-bottom: 0 !important;
   margin-top: 4px !important;
+}
+
+.genre-preview {
+  .genre-chip {
+    font-size: 0.95rem;
+    background-color: #ffeb3b;
+    color: #222;
+    border-radius: 20px;
+    padding: 0.4em 0.8em;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin-right: 6px;
+  }
 }

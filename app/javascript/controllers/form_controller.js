@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
-  static targets = ["step", "shuffleOutput", "foodOutput", "genreShuffleOutput", "musicFormat"];
+  static targets = ["step", "shuffleOutput", "foodOutput", "genreShuffleOutput", "musicFormat", "genrePreview"];
 
   connect() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -67,13 +67,6 @@ export default class extends Controller {
         const genreInput = document.querySelector(`input[name="music_genres[]"][value="${randomGenre}"]`);
         if (genreInput) genreInput.checked = true;
 
-        alert(`Surprise! We picked '${randomGenre}' for your music genre.`);
-
-        if (this.hasGenreShuffleOutputTarget) {
-          this.genreShuffleOutputTarget.innerText = `🎧 Your surprise genre is: ${randomGenre}`;
-          this.genreShuffleOutputTarget.classList.remove("d-none");
-        }
-
         event.target.checked = false;
       } else {
         if (this.hasGenreShuffleOutputTarget) {
@@ -83,6 +76,7 @@ export default class extends Controller {
       }
 
       this.toggleMusicFormatDisplay();
+      this.updateGenrePreview();
     }
 
     this.showStep(targetStepIndex);
@@ -156,5 +150,71 @@ export default class extends Controller {
     // Advance to the next step
     this.showStep(1);
   }
+
+  handleGenreShuffleClick(event) {
+    event.preventDefault();
+
+    const genreOptions = [
+      "Pop", "Rock", "Hip-Hop", "Rap", "R&B", "Indie", "Electronic", "Dance",
+      "Alternative", "Jazz", "Classical", "Folk", "Country", "Metal", "Punk",
+      "Blues", "Reggae", "Soul", "Funk", "Techno", "Afro"
+    ];
+
+    const randomGenre = genreOptions[Math.floor(Math.random() * genreOptions.length)];
+    this.selectedGenreShuffle = randomGenre;
+
+    const modalBody = document.getElementById("genreShuffleModalBody");
+    modalBody.innerText = `🎧 We'll surprise you with: "${randomGenre}". Wanna go with it?`;
+
+    const modal = new bootstrap.Modal(document.getElementById("genreShuffleModal"));
+    modal.show();
+
+    // ✅ Uncheck the shuffle checkbox after modal opens
+    const shuffleCheckbox = document.querySelector('input[name="genre_shuffle_temp"]');
+    if (shuffleCheckbox) shuffleCheckbox.checked = false;
+  }
+
+
+confirmGenreShuffle() {
+  if (!this.selectedGenreShuffle) return;
+
+  // Clear other genre selections
+  document.querySelectorAll('input[name="music_genres[]"]').forEach(input => {
+    input.checked = false;
+  });
+
+  const input = document.querySelector(`input[name="music_genres[]"][value="${this.selectedGenreShuffle}"]`);
+  if (input) input.checked = true;
+
+  // Close modal
+  const modal = bootstrap.Modal.getInstance(document.getElementById("genreShuffleModal"));
+  if (modal) modal.hide();
+
+  this.toggleMusicFormatDisplay();
+  this.updateGenrePreview();
+}
+
+updateGenrePreview() {
+  const selectedGenres = Array.from(document.querySelectorAll('input[name="music_genres[]"]:checked'))
+    .map(input => input.value);
+
+  if (this.hasGenrePreviewTarget) {
+    if (selectedGenres.length === 0) {
+      this.genrePreviewTarget.innerHTML = "";
+    } else {
+      this.genrePreviewTarget.innerHTML = `
+        <p class="mb-2 fw-bold">Your selection</p>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          ${selectedGenres.map(genre => `
+            <span class="genre-chip badge rounded-pill bg-warning text-dark d-flex align-items-center px-3 py-2">
+              <img src="/assets/icons/music.svg" height="16px" class="me-2" />
+              ${genre}
+            </span>
+          `).join('')}
+        </div>
+      `;
+    }
+  }
+}
 
 }
