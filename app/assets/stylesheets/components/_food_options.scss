@@ -23,7 +23,6 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 2px solid $gray;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     background-color: $light_gray;
     display: flex;
@@ -259,6 +258,10 @@
   // }
 
   // Shuffle
+  .option-card.shuffle {
+    width: 175px;
+    height: 175px;
+  }
   .option-card.shuffle:hover,
   .option-card.shuffle:has(.hidden-radio:checked) {
     mask: radial-gradient(40px at 40px 40px, #0000 98%, #000) -40px -40px;

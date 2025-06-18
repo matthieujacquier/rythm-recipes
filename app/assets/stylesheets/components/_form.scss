@@ -41,12 +41,12 @@ h2 {
   background-color: $info;
   margin: 16px;
   &:hover {
-    background-color: $flashy_yellow;
+    background-color: $orange;
   }
 }
 
 .option-card-genre:has(.hidden-radio:checked) {
-  background-color: $flashy_yellow;
+  background-color: $orange;
   color: white;
 }
 
