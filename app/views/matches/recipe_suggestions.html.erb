@@ -1,5 +1,5 @@
 <%# <pre><%= session[:match_data].pretty_inspect</pre> %>
-
+<div class="container full-height">
 <div class="card-container mt-5 mb-3">
   <h1 class="text-center mb-5">Which recipe would you like to select?</h1>
 
@@ -60,7 +60,8 @@
     </div>
 
     <div class="text-center mt-4">
-      <%= link_to "← Go Back", music_suggestions_matches_path, class: "button" %>
+      <%= link_to "← Go Back", music_suggestions_matches_path, class: "btn-back" %>
     </div>
   </div>
+</div>
 </div>

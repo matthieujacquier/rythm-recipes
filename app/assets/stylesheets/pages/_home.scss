@@ -1,14 +1,18 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+}
+
+.full-height {
+  min-height: calc(100vh - 165px);
+
 }
 
 .landing-container {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: url('https://storage.googleapis.com/qover-assets/Logos/BannerBG.png') no-repeat center center/cover;
+  background: asset-url('loginbg.png') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;

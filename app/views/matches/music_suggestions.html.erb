@@ -1,12 +1,12 @@
 <pre><%# session[:match_data].pretty_inspect %></pre>
 
-<div class="container">
+<div class="container full-height">
   <h2 class="text-center mb-4">Which <%= @format == "album" ? "playlist" : "album" %> would you like to select?</h2>
   <turbo-frame id="music_suggestions">
     <%= render partial: "music_cards", locals: { suggestions: @suggestions } %>
   </turbo-frame>
 
   <div class="text-center mt-4">
-    <%= button_to "Shuffle selection", music_suggestions_matches_path, method: :get, class: "btn btn-primary" %>
+    <%= button_to "Shuffle selection", music_suggestions_matches_path, method: :get, class: "button" %>
   </div>
 </div>
