@@ -1,7 +1,11 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+}
+
+.full-height {
+  min-height: calc(100vh - 165px);
+
 }
 
 .landing-container {

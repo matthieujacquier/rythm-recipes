@@ -1,4 +1,4 @@
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-5 full-height">
   <div class="row justify-content-center">
     <div class="col-10 d-flex justify-content-between">
       <div>
@@ -72,14 +72,14 @@
 
     <div class="col-2">
       <h2>Ingredients</h2>
-      <% @match.ingredients.each do |ingredient| %>
+      <% @match.recipe.ingredients.each do |ingredient| %>
         <p><%= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
       <% end %>
     </div>
     <div class="col-6">
 
       <h2>Instructions</h2>
-      <% @match.instructions.each do |instruction| %>
+      <% @match.recipe.instructions.each do |instruction| %>
         <p><%= "#{instruction['title']} - #{instruction['description']}" %></p>
       <% end %>
     </div>

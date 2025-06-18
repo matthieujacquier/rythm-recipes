@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RythmRecipes</title>
+    <title>Rhythm'n'Recipes</title>
+    <%= favicon_link_tag asset_path('favicon/icon.svg') %>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body class="<%= "#{controller_name}-#{action_name} d-flex flex-column" %>">
-<% unless controller_name == 'pages' && action_name == 'home' %>
-  <%= render 'shared/navbar' %>
-<% end %>
-<%= render "shared/flashes" %>
+    <% unless controller_name == 'pages' && action_name == 'home' %>
+      <%= render 'shared/navbar' %>
+    <% end %>
+    <%= render "shared/flashes" %>
     <%= yield %>
-<%= render "shared/footer" %>
+    <% unless controller_name == 'pages' && action_name == 'home' %>
+      <%= render "shared/footer" %>
+    <% end %>
   </body>
 </html>
