@@ -44,7 +44,7 @@ export default class extends Controller {
       const foodInput = document.querySelector(`input[name="food_type_selection"][value="${randomFood}"]`);
       if (foodInput) foodInput.checked = true;
 
-      alert("Thank you for trusting us! We'll surprise you with a " + randomFood + " dish!");
+
 
       if (this.hasShuffleOutputTarget) {
         this.shuffleOutputTarget.classList.remove("d-none");
@@ -88,6 +88,32 @@ export default class extends Controller {
     this.showStep(targetStepIndex);
   }
 
+  handleShuffleClick(event) {
+    event.preventDefault();
+
+    const foodOptions = ["Meat", "Vegan", "Vegetarian", "Seafood"];
+    const randomFood = foodOptions[Math.floor(Math.random() * foodOptions.length)];
+    this.selectedShuffle = randomFood;
+
+    // ❌ Uncheck all current selections (including Shuffle)
+    document.querySelectorAll('input[name="food_type_selection"]').forEach(input => {
+      input.checked = false;
+    });
+
+    // ✅ Check the randomly selected one
+    const selectedInput = document.querySelector(`input[name="food_type_selection"][value="${randomFood}"]`);
+    if (selectedInput) selectedInput.checked = true;
+
+    // 🟣 Update modal content
+    const modalBody = document.getElementById("shuffleModalBody");
+    modalBody.innerText = `We'll surprise you with a ${randomFood} dish!`;
+
+    // 🟣 Show the modal
+    const modal = new bootstrap.Modal(document.getElementById("shuffleModal"));
+    modal.show();
+  }
+
+
   submit() {
     this.element.querySelector("form").submit();
     setTimeout(() => {
@@ -108,6 +134,27 @@ export default class extends Controller {
     this.stepTargets.forEach((step, i) => {
       step.classList.toggle("d-none", i !== index);
     });
+  }
+
+  confirmShuffle() {
+    if (!this.selectedShuffle) return;
+
+    // Set the checked value again to ensure state
+    const foodInput = document.querySelector(`input[name="food_type_selection"][value="${this.selectedShuffle}"]`);
+    if (foodInput) foodInput.checked = true;
+
+    // Update the next step prompt
+    if (this.hasFoodOutputTarget) {
+      this.foodOutputTarget.innerHTML =
+        `Alright, we're gonna cook a ${this.selectedShuffle} dish.<br>How difficult should the preparation be?`;
+    }
+
+    // Close the modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById("shuffleModal"));
+    if (modal) modal.hide();
+
+    // Advance to the next step
+    this.showStep(1);
   }
 
 }
