@@ -14,3 +14,50 @@
 .navbar-lewagon .navbar-brand img {
   width: 80px;
 }
+
+.navbar-lewagon .nav-link,
+.navbar-lewagon .dropdown-item {
+  font-weight: 500;
+  color: #1e1e1e;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+
+
+.hamburger {
+  background: #fbca1f;
+  height: 45px;
+  width: 45px;
+  border: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+
+  svg {
+    height: 22px;
+    width: 22px;
+    stroke: black;
+    stroke-width: 4;
+    transition: stroke 0.2s ease;
+  }
+
+  &:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.25em 0.25em;
+    background-color: white;
+
+    svg {
+      stroke: #000000;
+      stroke-width: 4;
+    }
+  }
+
+  &:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+}
