@@ -21,7 +21,7 @@
                       <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
                         data: { action: "click->form#goToStep", step: "1" },
                         class: "hidden-radio" %>
-                      <img src="/assets/icons/<%= type.downcase %>.png" alt="<%= type %>" class="option-icon" />
+                      <%= image_tag "icons/#{type.downcase}.png", alt: type, class: "option-icon" %>
                       <span class="option-label"><%= type %></span>
                     </label>
                   <% end %>
