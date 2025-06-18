@@ -29,9 +29,14 @@
         <div class="card-ingredients">
           <h5>Ingredients</h5>
           <ul>
-            <% recipe.ingredients.each do |ingredient| %>
-              <li><%= "#{ingredient['quantity']} #{ingredient['name']}" %></li>
-            <% end %>
+            <%# <% recipe.ingredients.each do |ingredient| %>
+              <%# <li><%= "#{ingredient['quantity']} #{ingredient['name']}"</li> %>
+            <%# <% end %>
+
+            <% ingredients = recipe.ingredients.is_a?(String) ? JSON.parse(recipe.ingredients) : recipe.ingredients %>
+              <% ingredients.each do |ingredient| %>
+                <li><%= ingredient %></li>
+              <% end %>
           </ul>
         </div>
       </div>
