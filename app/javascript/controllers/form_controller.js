@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
-  static targets = ["step", "shuffleOutput", "foodOutput", "genreShuffleOutput", "musicFormat"];
+  static targets = ["step", "shuffleOutput", "foodOutput", "genreShuffleOutput", "musicFormat", "genrePreview"];
 
   connect() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -67,13 +67,6 @@ export default class extends Controller {
         const genreInput = document.querySelector(`input[name="music_genres[]"][value="${randomGenre}"]`);
         if (genreInput) genreInput.checked = true;
 
-        alert(`Surprise! We picked '${randomGenre}' for your music genre.`);
-
-        if (this.hasGenreShuffleOutputTarget) {
-          this.genreShuffleOutputTarget.innerText = `🎧 Your surprise genre is: ${randomGenre}`;
-          this.genreShuffleOutputTarget.classList.remove("d-none");
-        }
-
         event.target.checked = false;
       } else {
         if (this.hasGenreShuffleOutputTarget) {
@@ -83,6 +76,7 @@ export default class extends Controller {
       }
 
       this.toggleMusicFormatDisplay();
+      this.updateGenrePreview();
     }
 
     this.showStep(targetStepIndex);
@@ -134,7 +128,14 @@ export default class extends Controller {
     this.stepTargets.forEach((step, i) => {
       step.classList.toggle("d-none", i !== index);
     });
+
+    // Re-render genre preview if returning to genre step
+    if (index === 2) {
+      this.updateGenrePreview();
+      this.toggleMusicFormatDisplay(); // also re-check visibility
+    }
   }
+
 
   confirmShuffle() {
     if (!this.selectedShuffle) return;
@@ -155,6 +156,101 @@ export default class extends Controller {
 
     // Advance to the next step
     this.showStep(1);
+  }
+
+  handleGenreShuffleClick(event) {
+    event.preventDefault();
+
+    const genreOptions = [
+      "Pop", "Rock", "Hip-Hop", "Rap", "R&B", "Indie", "Electronic", "Dance",
+      "Alternative", "Jazz", "Classical", "Folk", "Country", "Metal", "Punk",
+      "Blues", "Reggae", "Soul", "Funk", "Techno", "Afro"
+    ];
+
+    const randomGenre = genreOptions[Math.floor(Math.random() * genreOptions.length)];
+    this.selectedGenreShuffle = randomGenre;
+
+    const modalBody = document.getElementById("genreShuffleModalBody");
+    modalBody.innerText = `🎧 We'll surprise you with: "${randomGenre}". Wanna go with it?`;
+
+    const modal = new bootstrap.Modal(document.getElementById("genreShuffleModal"));
+    modal.show();
+
+    // ✅ Uncheck the shuffle checkbox after modal opens
+    const shuffleCheckbox = document.querySelector('input[name="genre_shuffle_temp"]');
+    if (shuffleCheckbox) shuffleCheckbox.checked = false;
+  }
+
+
+  confirmGenreShuffle() {
+    if (!this.selectedGenreShuffle) return;
+
+    // Clear other genre selections
+    document.querySelectorAll('input[name="music_genres[]"]').forEach(input => {
+      input.checked = false;
+    });
+
+    const input = document.querySelector(`input[name="music_genres[]"][value="${this.selectedGenreShuffle}"]`);
+    if (input) input.checked = true;
+
+    // Close modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById("genreShuffleModal"));
+    if (modal) modal.hide();
+
+    this.toggleMusicFormatDisplay();
+    this.updateGenrePreview();
+  }
+
+  updateGenrePreview() {
+    this.colorClasses = [
+      "bg-warning text-dark",
+      "bg-success text-white",
+      "bg-info text-dark",
+      "bg-primary text-white",
+      "bg-danger text-white",
+      "bg-secondary text-white"
+    ];
+
+    const selectedGenres = Array.from(document.querySelectorAll('input[name="music_genres[]"]:checked'))
+      .map(input => input.value);
+
+    if (this.hasGenrePreviewTarget) {
+      if (selectedGenres.length === 0) {
+        this.genrePreviewTarget.innerHTML = "";
+      } else {
+        this.genrePreviewTarget.innerHTML = `
+  <p class="mb-2 fw-bold">🎵 Your selection</p>
+  <div class="d-flex flex-wrap justify-content-center gap-2">
+    ${selectedGenres.map((genre, i) => {
+      const color = this.colorClasses[i % this.colorClasses.length]; // or use random
+      return `
+        <span
+          class="genre-chip badge rounded-pill d-flex align-items-center px-3 py-2 ${color}"
+          data-action="click->form#removeGenreFromPreview"
+          data-genre="${genre}"
+          style="cursor: pointer;"
+        >
+          <img src="/assets/icons/music.svg" height="16px" class="me-2" />
+          <span class="me-2">${genre}</span>
+          <span class="remove-icon fw-bold" style="font-size: 1.2rem;">×</span>
+        </span>
+      `;
+    }).join('')}
+  </div>
+`;
+
+      }
+    }
+  }
+
+  removeGenreFromPreview(event) {
+    const genre = event.currentTarget.dataset.genre;
+    const checkbox = document.querySelector(`input[name="music_genres[]"][value="${genre}"]`);
+    if (checkbox) {
+      checkbox.checked = false;
+      // Trigger logic as if user clicked it
+      checkbox.dispatchEvent(new Event("click", { bubbles: true }));
+    }
   }
 
 }

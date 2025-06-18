@@ -25,7 +25,6 @@ h2 {
   justify-content: center;
   width: 160px;
   aspect-ratio: 1;
-  border: 2px solid $gray;
   border-radius: 100%;
   gap: 20px;
   cursor: pointer;
@@ -37,12 +36,26 @@ h2 {
   transform-origin: center;
 }
 
-// .option-card:hover {
-//   border-color: $gray;
-//   border-width: 3px;
-//   background-color: $orange;
-//   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-// }
+.option-card-genre {
+  cursor: pointer;
+  background-color: $info;
+  margin: 16px;
+  &:hover {
+    background-color: $flashy_yellow;
+  }
+}
+
+.option-card-genre:has(.hidden-radio:checked) {
+  background-color: $flashy_yellow;
+  color: white;
+}
+
+.option-card:hover {
+  border-color: $gray;
+  border-width: 3px;
+  background-color: $orange;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
 
 .option-label {
   font-size: 24px;
@@ -52,20 +65,21 @@ h2 {
 
 .sm {
   height: 40px;
-  font-size: 18px !important;
+  width: 100%;
+  font-size: 16px !important;
   border-radius: 25px;
   align-content: center;
+  border: 0px !important;
 }
 
 .hidden-radio {
   display: none;
 }
 
-.hidden-radio:checked + .option-label,
+
 .option-card:has(.hidden-radio:checked) {
   background-color: $orange;
   color: white;
-  border-color: $orange;
 }
 
 $n: 5;
@@ -80,73 +94,118 @@ $n3: 15;
   100% { transform: rotate(0deg); }
 }
 
-#difficulty-easy:hover {
-  border: 0;
-  --r: 45px; /* the radius of the small circles */
-  width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n})));
-  aspect-ratio: 1;
-  $m: (); /* empty variable */
-  /* loop through the number of circles*/
-  @for $i from 1 through ($n) {
-    $m: append($m,
-      radial-gradient(50% 50%,#000 98%,#0000) no-repeat
-      calc(50% + 50%*cos(360deg*#{$i/$n}))
-      calc(50% + 50%*sin(360deg*#{$i/$n}))
-     / calc(2*var(--r)) calc(2*var(--r)),
-    comma);
+#difficulty-easy {
+
+  .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+  background-color: transparent;
+  color: white;
+  border: 0px;
   }
-  mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n})),#0000 calc(var(--r)/tan(180deg/#{$n}) + 1px)),#{$m};
-  background: $green;
-  animation: wiggle 1s ease-in-out infinite;
-  .option-label {
+
+  &:hover {
+    --r: 45px; /* the radius of the small circles */
+    width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n})));
+    aspect-ratio: 1;
+    $m: (); /* empty variable */
+    /* loop through the number of circles*/
+    @for $i from 1 through ($n) {
+      $m: append($m,
+        radial-gradient(50% 50%,#000 98%,#0000) no-repeat
+        calc(50% + 50%*cos(360deg*#{$i/$n}))
+        calc(50% + 50%*sin(360deg*#{$i/$n}))
+      / calc(2*var(--r)) calc(2*var(--r)),
+      comma);
+    }
+    mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n})),#0000 calc(var(--r)/tan(180deg/#{$n}) + 1px)),#{$m};
+    background: $green;
+    animation: wiggle 1s ease-in-out infinite;
+
+    .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+      background-color: transparent;
+      color: white;
+      border-color: $green;
+    }
+
+    .option-label {
+      color: white;
+    }
+  }
+}
+#difficulty-medium {
+
+  .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+    background-color: transparent;
     color: white;
+    border: 0px;
+  }
+
+  &:hover {
+    border: 0;
+    --r: 30px; /* the radius of the small circles */
+    width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n2})));
+    aspect-ratio: 1;
+    $m: (); /* empty variable */
+    /* loop through the number of circles*/
+    @for $i from 1 through ($n2) {
+      $m: append($m,
+        radial-gradient(50% 50%,#000 98%,#0000) no-repeat
+        calc(50% + 50%*cos(360deg*#{$i/$n2}))
+        calc(50% + 50%*sin(360deg*#{$i/$n2}))
+      / calc(2*var(--r)) calc(2*var(--r)),
+      comma);
+    }
+    mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n2})),#0000 calc(var(--r)/tan(180deg/#{$n2}) + 1px)),#{$m};
+    background: $orange;
+    animation: wiggle 1s ease-in-out infinite;
+
+    .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+      background-color: transparent;
+      color: white;
+      border-color: $orange;
+    }
+
+    .option-label {
+      color: white;
+    }
   }
 }
 
-#difficulty-medium:hover {
-  border: 0;
-  --r: 30px; /* the radius of the small circles */
-  width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n2})));
-  aspect-ratio: 1;
-  $m: (); /* empty variable */
-  /* loop through the number of circles*/
-  @for $i from 1 through ($n2) {
-    $m: append($m,
-      radial-gradient(50% 50%,#000 98%,#0000) no-repeat
-      calc(50% + 50%*cos(360deg*#{$i/$n2}))
-      calc(50% + 50%*sin(360deg*#{$i/$n2}))
-     / calc(2*var(--r)) calc(2*var(--r)),
-    comma);
-  }
-  mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n2})),#0000 calc(var(--r)/tan(180deg/#{$n2}) + 1px)),#{$m};
-  background: $orange;
-  animation: wiggle 1s ease-in-out infinite;
-  .option-label {
-    color: white;
-  }
-}
+#difficulty-hard {
 
-#difficulty-hard:hover {
-  border: 0;
-  --r: 20px; /* the radius of the small circles */
-  width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n3})));
-  aspect-ratio: 1;
-  $m: (); /* empty variable */
-  /* loop through the number of circles*/
-  @for $i from 1 through ($n3) {
-    $m: append($m,
-      radial-gradient(50% 50%,#000 98%,#0000) no-repeat
-      calc(50% + 50%*cos(360deg*#{$i/$n3}))
-      calc(50% + 50%*sin(360deg*#{$i/$n3}))
-     / calc(2*var(--r)) calc(2*var(--r)),
-    comma);
-  }
-  mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n3})),#0000 calc(var(--r)/tan(180deg/#{$n3}) + 1px)),#{$m};
-  background: $red;
-  animation: wiggle 1s ease-in-out infinite;
-
-  .option-label {
+  .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+    background-color: transparent;
     color: white;
+    border: 0px;
+  }
+
+  &:hover {
+    border: 0;
+    --r: 20px; /* the radius of the small circles */
+    width: calc(2*var(--r)*(1 + 1/sin(180deg/#{$n3})));
+    aspect-ratio: 1;
+    $m: (); /* empty variable */
+    /* loop through the number of circles*/
+    @for $i from 1 through ($n3) {
+      $m: append($m,
+        radial-gradient(50% 50%,#000 98%,#0000) no-repeat
+        calc(50% + 50%*cos(360deg*#{$i/$n3}))
+        calc(50% + 50%*sin(360deg*#{$i/$n3}))
+      / calc(2*var(--r)) calc(2*var(--r)),
+      comma);
+    }
+    mask: radial-gradient(#000 calc(var(--r)/tan(180deg/#{$n3})),#0000 calc(var(--r)/tan(180deg/#{$n3}) + 1px)),#{$m};
+    background: $red;
+    animation: wiggle 1s ease-in-out infinite;
+
+    .hidden-radio:checked + .option-label, .option-card:has(.hidden-radio:checked) {
+      background-color: transparent;
+      color: white;
+      border-color: $red;
+    }
+
+    .option-label {
+      color: white;
+    }
   }
 }
 .form-content p,
@@ -168,4 +227,20 @@ $n3: 15;
 .form-content .text-center.my-5 {
   margin-bottom: 0 !important;
   margin-top: 4px !important;
+}
+
+.genre-preview {
+  .genre-chip {
+    font-size: 0.95rem;
+    background-color: #ffeb3b;
+    color: #222;
+    border-radius: 20px;
+    padding: 0.4em 0.8em;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin-right: 6px;
+  }
 }

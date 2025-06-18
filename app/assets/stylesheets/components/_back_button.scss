@@ -1,5 +1,5 @@
 .btn-back {
-  background: #fbca1f;
+  background: $light_gray;
   padding: 0.6em 1.3em;
   font-weight: 900;
   font-size: 18px;
@@ -11,13 +11,13 @@
   color: black;
   position: fixed;
   bottom: 45px;
-  left: 20px;
+  left: 45px;
   z-index: 999;
 
   &:hover {
     transform: translate(-0.05em, -0.05em);
     box-shadow: 0.25em 0.25em;
-    background-color: white;
+    background-color: $flashy_yellow;
   }
 
   &:active {
