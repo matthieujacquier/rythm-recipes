@@ -1,5 +1,8 @@
-h1 {font-weight: 400;}
-h2 {font-weight: 400;}
+h1 {font-weight: 500;}
+h2 {
+  font-weight: 500;
+  font-size: 26px;
+}
 
 .form-align-center {
   height: calc(50vh);
@@ -154,13 +157,12 @@ $n3: 15;
 }
 
 .form-content h1 {
-  margin-bottom: 12px !important;
+  margin-bottom: 17px !important;
 }
 
 .form-content h2 {
-  font-size: 24px;
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .form-content .text-center.my-5 {
