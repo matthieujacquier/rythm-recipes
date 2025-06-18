@@ -79,7 +79,7 @@
                 </label></div>
 
             </div>
-            <%= button_tag "← Go Back", type: :button, class: "button",
+            <%= button_tag "← Go Back", type: :button, class: "btn-back",
               data: { action: "click->form#goToStep", step: "0" } %>
           </div>
         </div>
@@ -99,7 +99,7 @@
                   <span class="option-label sm"><%= genre %></span>
                 </label>
               <% end %>
-              <%= button_tag "← Go Back", type: :button, class: "button",
+              <%= button_tag "← Go Back", type: :button, class: "btn-back",
                 data: { action: "click->form#goToStep", step: "1" } %>
               <div data-form-target="genreShuffleOutput" class="d-none mt-3 fw-bold"></div>
             </div>

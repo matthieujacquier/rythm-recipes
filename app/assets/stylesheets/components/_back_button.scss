@@ -9,6 +9,10 @@
   cursor: pointer;
   text-decoration: none;
   color: black;
+  position: fixed;
+  bottom: 45px;
+  left: 20px;
+  z-index: 999;
 
   &:hover {
     transform: translate(-0.05em, -0.05em);
