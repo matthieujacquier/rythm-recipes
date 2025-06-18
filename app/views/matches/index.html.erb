@@ -1,22 +1,19 @@
 <% @match_data ||= {} %>
+
 <div class="container">
   <div class="row">
     <div class="col-12 text-center my-5">
       <h1>Find your Rhythm & Recipe</h1>
     </div>
-
     <div data-controller="form">
       <%= form_tag generate_match_path, method: :post do %>
-
         <!--Food Type Selection -->
         <div class="option-step-wrapper" data-form-target="step">
           <div class="col-12 text-center">
             <h2>What would you like to cook today?</h2>
             <p>Choose one option</p>
-
             <div class="option-layout-wrapper">
               <div class="option-layout">
-
                 <div class="option-column left">
                   <% ['Vegan', 'Vegetarian'].each do |type| %>
                     <label class="option-card <%= type.downcase %>">
@@ -28,18 +25,16 @@
                     </label>
                   <% end %>
                 </div>
-
                 <div class="option-column center">
                   <% type = "Shuffle" %>
                   <label class="option-card <%= type.downcase %>">
                     <%= radio_button_tag :food_type_selection, type, @match_data["food_type"] == type,
-                      data: { action: "click->form#goToStep", step: "1" },
+                      data: { action: "form#handleShuffleClick" },
                       class: "hidden-radio" %>
                     <img src="/assets/icons/<%= type.downcase %>.png" alt="<%= type %>" class="option-icon" />
                     <span class="option-label"><%= type %></span>
                   </label>
                 </div>
-
                 <div class="option-column right">
                   <% ['Meat', 'Seafood'].each do |type| %>
                     <label class="option-card <%= type.downcase %>">
@@ -51,32 +46,43 @@
                     </label>
                   <% end %>
                 </div>
-
               </div>
               <div data-form-target="shuffleOutput" class="d-none mt-3 fw-bold"></div>
             </div>
           </div>
         </div>
-
         <!-- Difficulty -->
         <div class="d-none option-grid" data-controller="recipe" data-form-target="step">
           <div class="col-10 text-center">
             <h2 data-form-target="foodOutput">Choose the difficulty of the dish:</h2>
             <div class="d-flex flex-wrap justify-content-center form-align-center">
-              <% ['Easy', 'Medium', 'Hard'].each do |level| %>
-                <label class="option-card">
+
+                <div><% level = "Easy" %><label class="option-card" id="difficulty-easy">
                   <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
                   <span class="option-label"><%= level %></span>
-                </label>
-              <% end %>
+                </label></div>
+
+                <div><% level = "Medium" %><label class="option-card" id="difficulty-medium">
+                  <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
+                    data: { action: "click->form#goToStep", step: "2" },
+                    class: "hidden-radio" %>
+                  <span class="option-label"><%= level %></span>
+                </label></div>
+
+                <div><% level = "Hard" %><label class="option-card" id="difficulty-hard">
+                  <%= radio_button_tag :difficulty_selection, level, @match_data["difficulty"] == level,
+                    data: { action: "click->form#goToStep", step: "2" },
+                    class: "hidden-radio" %>
+                  <span class="option-label"><%= level %></span>
+                </label></div>
+
             </div>
             <%= button_tag "← Go Back", type: :button, class: "button",
               data: { action: "click->form#goToStep", step: "0" } %>
           </div>
         </div>
-
         <!-- Genre Selection -->
         <div class="d-none option-grid" data-form-target="step" id="genre-step">
           <% selected_genres = @match_data["genres"] || [] %>
@@ -99,21 +105,57 @@
             </div>
           </div>
         </div>
-
         <!-- Album or Playlist -->
         <div class="d-none option-grid" data-form-target="musicFormat">
           <h2>Album or Playlist?</h2>
           <% ['Album', 'Playlist'].each do |format| %>
             <label class="option-card">
-              <%= radio_button_tag :music_format_selection, format, @match_data["format"] == format,
+              <%= radio_button_tag :music_format_selection, format, false,
                 data: { action: "click->form#submit" },
                 class: "hidden-radio" %>
               <span class="option-label"><%= format %></span>
             </label>
           <% end %>
         </div>
-
       <% end %>
+      <!-- Shuffle Confirmation Modal -->
+      <div class="modal fade" id="shuffleModal" tabindex="-1" aria-labelledby="shuffleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="shuffleModalLabel">Surprise Dish</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="shuffleModalBody">
+              <!-- Will be filled by JS -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nope</button>
+              <button type="button" class="btn btn-primary" data-action="form#confirmShuffle">Yes, let's go!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="genreShuffleModal" tabindex="-1" aria-labelledby="genreShuffleModalLabel" aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Surprise Genre</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="genreShuffleModalBody">
+            <!-- JS will insert chosen genre -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nope</button>
+            <button type="button" class="btn btn-primary" data-action="form#confirmGenreShuffle">Yes, go on!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     </div>
   </div>
 </div>
