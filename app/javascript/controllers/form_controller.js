@@ -2,6 +2,9 @@ import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
   static targets = ["step", "shuffleOutput", "foodOutput", "genreShuffleOutput", "musicFormat", "genrePreview"];
+  static values = {
+  musicIconPath: String
+}
 
   connect() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -214,6 +217,7 @@ export default class extends Controller {
     const selectedGenres = Array.from(document.querySelectorAll('input[name="music_genres[]"]:checked'))
       .map(input => input.value);
 
+    const iconPath = this.musicIconPathValue;
     if (this.hasGenrePreviewTarget) {
       if (selectedGenres.length === 0) {
         this.genrePreviewTarget.innerHTML = "";
@@ -230,7 +234,7 @@ export default class extends Controller {
           data-genre="${genre}"
           style="cursor: pointer;"
         >
-          <%= image_tag "icons/music.svg", height: "16px", class: "me-2" %>
+          <img src="${iconPath}" height="16px" class="me-2" />
           <span class="me-2">${genre}</span>
           <span class="remove-icon fw-bold" style="font-size: 1.2rem;">×</span>
         </span>
