@@ -1,7 +1,6 @@
 <div class="container full-height">
   <div class="card-container mt-5 mb-3">
-    <h1 class="text-center mb-5">Hello <%= @user.first_name %>, these are your saved combos!</h1>
-
+    <h1 class="text-center mb-5 text-dark">Hi <%= @user.first_name %>, these are your saved combos!</h1>
     <div class="saved-recipe-container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 saved-recipe-list">
         <% @user.matches.each do |match| %>
@@ -18,7 +17,7 @@
                   <p class="card-text"><%= match.recipe.description %></p>
                 </div>
 
-                <div class="view-recipe">View Recipe!</div>
+                <div class="view-recipe">View Combo</div>
               </div>
             <% end %>
           <% end %>

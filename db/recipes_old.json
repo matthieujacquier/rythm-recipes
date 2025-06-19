@@ -1,0 +1,3260 @@
+[
+  {
+    "name": "Herbed Grilled Chicken",
+    "difficulty": "easy",
+    "food_type": "meat",
+    "image_url": "https://www.feastingathome.com/wp-content/uploads/2021/06/Grilled-lemon-Herb-Chicken-17.jpg",
+    "ingredients": [
+      {
+        "name": "Chicken breast",
+        "quantity": "500 grams"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Fresh rosemary",
+        "quantity": "2 sprigs"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Marinate Chicken",
+        "description": "Combine olive oil, lemon juice, minced garlic, chopped rosemary, salt, and pepper. Coat chicken breasts with the mixture and let marinate for 30 minutes."
+      },
+      {
+        "title": "Preheat Grill",
+        "description": "Preheat the grill to medium-high heat."
+      },
+      {
+        "title": "Grill Chicken",
+        "description": "Place chicken on the grill and cook for 6-7 minutes on each side until fully cooked."
+      }
+    ],
+    "cuisine": "Mediterranean",
+    "duration": 40,
+    "description": "Juicy chicken breasts marinated with herbs and grilled to perfection."
+  },
+  {
+    "name": "Beef Stir Fry",
+    "difficulty": "easy",
+    "food_type": "meat",
+    "image_url": "https://www.allrecipes.com/thmb/7N-Xq1XMMJw8G0KJv2e0ETUYB2I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/228823-quick-beef-stir-fry-DDMFS-4x3-1f79b031d3134f02ac27d79e967dfef5.jpg",
+    "ingredients": [
+      {
+        "name": "Beef strips",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "3 tablespoons"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1 inch piece"
+      },
+      {
+        "name": "Bell pepper",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Broccoli florets",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Carrot",
+        "quantity": "1 medium"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Ingredients",
+        "description": "Slice beef, bell pepper, and carrot. Chop ginger finely."
+      },
+      {
+        "title": "Cook Beef",
+        "description": "Heat sesame oil in a pan, add beef strips, and cook until brown."
+      },
+      {
+        "title": "Add Vegetables",
+        "description": "Add ginger, bell pepper, broccoli, and carrot. Stir fry for 5 minutes."
+      },
+      {
+        "title": "Add Sauce",
+        "description": "Pour in soy sauce and cook for another 2 minutes."
+      }
+    ],
+    "cuisine": "Asian",
+    "duration": 30,
+    "description": "A quick and flavorful beef stir fry with fresh vegetables."
+  },
+  {
+    "name": "Honey Garlic Pork Chops",
+    "difficulty": "easy",
+    "food_type": "meat",
+    "image_url": "https://www.allrecipes.com/thmb/xijdHGCdDvaDbX0cZioCuboPPX4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/235158-worlds-best-honey-garlic-pork-chops-DDMFS-4x3-6d16c2884cdd407eb8e1e2f494791542.jpg",
+    "ingredients": [
+      {
+        "name": "Pork chops",
+        "quantity": "4 pieces"
+      },
+      {
+        "name": "Honey",
+        "quantity": "3 tablespoons"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4 cloves"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Marinade",
+        "description": "Mix honey, minced garlic, soy sauce, olive oil, salt, and pepper in a bowl."
+      },
+      {
+        "title": "Marinate Pork Chops",
+        "description": "Coat pork chops with marinade and let sit for 20 minutes."
+      },
+      {
+        "title": "Cook Pork Chops",
+        "description": "Heat a skillet over medium heat and cook pork chops for 5-6 minutes on each side until golden brown."
+      }
+    ],
+    "cuisine": "American",
+    "duration": 35,
+    "description": "Tender pork chops glazed with a sweet and savory honey garlic sauce."
+  },
+  {
+    "name": "Lemon Herb Lamb Chops",
+    "difficulty": "easy",
+    "food_type": "meat",
+    "image_url": "https://nourishevolution.com/wp-content/uploads/2009/05/lamb-chops-small.jpeg",
+    "ingredients": [
+      {
+        "name": "Lamb chops",
+        "quantity": "8 pieces"
+      },
+      {
+        "name": "Lemon zest",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Thyme leaves",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Marinade",
+        "description": "Combine olive oil, lemon zest, minced garlic, thyme, salt, and pepper in a bowl."
+      },
+      {
+        "title": "Marinate Lamb Chops",
+        "description": "Rub the mixture over lamb chops and marinate for 20 minutes."
+      },
+      {
+        "title": "Cook Lamb Chops",
+        "description": "Heat a pan over medium-high heat and cook lamb chops for 3-4 minutes on each side to desired doneness."
+      }
+    ],
+    "cuisine": "Greek",
+    "duration": 30,
+    "description": "Delicious lamb chops infused with a lemon and herb marinade."
+  },
+  {
+    "name": "Vegetarian Stuffed Bell Peppers",
+    "difficulty": "easy",
+    "food_type": "vegetarian",
+    "image_url": "https://carlahall.com/wp-content/uploads/2023/09/easy-vegan-stuffed-pepper-720x405.jpg",
+    "ingredients": [
+      {
+        "name": "Bell peppers",
+        "quantity": "4 units"
+      },
+      {
+        "name": "Quinoa",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Black beans",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Corn kernels",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Cheddar cheese",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Cumin powder",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "1/2 teaspoon"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Quinoa",
+        "description": "Cook the quinoa according to package instructions in salted water."
+      },
+      {
+        "title": "Preheat Oven",
+        "description": "Preheat the oven to 180°C (350°F)."
+      },
+      {
+        "title": "Prepare the Peppers",
+        "description": "Cut the tops off the bell peppers and remove the seeds."
+      },
+      {
+        "title": "Mix Filling",
+        "description": "In a bowl, combine cooked quinoa, black beans, corn, cumin, salt, and pepper."
+      },
+      {
+        "title": "Stuff Peppers",
+        "description": "Fill each bell pepper with the quinoa mixture and top with cheddar cheese."
+      },
+      {
+        "title": "Bake",
+        "description": "Place stuffed peppers in a baking dish, drizzle with olive oil, and bake for 30 minutes."
+      }
+    ],
+    "cuisine": "Mexican",
+    "duration": 40,
+    "description": "Colorful bell peppers filled with a savory quinoa and black bean mix, topped with melted cheddar."
+  },
+  {
+    "name": "Caprese Salad",
+    "difficulty": "easy",
+    "food_type": "vegetarian",
+    "image_url": "https://whatsgabycooking.com/wp-content/uploads/2023/06/Dinner-Party-__-Traditional-Caprese-1-1200x800-1.jpg",
+    "ingredients": [
+      {
+        "name": "Tomatoes",
+        "quantity": "4 units"
+      },
+      {
+        "name": "Fresh mozzarella",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Fresh basil leaves",
+        "quantity": "20 leaves"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Balsamic glaze",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Slice Ingredients",
+        "description": "Thinly slice the tomatoes and mozzarella."
+      },
+      {
+        "title": "Assemble Salad",
+        "description": "Layer tomato slices, mozzarella slices, and basil leaves on a platter."
+      },
+      {
+        "title": "Season",
+        "description": "Drizzle with olive oil and balsamic glaze."
+      },
+      {
+        "title": "Final Touches",
+        "description": "Season with salt and pepper to taste before serving."
+      }
+    ],
+    "cuisine": "Italian",
+    "duration": 15,
+    "description": "A refreshing Italian salad featuring ripe tomatoes, creamy mozzarella, and fresh basil."
+  },
+  {
+    "name": "Thai Coconut Fish Curry",
+    "difficulty": "easy",
+    "food_type": "seafood",
+    "image_url": "https://www.feastingathome.com/wp-content/uploads/2021/05/Thai-Fish-Curry-27.jpg",
+    "ingredients": [
+      {
+        "name": "White Fish Fillets",
+        "quantity": "500 grams"
+      },
+      {
+        "name": "Coconut Milk",
+        "quantity": "400 ml"
+      },
+      {
+        "name": "Red Curry Paste",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Fish Sauce",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Basil Leaves",
+        "quantity": "20 grams"
+      },
+      {
+        "name": "Lime",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Red Bell Pepper",
+        "quantity": "1 unit"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Cook Curry Paste",
+        "description": "Fry the red curry paste in a pan until fragrant."
+      },
+      {
+        "title": "Simmer Fish",
+        "description": "Add coconut milk and fish sauce, bring to a simmer, and add fish fillets."
+      },
+      {
+        "title": "Finish with Vegetables",
+        "description": "Add sliced red bell pepper and basil leaves, then squeeze lime juice over the curry before serving."
+      }
+    ],
+    "cuisine": "Thai",
+    "duration": 35,
+    "description": "Rich and flavorful fish curry made with creamy coconut milk and aromatic Thai spices."
+  },
+  {
+    "name": "Vegetarian Fried Rice",
+    "difficulty": "easy",
+    "food_type": "vegetarian",
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2022/03/Vegetable-Fried-Rice-plate.jpg",
+    "ingredients": [
+      {
+        "name": "Cooked rice",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Eggs",
+        "quantity": "2 units"
+      },
+      {
+        "name": "Carrots",
+        "quantity": "2 units"
+      },
+      {
+        "name": "Peas",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "3 tablespoons"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Green onions",
+        "quantity": "2 units"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "2 cloves"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prep Veggies",
+        "description": "Chop carrots and green onions finely. Mince garlic."
+      },
+      {
+        "title": "Cook Eggs",
+        "description": "Scramble the eggs in a pan and set aside."
+      },
+      {
+        "title": "Stir-fry Vegetables",
+        "description": "In sesame oil, sauté garlic, carrots, and peas until tender."
+      },
+      {
+        "title": "Combine Ingredients",
+        "description": "Add cooked rice, soy sauce, scrambled eggs, and green onions to the pan."
+      },
+      {
+        "title": "Finish",
+        "description": "Stir everything together and cook for another 2 minutes."
+      }
+    ],
+    "cuisine": "Chinese",
+    "duration": 30,
+    "description": "A quick and easy vegetarian fried rice, perfect for a midweek dinner."
+  },
+  {
+    "name": "Vegetarian Tacos",
+    "difficulty": "easy",
+    "food_type": "vegetarian",
+    "image_url": "https://img.taste.com.au/SfXb279J/taste/2022/04/cuban-vegetarian-tacos-177724-1.jpg",
+    "ingredients": [
+      {
+        "name": "Corn tortillas",
+        "quantity": "8 units"
+      },
+      {
+        "name": "Black beans",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Avocado",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Cherry tomatoes",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Red onion",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Cilantro",
+        "quantity": "a handful"
+      },
+      {
+        "name": "Lime",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Chili powder",
+        "quantity": "1 teaspoon"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Ingredients",
+        "description": "Dice avocado, chop cherry tomatoes, and thinly slice red onion."
+      },
+      {
+        "title": "Make Filling",
+        "description": "In a bowl, mix black beans, avocado, tomatoes, onion, cilantro, lime juice, salt, and chili powder."
+      },
+      {
+        "title": "Warm Tortillas",
+        "description": "Heat the tortillas in a dry skillet for about 30 seconds on each side."
+      },
+      {
+        "title": "Assemble Tacos",
+        "description": "Spoon the filling onto each tortilla and fold in half."
+      }
+    ],
+    "cuisine": "Mexican",
+    "duration": 25,
+    "description": "A vibrant and zesty vegetarian taco filled with black beans and fresh avocado."
+  },
+  {
+    "name": "Vegan Chickpea Salad",
+    "difficulty": "easy",
+    "food_type": "vegan",
+    "image_url": "https://i0.wp.com/www.cearaskitchen.com/wp-content/uploads/2015/07/IMG_26131.jpg",
+    "ingredients": [
+      {
+        "name": "Canned chickpeas",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Cucumber",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Cherry tomatoes",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Red onion",
+        "quantity": "1/2 unit"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Fresh parsley",
+        "quantity": "a handful"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Vegetables",
+        "description": "Chop cucumber, cherry tomatoes, and red onion into small pieces."
+      },
+      {
+        "title": "Mix Ingredients",
+        "description": "In a large bowl, combine chickpeas, chopped vegetables, olive oil, lemon juice, salt, and pepper."
+      },
+      {
+        "title": "Serve",
+        "description": "Garnish with fresh parsley before serving."
+      }
+    ],
+    "cuisine": "Mediterranean",
+    "duration": 20,
+    "description": "A refreshing and protein-rich salad perfect for a light meal."
+  },
+  {
+    "name": "Vegan Thai Green Curry",
+    "difficulty": "easy",
+    "food_type": "vegan",
+    "image_url": "https://asianinspirations.com.au/wp-content/uploads/2019/06/R02332_Vegan_Thai_Green_Curry.jpg",
+    "ingredients": [
+      {
+        "name": "Coconut milk",
+        "quantity": "400 ml"
+      },
+      {
+        "name": "Green curry paste",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Tofu",
+        "quantity": "250 grams"
+      },
+      {
+        "name": "Green beans",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Red bell pepper",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Zucchini",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Basil leaves",
+        "quantity": "a handful"
+      },
+      {
+        "name": "Lime",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2 tablespoons"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Cook Tofu",
+        "description": "Cut tofu into cubes and fry until golden."
+      },
+      {
+        "title": "Make Curry Base",
+        "description": "Heat a pan and add green curry paste, cook for a minute, then add coconut milk."
+      },
+      {
+        "title": "Add Vegetables",
+        "description": "Add green beans, bell pepper, and zucchini, and simmer until tender."
+      },
+      {
+        "title": "Finish and Serve",
+        "description": "Stir in tofu and basil, add soy sauce, and squeeze lime juice before serving."
+      }
+    ],
+    "cuisine": "Thai",
+    "duration": 30,
+    "description": "A fragrant and colorful curry that is both satisfying and delicious."
+  },
+  {
+    "name": "Vegan Mexican Tacos",
+    "difficulty": "easy",
+    "food_type": "vegan",
+    "image_url": "https://cleangreensimple.com/wp-content/uploads/vegan-tacos-cauliflower.jpg",
+    "ingredients": [
+      {
+        "name": "Corn tortillas",
+        "quantity": "8 units"
+      },
+      {
+        "name": "Black beans",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Avocado",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Red onion",
+        "quantity": "1/2 unit"
+      },
+      {
+        "name": "Lime",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Chili powder",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Cilantro",
+        "quantity": "a handful"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Filling",
+        "description": "Mash avocado and mix with diced tomato, onion, lime juice, salt, and cilantro."
+      },
+      {
+        "title": "Cook Beans",
+        "description": "Heat black beans in a pan with chili powder and a pinch of salt."
+      },
+      {
+        "title": "Assemble Tacos",
+        "description": "Fill tortillas with black beans and avocado mixture."
+      }
+    ],
+    "cuisine": "Mexican",
+    "duration": 25,
+    "description": "Flavorful and vibrant tacos that are perfect for a quick vegan meal."
+  },
+  {
+    "name": "Vegan Indian Lentil Soup",
+    "difficulty": "easy",
+    "food_type": "vegan",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/13/23/97/IXfgttqYRvmispnpUMT3_dhal-1.jpg",
+    "ingredients": [
+      {
+        "name": "Red lentils",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Carrot",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Celery stalk",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Garlic cloves",
+        "quantity": "2 units"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1 inch piece"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Turmeric powder",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Vegetable broth",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Coriander leaves",
+        "quantity": "a handful"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Sauté Aromatics",
+        "description": "In a pot, sauté chopped onion, garlic, and ginger with cumin seeds."
+      },
+      {
+        "title": "Add Vegetables",
+        "description": "Add diced carrot and celery, cook for a few minutes."
+      },
+      {
+        "title": "Simmer Soup",
+        "description": "Add lentils, turmeric, vegetable broth, and salt, simmer until lentils are tender."
+      },
+      {
+        "title": "Serve",
+        "description": "Garnish with fresh coriander leaves before serving."
+      }
+    ],
+    "cuisine": "Indian",
+    "duration": 40,
+    "description": "A warming and nutritious soup with a hint of spice and aromatic flavors."
+  },
+  {
+    "name": "Garlic Butter Shrimp Pasta",
+    "difficulty": "easy",
+    "food_type": "seafood",
+    "image_url": "https://www.eatwell101.com/wp-content/uploads/2021/08/Garlic-Butter-Shrimp-Pasta-recipe-1-1200x800.jpg",
+    "ingredients": [
+      {
+        "name": "Spaghetti",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Shrimp",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4 cloves"
+      },
+      {
+        "name": "Butter",
+        "quantity": "50 grams"
+      },
+      {
+        "name": "Parmesan Cheese",
+        "quantity": "50 grams"
+      },
+      {
+        "name": "Parsley",
+        "quantity": "20 grams"
+      },
+      {
+        "name": "Lemon",
+        "quantity": "1 unit"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Boil Pasta",
+        "description": "Cook spaghetti in salted boiling water until al dente."
+      },
+      {
+        "title": "Prepare Shrimp",
+        "description": "In a pan, melt butter and sauté garlic, then add shrimp and cook until pink."
+      },
+      {
+        "title": "Combine Ingredients",
+        "description": "Toss cooked pasta with shrimp, lemon juice, and parsley. Top with parmesan cheese before serving."
+      }
+    ],
+    "cuisine": "Italian",
+    "duration": 30,
+    "description": "A quick and delicious pasta dish with succulent shrimp and a hint of garlic."
+  },
+  {
+    "name": "Spanish Garlic Prawns",
+    "difficulty": "easy",
+    "food_type": "seafood",
+    "image_url": "https://img.bestrecipes.com.au/UNwFowH_/br/2018/10/spanish-garlic-prawns-recipe-523733-1.jpg",
+    "ingredients": [
+      {
+        "name": "Prawns",
+        "quantity": "500 grams"
+      },
+      {
+        "name": "Olive Oil",
+        "quantity": "50 ml"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "5 cloves"
+      },
+      {
+        "name": "Paprika",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Chili Flakes",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Parsley",
+        "quantity": "10 grams"
+      },
+      {
+        "name": "Lemon",
+        "quantity": "1 unit"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Sauté Garlic",
+        "description": "Heat olive oil in a pan, add sliced garlic, and cook until golden."
+      },
+      {
+        "title": "Cook Prawns",
+        "description": "Add prawns, paprika, and chili flakes, and cook until prawns are pink."
+      },
+      {
+        "title": "Garnish and Serve",
+        "description": "Finish with chopped parsley and a squeeze of lemon before serving."
+      }
+    ],
+    "cuisine": "Spanish",
+    "duration": 25,
+    "description": "A classic Spanish tapas dish featuring prawns cooked in garlic and olive oil."
+  },
+  {
+    "name": "Lemon Herb Grilled Salmon",
+    "difficulty": "easy",
+    "food_type": "seafood",
+    "image_url": "https://www.thecookierookie.com/wp-content/uploads/2023/05/grilled-salmon-recipe-3.jpg",
+    "ingredients": [
+      {
+        "name": "Salmon Fillets",
+        "quantity": "4 units"
+      },
+      {
+        "name": "Lemon",
+        "quantity": "2 units"
+      },
+      {
+        "name": "Olive Oil",
+        "quantity": "30 ml"
+      },
+      {
+        "name": "Dill",
+        "quantity": "10 grams"
+      },
+      {
+        "name": "Garlic Powder",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": "1/2 teaspoon"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Marinade",
+        "description": "Mix olive oil, lemon juice, dill, garlic powder, salt, and pepper."
+      },
+      {
+        "title": "Marinate Salmon",
+        "description": "Coat salmon fillets with marinade and let sit for 15 minutes."
+      },
+      {
+        "title": "Grill Salmon",
+        "description": "Grill salmon fillets on a preheated grill for 5-7 minutes on each side."
+      }
+    ],
+    "cuisine": "American",
+    "duration": 30,
+    "description": "Juicy grilled salmon with a fresh and zesty lemon herb marinade."
+  },
+  {
+    "name": "Spicy Korean Beef Stir-Fry",
+    "difficulty": "medium",
+    "food_type": "meat",
+    "image_url": "https://i.redd.it/jeyuk-bokkeum-easy-korean-spicy-pork-stir-fry-v0-wswf7js504ze1.jpg?width=1800&format=pjpg&auto=webp&s=4a10c8a5dc230912c40a1ffa864f8c3416a39254",
+    "ingredients": [
+      {
+        "name": "Beef sirloin",
+        "quantity": "500 grams"
+      },
+      {
+        "name": "Gochujang paste",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "3 tablespoons"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4 cloves"
+      },
+      {
+        "name": "Green onions",
+        "quantity": "2 stalks"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Red bell pepper",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "White sesame seeds",
+        "quantity": "1 tablespoon"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Ingredients",
+        "description": "Slice beef into thin strips, chop garlic, and slice green onions."
+      },
+      {
+        "title": "Make the Sauce",
+        "description": "Mix gochujang paste, soy sauce, garlic, and sesame oil in a bowl."
+      },
+      {
+        "title": "Cook the Beef",
+        "description": "Stir-fry beef strips in a hot pan until browned."
+      },
+      {
+        "title": "Combine and Serve",
+        "description": "Add sauce and vegetables to the pan, cook for 5 mins, garnish with sesame seeds, and serve."
+      }
+    ],
+    "cuisine": "Korean",
+    "duration": 60,
+    "description": "A fiery and savory Korean beef stir-fry that's perfect for spice lovers."
+  },
+  {
+    "name": "Moroccan Lamb Tagine",
+    "difficulty": "medium",
+    "food_type": "meat",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5ed25ead6533665d5bd7dd4c/1597137411014-8UYJVBJVBGCX89F2DLQJ/Lamb-Tagine.jpg",
+    "ingredients": [
+      {
+        "name": "Lamb shoulder",
+        "quantity": "600 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Ground cinnamon",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Ground cumin",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Dried apricots",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Chickpeas",
+        "quantity": "400 grams can"
+      },
+      {
+        "name": "Tomato purée",
+        "quantity": "2 tablespoons"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Ingredients",
+        "description": "Dice lamb and onion, chop garlic and apricots."
+      },
+      {
+        "title": "Brown the Lamb",
+        "description": "Sauté lamb in a tagine or pot until browned on all sides."
+      },
+      {
+        "title": "Add Aromatics",
+        "description": "Add onion, garlic, and spices, and cook until fragrant."
+      },
+      {
+        "title": "Simmer",
+        "description": "Add apricots, chickpeas, and tomato purée, cover, and cook for 1 hour."
+      }
+    ],
+    "cuisine": "Moroccan",
+    "duration": 90,
+    "description": "A fragrant and hearty lamb tagine, rich in spices and sweetness from apricots."
+  },
+  {
+    "name": "Italian Chicken Cacciatore",
+    "difficulty": "medium",
+    "food_type": "meat",
+    "image_url": "https://www.nonnabox.com/wp-content/uploads/chickencaccitora-superJumbo.jpg",
+    "ingredients": [
+      {
+        "name": "Chicken thighs",
+        "quantity": "600 grams"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Red wine",
+        "quantity": "150 ml"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": "400 grams can"
+      },
+      {
+        "name": "Bell pepper",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Mushrooms",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Rosemary",
+        "quantity": "1 sprig"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Brown the Chicken",
+        "description": "Sauté chicken in olive oil until golden brown, then remove from pan."
+      },
+      {
+        "title": "Cook Vegetables",
+        "description": "Add onions, bell peppers, and mushrooms to the pan and cook until soft."
+      },
+      {
+        "title": "Deglaze",
+        "description": "Pour in red wine, scraping up any bits from the pan."
+      },
+      {
+        "title": "Simmer",
+        "description": "Return chicken to the pan, add tomatoes and rosemary, and simmer until chicken is cooked through."
+      }
+    ],
+    "cuisine": "Italian",
+    "duration": 75,
+    "description": "A rustic Italian chicken stew that's rich in flavor and perfect for a cozy meal."
+  },
+  {
+    "name": "Mexican Pork Carnitas",
+    "difficulty": "medium",
+    "food_type": "meat",
+    "image_url": "https://www.allrecipes.com/thmb/kPCpDhyAub-NJoPEa7fqkyMhM7k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/219048-pork-carnitas-DDMFS-4x3-71cbeba756924694b7af3f402342c9d7.jpg",
+    "ingredients": [
+      {
+        "name": "Pork shoulder",
+        "quantity": "1 kg"
+      },
+      {
+        "name": "Orange juice",
+        "quantity": "250 ml"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4 cloves"
+      },
+      {
+        "name": "Cumin",
+        "quantity": "2 teaspoons"
+      },
+      {
+        "name": "Bay leaves",
+        "quantity": "2 leaves"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "1 bunch"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1 tablespoon"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Pork",
+        "description": "Cut the pork into large chunks and season with salt and cumin."
+      },
+      {
+        "title": "Cook Pork",
+        "description": "In a large pot, add pork, orange juice, onion, garlic, and bay leaves, and bring to a boil."
+      },
+      {
+        "title": "Simmer",
+        "description": "Reduce heat to low and simmer until meat is tender, about 1.5 hours."
+      },
+      {
+        "title": "Crisp the Meat",
+        "description": "Shred pork and crisp in a hot pan, then garnish with coriander before serving."
+      }
+    ],
+    "cuisine": "Mexican",
+    "duration": 90,
+    "description": "Tender and flavorful pork carnitas with a citrusy twist, perfect for tacos."
+  },
+  {
+    "name": "Thai Green Curry",
+    "difficulty": "medium",
+    "food_type": "vegan",
+    "image_url": "https://piquantpost.com/cdn/shop/articles/GJ16a1y2HDD3gYjmojg2t_1000x.jpg?v=1646021297",
+    "ingredients": [
+      {
+        "name": "Coconut Milk",
+        "quantity": "400 ml"
+      },
+      {
+        "name": "Green Curry Paste",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Tofu",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Eggplant",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Bell Pepper",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Bamboo Shoots",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Thai Basil",
+        "quantity": "a handful"
+      },
+      {
+        "name": "Soy Sauce",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Lime Juice",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Olive Oil",
+        "quantity": "2 tablespoons"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Tofu",
+        "description": "Cut tofu into cubes and fry until golden."
+      },
+      {
+        "title": "Cook Paste",
+        "description": "In a saucepan, heat olive oil, add green curry paste, and cook for 2 minutes."
+      },
+      {
+        "title": "Add Coconut Milk",
+        "description": "Pour in coconut milk and bring to a simmer."
+      },
+      {
+        "title": "Add Vegetables",
+        "description": "Add eggplant, bell pepper, and bamboo shoots; simmer until tender."
+      },
+      {
+        "title": "Finish with Tofu & Seasoning",
+        "description": "Add fried tofu, soy sauce, and lime juice, simmer for another 5 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Garnish with Thai basil and serve hot."
+      }
+    ],
+    "cuisine": "Thai",
+    "duration": 70,
+    "description": "A flavorful vegan curry with aromatic spices and creamy coconut milk."
+  },
+  {
+    "name": "Stuffed Bell Peppers",
+    "difficulty": "medium",
+    "food_type": "vegetarian",
+    "image_url": "https://hips.hearstapps.com/hmg-prod/images/stuffed-peppers-recipe-2-6594706a0a63b.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*",
+    "ingredients": [
+      {
+        "name": "Bell peppers",
+        "quantity": "4 pieces"
+      },
+      {
+        "name": "Quinoa",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Black beans",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Corn",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Cheddar cheese",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 piece"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "2 cloves"
+      },
+      {
+        "name": "Cumin",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Quinoa",
+        "description": "Cook quinoa according to package instructions and set aside."
+      },
+      {
+        "title": "Prepare the Filling",
+        "description": "In a pan, heat olive oil and sauté chopped onion and garlic until golden. Add black beans, corn, cooked quinoa, cumin, salt, and pepper, and stir to combine."
+      },
+      {
+        "title": "Stuff the Peppers",
+        "description": "Cut the tops off the bell peppers and remove seeds. Fill each pepper with the quinoa mixture and top with grated cheddar cheese."
+      },
+      {
+        "title": "Bake the Peppers",
+        "description": "Place stuffed peppers in a baking dish and bake at 180°C (350°F) for 30 minutes until the peppers are tender and cheese is melted."
+      }
+    ],
+    "cuisine": "Mexican",
+    "duration": 60,
+    "description": "Colorful bell peppers stuffed with a flavorful mixture of quinoa, beans, and cheese."
+  },
+  {
+    "name": "Spinach and Ricotta Cannelloni",
+    "difficulty": "medium",
+    "food_type": "vegetarian",
+    "image_url": "https://img.taste.com.au/jaSgj_Nr/taste/2016/11/spinach-and-ricotta-cannelloni-29354-1.jpeg",
+    "ingredients": [
+      {
+        "name": "Cannelloni tubes",
+        "quantity": "12 pieces"
+      },
+      {
+        "name": "Spinach",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Ricotta cheese",
+        "quantity": "250 grams"
+      },
+      {
+        "name": "Parmesan cheese",
+        "quantity": "50 grams"
+      },
+      {
+        "name": "Tomato sauce",
+        "quantity": "400 ml"
+      },
+      {
+        "name": "Nutmeg",
+        "quantity": "1/4 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Pepper",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "1 tablespoon"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Filling",
+        "description": "In a pan, wilt spinach in olive oil, then mix with ricotta, nutmeg, salt, and pepper."
+      },
+      {
+        "title": "Stuff the Cannelloni",
+        "description": "Fill each cannelloni tube with the spinach and ricotta mixture."
+      },
+      {
+        "title": "Assemble the Dish",
+        "description": "Spread a layer of tomato sauce in a baking dish, arrange stuffed cannelloni on top, and cover with remaining sauce."
+      },
+      {
+        "title": "Bake the Cannelloni",
+        "description": "Sprinkle with parmesan cheese and bake at 180°C (350°F) for 40 minutes until the top is golden."
+      }
+    ],
+    "cuisine": "Italian",
+    "duration": 75,
+    "description": "Delicious baked cannelloni filled with creamy ricotta and fresh spinach."
+  },
+  {
+    "name": "Chickpea and Vegetable Tagine",
+    "difficulty": "medium",
+    "food_type": "vegetarian",
+    "image_url": "https://www.grocery.coop/sites/default/files/Moroccan_Vegetable_Tagine_with_Chickpeas.jpg",
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Carrots",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Zucchini",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Canned tomatoes",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 piece"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "2 cloves"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Cinnamon stick",
+        "quantity": "1 piece"
+      },
+      {
+        "name": "Cumin",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Sauté Aromatics",
+        "description": "In a tagine or pot, heat olive oil and sauté onion, garlic, and ginger until fragrant."
+      },
+      {
+        "title": "Add Vegetables and Spices",
+        "description": "Add carrots, zucchini, cumin, and cinnamon stick, and cook until vegetables begin to soften."
+      },
+      {
+        "title": "Simmer with Chickpeas",
+        "description": "Add chickpeas and canned tomatoes, bring to a simmer, and cook for 30 minutes until flavors meld."
+      },
+      {
+        "title": "Adjust Seasoning",
+        "description": "Season with salt and pepper to taste before serving."
+      }
+    ],
+    "cuisine": "Moroccan",
+    "duration": 70,
+    "description": "A hearty Moroccan tagine packed with chickpeas and vibrant vegetables."
+  },
+  {
+    "name": "Mushroom and Leek Risotto",
+    "difficulty": "medium",
+    "food_type": "vegetarian",
+    "image_url": "https://www.feastingathome.com/wp-content/uploads/2022/02/Mushroom-Risotto_-18.jpg",
+    "ingredients": [
+      {
+        "name": "Arborio rice",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Mushrooms",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Leek",
+        "quantity": "1 piece"
+      },
+      {
+        "name": "Vegetable stock",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Parmesan cheese",
+        "quantity": "50 grams"
+      },
+      {
+        "name": "Butter",
+        "quantity": "50 grams"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "White wine",
+        "quantity": "100 ml"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Vegetables",
+        "description": "Clean and slice the mushrooms and leek."
+      },
+      {
+        "title": "Start the Risotto",
+        "description": "In a pot, heat olive oil and butter, sauté leek and mushrooms until soft."
+      },
+      {
+        "title": "Cook the Rice",
+        "description": "Add rice and cook until translucent, then pour in white wine, stirring until absorbed."
+      },
+      {
+        "title": "Add Stock Gradually",
+        "description": "Add hot vegetable stock a ladle at a time, stirring continuously until rice is creamy and cooked."
+      },
+      {
+        "title": "Finish with Cheese",
+        "description": "Stir in parmesan cheese, season with salt and pepper, and serve immediately."
+      }
+    ],
+    "cuisine": "Italian",
+    "duration": 65,
+    "description": "Rich and creamy risotto with earthy mushrooms and delicate leeks."
+  },
+  {
+    "name": "Mushroom Stroganoff",
+    "difficulty": "medium",
+    "food_type": "vegan",
+    "image_url": "https://thecozyapron.com/wp-content/uploads/2018/09/mushroom-stroganoff_thecozyapron_1.jpg",
+    "ingredients": [
+      {
+        "name": "Button Mushrooms",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 medium"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "2 cloves"
+      },
+      {
+        "name": "Vegan Sour Cream",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Vegetable Broth",
+        "quantity": "250 ml"
+      },
+      {
+        "name": "Olive Oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Paprika",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Fresh Parsley",
+        "quantity": "a handful"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Ingredients",
+        "description": "Chop the mushrooms, onion, and garlic finely."
+      },
+      {
+        "title": "Sauté Vegetables",
+        "description": "Heat olive oil in a pan, add onions and garlic, and sauté until golden."
+      },
+      {
+        "title": "Cook Mushrooms",
+        "description": "Add mushrooms and cook until they release moisture."
+      },
+      {
+        "title": "Add Broth",
+        "description": "Pour in vegetable broth, add paprika, and simmer for 10 minutes."
+      },
+      {
+        "title": "Finish with Cream",
+        "description": "Stir in the vegan sour cream, season with salt and pepper, and simmer another 5 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Garnish with fresh parsley and serve."
+      }
+    ],
+    "cuisine": "Russian",
+    "duration": 60,
+    "description": "A creamy, hearty vegan twist on the classic stroganoff."
+  },
+  {
+    "name": "Moroccan Vegetable Tagine",
+    "difficulty": "medium",
+    "food_type": "vegan",
+    "image_url": "https://www.grocery.coop/sites/default/files/Moroccan_Vegetable_Tagine_with_Chickpeas.jpg",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "quantity": "2 large"
+      },
+      {
+        "name": "Zucchini",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Chickpeas",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": "2 large"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Ras el Hanout",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Vegetable Broth",
+        "quantity": "500 ml"
+      },
+      {
+        "name": "Olive Oil",
+        "quantity": "3 tablespoons"
+      },
+      {
+        "name": "Cilantro",
+        "quantity": "a handful"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Chop Vegetables",
+        "description": "Cut carrots, zucchini, and tomatoes into chunks."
+      },
+      {
+        "title": "Sauté Onion and Garlic",
+        "description": "In a tagine or large pot, heat olive oil and sauté onions and garlic until soft."
+      },
+      {
+        "title": "Add Spices",
+        "description": "Stir in ras el hanout and cook for 1 minute."
+      },
+      {
+        "title": "Combine Ingredients",
+        "description": "Add carrots, zucchini, tomatoes, and chickpeas; stir well."
+      },
+      {
+        "title": "Simmer with Broth",
+        "description": "Pour in vegetable broth, cover, and simmer for 40 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Garnish with chopped cilantro and serve hot."
+      }
+    ],
+    "cuisine": "Moroccan",
+    "duration": 75,
+    "description": "A fragrant Moroccan dish packed with vegetables and exotic spices."
+  },
+  {
+    "name": "Vegan Paella",
+    "difficulty": "medium",
+    "food_type": "vegan",
+    "image_url": "https://realfood.tesco.com/media/images/1400x919Vegetablepaellarecipe-9e034e9a-478a-4ee9-8d7a-5c4229c206eb-0-1400x919.jpg",
+    "ingredients": [
+      {
+        "name": "Arborio Rice",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Red Bell Pepper",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Green Peas",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Artichoke Hearts",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "a pinch"
+      },
+      {
+        "name": "Vegetable Broth",
+        "quantity": "800 ml"
+      },
+      {
+        "name": "Smoked Paprika",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Olive Oil",
+        "quantity": "3 tablespoons"
+      },
+      {
+        "name": "Lemon",
+        "quantity": "1"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Ingredients",
+        "description": "Chop bell pepper and garlic finely."
+      },
+      {
+        "title": "Sauté Garlic and Pepper",
+        "description": "In a paella pan, heat olive oil and sauté garlic and red bell pepper until soft."
+      },
+      {
+        "title": "Add Rice and Spices",
+        "description": "Add rice, saffron, and smoked paprika, stir well to coat the rice."
+      },
+      {
+        "title": "Add Broth and Simmer",
+        "description": "Pour in vegetable broth, bring to a boil, then reduce heat and simmer."
+      },
+      {
+        "title": "Add Vegetables",
+        "description": "Add green peas and artichoke hearts, cook until rice is tender."
+      },
+      {
+        "title": "Serve",
+        "description": "Garnish with lemon wedges and serve hot."
+      }
+    ],
+    "cuisine": "Spanish",
+    "duration": 80,
+    "description": "A vibrant and colorful vegan paella bursting with flavors."
+  },
+  {
+    "name": "Seafood Paella",
+    "difficulty": "medium",
+    "food_type": "seafood",
+    "image_url": "https://meglepkek.hu/image?src=%2Fuploads%2Fimages%2Fgasztro-elmenyek%2Ftenger-gyumolcsei%2Ftenger-gyumolcsei12.webp&w=1920&h=1080",
+    "ingredients": [
+      {
+        "name": "Saffron",
+        "quantity": "1 pinch"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1, chopped"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4 cloves, minced"
+      },
+      {
+        "name": "Bell pepper",
+        "quantity": "1, sliced"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "2, chopped"
+      },
+      {
+        "name": "Rice",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Fish stock",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Shrimp",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Mussels",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Squid",
+        "quantity": "150 grams, sliced"
+      },
+      {
+        "name": "Peas",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Lemon",
+        "quantity": "1, cut into wedges"
+      },
+      {
+        "name": "Parsley",
+        "quantity": "2 tablespoons, chopped"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Saffron",
+        "description": "Steep saffron in a small bowl with 2 tablespoons of warm water."
+      },
+      {
+        "title": "Cook Aromatics",
+        "description": "In a large skillet, heat olive oil and sauté onion, garlic, and bell pepper until soft."
+      },
+      {
+        "title": "Add Tomatoes and Rice",
+        "description": "Stir in tomatoes and rice, cook for 2 minutes."
+      },
+      {
+        "title": "Add Stock and Saffron",
+        "description": "Pour in fish stock and saffron water, bring to a simmer."
+      },
+      {
+        "title": "Add Seafood",
+        "description": "Add shrimp, mussels, and squid evenly over the rice, cook for 15 minutes."
+      },
+      {
+        "title": "Finish Cooking",
+        "description": "Stir in peas and cook until seafood is done. Garnish with lemon wedges and parsley."
+      }
+    ],
+    "cuisine": "Spanish",
+    "duration": 60,
+    "description": "A classic Spanish dish bursting with the flavors of the sea."
+  },
+  {
+    "name": "Grilled Miso Salmon",
+    "difficulty": "medium",
+    "food_type": "seafood",
+    "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/grilled-miso-salmon-with-rice-noodles-243f218.jpg",
+    "ingredients": [
+      {
+        "name": "Salmon fillets",
+        "quantity": "4 pieces"
+      },
+      {
+        "name": "Miso paste",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1 teaspoon, grated"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "1 clove, minced"
+      },
+      {
+        "name": "Green onions",
+        "quantity": "2, sliced"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "1 tablespoon"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare Marinade",
+        "description": "Mix miso paste, soy sauce, mirin, sesame oil, ginger, and garlic in a bowl."
+      },
+      {
+        "title": "Marinate Salmon",
+        "description": "Place salmon fillets in marinade and refrigerate for at least 30 minutes."
+      },
+      {
+        "title": "Preheat Grill",
+        "description": "Heat grill to medium-high heat."
+      },
+      {
+        "title": "Grill Salmon",
+        "description": "Grill salmon for 4-5 minutes each side until cooked through."
+      },
+      {
+        "title": "Garnish and Serve",
+        "description": "Garnish with green onions and sesame seeds before serving."
+      }
+    ],
+    "cuisine": "Japanese",
+    "duration": 50,
+    "description": "A savory and sweet miso-marinated salmon grilled to perfection."
+  },
+  {
+    "name": "Thai Green Curry with Prawns",
+    "difficulty": "medium",
+    "food_type": "seafood",
+    "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/thai-green-prawn-curry-503844c.jpg?resize=830%2C435",
+    "ingredients": [
+      {
+        "name": "Prawns",
+        "quantity": "300 grams, peeled and deveined"
+      },
+      {
+        "name": "Coconut milk",
+        "quantity": "400 ml"
+      },
+      {
+        "name": "Green curry paste",
+        "quantity": "3 tablespoons"
+      },
+      {
+        "name": "Fish sauce",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Brown sugar",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Kaffir lime leaves",
+        "quantity": "4"
+      },
+      {
+        "name": "Bamboo shoots",
+        "quantity": "100 grams, sliced"
+      },
+      {
+        "name": "Thai basil",
+        "quantity": "1 handful"
+      },
+      {
+        "name": "Red chili",
+        "quantity": "1, sliced"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Cook Curry Paste",
+        "description": "Heat a pot over medium heat and cook the green curry paste until fragrant."
+      },
+      {
+        "title": "Add Coconut Milk",
+        "description": "Stir in coconut milk and bring to a simmer."
+      },
+      {
+        "title": "Season the Curry",
+        "description": "Add fish sauce, brown sugar, and lime leaves."
+      },
+      {
+        "title": "Cook Prawns and Vegetables",
+        "description": "Add prawns and bamboo shoots; cook until prawns are pink and cooked through."
+      },
+      {
+        "title": "Garnish and Serve",
+        "description": "Stir in Thai basil and garnish with red chili slices."
+      }
+    ],
+    "cuisine": "Thai",
+    "duration": 55,
+    "description": "A fragrant and spicy Thai curry with succulent prawns."
+  },
+  {
+    "name": "New England Clam Chowder",
+    "difficulty": "medium",
+    "food_type": "seafood",
+    "image_url": "https://www.allrecipes.com/thmb/x2FWMqwalalBhkoFr09aCe5Sq1Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/13078-New-England-Clam-Chowder-DDMFS-1X2-0562-31b89de31309434ca5e8a3e5259291b7.jpg",
+    "ingredients": [
+      {
+        "name": "Clams",
+        "quantity": "500 grams, cleaned"
+      },
+      {
+        "name": "Bacon",
+        "quantity": "100 grams, chopped"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1, chopped"
+      },
+      {
+        "name": "Celery",
+        "quantity": "2 stalks, chopped"
+      },
+      {
+        "name": "Potato",
+        "quantity": "2, diced"
+      },
+      {
+        "name": "Butter",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Flour",
+        "quantity": "3 tablespoons"
+      },
+      {
+        "name": "Milk",
+        "quantity": "500 ml"
+      },
+      {
+        "name": "Cream",
+        "quantity": "200 ml"
+      },
+      {
+        "name": "Thyme",
+        "quantity": "1 teaspoon"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Cook Bacon",
+        "description": "In a pot, cook bacon until crispy, then remove and set aside."
+      },
+      {
+        "title": "Cook Vegetables",
+        "description": "In the bacon fat, sauté onion and celery until soft."
+      },
+      {
+        "title": "Make Roux",
+        "description": "Add butter and flour, stir to make a roux."
+      },
+      {
+        "title": "Add Liquids",
+        "description": "Slowly stir in milk, cream, and clam juice; bring to a boil."
+      },
+      {
+        "title": "Finish Soup",
+        "description": "Add potatoes, thyme, and clams; simmer until potatoes are tender."
+      },
+      {
+        "title": "Serve",
+        "description": "Garnish with cooked bacon and serve hot."
+      }
+    ],
+    "cuisine": "American",
+    "duration": 70,
+    "description": "A hearty and creamy chowder filled with tender clams and crispy bacon."
+  },
+  {
+    "name": "Beef Wellington",
+    "difficulty": "hard",
+    "food_type": "meat",
+    "image_url": "https://www.foodandwine.com/thmb/2k2Kq24_fMvHCyLMPRSNrpg5QdE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/beef-wellington-FT-RECIPE0321-c9a63fccde3b45889ad78fdad078153f.jpg",
+    "ingredients": [
+      {
+        "name": "Beef tenderloin",
+        "quantity": "800 grams"
+      },
+      {
+        "name": "Mushrooms",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Puff pastry",
+        "quantity": "500 grams"
+      },
+      {
+        "name": "Prosciutto",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Egg yolk",
+        "quantity": "2 units"
+      },
+      {
+        "name": "Dijon mustard",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the beef",
+        "description": "Season the beef with salt and pepper, then sear it on all sides."
+      },
+      {
+        "title": "Prepare mushroom duxelles",
+        "description": "Finely chop mushrooms and cook them until all moisture is evaporated."
+      },
+      {
+        "title": "Assemble Wellington",
+        "description": "Wrap the beef in prosciutto and mushroom duxelles, then encase in puff pastry."
+      },
+      {
+        "title": "Bake",
+        "description": "Brush with egg yolk and bake in the oven until golden brown."
+      }
+    ],
+    "cuisine": "British",
+    "duration": 120,
+    "description": "A classic and elegant dish featuring tender beef wrapped in flaky pastry."
+  },
+  {
+    "name": "Coq au Vin",
+    "difficulty": "hard",
+    "food_type": "meat",
+    "image_url": "https://static01.nyt.com/images/2023/08/24/multimedia/MC-Coq-Au-Van-ctpm/MC-Coq-Au-Van-ctpm-videoSixteenByNineJumbo1600.jpg",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": "1.5 kilograms"
+      },
+      {
+        "name": "Red wine",
+        "quantity": "750 ml"
+      },
+      {
+        "name": "Bacon",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Mushrooms",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Pearl onions",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Thyme",
+        "quantity": "2 teaspoons"
+      },
+      {
+        "name": "Bay leaf",
+        "quantity": "1 unit"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Marinate the chicken",
+        "description": "Marinate chicken pieces in red wine with garlic and herbs."
+      },
+      {
+        "title": "Cook bacon and vegetables",
+        "description": "Fry bacon, then add pearl onions and mushrooms until golden."
+      },
+      {
+        "title": "Cook chicken",
+        "description": "Brown chicken pieces, then simmer with marinade and vegetables."
+      },
+      {
+        "title": "Serve",
+        "description": "Let it stew until chicken is tender, then serve hot."
+      }
+    ],
+    "cuisine": "French",
+    "duration": 150,
+    "description": "A rich and hearty French stew made with chicken and red wine."
+  },
+  {
+    "name": "Eggplant Moussaka",
+    "difficulty": "hard",
+    "food_type": "vegetarian",
+    "image_url": "https://www.feastingathome.com/wp-content/uploads/2013/03/epplant-moussaka-227.jpg",
+    "ingredients": [
+      {
+        "name": "Eggplants",
+        "quantity": "3 large"
+      },
+      {
+        "name": "Potatoes",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Tomato sauce",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "4 tablespoons"
+      },
+      {
+        "name": "Bechamel sauce",
+        "quantity": "500 ml"
+      },
+      {
+        "name": "Nutmeg",
+        "quantity": "1/2 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Vegetables",
+        "description": "Slice eggplants and potatoes, and fry or grill until golden."
+      },
+      {
+        "title": "Cook the Tomato Sauce",
+        "description": "Sauté onion and garlic, add tomato sauce, and season with salt and pepper."
+      },
+      {
+        "title": "Assemble the Moussaka",
+        "description": "Layer potatoes, eggplants, and tomato sauce in a baking dish, and top with bechamel sauce."
+      },
+      {
+        "title": "Bake",
+        "description": "Bake in a preheated oven at 180°C for 60 minutes until the top is golden brown."
+      }
+    ],
+    "cuisine": "Greek",
+    "duration": 130,
+    "description": "A traditional Greek casserole with layers of eggplant, potatoes, and creamy bechamel."
+  },
+  {
+    "name": "Osso Buco",
+    "difficulty": "hard",
+    "food_type": "meat",
+    "image_url": "https://www.simplyrecipes.com/thmb/2AjZWxY7oJ7jkMRtrSjtkQAtvQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2006__12__Osso-Buco-LEAD-5-a816159cbe9740a5b21f3c1e515f9da2.jpg",
+    "ingredients": [
+      {
+        "name": "Veal shanks",
+        "quantity": "1.2 kilograms"
+      },
+      {
+        "name": "Carrots",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Celery",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Tomato paste",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "White wine",
+        "quantity": "250 ml"
+      },
+      {
+        "name": "Beef stock",
+        "quantity": "500 ml"
+      },
+      {
+        "name": "Lemon zest",
+        "quantity": "from 1 lemon"
+      },
+      {
+        "name": "Parsley",
+        "quantity": "a handful"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the vegetables",
+        "description": "Chop carrots, celery, and onion finely."
+      },
+      {
+        "title": "Brown the veal",
+        "description": "Season shanks and brown them in a pan."
+      },
+      {
+        "title": "Build the sauce",
+        "description": "Add vegetables, tomato paste, wine, and stock; simmer."
+      },
+      {
+        "title": "Slow cook",
+        "description": "Cook until veal is tender, about 2 hours, then garnish."
+      }
+    ],
+    "cuisine": "Italian",
+    "duration": 180,
+    "description": "A sumptuous Italian dish featuring slowly braised veal shanks."
+  },
+  {
+    "name": "Rogan Josh",
+    "difficulty": "hard",
+    "food_type": "meat",
+    "image_url": "https://headbangerskitchen.com/wp-content/uploads/2024/08/ROGANJOSH-H2.jpg",
+    "ingredients": [
+      {
+        "name": "Lamb",
+        "quantity": "1 kilogram"
+      },
+      {
+        "name": "Yogurt",
+        "quantity": "250 grams"
+      },
+      {
+        "name": "Onions",
+        "quantity": "3 large"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "5 cloves"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "50 grams"
+      },
+      {
+        "name": "Cumin",
+        "quantity": "2 teaspoons"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2 teaspoons"
+      },
+      {
+        "name": "Kashmiri chili",
+        "quantity": "2 teaspoons"
+      },
+      {
+        "name": "Garam masala",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3 tablespoons"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Marinate lamb",
+        "description": "Mix lamb with yogurt and spices; let it marinate."
+      },
+      {
+        "title": "Prepare base",
+        "description": "Fry onions, garlic, and ginger until golden brown."
+      },
+      {
+        "title": "Cook lamb",
+        "description": "Add lamb to the base and cook until tender."
+      },
+      {
+        "title": "Simmer",
+        "description": "Simmer with water until thick and aromatic."
+      }
+    ],
+    "cuisine": "Indian",
+    "duration": 120,
+    "description": "A flavorful and aromatic curry made with tender lamb and rich spices."
+  },
+  {
+    "name": "Stuffed Bell Peppers with Quinoa and Cheese",
+    "difficulty": "hard",
+    "food_type": "vegetarian",
+    "image_url": "https://www.thespruceeats.com/thmb/FC1kDitBHn08teDrh-gkYeg27VA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/quinoa-stuffed-peppers-2238585-08-43c24df24a3e4aa8991d22337e1ded40.jpg",
+    "ingredients": [
+      {
+        "name": "Bell peppers",
+        "quantity": "4 units"
+      },
+      {
+        "name": "Quinoa",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Cheddar cheese",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 medium"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "2 cloves"
+      },
+      {
+        "name": "Tomato paste",
+        "quantity": "50 grams"
+      },
+      {
+        "name": "Cumin",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Bell Peppers",
+        "description": "Slice the tops off the bell peppers and remove seeds."
+      },
+      {
+        "title": "Cook the Quinoa",
+        "description": "Rinse quinoa and cook it in salted water until fluffy."
+      },
+      {
+        "title": "Make the Filling",
+        "description": "Sauté onion and garlic in olive oil, then add quinoa, tomato paste, cumin, salt, and pepper."
+      },
+      {
+        "title": "Stuff and Bake",
+        "description": "Fill bell peppers with the mixture, top with cheese, and bake in a preheated oven at 180°C for 30 minutes."
+      }
+    ],
+    "cuisine": "Mediterranean",
+    "duration": 95,
+    "description": "A hearty dish of bell peppers stuffed with a savory mixture of quinoa and melted cheese."
+  },
+  {
+    "name": "Vegetable Lasagna with Homemade Pasta",
+    "difficulty": "hard",
+    "food_type": "vegetarian",
+    "image_url": "https://www.inspiredtaste.net/wp-content/uploads/2016/10/Easy-Vegetable-Lasagna-Recipe-1200.jpg",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Eggs",
+        "quantity": "3 units"
+      },
+      {
+        "name": "Spinach",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Zucchini",
+        "quantity": "1 medium"
+      },
+      {
+        "name": "Ricotta cheese",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Parmesan cheese",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Tomato sauce",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Make the Pasta",
+        "description": "Combine flour and eggs to create a dough, roll it out thinly, and cut into sheets."
+      },
+      {
+        "title": "Prepare the Vegetables",
+        "description": "Slice zucchini and wilt spinach in a pan with olive oil."
+      },
+      {
+        "title": "Assemble the Lasagna",
+        "description": "Layer pasta sheets, vegetables, ricotta, tomato sauce, and parmesan in a baking dish."
+      },
+      {
+        "title": "Bake",
+        "description": "Bake in a preheated oven at 180°C for 45 minutes until golden and bubbling."
+      }
+    ],
+    "cuisine": "Italian",
+    "duration": 120,
+    "description": "A classic Italian dish made with fresh homemade pasta and layers of rich vegetable filling."
+  },
+  {
+    "name": "Mushroom and Truffle Risotto",
+    "difficulty": "hard",
+    "food_type": "vegetarian",
+    "image_url": "https://www.onegreenplanet.org/wp-content/uploads/2015/11/Truffled-Mushroom-Risotto.jpg",
+    "ingredients": [
+      {
+        "name": "Arborio rice",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Mushrooms",
+        "quantity": "250 grams"
+      },
+      {
+        "name": "White wine",
+        "quantity": "100 ml"
+      },
+      {
+        "name": "Vegetable broth",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Parmesan cheese",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Truffle oil",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Butter",
+        "quantity": "50 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 small"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "2 cloves"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Ingredients",
+        "description": "Dice onions and mushrooms, and mince garlic."
+      },
+      {
+        "title": "Cook the Risotto",
+        "description": "Sauté onion and garlic, add rice, deglaze with wine, and gradually add broth while stirring."
+      },
+      {
+        "title": "Finish the Risotto",
+        "description": "Stir in mushrooms, butter, parmesan, and truffle oil until creamy."
+      }
+    ],
+    "cuisine": "Italian",
+    "duration": 105,
+    "description": "An indulgent risotto combining earthy mushrooms and the luxurious aroma of truffle oil."
+  },
+  {
+    "name": "Vegan Mushroom Wellington",
+    "difficulty": "hard",
+    "food_type": "vegan",
+    "image_url": "https://www.feastingathome.com/wp-content/uploads/2017/11/vegan-mushroom-wellington-115-2-1.jpg",
+    "ingredients": [
+      {
+        "name": "Portobello mushrooms",
+        "quantity": "4 large"
+      },
+      {
+        "name": "Puff pastry",
+        "quantity": "500 grams"
+      },
+      {
+        "name": "Spinach",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Thyme",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Pepper",
+        "quantity": "1/2 teaspoon"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Mushrooms",
+        "description": "Clean and chop mushrooms; sauté with onions and garlic until soft."
+      },
+      {
+        "title": "Prepare the Spinach",
+        "description": "Wilt the spinach in the pan and mix with the mushroom mixture."
+      },
+      {
+        "title": "Assemble the Wellington",
+        "description": "Roll out puff pastry, place filling, and wrap carefully."
+      },
+      {
+        "title": "Bake",
+        "description": "Preheat oven to 200°C and bake for 30 minutes until golden brown."
+      }
+    ],
+    "cuisine": "British",
+    "duration": 95,
+    "description": "A luxurious vegan twist on the classic Wellington, perfect for special occasions."
+  },
+  {
+    "name": "Vegan Biryani",
+    "difficulty": "hard",
+    "food_type": "vegan",
+    "image_url": "https://cache.marieclaire.fr/data/photo/w1200_h630_ci/6z/recette-biryani-vegetarien-rapide.jpg",
+    "ingredients": [
+      {
+        "name": "Basmati rice",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Cauliflower",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Carrot",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Green beans",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2 large"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4 cloves"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1 inch"
+      },
+      {
+        "name": "Coconut milk",
+        "quantity": "200 ml"
+      },
+      {
+        "name": "Biryani masala",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Cilantro",
+        "quantity": "1 bunch"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Vegetables",
+        "description": "Chop and sauté onions, garlic, ginger, and mixed vegetables."
+      },
+      {
+        "title": "Cook the Rice",
+        "description": "Parboil the rice in salted water and set aside."
+      },
+      {
+        "title": "Layer and Cook",
+        "description": "Layer rice and vegetable mixture; add coconut milk and biryani masala."
+      },
+      {
+        "title": "Simmer",
+        "description": "Cover and cook on low heat until rice is fully cooked."
+      }
+    ],
+    "cuisine": "Indian",
+    "duration": 110,
+    "description": "An aromatic and richly spiced vegan biryani that delights the senses."
+  },
+  {
+    "name": "Vegan Ramen",
+    "difficulty": "hard",
+    "food_type": "vegan",
+    "image_url": "https://assets.zuckerjagdwurst.com/jr7975ouy94n0aej8ng6l2u608tk/1200/640/75/true/center/undefined.jpg?animated=undefined",
+    "ingredients": [
+      {
+        "name": "Ramen noodles",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Miso paste",
+        "quantity": "3 tablespoons"
+      },
+      {
+        "name": "Tofu",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Shiitake mushrooms",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Spinach",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Carrot",
+        "quantity": "1 medium"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "3 tablespoons"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1 inch"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Spring onions",
+        "quantity": "3 stalks"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Broth",
+        "description": "Simmer miso paste, soy sauce, ginger, and garlic in water."
+      },
+      {
+        "title": "Cook the Noodles",
+        "description": "Boil ramen noodles separately and drain."
+      },
+      {
+        "title": "Add Vegetables",
+        "description": "Add mushrooms, tofu, and spinach to the broth; simmer."
+      },
+      {
+        "title": "Assemble",
+        "description": "Serve noodles in bowls, pour broth over, and garnish with spring onions."
+      }
+    ],
+    "cuisine": "Japanese",
+    "duration": 100,
+    "description": "A savory and comforting vegan ramen that's perfect for a cozy night in."
+  },
+  {
+    "name": "Bouillabaisse Marseillaise",
+    "difficulty": "hard",
+    "food_type": "seafood",
+    "image_url": "https://www.seriouseats.com/thmb/n-oqt2lTHSkgpOiVOpfNe1BMFVE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2018__09__20180823-bouillabaisse-french-fish-soup-liz-clayman-in-bowl-fd66dfd246574977bfcbd5186ff316f5.jpg",
+    "ingredients": [
+      {
+        "name": "Sea bass",
+        "quantity": "500 grams"
+      },
+      {
+        "name": "Monkfish",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Mussels",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Leeks",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Fennel",
+        "quantity": "1 bulb"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "1 gram"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4 cloves"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "50 ml"
+      },
+      {
+        "name": "Fish stock",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": "2, diced"
+      },
+      {
+        "name": "Orange zest",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Bay leaf",
+        "quantity": "1 leaf"
+      },
+      {
+        "name": "Thyme",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the fish",
+        "description": "Clean and cut the sea bass and monkfish into chunks. Set aside."
+      },
+      {
+        "title": "Cook the vegetables",
+        "description": "Sauté leeks and fennel in olive oil until soft, then add garlic and tomatoes."
+      },
+      {
+        "title": "Add liquids and spices",
+        "description": "Pour in fish stock, add saffron, orange zest, bay leaf, and thyme. Simmer for 30 minutes."
+      },
+      {
+        "title": "Add seafood",
+        "description": "Add fish and mussels, cook until mussels open and fish is cooked through."
+      },
+      {
+        "title": "Season",
+        "description": "Season with salt and pepper. Serve hot."
+      }
+    ],
+    "cuisine": "French",
+    "duration": 120,
+    "description": "A traditional Provençal seafood stew infused with saffron and aromatic herbs."
+  },
+  {
+    "name": "Paella de Marisco",
+    "difficulty": "hard",
+    "food_type": "seafood",
+    "image_url": "https://foodal.com/wp-content/uploads/2020/06/Head-to-Spain-with-Homemade-Paella-de-Marisco.jpg",
+    "ingredients": [
+      {
+        "name": "Arborio rice",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Shrimp",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Calamari",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Clams",
+        "quantity": "150 grams"
+      },
+      {
+        "name": "Red bell pepper",
+        "quantity": "1, sliced"
+      },
+      {
+        "name": "Green peas",
+        "quantity": "100 grams"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "1 gram"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1, chopped"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "50 ml"
+      },
+      {
+        "name": "Fish stock",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Lemon",
+        "quantity": "1, cut into wedges"
+      },
+      {
+        "name": "Paprika",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Sauté base ingredients",
+        "description": "In a large pan, heat olive oil and sauté onion, garlic, and red bell pepper until soft."
+      },
+      {
+        "title": "Add rice and spices",
+        "description": "Stir in rice, saffron, and paprika until rice is well coated."
+      },
+      {
+        "title": "Incorporate stock",
+        "description": "Add fish stock gradually and stir occasionally, allowing the rice to absorb the liquid."
+      },
+      {
+        "title": "Cook seafood",
+        "description": "Add shrimp, calamari, and clams; cook until seafood is done and rice is tender."
+      },
+      {
+        "title": "Finish and serve",
+        "description": "Top with green peas, season with salt and pepper, and garnish with lemon wedges."
+      }
+    ],
+    "cuisine": "Spanish",
+    "duration": 100,
+    "description": "A rich and flavorful Spanish rice dish loaded with fresh seafood."
+  },
+  {
+    "name": "Cioppino",
+    "difficulty": "hard",
+    "food_type": "seafood",
+    "image_url": "https://www.allrecipes.com/thmb/0s1NugH5SGHWm2tNCXL0eJX-LU4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/12816-cioppino-ARMag-DEC2020_09971-f5eded3dc22347109ac5fc032715d673.jpg",
+    "ingredients": [
+      {
+        "name": "Dungeness crab",
+        "quantity": "1 whole"
+      },
+      {
+        "name": "Clams",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Shrimp",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Cod fillets",
+        "quantity": "200 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1, diced"
+      },
+      {
+        "name": "Celery",
+        "quantity": "2 stalks, diced"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4 cloves, minced"
+      },
+      {
+        "name": "Tomato paste",
+        "quantity": "2 tablespoons"
+      },
+      {
+        "name": "Crushed tomatoes",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Dry white wine",
+        "quantity": "250 ml"
+      },
+      {
+        "name": "Fish stock",
+        "quantity": "750 ml"
+      },
+      {
+        "name": "Basil",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Oregano",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the base",
+        "description": "Sauté onion, celery, and garlic in olive oil until soft, then add tomato paste."
+      },
+      {
+        "title": "Add liquids",
+        "description": "Pour in white wine and reduce by half, then add crushed tomatoes and fish stock."
+      },
+      {
+        "title": "Simmer with herbs",
+        "description": "Add basil and oregano, simmer for 30 minutes to develop flavors."
+      },
+      {
+        "title": "Cook seafood",
+        "description": "Add crab, clams, shrimp, and cod; cook until clams open and seafood is cooked."
+      },
+      {
+        "title": "Season and serve",
+        "description": "Adjust seasoning with salt and pepper. Serve with crusty bread."
+      }
+    ],
+    "cuisine": "Italian-American",
+    "duration": 110,
+    "description": "A hearty and rustic seafood stew with a tomato and wine base, perfect for a cozy meal."
+  },
+  {
+    "name": "Lobster Thermidor",
+    "difficulty": "hard",
+    "food_type": "seafood",
+    "image_url": "https://themaplecuttingboard.com/wp-content/uploads/2019/11/Termidor.jpeg",
+    "ingredients": [
+      {
+        "name": "Lobster",
+        "quantity": "2 whole"
+      },
+      {
+        "name": "Butter",
+        "quantity": "50 grams"
+      },
+      {
+        "name": "Shallots",
+        "quantity": "2, finely chopped"
+      },
+      {
+        "name": "Dry white wine",
+        "quantity": "100 ml"
+      },
+      {
+        "name": "Heavy cream",
+        "quantity": "200 ml"
+      },
+      {
+        "name": "Dijon mustard",
+        "quantity": "1 tablespoon"
+      },
+      {
+        "name": "Gruyère cheese",
+        "quantity": "100 grams, grated"
+      },
+      {
+        "name": "Parsley",
+        "quantity": "1 tablespoon, chopped"
+      },
+      {
+        "name": "Paprika",
+        "quantity": "1 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the lobster",
+        "description": "Boil lobsters until cooked, then remove meat and chop. Reserve shells."
+      },
+      {
+        "title": "Make the sauce",
+        "description": "Sauté shallots in butter, deglaze with wine, then add cream and mustard."
+      },
+      {
+        "title": "Combine ingredients",
+        "description": "Stir lobster meat into sauce, season with salt, pepper, and parsley."
+      },
+      {
+        "title": "Fill and bake",
+        "description": "Fill lobster shells with mixture, top with cheese and paprika, then bake until golden."
+      },
+      {
+        "title": "Serve hot",
+        "description": "Garnish with parsley and serve immediately."
+      }
+    ],
+    "cuisine": "French",
+    "duration": 95,
+    "description": "A luxurious French dish featuring lobster in a creamy mustard sauce, baked to perfection."
+  }
+]
