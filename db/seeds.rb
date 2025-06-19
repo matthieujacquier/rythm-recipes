@@ -75,51 +75,51 @@ end
 #turns MusicSuggestion object into an array. So that we can sample over it
 music_suggestions = MusicSuggestion.all.to_a
 
-# puts "Seeding users..."
+puts "Seeding users..."
 
-# user5 = User.create(
-#   email: "matthieu@example.com",
-#   password: "password123",
-#   first_name: "Matthieu",
-#   last_name: "Rap",
-#   admin: true
-# )
+user5 = User.create(
+  email: "matthieu@example.com",
+  password: "password123",
+  first_name: "Matthieu",
+  last_name: "Rap",
+  admin: true
+)
 
-# user1 = User.create(
-#   email: "sam@example.com",
-#   password: "password123",
-#   first_name: "Sam",
-#   last_name: "Techno",
-#   admin: true
-# )
+user1 = User.create(
+  email: "sam@example.com",
+  password: "password123",
+  first_name: "Sam",
+  last_name: "Techno",
+  admin: true
+)
 
-# user2 = User.create(
-#   email: "marta@example.com",
-#   password: "password123",
-#   first_name: "Marta",
-#   last_name: "Rock",
-#   admin: true
-# )
+user2 = User.create(
+  email: "marta@example.com",
+  password: "password123",
+  first_name: "Marta",
+  last_name: "Rock",
+  admin: true
+)
 
-# user3 = User.create(
-#   email: "pelin@example.com",
-#   password: "password123",
-#   first_name: "Pelin",
-#   last_name: "Jazz",
-#   admin: true
-# )
+user3 = User.create(
+  email: "pelin@example.com",
+  password: "password123",
+  first_name: "Pelin",
+  last_name: "Jazz",
+  admin: true
+)
 
-# user4 = User.create(
-#   email: "sneha@example.com",
-#   password: "password123",
-#   first_name: "Sneha",
-#   last_name: "Reggae",
-#   admin: true
-# )
+user4 = User.create(
+  email: "sneha@example.com",
+  password: "password123",
+  first_name: "Sneha",
+  last_name: "Reggae",
+  admin: true
+)
 
-# users = [user1, user2, user3, user4, user5]
+users = [user1, user2, user3, user4, user5]
 
-# puts "Created #{User.count} users"
+puts "Created #{User.count} users"
 
 puts "Seeding recipes with JSON..."
 
