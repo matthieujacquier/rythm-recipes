@@ -1,8 +1,9 @@
 <pre><%# session[:match_data].pretty_inspect %></pre>
 
-<div class="container full-height">
-  <h2 class="text-center mb-4">Which <%= @format == "album" ? "playlist" : "album" %> would you like to select?</h2>
-  <turbo-frame id="music_suggestions">
+<div class="container full-height pt-0">
+<h2 class="text-center" style="margin-top: -15px; margin-bottom: 24px;">
+  Which <%= @format == "album" ? "playlist" : "album" %> would you like to select?
+</h2>  <turbo-frame id="music_suggestions">
     <%= render partial: "music_cards", locals: { suggestions: @suggestions } %>
   </turbo-frame>
 

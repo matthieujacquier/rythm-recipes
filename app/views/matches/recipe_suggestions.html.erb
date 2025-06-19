@@ -1,7 +1,8 @@
 <div class="container full-height">
-  <div class="card-container mt-5 mb-3">
-    <h1 class="text-center mb-5">Which recipe would you like to select?</h1>
-
+<div class="form-content">
+    <h2 class="text-center mb-4 mt-6">Which recipe would you like to select?</h2>
+</div>
+<div class="card-container mt-5 mb-3">
     <div data-controller="recipe-suggestions">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
         <% @recipes.each do |recipe| %>
