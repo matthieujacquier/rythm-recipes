@@ -232,7 +232,7 @@ export default class extends Controller {
           data-genre="${genre}"
           style="cursor: pointer;"
         >
-          <img src="/assets/icons/music.svg" height="16px" class="me-2" />
+          <img src="${iconPath}" height="16px" class="me-2" />
           <span class="me-2">${genre}</span>
           <span class="remove-icon fw-bold" style="font-size: 1.2rem;">×</span>
         </span>
