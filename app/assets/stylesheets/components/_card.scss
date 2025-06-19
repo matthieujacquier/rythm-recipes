@@ -146,30 +146,7 @@
     border-radius: 3px;
   }
 
-.button {
-  background: white;
-  padding: 0.6em 1.3em;
-  font-weight: 900;
-  font-size: 18px;
-  border: 3px solid black;
-  border-radius: 0.4em;
-  box-shadow: 0.1em 0.1em;
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
-}
 
-.button:hover {
-  transform: translate(-0.05em, -0.05em);
-  box-shadow: 0.25em 0.25em;
-  background-color: $flashy_yellow;
-}
-
-.button:active {
-  transform: translate(0.05em, 0.05em);
-  box-shadow: 0.05em 0.05em;
-  background-color: $flashy_yellow;
-}
 
 .saved-recipe-container {
   max-width: 900px;
