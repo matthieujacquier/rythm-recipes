@@ -81,7 +81,7 @@ user5 = User.create(
   email: "matthieu@example.com",
   password: "password123",
   first_name: "Matthieu",
-  last_name: "Rap",
+  last_name: "Jacquier",
   admin: true
 )
 
@@ -89,7 +89,7 @@ user1 = User.create(
   email: "sam@example.com",
   password: "password123",
   first_name: "Sam",
-  last_name: "Techno",
+  last_name: "Tettey",
   admin: true
 )
 
@@ -97,7 +97,7 @@ user2 = User.create(
   email: "marta@example.com",
   password: "password123",
   first_name: "Marta",
-  last_name: "Rock",
+  last_name: "Borges",
   admin: true
 )
 
@@ -105,7 +105,7 @@ user3 = User.create(
   email: "pelin@example.com",
   password: "password123",
   first_name: "Pelin",
-  last_name: "Jazz",
+  last_name: "Chatzi",
   admin: true
 )
 
@@ -113,7 +113,7 @@ user4 = User.create(
   email: "sneha@example.com",
   password: "password123",
   first_name: "Sneha",
-  last_name: "Reggae",
+  last_name: "Jha",
   admin: true
 )
 
