@@ -9,9 +9,9 @@
           <% if match.saved? %>
             <%= link_to match_path(match), class: "col d-flex flex-column align-items-center text-decoration-none" do %>
               <div class="card selectable-card w-100 position-relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="<%= match.recipe.name %>"
-                    class="card-img">
+                <img src="<%= match.recipe.image_url %>"
+                     alt="<%= match.recipe.name %>"
+                     class="card-img">
 
                 <div class="recipe-name"><%= match.recipe.name %></div>
 
