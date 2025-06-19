@@ -4,7 +4,7 @@ class RecipeGenerator
     @food_type = food_type
   end
 
- def call
+def call
   response = OpenAIClient.chat(
     parameters: {
       model: "gpt-4o",
@@ -45,7 +45,7 @@ end
       ],
       "cuisine": "Cuisine type (e.g., Italian, Indian, French)",
       "duration": 45,
-      "description": "Short, enticing one-sentence description of the dish",
+      "description": "Short, enticing one to three sentences description of the dish",
       "difficulty": "easy",
       "food_type": "meat"
     }
@@ -53,6 +53,8 @@ end
     Guidelines:
     - Include the `difficulty` and `food_type` fields in **each recipe object**.
     - Recipes must be unique in name, ingredients, preparation method, and cuisine.
+    - Be original in your suggestions
+    - Do not repeat the following recipes : Herbed Grilled chicken, Beef Stir Fry, Honey Garlic Pork Chops, Lemon Herb Lamb Chops, Vegetarian Stuffed Bell Peppers, Caprese Salad, Thai Coconut Fish Curry, Vegetarian Fried Rice, Vegetarian Tacos, Vegan Chickpea Salad, Vegan Thai Green Curry, Vegan Mexican Tacos, Vegan Indian Lentil Soup, Garlic Butter Shrimp Pasta, Spanish Garlic Prawns, Lemon Herb Grilled Salmon, Spicy Korean Beef Stir-Fry, Moroccan Lamb Tagine, Italian Chick Cacciatore, Mexican Pork Carnitas, Thai Green Curry, Stuffed Bell Peppers, Spinach and Ricotta Cannelloni, Chickpea and Vegetable Tagine, Mushroom and Leek Risotto, Mushroom Stroganoff, Moroccan Vegetable Tagine, Vegan Paella, Seafood Paella, Grilled Miso Salmon, Thai Green Curry with Prawns, New England Clam Chowder, Beef Wellington, Coq au Vin, Eggplant Moussaka, Osso Buco, Rogan Josh, Stuffed Bell Peppers with Quinoa and Cheese, Vegetable Lasagna with Homemade Pasta, Mushroom and Truffle Risotto, Vegan Mushroom Wellington, Vegan Biryani, Vegan Ramen, Bouillabaisse Marseillaise, Paella de Marisco, Cioppino, Lobster Thermidor.
     - Difficulty levels affect the duration and complexity:
       - Easy = 15–45 min
       - Medium = 45–90 min
