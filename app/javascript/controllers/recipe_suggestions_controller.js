@@ -16,13 +16,13 @@ export default class extends Controller {
     document.getElementById("selected-recipe-id").value = this.selectedCardId
 
     this.buttonTarget.classList.remove("disabled")
-    this.errorTarget.textContent = "" // clear any existing error
+    this.errorTarget.textContent = ""
   }
 
   validate(event) {
     if (!this.selectedCardId) {
       event.preventDefault()
-      this.errorTarget.textContent = "❗ Please select a recipe before continuing."
+      this.errorTarget.textContent = "❗ Holy macaroni! Looks like you forgot to select a recipe."
     }
   }
 }

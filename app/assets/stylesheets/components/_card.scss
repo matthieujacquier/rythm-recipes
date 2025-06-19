@@ -189,3 +189,12 @@
   width: 100%;
   max-width: 90%;
 }
+
+.alert {
+  z-index: 1000;
+  padding: 15px;
+  border-radius: 5px;
+  color: rgb(184, 66, 66);
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(245, 199, 46, 0.2);
+}
