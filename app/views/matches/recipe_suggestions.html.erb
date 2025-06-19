@@ -51,8 +51,10 @@
           </div>
         <% end %>
 
-        <div data-recipe-suggestions-target="error" class="alert" role="alert"></div>
-      </div>
+        <div data-recipe-suggestions-target="error" class="alert" role="alert">
+          <button class="close-btn" aria-label="Close alert">&times;</button>
+          <span class="message"></span>
+        </div>
 
       <div class="text-center mt-4">
         <%= button_to "Shuffle recipes", recipe_suggestions_matches_path, method: :get, class: "button" %>

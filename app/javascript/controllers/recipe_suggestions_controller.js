@@ -5,6 +5,14 @@ export default class extends Controller {
 
   connect() {
     this.selectedCardId = null
+
+    // Attach close listener once when controller connects
+    const closeBtn = this.errorTarget.querySelector('.close-btn')
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        this.errorTarget.classList.remove('show')
+      })
+    }
   }
 
   select(event) {
@@ -16,13 +24,25 @@ export default class extends Controller {
     document.getElementById("selected-recipe-id").value = this.selectedCardId
 
     this.buttonTarget.classList.remove("disabled")
-    this.errorTarget.textContent = ""
+
+    // Clear error if previously shown
+    this.errorTarget.classList.remove('show')
+    const messageSpan = this.errorTarget.querySelector('.message')
+    if (messageSpan) messageSpan.textContent = ""
   }
 
   validate(event) {
     if (!this.selectedCardId) {
       event.preventDefault()
-      this.errorTarget.textContent = "❗ Holy macaroni! Looks like you forgot to select a recipe."
+
+      const alertBox = this.errorTarget
+      const messageSpan = alertBox.querySelector('.message')
+
+      if (messageSpan) {
+        messageSpan.textContent = "❗ Holy macaroni! Looks like you forgot to select a recipe."
+      }
+
+      alertBox.classList.add('show')
     }
   }
 }

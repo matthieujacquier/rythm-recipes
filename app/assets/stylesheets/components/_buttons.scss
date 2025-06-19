@@ -63,3 +63,42 @@
     box-shadow: 0.05em 0.05em;
   }
 }
+
+.alert {
+  display: none;
+  z-index: 1000;
+  padding: 15px 40px 15px 15px;
+  border-radius: 0.4em;
+  color: rgb(184, 66, 66);
+  border: 3px solid black;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alert.show {
+  display: block;
+}
+
+.alert .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background: none;
+  border: none;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.btn-save{
+  background: rgb(255, 255, 255);
+  font-weight: 900;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 0.4em;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  bottom: 10px;
+}
