@@ -124,7 +124,7 @@ puts "Created #{User.count} users"
 puts "Seeding recipes with JSON..."
 
 # Load recipes from JSON file
-file_path_recipes = Rails.root.join('recipes.json')
+file_path_recipes = Rails.root.join('db', 'recipes.json')
 seed_recipes = JSON.parse(File.read(file_path_recipes))
 
 # Seed from JSON file first
@@ -152,6 +152,7 @@ seed_recipes.each do |recipe_data|
   rescue => e
     puts "⚠️ Failed to seed from file: #{recipe_name} - #{e.message}"
   end
+  puts "📦 Found #{seed_recipes.size} recipes to seed"
 end
 
 
@@ -199,13 +200,3 @@ end
 
 
 puts "Seeding complete!"
-
-# puts "Seeding matches..."
-
-# match1 =  Match.create!(
-# recipe_name: "Shrimp Scampi Meets Salsa Verde",
-# recipe_description: "This shrimp pasta with cilantro and lime is spicy, citrusy, and bold.",
-# user: user1,
-# music_suggestion: music_suggestions.sample,
-# recipe: food_suggestions.sample
-# )
