@@ -31,17 +31,13 @@
     overflow: hidden;
     text-align: center;
     cursor: pointer;
+    transition: transform 1s ease-in-out;
     margin: 16px;
     transform-origin: center;
     will-change: transform;
-    transition:
-    transform 0.3s ease-in-out,
-    clip-path 0.4s ease-in-out,
-    background-color 0.4s ease-in-out,
-    border-radius 0.4s ease-in-out;
 
     &:hover {
-    transform: scale(1.10);
+    transform: scale(1.10) rotate(0deg);
     border: none;
     animation: wiggle 1s ease-in-out infinite;
     }
@@ -51,7 +47,6 @@
     height: 100%;
     padding: 20%;
     object-fit: contain;
-    transition: transform 0.4s ease;
     z-index: 1;
   }
 
@@ -68,9 +63,7 @@
       font-size: 15px;
       font-weight: 450;
       text-align: center;
-      transition: opacity 0.2s ease;
       z-index: 2;
-      transition: opacity 0.3s ease 0.05s;
     }
 
     &:hover .option-label {
