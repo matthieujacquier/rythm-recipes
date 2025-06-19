@@ -17,8 +17,8 @@
     <% end %>
     <%= render "shared/flashes" %>
     <%= yield %>
-    <% unless controller_name == 'pages' && action_name == 'home' %>
-      <%= render "shared/footer" %>
-    <% end %>
+   <% if (controller_name == 'matches' && action_name == 'show') || controller_name == 'users' %>
+  <%= render 'shared/footer' %>
+<% end %>
   </body>
 </html>
