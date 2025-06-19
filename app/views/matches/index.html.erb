@@ -296,15 +296,18 @@
           </div>
         </div>
         <!-- Album or Playlist -->
-        <div class="d-none option-grid" data-form-target="musicFormat">
+        <div class="d-none d-block option-grid text-center" data-form-target="musicFormat">
+          <h2 class="mt-5">Select a preference</h2>
+          <div class="d-flex flex-wrap justify-content-center">
           <% ['Album', 'Playlist'].each do |format| %>
-            <label class="option-card">
+            <label class="option-card-music_format">
               <%= radio_button_tag :music_format_selection, format, false,
                 data: { action: "click->form#submit" },
                 class: "hidden-radio" %>
               <span class="option-label"><%= format %></span>
             </label>
           <% end %>
+          </div>
         </div>
       <% end %>
 
