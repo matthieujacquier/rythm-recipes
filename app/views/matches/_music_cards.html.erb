@@ -1,32 +1,39 @@
 <div class="container music-selection-page" data-controller="music-suggestions">
   <div class="row justify-content-center gy-4">
     <% @music_suggestions.each do |music| %>
-      <div class="col-md-4 spotify_player">
-        <div class="music-card">
-          <div class="selectable-card p-2"
-              data-music-suggestions-target="card"
-              data-action="click->music-suggestions#select"
-              data-id="<%= music.id %>">
-            <% embed_type = music.album ? "album" : "playlist" %>
-            <% embed_url = "https://open.spotify.com/embed/#{embed_type}/#{music.spotify_id}" %>
+  <% embed_type = music.album ? "album" : "playlist" %>
+  <% embed_url = "https://open.spotify.com/embed/#{embed_type}/#{music.spotify_id}" %>
 
-            <iframe class="spotify-embed" style="border-radius:12px;"
-                    src="<%= embed_url %>?utm_source=generator&theme=0"
-                    width="100%" height="380" frameborder="0"
-                    allowfullscreen
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
+  <div class="col-md-4 spotify_player">
+    <div class="music-card">
+      <div class="selectable-card p-2"
+           data-music-suggestions-target="card"
+           data-action="click->music-suggestions#select"
+           data-id="<%= music.id %>">
 
-            <% if session[:match_data]["format"] == "Album" %>
-              <h6 class="text-center mt-2">A few words</h6>
-              <p class="mt-2 p-2"><%= music.description %></p>
-            <% end %>
-          </div>
-        </div>
+        <% if embed_type == "album" %>
+          <iframe class="spotify-embed" style="border-radius:12px;"
+                  src="<%= embed_url %>?utm_source=generator&theme=0"
+                  width="100%" height="360" frameborder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  allowfullscreen loading="lazy"></iframe>
+
+          <h6 class="text-center mt-2">A few words</h6>
+          <p class="mt-2 p-2"><%= music.description %></p>
+
+        <% else %>
+          <iframe class="spotify-embed" style="border-radius:12px;"
+                  src="<%= embed_url %>?utm_source=generator&theme=0"
+                  width="100%" height="500" frameborder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  allowfullscreen loading="lazy"></iframe>
+        <% end %>
       </div>
-    <% end %>
+    </div>
   </div>
-
+<% end %>
+  </div>
+  
   <div class="text-center mt-4">
     <!-- hidden form submitted by Stimulus -->
     <%= form_with url: select_music_matches_path, method: :post, html: { id: "music-selection-form" } do %>
