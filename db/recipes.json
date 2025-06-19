@@ -603,7 +603,7 @@
     "name": "Vegan Thai Green Curry",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPT3t9fji-v9oZRw55pKrJEf3uwDRkNBSHjg&s",
+    "image_url": "https://realfood.tesco.com/media/images/1400x919-Vegan-thai-green-curry-recipe-cacf44ce-4b8f-4ee0-9677-a7fcaaf29949-0-1400x919.jpg",
     "ingredients": [
       {
         "name": "Coconut milk",
@@ -805,7 +805,7 @@
     "name": "Garlic Butter Shrimp Pasta",
     "difficulty": "easy",
     "food_type": "seafood",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1AD3MuT742FWQALeZFTjNPA2hoZGGtpm3Vw&s",
+    "image_url": "https://amyinthekitchen.com/wp-content/uploads/2022/05/Pasta-with-garlic-butter-shrimp-recipe.jpg",
     "ingredients": [
       {
         "name": "Spaghetti",
@@ -1029,7 +1029,7 @@
     "name": "Moroccan Lamb Tagine",
     "difficulty": "medium",
     "food_type": "meat",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3BRLyWzLK2IE4jC7T5eOlyYU_EK7S4YrdA&s",
+    "image_url": "https://realfood.tesco.com/media/images/RFO-1400x919-Tagine-724d7e31-fe78-4182-846f-04165d6df9d0-0-1400x919.jpg",
     "ingredients": [
       {
         "name": "Lamb shoulder",
@@ -1674,84 +1674,6 @@
     "description": "Rich and creamy risotto with earthy mushrooms and delicate leeks."
   },
   {
-    "name": "Mushroom Stroganoff",
-    "difficulty": "medium",
-    "food_type": "vegan",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCs3LkZrbcfbeFSEnfIPjmxARVo_jVrr4a6Q&s",
-    "ingredients": [
-      {
-        "name": "Button Mushrooms",
-        "quantity": "300 grams"
-      },
-      {
-        "name": "Onion",
-        "quantity": "1 medium"
-      },
-      {
-        "name": "Garlic",
-        "quantity": "2 cloves"
-      },
-      {
-        "name": "Vegan Sour Cream",
-        "quantity": "150 grams"
-      },
-      {
-        "name": "Vegetable Broth",
-        "quantity": "250 ml"
-      },
-      {
-        "name": "Olive Oil",
-        "quantity": "2 tablespoons"
-      },
-      {
-        "name": "Paprika",
-        "quantity": "1 teaspoon"
-      },
-      {
-        "name": "Salt",
-        "quantity": "to taste"
-      },
-      {
-        "name": "Black Pepper",
-        "quantity": "to taste"
-      },
-      {
-        "name": "Fresh Parsley",
-        "quantity": "a handful"
-      }
-    ],
-    "portion_size": 4,
-    "instructions": [
-      {
-        "title": "Prepare Ingredients",
-        "description": "Chop the mushrooms, onion, and garlic finely."
-      },
-      {
-        "title": "Sauté Vegetables",
-        "description": "Heat olive oil in a pan, add onions and garlic, and sauté until golden."
-      },
-      {
-        "title": "Cook Mushrooms",
-        "description": "Add mushrooms and cook until they release moisture."
-      },
-      {
-        "title": "Add Broth",
-        "description": "Pour in vegetable broth, add paprika, and simmer for 10 minutes."
-      },
-      {
-        "title": "Finish with Cream",
-        "description": "Stir in the vegan sour cream, season with salt and pepper, and simmer another 5 minutes."
-      },
-      {
-        "title": "Serve",
-        "description": "Garnish with fresh parsley and serve."
-      }
-    ],
-    "cuisine": "Russian",
-    "duration": 60,
-    "description": "A creamy, hearty vegan twist on the classic stroganoff."
-  },
-  {
     "name": "Moroccan Vegetable Tagine",
     "difficulty": "medium",
     "food_type": "vegan",
@@ -1833,7 +1755,7 @@
     "name": "Vegan Paella",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGZvbSaZizzYp_XPNgHOl6i5Fn6lGB2PjZw&s",
+    "image_url": "https://ohmyveggies.com/wp-content/uploads/2023/08/vegan-paella-7-of-11.jpg",
     "ingredients": [
       {
         "name": "Arborio Rice",
@@ -1911,7 +1833,7 @@
     "name": "Seafood Paella",
     "difficulty": "medium",
     "food_type": "seafood",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHGym4JnKdxeNYB3bIIHOqo_L16Juo1Pa1g&s",
+    "image_url": "https://realfood.tesco.com/media/images/1400x919-SeafoodPaella-Recipe-d345d50e-8bf1-40a5-a424-a0443972c226-0-1400x919.jpg",
     "ingredients": [
       {
         "name": "Saffron",
@@ -2896,76 +2818,6 @@
     "description": "A luxurious vegan twist on the classic Wellington, perfect for special occasions."
   },
   {
-    "name": "Vegan Biryani",
-    "difficulty": "hard",
-    "food_type": "vegan",
-    "image_url": "https://cache.marieclaire.fr/data/photo/w1200_h630_ci/6z/recette-biryani-vegetarien-rapide.jpg",
-    "ingredients": [
-      {
-        "name": "Basmati rice",
-        "quantity": "300 grams"
-      },
-      {
-        "name": "Cauliflower",
-        "quantity": "200 grams"
-      },
-      {
-        "name": "Carrot",
-        "quantity": "1 large"
-      },
-      {
-        "name": "Green beans",
-        "quantity": "100 grams"
-      },
-      {
-        "name": "Onion",
-        "quantity": "2 large"
-      },
-      {
-        "name": "Garlic",
-        "quantity": "4 cloves"
-      },
-      {
-        "name": "Ginger",
-        "quantity": "1 inch"
-      },
-      {
-        "name": "Coconut milk",
-        "quantity": "200 ml"
-      },
-      {
-        "name": "Biryani masala",
-        "quantity": "2 tablespoons"
-      },
-      {
-        "name": "Cilantro",
-        "quantity": "1 bunch"
-      }
-    ],
-    "portion_size": 4,
-    "instructions": [
-      {
-        "title": "Prepare the Vegetables",
-        "description": "Chop and sauté onions, garlic, ginger, and mixed vegetables."
-      },
-      {
-        "title": "Cook the Rice",
-        "description": "Parboil the rice in salted water and set aside."
-      },
-      {
-        "title": "Layer and Cook",
-        "description": "Layer rice and vegetable mixture; add coconut milk and biryani masala."
-      },
-      {
-        "title": "Simmer",
-        "description": "Cover and cook on low heat until rice is fully cooked."
-      }
-    ],
-    "cuisine": "Indian",
-    "duration": 110,
-    "description": "An aromatic and richly spiced vegan biryani that delights the senses."
-  },
-  {
     "name": "Vegan Ramen",
     "difficulty": "hard",
     "food_type": "vegan",
@@ -3043,7 +2895,7 @@
     "name": "Teriyaki Chicken Skewers",
     "difficulty": "easy",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://kikkomanusa.com/homecooks/wp-content/uploads/2024/06/Takumi-Teriyaki-Grilled-Chicken-Thigh-Kabobs-IMG-1.png",
     "ingredients": [
       {
         "name": "Chicken thighs",
@@ -3453,7 +3305,7 @@
     "name": "Vegan Stuffed Cabbage Rolls",
     "difficulty": "hard",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://www.brandnewvegan.com/wp-content/uploads/stuffed-vegan-cabbage-rolls-h2.jpg",
     "ingredients": [
       {
         "name": "Cabbage leaves",
@@ -3607,7 +3459,7 @@
     "name": "Herb-Crusted Pork Chops",
     "difficulty": "easy",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://images.food52.com/pZTsQ3M2Yu4celiPBJHhpUfIZsM=/2016x1344/filters:format(webp)/b04627cd-47f9-404b-8992-d7f8bc138f3e--pork_chops.jpg",
     "ingredients": [
       {
         "name": "Pork chops",
@@ -3757,7 +3609,7 @@
     "name": "Vegetarian Quinoa Salad",
     "difficulty": "easy",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://sweetsimplevegan.com/wp-content/uploads/2023/02/horizontal_photo_Vegan_quinoa_salad_recipe_sweet_simple_vegan_1.jpg",
     "ingredients": [
       {
         "name": "Quinoa",
@@ -3823,7 +3675,7 @@
     "name": "Vegetarian Pasta Primavera",
     "difficulty": "easy",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://frommybowl.com/wp-content/uploads/2021/06/One_Pot_Pasta_Primavera_Vegan_FromMyBowl-7-scaled.jpg",
     "ingredients": [
       {
         "name": "Pasta",
@@ -4013,76 +3865,7 @@
     "duration": 40,
     "description": "Deliciously baked tomatoes stuffed with a savory mixture of rice, feta, and herbs, capturing the essence of Greek cuisine."
   },
-  {
-    "name": "Vegetarian French Ratatouille",
-    "difficulty": "easy",
-    "food_type": "vegetarian",
-    "image_url": null,
-    "ingredients": [
-      {
-        "name": "Eggplant",
-        "quantity": "1 unit"
-      },
-      {
-        "name": "Zucchini",
-        "quantity": "1 unit"
-      },
-      {
-        "name": "Bell pepper",
-        "quantity": "1 unit"
-      },
-      {
-        "name": "Tomatoes",
-        "quantity": "4 units"
-      },
-      {
-        "name": "Onion",
-        "quantity": "1 unit"
-      },
-      {
-        "name": "Garlic",
-        "quantity": "3 cloves"
-      },
-      {
-        "name": "Olive oil",
-        "quantity": "2 tablespoons"
-      },
-      {
-        "name": "Thyme",
-        "quantity": "1 teaspoon"
-      },
-      {
-        "name": "Salt",
-        "quantity": "to taste"
-      },
-      {
-        "name": "Black pepper",
-        "quantity": "to taste"
-      }
-    ],
-    "portion_size": 4,
-    "instructions": [
-      {
-        "title": "Prepare Vegetables",
-        "description": "Dice eggplant, zucchini, bell pepper, and tomatoes."
-      },
-      {
-        "title": "Cook Vegetables",
-        "description": "In a pan, heat olive oil and sauté onion and garlic until soft, then add diced vegetables."
-      },
-      {
-        "title": "Season",
-        "description": "Add thyme, salt, and pepper, and cook on low heat for 30 minutes."
-      },
-      {
-        "title": "Serve",
-        "description": "Serve warm as a side dish or main course."
-      }
-    ],
-    "cuisine": "French",
-    "duration": 45,
-    "description": "A traditional French dish made with a medley of sautéed vegetables, perfect for a comforting and flavorful meal."
-  },
+
   {
     "name": "Vegetarian Spinach and Ricotta Pie",
     "difficulty": "easy",
@@ -4149,7 +3932,7 @@
     "name": "Vegetarian Indian Potato and Pea Curry",
     "difficulty": "easy",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://images.squarespace-cdn.com/content/v1/63d0a16cfad8c1759df2fe31/a3c129bf-7bef-48ed-8828-dbbd47707a8b/GCBC14_EP54_-Easy-Peasy-Potato-_-Pea-Curry_1L0A8994-700x404.jpg",
     "ingredients": [
       {
         "name": "Potatoes",
@@ -4351,7 +4134,7 @@
     "name": "Vegan Sweet Potato Curry",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://nourishevolution.com/wp-content/uploads/2009/05/lamb-chops-small.jpeg",
     "ingredients": [
       {
         "name": "Sweet Potatoes",
@@ -4421,7 +4204,7 @@
     "name": "Vegan Lentil Soup",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://www.eatingwell.com/thmb/AZdGSagOj8VtZPnpcVdD8ttRk3k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vegan-lentil-stew-0b016185b40446ba98409c75dfeaef7f.jpg",
     "ingredients": [
       {
         "name": "Green Lentils",
@@ -4491,7 +4274,7 @@
     "name": "Vegan Tofu Stir Fry",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://thehappyfoodie.co.uk/wp-content/uploads/2021/08/teriyaki-tofu-stir-fry-vegan-easy-c615c99e-a17a-4e20-bf9a-c2499631ae39_s900x0_c600x349_l0x287.jpg",
     "ingredients": [
       {
         "name": "Firm Tofu",
@@ -4557,7 +4340,7 @@
     "name": "Vegan Black Bean Tacos",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://playswellwithbutter.com/wp-content/uploads/2019/08/Quinoa-Black-Bean-Tacos-13-e1610577176314.jpg",
     "ingredients": [
       {
         "name": "Corn Tortillas",
@@ -4623,7 +4406,7 @@
     "name": "Vegan Cauliflower Buffalo Wings",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://images.getrecipekit.com/20230504171618-vegancauliflowerwings_blog3-min.jpg?aspect_ratio=16:9&quality=90&",
     "ingredients": [
       {
         "name": "Cauliflower",
@@ -4685,7 +4468,7 @@
     "name": "Vegan Mushroom Stroganoff",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://static1.squarespace.com/static/62c84366f3780a592d560a4d/t/66e20f53f436a64f6282f979/1726091096471/vegan-oyster-mushroom-stroganoff-2024-09-107.jpg?format=1500w",
     "ingredients": [
       {
         "name": "Mushrooms",
@@ -4755,7 +4538,7 @@
     "name": "Garlic Lemon Shrimp Skewers",
     "difficulty": "easy",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://res.cloudinary.com/wildasset/image/upload/f_auto,q_auto,w_576/v1716234955/blog/SidestripedShrimpskewers.jpg",
     "ingredients": [
       {
         "name": "Shrimp",
@@ -4813,7 +4596,7 @@
     "name": "Coconut Shrimp with Sweet Chili Sauce",
     "difficulty": "easy",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://www.friedmansideasandinnovations.com/wp-content/uploads/2020/08/Coconut-Shrimp-132052307.jpg",
     "ingredients": [
       {
         "name": "Shrimp",
@@ -5061,7 +4844,7 @@
     "name": "Vegan Peking Seitan Duck",
     "difficulty": "hard",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://www.sidechef.com/recipe/10e80abd-3699-4ef0-9935-f21a72789215.jpeg?d=1408x1120",
     "ingredients": [
       {
         "name": "Seitan",
@@ -5401,7 +5184,7 @@
     "name": "Japanese Chicken Katsu Curry",
     "difficulty": "medium",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://www.foodandwine.com/thmb/hicXzmGIIpkwyX3Q55IYiupQjMo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Katsu-Curry-Japanese-Curry-with-Tonkatsu-Nuggets-and-Fried-Egg-FT-RECIPE0922-2000-bd3fa359de3544448906652f53f53bb3.jpg",
     "ingredients": [
       {
         "name": "Chicken breasts",
@@ -5705,7 +5488,7 @@
     "name": "Spinach and Feta Stuffed Shells",
     "difficulty": "medium",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://hips.hearstapps.com/hmg-prod/images/spinach-stuffed-shells-2-jpg-1632960411.jpg",
     "ingredients": [
       {
         "name": "Jumbo pasta shells",
@@ -6307,7 +6090,7 @@
     "name": "Vegan Shepherd's Pie",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://audreydunham.com/wp-content/uploads/2024/03/shepherds-pie-hero-landscape-web.jpg",
     "ingredients": [
       {
         "name": "Lentils",
@@ -6479,7 +6262,7 @@
     "name": "Vegan Pad Thai",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://www.thespruceeats.com/thmb/wF19pUZKaKo66pofbpjI0eS1SLc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vegetarian-pad-thai-3217746-step-11-231a859fac40430583b044297aaf4a87.jpg",
     "ingredients": [
       {
         "name": "Rice Noodles",
@@ -6561,7 +6344,7 @@
     "name": "Vegan Jambalaya",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://thepeskyvegan.com/wp-content/uploads/2023/09/best-vegan-jambalaya-recipe-pan-overhead.jpg",
     "ingredients": [
       {
         "name": "Brown Rice",
@@ -6647,7 +6430,7 @@
     "name": "Vegan Moussaka",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/vegan_moussaka_52413_16x9.jpg",
     "ingredients": [
       {
         "name": "Eggplant",
@@ -6725,7 +6508,7 @@
     "name": "Vegan Quinoa Stuffed Peppers",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_1200/hellofresh_s3/image/poivrons-farcis-aux-legumes-et-au-quinoa-ed02c72b.jpg",
     "ingredients": [
       {
         "name": "Quinoa",
@@ -6943,7 +6726,7 @@
     "name": "Thai Spicy Basil Shrimp",
     "difficulty": "medium",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://www.thespruceeats.com/thmb/0RoTEiRWmqKFzMOt0tV3V8sxQN4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/thai-basil-shrimp-3217540-Step_05-8577474ef0bc47e4ae802bc10aad7ddb.jpg",
     "ingredients": [
       {
         "name": "Shrimp",
@@ -7079,7 +6862,7 @@
     "name": "Indian Spiced Fish Curry",
     "difficulty": "medium",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://notacurry.com/wp-content/uploads/2020/07/Fish-curry-with-cauliflower.jpg",
     "ingredients": [
       {
         "name": "White fish fillets",
@@ -7142,72 +6925,10 @@
     "description": "Delicately spiced curry with tender fish fillets and creamy coconut milk. A comforting dish with a hint of spice."
   },
   {
-    "name": "French Bouillabaisse",
-    "difficulty": "medium",
-    "food_type": "seafood",
-    "image_url": "https://assets.epicurious.com/photos/61f423f29c9591f7270e22c6/4:3/w_4965,h_3723,c_limit/Bouillabaise_RECIPE_20220125_1776_V1_final.jpg",
-    "ingredients": [
-      {
-        "name": "Assorted fish",
-        "quantity": "600 grams"
-      },
-      {
-        "name": "Shellfish",
-        "quantity": "400 grams"
-      },
-      {
-        "name": "Fennel",
-        "quantity": "1 bulb"
-      },
-      {
-        "name": "Leeks",
-        "quantity": "2 stalks"
-      },
-      {
-        "name": "Garlic",
-        "quantity": "4 cloves"
-      },
-      {
-        "name": "Tomatoes",
-        "quantity": "3 large"
-      },
-      {
-        "name": "Saffron",
-        "quantity": "1 pinch"
-      },
-      {
-        "name": "Fish stock",
-        "quantity": "1.5 liters"
-      }
-    ],
-    "portion_size": 4,
-    "instructions": [
-      {
-        "title": "Prepare Base",
-        "description": "Sauté fennel, leeks, and garlic until soft."
-      },
-      {
-        "title": "Add Tomatoes",
-        "description": "Add chopped tomatoes and saffron, cook until tomatoes break down."
-      },
-      {
-        "title": "Add Stock",
-        "description": "Pour in fish stock and bring to a boil."
-      },
-      {
-        "title": "Add Seafood",
-        "description": "Add fish and shellfish, simmer until cooked."
-      }
-    ],
-    "cuisine": "French",
-    "duration": 80,
-    "description": "A classic French seafood stew with a rich broth filled with a variety of fish and shellfish. A feast for the senses."
-  },
-  {
     "name": "Spanish Gambas al Ajillo",
     "difficulty": "medium",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://www.simplyrecipes.com/thmb/DWxegonPG3PBVtuewRDljoYhlyg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Spanish-Garlic-Shrimp-LEAD-2-8b7bc797105b41908dcbc58ef007da75.jpg",
     "ingredients": [
       {
         "name": "Shrimp",
@@ -7261,7 +6982,7 @@
     "name": "Portuguese Bacalhau à Brás",
     "difficulty": "medium",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://www.pingodoce.pt/wp-content/uploads/2016/03/bacalhau-a-bras.jpg",
     "ingredients": [
       {
         "name": "Salted cod",
@@ -7501,7 +7222,7 @@
     "name": "Portuguese Cozido",
     "difficulty": "hard",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://welovecampodeourique.com/wp-content/uploads/2018/02/cozido_portuguesa.jpg",
     "ingredients": [
       {
         "name": "Beef brisket",
@@ -7675,7 +7396,7 @@
     "name": "Brazilian Feijoada",
     "difficulty": "hard",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://cheapandcheerfulcooking.com/wp-content/uploads/2020/05/vegan-feijoada-1.jpg",
     "ingredients": [
       {
         "name": "Black beans",
@@ -7795,7 +7516,7 @@
     "name": "Eggplant and Ricotta Ravioli",
     "difficulty": "hard",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5f063187ead18a2e98ba7f9b/1693696018104-W4IWU2RZ5OQ9LEZRZXIH/MarriottRiverwalk-11.jpg",
     "ingredients": [
       {
         "name": "Eggplant",
@@ -7869,7 +7590,7 @@
     "name": "Vegetarian Ramen with Homemade Noodles",
     "difficulty": "hard",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://veganhuggs.com/wp-content/uploads/2021/05/vegan-ramen-in-bowl-square-crop.jpg",
     "ingredients": [
       {
         "name": "All-purpose flour",
@@ -7939,7 +7660,7 @@
     "name": "Wild Mushroom and Spinach Strudel",
     "difficulty": "hard",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://static01.nyt.com/images/2013/12/17/science/19recipehealth/19recipehealth-superJumbo.jpg",
     "ingredients": [
       {
         "name": "Phyllo pastry",
@@ -8009,7 +7730,7 @@
     "name": "Stuffed Artichokes with Lemon and Herbs",
     "difficulty": "hard",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://homesteadandchill.com/wp-content/uploads/2024/04/roasted-baked-artichokes-recipe-garlic-lemon-herbs-delicious-easy-feature-500x375.jpg",
     "ingredients": [
       {
         "name": "Artichokes",
@@ -8075,7 +7796,7 @@
     "name": "Pistachio and Goat Cheese Terrine",
     "difficulty": "hard",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://images.services.kitchenstories.io/25QORIQl44oRJwKN9-nMBkLaCms=/3840x0/filters:quality(80)/images.kitchenstories.io/recipeImages/05_05_RaffinierteZiegenkaeseterrine_titlePicture.jpg",
     "ingredients": [
       {
         "name": "Goat cheese",
@@ -8141,7 +7862,7 @@
     "name": "Roasted Butternut Squash and Sage Risotto",
     "difficulty": "hard",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://res.cloudinary.com/hellochef/image/upload/c_fit/q_auto/dpr_auto/hw3qtoaiqtudee9lclxt?_a=E",
     "ingredients": [
       {
         "name": "Butternut squash",
@@ -8211,7 +7932,7 @@
     "name": "Beetroot and Feta Galette",
     "difficulty": "hard",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://westgold.com/assets/article-images/Beetroot-Galette-on-picnic-table.jpg",
     "ingredients": [
       {
         "name": "Beetroot",
@@ -8281,7 +8002,7 @@
     "name": "Caramelized Onion and Gruyère Soufflé",
     "difficulty": "hard",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://margotdreamsofbaking.ca/wp-content/uploads/2021/11/Caramelilzed-Onion-and-Gruyere-Buns.jpg",
     "ingredients": [
       {
         "name": "Onions",
@@ -8348,48 +8069,6 @@
     "description": "A light and airy soufflé with the rich flavor of caramelized onions and melted Gruyère cheese, perfect for a sophisticated dinner."
   },
   {
-    "name": "Vegan Baked Alaska",
-    "difficulty": "hard",
-    "food_type": "vegan",
-    "image_url": null,
-    "ingredients": [
-      {
-        "name": "Aquafaba",
-        "quantity": "200 ml"
-      },
-      {
-        "name": "Sugar",
-        "quantity": "100 g"
-      },
-      {
-        "name": "Vegan ice cream",
-        "quantity": "500 ml"
-      },
-      {
-        "name": "Vegan sponge cake",
-        "quantity": "200 g"
-      }
-    ],
-    "portion_size": 4,
-    "instructions": [
-      {
-        "title": "Prepare the Meringue",
-        "description": "Whip aquafaba until soft peaks form, gradually adding sugar to create stiff peaks."
-      },
-      {
-        "title": "Assemble and Freeze",
-        "description": "Place vegan ice cream on sponge cake, cover with meringue, and freeze until firm."
-      },
-      {
-        "title": "Bake and Serve",
-        "description": "Bake in a preheated oven at 220°C for 5 minutes or until meringue is golden, then serve immediately."
-      }
-    ],
-    "cuisine": "American",
-    "duration": 100,
-    "description": "A stunning vegan twist on a classic dessert, combining soft meringue with creamy ice cream atop a fluffy sponge cake."
-  },
-  {
     "name": "Vegan Tofu Wellington",
     "difficulty": "hard",
     "food_type": "vegan",
@@ -8436,52 +8115,10 @@
     "description": "A plant-based take on the traditional Wellington, featuring savory tofu and mushrooms wrapped in crisp, flaky pastry."
   },
   {
-    "name": "Vegan Jackfruit Tarte Tatin",
-    "difficulty": "hard",
-    "food_type": "vegan",
-    "image_url": null,
-    "ingredients": [
-      {
-        "name": "Canned jackfruit",
-        "quantity": "300 g"
-      },
-      {
-        "name": "Vegan sugar",
-        "quantity": "150 g"
-      },
-      {
-        "name": "Vegan butter",
-        "quantity": "50 g"
-      },
-      {
-        "name": "Puff pastry",
-        "quantity": "1 sheet"
-      }
-    ],
-    "portion_size": 4,
-    "instructions": [
-      {
-        "title": "Caramelize the Sugar",
-        "description": "Melt sugar with vegan butter in a skillet until caramelized."
-      },
-      {
-        "title": "Prepare the Tarte",
-        "description": "Arrange jackfruit in caramel, cover with puff pastry, and bake."
-      },
-      {
-        "title": "Bake and Invert",
-        "description": "Bake in a preheated oven at 180°C for 25 minutes, then invert onto a plate."
-      }
-    ],
-    "cuisine": "French",
-    "duration": 95,
-    "description": "A delightful vegan dessert, featuring sweet and succulent jackfruit atop a caramel base, encased in a crisp pastry."
-  },
-  {
     "name": "Vegan Tempeh Bourguignon",
     "difficulty": "hard",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://www.exceedinglyvegan.com/application/files/thumbnails/mainimage/6914/6798/2024/vegan_Boeuf_Bourguignon.jpg",
     "ingredients": [
       {
         "name": "Tempeh",
@@ -8527,7 +8164,7 @@
     "name": "Vegan Moroccan Bastilla",
     "difficulty": "hard",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://img.cuisineaz.com/660x495/2021/12/22/i182444-shutterstock-1059181367.jpeg",
     "ingredients": [
       {
         "name": "Phyllo dough",
@@ -8573,7 +8210,7 @@
     "name": "Vegan Szechuan Mapo Tofu",
     "difficulty": "hard",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://static01.nyt.com/images/2019/02/24/dining/dt-vegetarian-mapo-tofu/dt-vegetarian-mapo-tofu-superJumbo.jpg",
     "ingredients": [
       {
         "name": "Firm tofu",
@@ -8690,80 +8327,6 @@
     "description": "An exquisite saffron-infused risotto paired with succulent lobster, perfect for a gourmet dining experience."
   },
   {
-    "name": "Bouillabaisse",
-    "difficulty": "hard",
-    "food_type": "seafood",
-    "image_url": null,
-    "ingredients": [
-      {
-        "name": "White fish fillets",
-        "quantity": "500 grams"
-      },
-      {
-        "name": "Mussels",
-        "quantity": "250 grams"
-      },
-      {
-        "name": "Prawns",
-        "quantity": "250 grams"
-      },
-      {
-        "name": "Tomatoes",
-        "quantity": "4, chopped"
-      },
-      {
-        "name": "Fennel bulb",
-        "quantity": "1, sliced"
-      },
-      {
-        "name": "Garlic",
-        "quantity": "4 cloves, minced"
-      },
-      {
-        "name": "Saffron threads",
-        "quantity": "1 pinch"
-      },
-      {
-        "name": "Fish stock",
-        "quantity": "1 liter"
-      },
-      {
-        "name": "Orange peel",
-        "quantity": "1 strip"
-      },
-      {
-        "name": "Olive oil",
-        "quantity": "2 tablespoons"
-      }
-    ],
-    "portion_size": 4,
-    "instructions": [
-      {
-        "title": "Prepare Ingredients",
-        "description": "Clean and prepare all seafood, set aside."
-      },
-      {
-        "title": "Sauté Vegetables",
-        "description": "In a large pot, heat olive oil, add fennel and garlic, sauté until soft."
-      },
-      {
-        "title": "Add Tomatoes",
-        "description": "Add tomatoes and cook until they soften and release juices."
-      },
-      {
-        "title": "Simmer with Stock",
-        "description": "Add fish stock, saffron, and orange peel, simmer for 30 minutes."
-      },
-      {
-        "title": "Cook Seafood",
-        "description": "Add fish, mussels, and prawns, cook until seafood is just done."
-      }
-    ],
-    "cuisine": "French",
-    "duration": 120,
-    "description": "A classic Provençal seafood stew rich with flavors of the Mediterranean, perfect for seafood lovers."
-  },
-  {
     "name": "Seafood Moqueca",
     "difficulty": "hard",
     "food_type": "seafood",
@@ -8841,7 +8404,7 @@
     "name": "Chilean Seafood Empanadas",
     "difficulty": "hard",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://www.thespruceeats.com/thmb/giWLAlZlpiY4imNIsvg7TpQCOcA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chilean-style-beef-empanadas-3029728-hero-01-b634bd98417c460686fcf51568e86e4a.jpg",
     "ingredients": [
       {
         "name": "Prawns",
@@ -8982,84 +8545,10 @@
     "description": "A comforting Japanese hot pot featuring a mix of seafood and vegetables, perfect for a cozy meal."
   },
   {
-    "name": "Vietnamese Grilled Seafood Platter",
-    "difficulty": "hard",
-    "food_type": "seafood",
-    "image_url": null,
-    "ingredients": [
-      {
-        "name": "Tiger prawns",
-        "quantity": "200 grams"
-      },
-      {
-        "name": "Squid",
-        "quantity": "200 grams"
-      },
-      {
-        "name": "Fish sauce",
-        "quantity": "4 tablespoons"
-      },
-      {
-        "name": "Lemongrass",
-        "quantity": "2 stalks, minced"
-      },
-      {
-        "name": "Garlic",
-        "quantity": "4 cloves, minced"
-      },
-      {
-        "name": "Sugar",
-        "quantity": "2 teaspoons"
-      },
-      {
-        "name": "Lime",
-        "quantity": "1, juiced"
-      },
-      {
-        "name": "Chili",
-        "quantity": "1, sliced"
-      },
-      {
-        "name": "Coriander leaves",
-        "quantity": "2 tablespoons, chopped"
-      },
-      {
-        "name": "Rice noodles",
-        "quantity": "200 grams"
-      }
-    ],
-    "portion_size": 4,
-    "instructions": [
-      {
-        "title": "Marinate Seafood",
-        "description": "Mix fish sauce, lemongrass, garlic, sugar, lime, and chili, marinate prawns and squid."
-      },
-      {
-        "title": "Prepare Grill",
-        "description": "Preheat grill to medium-high heat."
-      },
-      {
-        "title": "Grill Seafood",
-        "description": "Grill prawns and squid until charred and cooked through."
-      },
-      {
-        "title": "Cook Noodles",
-        "description": "Boil rice noodles according to package instructions, drain and set aside."
-      },
-      {
-        "title": "Assemble Platter",
-        "description": "Arrange grilled seafood and noodles on a platter, garnish with coriander."
-      }
-    ],
-    "cuisine": "Vietnamese",
-    "duration": 100,
-    "description": "A vibrant platter of grilled seafood marinated in aromatic herbs and spices, served with rice noodles."
-  },
-  {
     "name": "Indian Spiced Seafood Biryani",
     "difficulty": "hard",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://img.taste.com.au/94oxJbd1/taste/2017/10/seafood-biryani-131749-1.jpg",
     "ingredients": [
       {
         "name": "Basmati rice",
