@@ -3,6 +3,6 @@
     <%= link_to "Remove this match from saved",
                 unsave_match_path(@match),
                 data: { turbo_method: :patch },
-                class: "btn btn-warning text-light" %>
+                class: "btn-unsave" %>
   <% end %>
 <% end %>

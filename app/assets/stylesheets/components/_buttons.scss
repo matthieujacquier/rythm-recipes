@@ -93,12 +93,80 @@
 
 .btn-save{
   background: rgb(255, 255, 255);
+  // box-shadow: #000000 0.1em 0.1em;
   font-weight: 900;
-  padding: 5px;
-  border: 2px solid black;
+  padding: 5px 10px 5px 10px;
+  // border: 2px solid black;
   border-radius: 0.4em;
   cursor: pointer;
   text-decoration: none;
   color: black;
   bottom: 10px;
+}
+
+.btn-save:hover {
+  background-color: $green;
+  // box-shadow: 0.1em 0.1em black;
+  color: white
+}
+
+.btn-unsave{
+  background: $green;
+  // box-shadow: #000000 0.1em 0.1em;
+  font-weight: 900;
+  padding: 5px 10px 5px 10px;
+  // border: 2px solid black;
+  border-radius: 0.4em;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  bottom: 10px;
+}
+
+.btn-unsave:hover {
+  background-color: white;
+  // box-shadow: 0.1em 0.1em black;
+  color: black
+}
+
+.btn-share {
+  background: $blue;
+  // box-shadow: #000000 0.1em 0.1em;
+  font-weight: 900;
+  padding: 5px 10px 5px 10px;
+  // border: 2px solid black;
+  border-radius: 0.4em;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-share:hover {
+  background-color: white;
+  // box-shadow: 0.1em 0.1em black;
+  color: $blue
+}
+
+.btn-link {
+  background: $blue;
+  // box-shadow: #000000 0.1em 0.1em;
+  font-weight: 900;
+  padding: 5px 10px 5px 10px;
+  // border: 2px solid black;
+  border-radius: 0.4em;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-link:hover {
+  background: $blue;
+  // box-shadow: #000000 0.1em 0.1em;
+  font-weight: 900;
+  padding: 5px 10px 5px 10px;
+  // border: 2px solid black;
+  border-radius: 0.4em;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }

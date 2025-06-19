@@ -10,7 +10,7 @@ export default class extends Controller {
     copyBtn.innerHTML = "<i class='fa-solid fa-check'></i> Link was copied to clipboard!"
 
     setTimeout(() => {
-      copyBtn.innerHTML = '<i class="fa-solid fa-share"></i> Share your cooking experience'
+      copyBtn.innerHTML = '<i class="fa-solid fa-share"></i> Share your combo'
     }, 2000)
   }
 }

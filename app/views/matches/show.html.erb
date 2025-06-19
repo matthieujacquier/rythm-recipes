@@ -10,7 +10,7 @@
               <%= link_to "Remove this combo from saved",
                           unsave_match_path(@match),
                           data: { turbo_method: :patch },
-                          class: "btn-save" %>
+                          class: "btn-unsave" %>
             <% else %>
               <%= link_to "Save this combo",
                           save_match_path(@match),
@@ -22,11 +22,11 @@
 
         <div class="ms-3" data-controller="matches">
           <input type="hidden" value="<%= match_url(@match) %>" data-matches-target="source">
-          <a class="btn btn-primary text-light" id="copyBtn" data-action="matches#copy"><i class="fa-solid fa-share"></i> Share your combo</a>
+          <a class="btn-link" id="copyBtn" data-action="matches#copy"><i class="fa-solid fa-share"></i> Share your combo</a>
         </div>
 
       </div>
-        <p>Match created by: <%= @match.user.full_name %>
+        <p>Combo created by: <%= @match.user.full_name %>
       </div>
 
 
@@ -57,7 +57,7 @@
           <iframe class="" style="border-radius:12px;"
                   src="<%= embed_url %>?utm_source=generator&theme=0"
                   width="100%"
-                  height="100%"
+                  height="75%"
                   frameborder="0"
                   allowfullscreen=""
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -70,7 +70,8 @@
     </div>
     <div class="col-10 justify-content-between d-flex mt-5">
 
-    <div class="col-2">
+    <div class="show-instructions row">
+      <div class="col-md-4">
       <h2>Ingredients</h2>
       <%# @match.recipe.ingredients.each do |ingredient| %>
         <%# <p><%#= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
@@ -80,11 +81,13 @@
         <% ingredients.each do |ingredient| %>
           <p><%= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
         <% end %>
+      </div>
 
-    </div>
-    <div class="col-6">
+    <%# </div>
+    <div class="col-6"> %>
 
-      <h2>Instructions</h2>
+    <%# <div class="col-md-8"> %>
+      <div class="instructions"> <h2>Instructions</h2>
       <%# @match.recipe.instructions.each do |instruction| %>
         <%# <p>= "#{instruction['title']} - #{instruction['description']}"</p> %>
       <%# end %>
@@ -92,6 +95,8 @@
         <% instructions.each do |instruction| %>
           <p><%= "#{instruction['title']} - #{instruction['description']}" %></p>
         <% end %>
+        </div>
+        </div>
     </div>
   </div>
 </div>
