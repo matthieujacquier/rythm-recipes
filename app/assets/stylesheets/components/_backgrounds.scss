@@ -13,6 +13,14 @@ body.matches-music_suggestions {
   background-color: transparent !important;
 }
 
+body.users-about {
+  background-image: asset-url('yellow.png');
+  background-size: 100px;
+  background-repeat: repeat;
+  background-position: center center;
+  background-color: transparent !important;
+}
+
 body.matches-recipe_suggestions {
   background-image: asset-url('red.png');
   background-size: 100px;
@@ -22,7 +30,7 @@ body.matches-recipe_suggestions {
 }
 
 body.matches-show {
-  background-image: asset-url('green.png');
+  background-image: asset-url('yellow.png');
   background-size: 100px;
   background-repeat: repeat;
   background-position: center center;
