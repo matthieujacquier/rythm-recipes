@@ -196,7 +196,7 @@ end
 # end
 
 
-food_suggestions = Recipe.all.to_a
+# food_suggestions = Recipe.all.to_a
 
 
 puts "Seeding complete!"
