@@ -57,7 +57,7 @@
     "name": "Beef Stir Fry",
     "difficulty": "easy",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://www.allrecipes.com/thmb/7N-Xq1XMMJw8G0KJv2e0ETUYB2I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/228823-quick-beef-stir-fry-DDMFS-4x3-1f79b031d3134f02ac27d79e967dfef5.jpg",
     "ingredients": [
       {
         "name": "Beef strips",
@@ -2901,7 +2901,7 @@
     "name": "Bouillabaisse Marseillaise",
     "difficulty": "hard",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://www.seriouseats.com/thmb/n-oqt2lTHSkgpOiVOpfNe1BMFVE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2018__09__20180823-bouillabaisse-french-fish-soup-liz-clayman-in-bowl-fd66dfd246574977bfcbd5186ff316f5.jpg",
     "ingredients": [
       {
         "name": "Sea bass",
