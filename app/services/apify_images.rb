@@ -15,7 +15,7 @@ class ApifyImages
 
     body = {
       queries: [@query],
-      maxResultsPerQuery: 1
+      maxResultsPerQuery: 5
     }.to_json
 
     headers = { "Content-Type" => "application/json" }

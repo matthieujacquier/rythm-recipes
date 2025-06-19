@@ -297,7 +297,7 @@
     "name": "Caprese Salad",
     "difficulty": "easy",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://whatsgabycooking.com/wp-content/uploads/2023/06/Dinner-Party-__-Traditional-Caprese-1-1200x800-1.jpg",
     "ingredients": [
       {
         "name": "Tomatoes",
@@ -409,7 +409,7 @@
     "name": "Vegetarian Fried Rice",
     "difficulty": "easy",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2022/03/Vegetable-Fried-Rice-plate.jpg",
     "ingredients": [
       {
         "name": "Cooked rice",
@@ -475,7 +475,7 @@
     "name": "Vegetarian Tacos",
     "difficulty": "easy",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://img.taste.com.au/SfXb279J/taste/2022/04/cuban-vegetarian-tacos-177724-1.jpg",
     "ingredients": [
       {
         "name": "Corn tortillas",
@@ -541,7 +541,7 @@
     "name": "Vegan Chickpea Salad",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://i0.wp.com/www.cearaskitchen.com/wp-content/uploads/2015/07/IMG_26131.jpg",
     "ingredients": [
       {
         "name": "Canned chickpeas",
@@ -603,7 +603,7 @@
     "name": "Vegan Thai Green Curry",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPT3t9fji-v9oZRw55pKrJEf3uwDRkNBSHjg&s",
     "ingredients": [
       {
         "name": "Coconut milk",
@@ -669,7 +669,7 @@
     "name": "Vegan Mexican Tacos",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://cleangreensimple.com/wp-content/uploads/vegan-tacos-cauliflower.jpg",
     "ingredients": [
       {
         "name": "Corn tortillas",
@@ -731,7 +731,7 @@
     "name": "Vegan Indian Lentil Soup",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/13/23/97/IXfgttqYRvmispnpUMT3_dhal-1.jpg",
     "ingredients": [
       {
         "name": "Red lentils",
@@ -805,7 +805,7 @@
     "name": "Garlic Butter Shrimp Pasta",
     "difficulty": "easy",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1AD3MuT742FWQALeZFTjNPA2hoZGGtpm3Vw&s",
     "ingredients": [
       {
         "name": "Spaghetti",
@@ -913,7 +913,7 @@
     "name": "Lemon Herb Grilled Salmon",
     "difficulty": "easy",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://www.thecookierookie.com/wp-content/uploads/2023/05/grilled-salmon-recipe-3.jpg",
     "ingredients": [
       {
         "name": "Salmon Fillets",
@@ -967,7 +967,7 @@
     "name": "Spicy Korean Beef Stir-Fry",
     "difficulty": "medium",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://i.redd.it/jeyuk-bokkeum-easy-korean-spicy-pork-stir-fry-v0-wswf7js504ze1.jpg?width=1800&format=pjpg&auto=webp&s=4a10c8a5dc230912c40a1ffa864f8c3416a39254",
     "ingredients": [
       {
         "name": "Beef sirloin",
@@ -1029,7 +1029,7 @@
     "name": "Moroccan Lamb Tagine",
     "difficulty": "medium",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3BRLyWzLK2IE4jC7T5eOlyYU_EK7S4YrdA&s",
     "ingredients": [
       {
         "name": "Lamb shoulder",
@@ -1091,7 +1091,7 @@
     "name": "Italian Chicken Cacciatore",
     "difficulty": "medium",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://www.nonnabox.com/wp-content/uploads/chickencaccitora-superJumbo.jpg",
     "ingredients": [
       {
         "name": "Chicken thighs",
@@ -1153,7 +1153,7 @@
     "name": "Mexican Pork Carnitas",
     "difficulty": "medium",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://www.allrecipes.com/thmb/kPCpDhyAub-NJoPEa7fqkyMhM7k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/219048-pork-carnitas-DDMFS-4x3-71cbeba756924694b7af3f402342c9d7.jpg",
     "ingredients": [
       {
         "name": "Pork shoulder",
@@ -1215,7 +1215,7 @@
     "name": "Thai Green Curry",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://piquantpost.com/cdn/shop/articles/GJ16a1y2HDD3gYjmojg2t_1000x.jpg?v=1646021297",
     "ingredients": [
       {
         "name": "Coconut Milk",
@@ -1367,7 +1367,7 @@
     "name": "Spinach and Ricotta Cannelloni",
     "difficulty": "medium",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://img.taste.com.au/jaSgj_Nr/taste/2016/11/spinach-and-ricotta-cannelloni-29354-1.jpeg",
     "ingredients": [
       {
         "name": "Cannelloni tubes",
@@ -1433,7 +1433,7 @@
     "name": "Chickpea and Vegetable Tagine",
     "difficulty": "medium",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://www.grocery.coop/sites/default/files/Moroccan_Vegetable_Tagine_with_Chickpeas.jpg",
     "ingredients": [
       {
         "name": "Chickpeas",
@@ -1511,7 +1511,7 @@
     "name": "Mushroom and Leek Risotto",
     "difficulty": "medium",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://www.feastingathome.com/wp-content/uploads/2022/02/Mushroom-Risotto_-18.jpg",
     "ingredients": [
       {
         "name": "Arborio rice",
@@ -1585,7 +1585,7 @@
     "name": "Mushroom Stroganoff",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCs3LkZrbcfbeFSEnfIPjmxARVo_jVrr4a6Q&s",
     "ingredients": [
       {
         "name": "Button Mushrooms",
@@ -1663,7 +1663,7 @@
     "name": "Moroccan Vegetable Tagine",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://www.grocery.coop/sites/default/files/Moroccan_Vegetable_Tagine_with_Chickpeas.jpg",
     "ingredients": [
       {
         "name": "Carrots",
@@ -1741,7 +1741,7 @@
     "name": "Vegan Paella",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGZvbSaZizzYp_XPNgHOl6i5Fn6lGB2PjZw&s",
     "ingredients": [
       {
         "name": "Arborio Rice",
@@ -1819,7 +1819,7 @@
     "name": "Seafood Paella",
     "difficulty": "medium",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHGym4JnKdxeNYB3bIIHOqo_L16Juo1Pa1g&s",
     "ingredients": [
       {
         "name": "Saffron",
@@ -1983,7 +1983,7 @@
     "name": "Thai Green Curry with Prawns",
     "difficulty": "medium",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/thai-green-prawn-curry-503844c.jpg?resize=830%2C435",
     "ingredients": [
       {
         "name": "Prawns",
@@ -2131,7 +2131,7 @@
     "name": "Beef Wellington",
     "difficulty": "hard",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://www.foodandwine.com/thmb/2k2Kq24_fMvHCyLMPRSNrpg5QdE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/beef-wellington-FT-RECIPE0321-c9a63fccde3b45889ad78fdad078153f.jpg",
     "ingredients": [
       {
         "name": "Beef tenderloin",
@@ -2193,7 +2193,7 @@
     "name": "Coq au Vin",
     "difficulty": "hard",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://static01.nyt.com/images/2023/08/24/multimedia/MC-Coq-Au-Van-ctpm/MC-Coq-Au-Van-ctpm-videoSixteenByNineJumbo1600.jpg",
     "ingredients": [
       {
         "name": "Chicken",
@@ -2260,10 +2260,80 @@
     "description": "A rich and hearty French stew made with chicken and red wine."
   },
   {
+    "name": "Eggplant Moussaka",
+    "difficulty": "hard",
+    "food_type": "vegetarian",
+    "image_url": "https://www.feastingathome.com/wp-content/uploads/2013/03/epplant-moussaka-227.jpg",
+    "ingredients": [
+      {
+        "name": "Eggplants",
+        "quantity": "3 large"
+      },
+      {
+        "name": "Potatoes",
+        "quantity": "300 grams"
+      },
+      {
+        "name": "Tomato sauce",
+        "quantity": "400 grams"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1 large"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "4 tablespoons"
+      },
+      {
+        "name": "Bechamel sauce",
+        "quantity": "500 ml"
+      },
+      {
+        "name": "Nutmeg",
+        "quantity": "1/2 teaspoon"
+      },
+      {
+        "name": "Salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "portion_size": 4,
+    "instructions": [
+      {
+        "title": "Prepare the Vegetables",
+        "description": "Slice eggplants and potatoes, and fry or grill until golden."
+      },
+      {
+        "title": "Cook the Tomato Sauce",
+        "description": "Sauté onion and garlic, add tomato sauce, and season with salt and pepper."
+      },
+      {
+        "title": "Assemble the Moussaka",
+        "description": "Layer potatoes, eggplants, and tomato sauce in a baking dish, and top with bechamel sauce."
+      },
+      {
+        "title": "Bake",
+        "description": "Bake in a preheated oven at 180°C for 60 minutes until the top is golden brown."
+      }
+    ],
+    "cuisine": "Greek",
+    "duration": 130,
+    "description": "A traditional Greek casserole with layers of eggplant, potatoes, and creamy bechamel."
+  },
+  {
     "name": "Osso Buco",
     "difficulty": "hard",
     "food_type": "meat",
-    "image_url": null,
+    "image_url": "https://www.simplyrecipes.com/thmb/2AjZWxY7oJ7jkMRtrSjtkQAtvQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2006__12__Osso-Buco-LEAD-5-a816159cbe9740a5b21f3c1e515f9da2.jpg",
     "ingredients": [
       {
         "name": "Veal shanks",
@@ -2411,7 +2481,7 @@
     "name": "Stuffed Bell Peppers with Quinoa and Cheese",
     "difficulty": "hard",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://www.thespruceeats.com/thmb/FC1kDitBHn08teDrh-gkYeg27VA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/quinoa-stuffed-peppers-2238585-08-43c24df24a3e4aa8991d22337e1ded40.jpg",
     "ingredients": [
       {
         "name": "Bell peppers",
@@ -2481,7 +2551,7 @@
     "name": "Vegetable Lasagna with Homemade Pasta",
     "difficulty": "hard",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://www.inspiredtaste.net/wp-content/uploads/2016/10/Easy-Vegetable-Lasagna-Recipe-1200.jpg",
     "ingredients": [
       {
         "name": "Flour",
@@ -2551,7 +2621,7 @@
     "name": "Mushroom and Truffle Risotto",
     "difficulty": "hard",
     "food_type": "vegetarian",
-    "image_url": null,
+    "image_url": "https://www.onegreenplanet.org/wp-content/uploads/2015/11/Truffled-Mushroom-Risotto.jpg",
     "ingredients": [
       {
         "name": "Arborio rice",
@@ -2618,80 +2688,10 @@
     "description": "An indulgent risotto combining earthy mushrooms and the luxurious aroma of truffle oil."
   },
   {
-    "name": "Eggplant Moussaka",
-    "difficulty": "hard",
-    "food_type": "vegetarian",
-    "image_url": null,
-    "ingredients": [
-      {
-        "name": "Eggplants",
-        "quantity": "3 large"
-      },
-      {
-        "name": "Potatoes",
-        "quantity": "300 grams"
-      },
-      {
-        "name": "Tomato sauce",
-        "quantity": "400 grams"
-      },
-      {
-        "name": "Onion",
-        "quantity": "1 large"
-      },
-      {
-        "name": "Garlic",
-        "quantity": "3 cloves"
-      },
-      {
-        "name": "Olive oil",
-        "quantity": "4 tablespoons"
-      },
-      {
-        "name": "Bechamel sauce",
-        "quantity": "500 ml"
-      },
-      {
-        "name": "Nutmeg",
-        "quantity": "1/2 teaspoon"
-      },
-      {
-        "name": "Salt",
-        "quantity": "to taste"
-      },
-      {
-        "name": "Black pepper",
-        "quantity": "to taste"
-      }
-    ],
-    "portion_size": 4,
-    "instructions": [
-      {
-        "title": "Prepare the Vegetables",
-        "description": "Slice eggplants and potatoes, and fry or grill until golden."
-      },
-      {
-        "title": "Cook the Tomato Sauce",
-        "description": "Sauté onion and garlic, add tomato sauce, and season with salt and pepper."
-      },
-      {
-        "title": "Assemble the Moussaka",
-        "description": "Layer potatoes, eggplants, and tomato sauce in a baking dish, and top with bechamel sauce."
-      },
-      {
-        "title": "Bake",
-        "description": "Bake in a preheated oven at 180°C for 60 minutes until the top is golden brown."
-      }
-    ],
-    "cuisine": "Greek",
-    "duration": 130,
-    "description": "A traditional Greek casserole with layers of eggplant, potatoes, and creamy bechamel."
-  },
-  {
     "name": "Vegan Mushroom Wellington",
     "difficulty": "hard",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://www.feastingathome.com/wp-content/uploads/2017/11/vegan-mushroom-wellington-115-2-1.jpg",
     "ingredients": [
       {
         "name": "Portobello mushrooms",
@@ -2757,7 +2757,7 @@
     "name": "Vegan Biryani",
     "difficulty": "hard",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://cache.marieclaire.fr/data/photo/w1200_h630_ci/6z/recette-biryani-vegetarien-rapide.jpg",
     "ingredients": [
       {
         "name": "Basmati rice",
@@ -2827,7 +2827,7 @@
     "name": "Vegan Ramen",
     "difficulty": "hard",
     "food_type": "vegan",
-    "image_url": null,
+    "image_url": "https://assets.zuckerjagdwurst.com/jr7975ouy94n0aej8ng6l2u608tk/1200/640/75/true/center/undefined.jpg?animated=undefined",
     "ingredients": [
       {
         "name": "Ramen noodles",
@@ -3089,7 +3089,7 @@
     "name": "Cioppino",
     "difficulty": "hard",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://www.allrecipes.com/thmb/0s1NugH5SGHWm2tNCXL0eJX-LU4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/12816-cioppino-ARMag-DEC2020_09971-f5eded3dc22347109ac5fc032715d673.jpg",
     "ingredients": [
       {
         "name": "Dungeness crab",
@@ -3183,7 +3183,7 @@
     "name": "Lobster Thermidor",
     "difficulty": "hard",
     "food_type": "seafood",
-    "image_url": null,
+    "image_url": "https://themaplecuttingboard.com/wp-content/uploads/2019/11/Termidor.jpeg",
     "ingredients": [
       {
         "name": "Lobster",
