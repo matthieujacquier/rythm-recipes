@@ -603,7 +603,7 @@
     "name": "Vegan Thai Green Curry",
     "difficulty": "easy",
     "food_type": "vegan",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPT3t9fji-v9oZRw55pKrJEf3uwDRkNBSHjg&s",
+    "image_url": "https://asianinspirations.com.au/wp-content/uploads/2019/06/R02332_Vegan_Thai_Green_Curry.jpg",
     "ingredients": [
       {
         "name": "Coconut milk",
@@ -805,7 +805,7 @@
     "name": "Garlic Butter Shrimp Pasta",
     "difficulty": "easy",
     "food_type": "seafood",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1AD3MuT742FWQALeZFTjNPA2hoZGGtpm3Vw&s",
+    "image_url": "https://www.eatwell101.com/wp-content/uploads/2021/08/Garlic-Butter-Shrimp-Pasta-recipe-1-1200x800.jpg",
     "ingredients": [
       {
         "name": "Spaghetti",
@@ -1029,7 +1029,7 @@
     "name": "Moroccan Lamb Tagine",
     "difficulty": "medium",
     "food_type": "meat",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3BRLyWzLK2IE4jC7T5eOlyYU_EK7S4YrdA&s",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5ed25ead6533665d5bd7dd4c/1597137411014-8UYJVBJVBGCX89F2DLQJ/Lamb-Tagine.jpg",
     "ingredients": [
       {
         "name": "Lamb shoulder",
@@ -1585,7 +1585,7 @@
     "name": "Mushroom Stroganoff",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCs3LkZrbcfbeFSEnfIPjmxARVo_jVrr4a6Q&s",
+    "image_url": "https://thecozyapron.com/wp-content/uploads/2018/09/mushroom-stroganoff_thecozyapron_1.jpg",
     "ingredients": [
       {
         "name": "Button Mushrooms",
@@ -1741,7 +1741,7 @@
     "name": "Vegan Paella",
     "difficulty": "medium",
     "food_type": "vegan",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGZvbSaZizzYp_XPNgHOl6i5Fn6lGB2PjZw&s",
+    "image_url": "https://realfood.tesco.com/media/images/1400x919Vegetablepaellarecipe-9e034e9a-478a-4ee9-8d7a-5c4229c206eb-0-1400x919.jpg",
     "ingredients": [
       {
         "name": "Arborio Rice",
@@ -1819,7 +1819,7 @@
     "name": "Seafood Paella",
     "difficulty": "medium",
     "food_type": "seafood",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHGym4JnKdxeNYB3bIIHOqo_L16Juo1Pa1g&s",
+    "image_url": "https://meglepkek.hu/image?src=%2Fuploads%2Fimages%2Fgasztro-elmenyek%2Ftenger-gyumolcsei%2Ftenger-gyumolcsei12.webp&w=1920&h=1080",
     "ingredients": [
       {
         "name": "Saffron",
