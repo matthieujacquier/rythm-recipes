@@ -12,3 +12,5 @@ class SaveRecipes
     puts "Recipes saved to recipes.json"
   end
 end
+
+SaveRecipes.call
