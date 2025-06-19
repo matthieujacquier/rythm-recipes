@@ -4,64 +4,133 @@
   <title>The page you were looking for doesn't exist (404)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-  .rails-default-error-page {
-    background-color: #EFEFEF;
-    color: #2E2F30;
-    text-align: center;
-    font-family: arial, sans-serif;
-    margin: 0;
-  }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: "Space Grotesk", "Helvetica", "sans-serif";
+    }
 
-  .rails-default-error-page div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
-  }
+    .full-height {
+      min-height: calc(100vh - 185px);
+    }
 
-  .rails-default-error-page div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
+    .landing-container {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      background: url('/mix.png') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
 
-  .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
-  }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(30, 30, 30, 0.3);
+      z-index: 1;
+    }
 
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .content h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .content h3 {
+      font-size: 1.5em;
+      margin-bottom: 1.5em;
+      font-weight: 300;
+    }
+
+    .buttons {
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      padding: 0.7em 2em;
+      border: 3px solid #FFDB81; /* Replace $yellow */
+      border-radius: 2px;
+      position: relative;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16),
+                  0 3px 6px rgba(0, 0, 0, 0.1);
+      color: #FFDB81;
+      text-decoration: none;
+      transition: 0.3s ease all;
+      z-index: 1;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    .buttons::before {
+      transition: 0.5s all ease;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      opacity: 0;
+      content: '';
+      background-color: #FFDB81;
+      z-index: -1;
+    }
+
+    .buttons:hover,
+    .buttons:focus {
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .buttons:hover::before,
+    .buttons:focus::before {
+      left: 0;
+      right: 0;
+      opacity: 1;
+    }
+
+    .buttons:active {
+      transform: scale(0.9);
+    }
+
+    .buttons.secondary {
+      border-color: #6A994E; /* Replace $green */
+      color: #6A994E;
+    }
+
+    .buttons.secondary::before {
+      background-color: #6A994E;
+    }
+
+    .buttons.secondary:hover,
+    .buttons.secondary:focus {
+      color: white;
+    }
   </style>
 </head>
 
-<body class="rails-default-error-page">
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
+<body>
+  <div class="landing-container">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Oopsy, groove not found!</h1>
+        <div>
+          <a href="/matches" class="buttons">Back to home page</a>
+        </div>
+      </div>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
-  </div>
-</body>
+  </body>
 </html>

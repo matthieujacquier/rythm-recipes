@@ -1,46 +1,45 @@
 <div class="container full-height">
-<div class="form-content">
-  <h2 class="text-center mb-5">Which recipe would you like to select?</h2>
-</div>
-  <div data-controller="recipe-suggestions">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
-  <% @recipes.each do |recipe| %>
-    <div class="col">
-      <div
-        class="card selectable-card"
-        data-id="<%= recipe.id %>"
-        data-action="click->recipe-suggestions#select"
-        data-recipe-suggestions-target="card"
-      >
-        <img
-          src="<%= recipe.image_url %>"
-          class="card-img"
-          alt="<%= recipe.name %>">
+  <div class="card-container mt-5 mb-3">
+    <h1 class="text-center mb-5">Which recipe would you like to select?</h1>
 
-        <div class="recipe-name">
-          <%= recipe.name %>
-        </div>
+    <div data-controller="recipe-suggestions">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+        <% @recipes.each do |recipe| %>
+          <div class="col">
+            <div
+              class="card selectable-card"
+              data-id="<%= recipe.id %>"
+              data-action="click->recipe-suggestions#select"
+              data-recipe-suggestions-target="card"
+            >
+              <img
+                src="<%= recipe.image_url %>"
+                class="card-img"
+                alt="<%= recipe.name %>">
 
-        <div class="card-body">
-          <p class="card-text"><%= recipe.description %></p>
-        </div>
+              <div class="recipe-name">
+                <%= recipe.name %>
+              </div>
 
-        <div class="card-ingredients">
-          <h5>Ingredients</h5>
-          <ul>
-            <% recipe.ingredients.each do |ingredient| %>
-              <li><%= ingredient['quantity'] %> <%= ingredient['name'] %></li>
-            <% end %>
-          </ul>
-        </div>
+              <div class="card-body">
+                <p class="card-text"><%= recipe.description %></p>
+              </div>
+
+              <div class="card-ingredients">
+                <h5>Ingredients</h5>
+                <ul>
+                  <% recipe.ingredients.each do |ingredient| %>
+                    <li><%= ingredient['quantity'] %> <%= ingredient['name'] %></li>
+                  <% end %>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <% end %>
       </div>
-    </div>
-  <% end %>
-</div>
-
 
       <div class="text-center mt-5">
-        <%= form_with url: matches_path, method: :post, id: "match-form" do %>
+        <%= form_with url: matches_path, method: :post, id: "match-form", data: { action: "submit->recipe-suggestions#validate" } do %>
           <%= hidden_field_tag :recipe_id, "", id: "selected-recipe-id" %>
 
           <div class="text-center mt-5">
@@ -50,6 +49,12 @@
               data: { recipe_suggestions_target: "button" }) %>
           </div>
         <% end %>
+
+        <div data-recipe-suggestions-target="error" class="alert alert-danger" role="alert"></div>
+      </div>
+
+      <div class="text-center mt-4">
+        <%= button_to "Shuffle recipes", recipe_suggestions_matches_path, method: :get, class: "button" %>
       </div>
     </div>
 
@@ -57,5 +62,4 @@
       <%= link_to "← Go Back", music_suggestions_matches_path, class: "btn-back" %>
     </div>
   </div>
-</div>
 </div>
