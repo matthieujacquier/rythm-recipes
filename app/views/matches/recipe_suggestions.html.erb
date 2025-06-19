@@ -1,3 +1,7 @@
+<% if session[:match_data]["food_type"] == nil %>
+  <div>
+<% else %>
+
 <div class="container full-height">
   <div class="card-container mt-5 mb-3">
     <h1 class="text-center mb-5">Which recipe would you like to select?</h1>
@@ -63,3 +67,4 @@
     </div>
   </div>
 </div>
+<% end %>

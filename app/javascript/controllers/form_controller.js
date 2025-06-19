@@ -171,7 +171,7 @@ export default class extends Controller {
     this.selectedGenreShuffle = randomGenre;
 
     const modalBody = document.getElementById("genreShuffleModalBody");
-    modalBody.HTML = `<h4> We'll surprise you with: "${randomGenre}".</h4>`;
+    modalBody.innerHTML = `<h4>Our DJ recommends <span style="background:#fbca1f">${randomGenre}</span>.</h4>`;
 
     const modal = new bootstrap.Modal(document.getElementById("genreShuffleModal"));
     modal.show();

@@ -247,6 +247,7 @@ $n3: 15;
 
 .modal-content {
   border-radius: 8px !important;
+  padding: 2rem 0
 }
 
 .modal-footer {
@@ -254,5 +255,14 @@ $n3: 15;
 }
 
 .modal-body {
-  padding: 1rem 0 0 0 !important;
+  padding: 1rem 0 1rem 0 !important;
+}
+
+#shuffle {
+  width: auto;
+  padding: 0 16px;
+  background: white;
+  &:hover {
+    background: $orange;
+  }
 }

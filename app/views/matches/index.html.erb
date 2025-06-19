@@ -275,7 +275,8 @@
                   <span class="option-label sm"><%= genre %></span>
                 </label>
               </div>
-
+              </div>
+              <div>
               <div class="mx-2">
                 <% genre = "Shuffle" %><label class="option-card-genre sm" id="shuffle">
                   <%= check_box_tag "genre_shuffle_temp", "1", false,
@@ -286,9 +287,6 @@
                   </span>
                 </label>
               </div>
-
-
-
 
               <%= button_tag "← Go Back", type: :button, class: "btn-back",
                 data: { action: "click->form#goToStep", step: "1" } %>
@@ -328,12 +326,12 @@
       <div class="modal fade" id="genreShuffleModal" tabindex="-1" aria-labelledby="genreShuffleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-body" id="genreShuffleModalBody">
+          <div class="modal-body text-center" id="genreShuffleModalBody">
             <!-- JS will insert chosen genre -->
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Change the genre</button>
-            <button type="button" class="btn btn-primary" data-action="form#confirmGenreShuffle">Sounds good!</button>
+          <div class="modal-footer justify-content-around">
+            <button type="button" class="button" data-action="form#confirmGenreShuffle">Yes, DJ!</button>
+            <button type="button" class="button" data-bs-dismiss="modal">No, thanks</button>
           </div>
         </div>
       </div>
