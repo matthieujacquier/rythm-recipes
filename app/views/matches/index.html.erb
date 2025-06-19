@@ -6,7 +6,8 @@
     <div class="col-12 text-center my-5">
       <h1>Find your Rhythm & Recipe</h1>
     </div>
-    <div data-controller="form">
+    <div data-controller="form"
+    data-form-music-icon-path-value="<%= asset_path('icons/music.svg') %>">
       <%= form_tag generate_match_path, method: :post do %>
         <!--Food Type Selection -->
         <div class="option-step-wrapper" data-form-target="step">
