@@ -30,7 +30,7 @@
                 <h5>Ingredients</h5>
                 <ul>
                   <% recipe.ingredients.each do |ingredient| %>
-                    <li><%#= ingredient['quantity'] %> <%= ingredient['name'] %></li>
+                    <li><%= ingredient['quantity'] %> <%= ingredient['name'] %></li>
                   <% end %>
                 </ul>
               </div>
