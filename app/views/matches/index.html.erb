@@ -298,7 +298,7 @@
         <!-- Album or Playlist -->
         <div class="d-none option-grid" data-form-target="musicFormat">
           <% ['Album', 'Playlist'].each do |format| %>
-            <label class="option-card">
+            <label class="option-card-music_format">
               <%= radio_button_tag :music_format_selection, format, false,
                 data: { action: "click->form#submit" },
                 class: "hidden-radio" %>

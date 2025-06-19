@@ -50,12 +50,7 @@ h2 {
   color: white;
 }
 
-.option-card:hover {
-  border-color: $gray;
-  border-width: 3px;
-  background-color: $orange;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
+
 
 .option-label {
   font-size: 24px;
@@ -169,6 +164,31 @@ $n3: 15;
     }
   }
 }
+
+.option-card-music_format {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  gap: 20px;
+  cursor: pointer;
+  text-align: center;
+  background-color: $info;
+  margin: 16px;
+  transition: all 0.2s ease-in-out;
+  transform-origin: center;
+
+  &:hover {
+      border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+      background-color: $orange;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      animation: wiggle 1s ease-in-out infinite;
+  }
+}
+
+
 
 #difficulty-hard {
 
