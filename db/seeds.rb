@@ -7,119 +7,119 @@ albums_by_genre = JSON.parse(File.read(file_path))
 Match.delete_all
 Recipe.delete_all
 User.delete_all
-# MusicSuggestion.delete_all
+MusicSuggestion.delete_all
 
-# puts "Defining genres"
+puts "Defining genres"
 
-# GENRES = [
-#   'Pop','Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie',
-#   'Electronic', 'Dance', 'Alternative', 'Jazz', 'Classical',
-#   'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae', 'Soul', 'Funk', 'Techno', 'Afro'
-# ]
+GENRES = [
+  'Pop','Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie',
+  'Electronic', 'Dance', 'Alternative', 'Jazz', 'Classical',
+  'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae', 'Soul', 'Funk', 'Techno', 'Afro'
+]
 
-# spotify = SpotifyClient.new
+spotify = SpotifyClient.new
 
-# albums_by_genre.each do |album_info|
-#     genre = album_info["genre"]
-#     artist_name = album_info["artist"]
-#     album_title = album_info["album"]
-#     description = album_info["description"]
+albums_by_genre.each do |album_info|
+    genre = album_info["genre"]
+    artist_name = album_info["artist"]
+    album_title = album_info["album"]
+    description = album_info["description"]
 
-#     puts "Searching album '#{album_title}' by '#{artist_name}'"
+    puts "Searching album '#{album_title}' by '#{artist_name}'"
 
-#     album_data = spotify.search_album_by_artist_and_title(artist_name, album_title)
-#     unless album_data
-#       puts "Album not found: #{album_title} by #{artist_name}"
-#       next
-#     end
+    album_data = spotify.search_album_by_artist_and_title(artist_name, album_title)
+    unless album_data
+      puts "Album not found: #{album_title} by #{artist_name}"
+      next
+    end
 
-#     music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: album_data['id'])
-#     music_suggestion.update!(
-#       name: album_data['name'],
-#       image_url: album_data['images'][0]['url'],
-#       genre: genre,
-#       artists: album_data['artists'].map { |a| a['name'] },
-#       tracklist: album_data['href'],
-#       preview_url: nil,
-#       album: true,
-#       description: description
-#     )
-#     puts "Saved: #{album_data['name']} (#{genre})"
-# end
+    music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: album_data['id'])
+    music_suggestion.update!(
+      name: album_data['name'],
+      image_url: album_data['images'][0]['url'],
+      genre: genre,
+      artists: album_data['artists'].map { |a| a['name'] },
+      tracklist: album_data['href'],
+      preview_url: nil,
+      album: true,
+      description: description
+    )
+    puts "Saved: #{album_data['name']} (#{genre})"
+end
 
-# puts "Fetching playlists..."
+puts "Fetching playlists..."
 
-# GENRES.each do |genre|
-#   puts "Fetching playlist for genre: #{genre}"
+GENRES.each do |genre|
+  puts "Fetching playlist for genre: #{genre}"
 
-#   playlists = spotify.search_playlists(genre)
-#   next unless playlists.present?
+  playlists = spotify.search_playlists(genre)
+  next unless playlists.present?
 
-#   playlists.each do |playlist|
-#   next unless playlist.is_a?(Hash) && playlist['id']
-#   music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: playlist['id'])
-#   music_suggestion.update!(
-#     name: playlist['name'],
-#     image_url: playlist['images'][0]['url'],
-#     genre: genre,
-#     artists: ["Various Artists"],
-#     tracklist: playlist['href'],
-#     preview_url: nil,
-#     album: false
-#   )
+  playlists.each do |playlist|
+  next unless playlist.is_a?(Hash) && playlist['id']
+  music_suggestion = MusicSuggestion.find_or_initialize_by(spotify_id: playlist['id'])
+  music_suggestion.update!(
+    name: playlist['name'],
+    image_url: playlist['images'][0]['url'],
+    genre: genre,
+    artists: ["Various Artists"],
+    tracklist: playlist['href'],
+    preview_url: nil,
+    album: false
+  )
 
-#     puts "Saved playlist: #{music_suggestion.name} (#{genre})"
-#   end
-# end
+    puts "Saved playlist: #{music_suggestion.name} (#{genre})"
+  end
+end
 
-# #turns MusicSuggestion object into an array. So that we can sample over it
-# music_suggestions = MusicSuggestion.all.to_a
+#turns MusicSuggestion object into an array. So that we can sample over it
+music_suggestions = MusicSuggestion.all.to_a
 
-# puts "Seeding users..."
+puts "Seeding users..."
 
-# user5 = User.create(
-#   email: "matthieu@example.com",
-#   password: "password123",
-#   first_name: "Matthieu",
-#   last_name: "Rap",
-#   admin: true
-# )
+user5 = User.create(
+  email: "matthieu@example.com",
+  password: "password123",
+  first_name: "Matthieu",
+  last_name: "Rap",
+  admin: true
+)
 
-# user1 = User.create(
-#   email: "sam@example.com",
-#   password: "password123",
-#   first_name: "Sam",
-#   last_name: "Techno",
-#   admin: true
-# )
+user1 = User.create(
+  email: "sam@example.com",
+  password: "password123",
+  first_name: "Sam",
+  last_name: "Techno",
+  admin: true
+)
 
-# user2 = User.create(
-#   email: "marta@example.com",
-#   password: "password123",
-#   first_name: "Marta",
-#   last_name: "Rock",
-#   admin: true
-# )
+user2 = User.create(
+  email: "marta@example.com",
+  password: "password123",
+  first_name: "Marta",
+  last_name: "Rock",
+  admin: true
+)
 
-# user3 = User.create(
-#   email: "pelin@example.com",
-#   password: "password123",
-#   first_name: "Pelin",
-#   last_name: "Jazz",
-#   admin: true
-# )
+user3 = User.create(
+  email: "pelin@example.com",
+  password: "password123",
+  first_name: "Pelin",
+  last_name: "Jazz",
+  admin: true
+)
 
-# user4 = User.create(
-#   email: "sneha@example.com",
-#   password: "password123",
-#   first_name: "Sneha",
-#   last_name: "Reggae",
-#   admin: true
-# )
+user4 = User.create(
+  email: "sneha@example.com",
+  password: "password123",
+  first_name: "Sneha",
+  last_name: "Reggae",
+  admin: true
+)
 
-# users = [user1, user2, user3, user4, user5]
+users = [user1, user2, user3, user4, user5]
 
-# puts "Created #{User.count} users"
+puts "Created #{User.count} users"
 
 puts "Seeding recipes with JSON..."
 
