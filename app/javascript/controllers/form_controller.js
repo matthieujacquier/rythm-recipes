@@ -99,8 +99,8 @@ export default class extends Controller {
     if (selectedInput) selectedInput.checked = true;
 
     // 🟣 Update modal content
-    const modalBody = document.getElementById("shuffleModalBody");
-    modalBody.innerText = `We'll surprise you with a ${randomFood} dish!`;
+    const modalHead = document.getElementById("shuffleModalHead");
+    modalHead.innerHTML = `We'll surprise you with a ${randomFood} dish!`;
 
     // 🟣 Show the modal
     const modal = new bootstrap.Modal(document.getElementById("shuffleModal"));
@@ -203,9 +203,8 @@ export default class extends Controller {
 
   updateGenrePreview() {
     this.colorClasses = [
-      "bg-warning text-dark",
       "bg-success text-white",
-      "bg-info text-dark",
+      "bg-warning text-dark",
       "bg-primary text-white",
       "bg-danger text-white",
       "bg-secondary text-white"
@@ -222,7 +221,7 @@ export default class extends Controller {
   <p class="mb-2 fw-bold">Your selection</p>
   <div class="d-flex flex-wrap justify-content-center gap-2">
     ${selectedGenres.map((genre, i) => {
-      const color = this.colorClasses[i % this.colorClasses.length]; // or use random
+      const color = this.colorClasses[i % this.colorClasses.length];
       return `
         <span
           class="genre-chip badge rounded-pill d-flex align-items-center px-3 py-2 ${color}"
