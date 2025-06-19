@@ -2,6 +2,9 @@ import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
   static targets = ["step", "shuffleOutput", "foodOutput", "genreShuffleOutput", "musicFormat", "genrePreview"];
+  static values = {
+  musicIconPath: String
+}
 
   connect() {
     const urlParams = new URLSearchParams(window.location.search);
