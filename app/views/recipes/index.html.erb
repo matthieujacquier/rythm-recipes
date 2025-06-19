@@ -6,9 +6,10 @@
 
 <% @recipes.each do |recipe| %>
   <div class="row my-5">
+    <div class="d-flex"><h3><%= recipe.name %> - <%= recipe.id %></h3></div>
     <div class="col-6">
-      <h3><%= recipe.name %></h3>
-      <img style="max-width:600px;" src="<%= recipe.image_url %>" alt="<%= recipe.name %>">
+
+      <img style="width: 100%;" src="<%= recipe.image_url %>" alt="<%= recipe.name %>">
       <div class="d-flex flex-wrap">
         <p class="me-2">Difficulty:<%= recipe.difficulty %></p>
         <p class="me-2">Food Type:<%= recipe.food_type %></p>
@@ -19,10 +20,14 @@
     </div>
 
     <div class="col-6">
+      <h3>Ingredients</h3>
       <% recipe.ingredients.each do |ingredient| %>
         <p><%= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
       <% end %>
 
+      <hr>
+
+      <h3>Instructions</h3>
       <% recipe.instructions.each do |instruction| %>
         <p><%= "#{instruction['title']} - #{instruction['description']}" %></p>
       <% end %>
