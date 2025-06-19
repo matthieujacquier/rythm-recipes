@@ -13,6 +13,14 @@ body.matches-music_suggestions {
   background-color: transparent !important;
 }
 
+body.users-about {
+  background-image: asset-url('yellow.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent !important;
+}
+
 body.matches-recipe_suggestions {
   background-image: asset-url('red.png');
   background-size: cover;
