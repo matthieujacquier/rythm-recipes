@@ -70,15 +70,19 @@ class MatchesController < ApplicationController
   end
 
   def music_suggestions
-    @genres = session[:match_data]["genres"]
-    @format = session[:match_data]["format"]
+    if session[:match_data] == nil
+      redirect_to matches_path
+    else
+      @genres = session[:match_data]["genres"]
+      @format = session[:match_data]["format"]
 
-    if @format == "Album"
-      @albums_by_genre = MusicSuggestion.where(genre: @genres, album: true).sample(3)
-      @music_suggestions = @albums_by_genre.sample(3)
-    elsif @format == "Playlist"
-      @playlists_by_genre = MusicSuggestion.where(genre: @genres, album: false)
-      @music_suggestions = @playlists_by_genre.sample(3)
+      if @format == "Album"
+        @albums_by_genre = MusicSuggestion.where(genre: @genres, album: true).sample(3)
+        @music_suggestions = @albums_by_genre.sample(3)
+      elsif @format == "Playlist"
+        @playlists_by_genre = MusicSuggestion.where(genre: @genres, album: false)
+        @music_suggestions = @playlists_by_genre.sample(3)
+      end
     end
   end
 
@@ -89,6 +93,9 @@ class MatchesController < ApplicationController
   end
 
   def recipe_suggestions
+    if session[:match_data] == nil
+      redirect_to matches_path
+    else
     @selected_food = session[:match_data]["food_type"]
     @difficulty = session[:match_data]["difficulty"]
     @recipes = Recipe.where(
@@ -97,5 +104,6 @@ class MatchesController < ApplicationController
       @difficulty.downcase
     ).sample(4)
     session[:match_data]["selected_recipe_id"] = params[:recipe_id]
+    end
   end
 end
