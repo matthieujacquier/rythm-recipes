@@ -309,18 +309,18 @@
           <% end %>
         </div>
       <% end %>
+
       <!-- Shuffle Confirmation Modal -->
       <div class="modal fade" id="shuffleModal" tabindex="-1" aria-labelledby="shuffleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-header">
-            </div>
-            <div class="modal-body" id="shuffleModalBody">
+
+            <div class="modal-body text-center" id="shuffleModalBody">
               <!-- Will be filled by JS -->
             </div>
-            <div class="modal-footer">
-              <button type="button" class="button" data-bs-dismiss="modal">Change the food type</button>
-              <button type="button" class="button" data-action="form#confirmShuffle">Sounds good!</button>
+            <div class="modal-footer justify-content-around">
+              <button type="button" class="button" data-action="form#confirmShuffle">Yes, chef!</button>
+              <button type="button" class="button" data-bs-dismiss="modal">No, thanks</button>
             </div>
           </div>
         </div>
@@ -328,16 +328,12 @@
       <div class="modal fade" id="genreShuffleModal" tabindex="-1" aria-labelledby="genreShuffleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Surprise Genre</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
           <div class="modal-body" id="genreShuffleModalBody">
             <!-- JS will insert chosen genre -->
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nope</button>
-            <button type="button" class="btn btn-primary" data-action="form#confirmGenreShuffle">Yes, go on!</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Change the genre</button>
+            <button type="button" class="btn btn-primary" data-action="form#confirmGenreShuffle">Sounds good!</button>
           </div>
         </div>
       </div>

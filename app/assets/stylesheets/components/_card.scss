@@ -147,7 +147,7 @@
   }
 
 .button {
-  background: #fbca1f;
+  background: white;
   padding: 0.6em 1.3em;
   font-weight: 900;
   font-size: 18px;
@@ -162,12 +162,13 @@
 .button:hover {
   transform: translate(-0.05em, -0.05em);
   box-shadow: 0.25em 0.25em;
-  background-color: white;
+  background-color: $flashy_yellow;
 }
 
 .button:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
+  background-color: $flashy_yellow;
 }
 
 .saved-recipe-container {

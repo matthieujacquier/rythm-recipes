@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get "users/:id", to: "users#about", as: :about_user
   post "generate_match", to: "matches#generate", as: :generate_match
-  # resources :recipes, only: :index
+  resources :recipes, only: :index
   resources :matches, only: [:index, :create, :show] do
     member do
       patch :save

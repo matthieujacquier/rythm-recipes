@@ -100,7 +100,7 @@ export default class extends Controller {
 
     // 🟣 Update modal content
     const modalBody = document.getElementById("shuffleModalBody");
-    modalBody.innerText = `We'll surprise you with a ${randomFood} dish!`;
+    modalBody.innerHTML = `<h4>The chef recommends a <span style="background:#fbca1f">${randomFood.toLowerCase()}</span> dish.</h4>`;
 
     // 🟣 Show the modal
     const modal = new bootstrap.Modal(document.getElementById("shuffleModal"));
@@ -171,7 +171,7 @@ export default class extends Controller {
     this.selectedGenreShuffle = randomGenre;
 
     const modalBody = document.getElementById("genreShuffleModalBody");
-    modalBody.innerText = `🎧 We'll surprise you with: "${randomGenre}". Wanna go with it?`;
+    modalBody.HTML = `<h4> We'll surprise you with: "${randomGenre}".</h4>`;
 
     const modal = new bootstrap.Modal(document.getElementById("genreShuffleModal"));
     modal.show();
