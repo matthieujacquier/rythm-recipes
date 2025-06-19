@@ -1,5 +1,4 @@
 class MatchesController < ApplicationController
-
   def index
     def index
       if params[:reset] == "true"
@@ -29,34 +28,31 @@ class MatchesController < ApplicationController
     else
       redirect_to recipe_suggestions_matches_path, alert: "Could not create match."
     end
-
   end
-
 
   def show
     @match = Match.find(params[:id])
   end
 
   def save
-  @match = Match.find(params[:id])
-  @match.update(saved: true)
+    @match = Match.find(params[:id])
+    @match.update(saved: true)
 
   respond_to do |format|
     format.turbo_stream
     format.html { redirect_to match_path(@match) }
   end
-end
-
-def unsave
-  @match = Match.find(params[:id])
-  @match.update(saved: false)
-
-  respond_to do |format|
-    format.turbo_stream
-    format.html { redirect_to match_path(@match) }
   end
-end
 
+  def unsave
+    @match = Match.find(params[:id])
+    @match.update(saved: false)
+
+    respond_to do |format|
+      format.turbo_stream
+      format.html { redirect_to match_path(@match) }
+    end
+  end
 
   def generate
     session[:match_data] = {
@@ -84,7 +80,6 @@ end
       @playlists_by_genre = MusicSuggestion.where(genre: @genres, album: false)
       @music_suggestions = @playlists_by_genre.sample(3)
     end
-
   end
 
   def select_music
@@ -103,5 +98,4 @@ end
     ).sample(4)
     session[:match_data]["selected_recipe_id"] = params[:recipe_id]
   end
-
 end
