@@ -1,35 +1,53 @@
 .recipe_image {
-  max-width: 100%;
+  max-height: 425px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.details {
-  background-color: white;
-  color: $gray;
-  padding: 8px 16px;
-  border-radius: 25px;
+  margin-bottom: .5rem;
 }
 
 .detail-bubbles {
-  align-items: flex-end;
+  display: flex;
   flex-wrap: wrap;
-  align-self: flex-end;
-  row-gap: 16px;
-  width: 75%;
-  column-gap: 16px;
+  gap: 0 22px;
+  font-size: 14px;
 
-  p {
-    margin: 0;
+  .details {
+    padding: 8px 16px;
+    border-radius: 25px;
+    color: #1e1e1e;
+    background-color: #eee;
+    flex-shrink: 0;
+
+    // Random-looking, but ordered color variation:
+    &:nth-child(1) {
+      background-color: $orange;
+      color: $gray;
+    }
+    &:nth-child(2) {
+      background-color: $blue;
+      color: $light_gray;
+    }
+    &:nth-child(3) {
+      background-color: $green;
+      color: $light_gray;
+    }
+    &:nth-child(4) {
+      background-color: $red;
+      color: $light_gray;
+    }
+    &:nth-child(5) {
+      background-color: $flashy_yellow;
+      color: $gray;
+    }
   }
 }
+
 
 .show-instructions {
   border-radius: 25px;
   // box-shadow: 0 0 10px rgba(0, 0, 0, 0.559);
   justify-content: flex-start;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .instructions {

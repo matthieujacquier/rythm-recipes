@@ -1,63 +1,79 @@
-<div class="container-fluid mt-5 full-height">
+<div class="container full-height-with-footer">
   <div class="row justify-content-center">
-    <div class="col-10 d-flex justify-content-between">
-      <div>
-        <h1 class="mb-3"><%= @match.recipe.name %></h1>
-        <div class="d-flex mb-2">
-        <div>
-          <%= turbo_frame_tag "save_button_#{@match.id}" do %>
-            <% if @match.saved? %>
-              <%= link_to "Remove this combo from saved",
-                          unsave_match_path(@match),
-                          data: { turbo_method: :patch },
-                          class: "btn-unsave" %>
-            <% else %>
-              <%= link_to "Save this combo",
-                          save_match_path(@match),
-                          data: { turbo_method: :patch },
-                          class: "btn-save" %>
-            <% end %>
+    <div class="col-12 justify-content-between">
+      <h1 class="mb-3"><%= @match.recipe.name %></h1>
+      <div class="d-flex mt-2 mb-3">
+
+        <%= turbo_frame_tag "save_button_#{@match.id}" do %>
+          <% if @match.saved? %>
+            <%= link_to "Remove this combo from saved",
+                        unsave_match_path(@match),
+                        data: { turbo_method: :patch },
+                        class: "btn-unsave" %>
+          <% else %>
+            <%= link_to "Save this Combo",
+                        save_match_path(@match),
+                        data: { turbo_method: :patch },
+                        class: "btn-save" %>
           <% end %>
-        </div>
+        <% end %>
 
         <div class="ms-3" data-controller="matches">
           <input type="hidden" value="<%= match_url(@match) %>" data-matches-target="source">
-          <a class="btn-link" id="copyBtn" data-action="matches#copy"><i class="fa-solid fa-share"></i> Share your combo</a>
+          <a class="btn-share" id="copyBtn" data-action="matches#copy"><i class="fa-solid fa-share"></i> Share your combo</a>
         </div>
 
       </div>
-        <p>Combo created by: <%= @match.user.full_name %>
-      </div>
-
-
+      <p>Combo created by: <%= @match.user.first_name %>
     </div>
   </div>
 
-  <div class="row justify-content-center">
-    <div class="col-10 justify-content-between d-flex">
-      <div class="col-6">
+  <div class="row justify-content-start">
+    <div class="col-6 justify-content-start">
 
         <img class="recipe_image" src="<%= @match.recipe.image_url %>" alt="">
-
         <div class="d-flex detail-bubbles mt-3">
           <p class="details">Difficulty: <%= @match.recipe.difficulty %></p>
           <p class="details">Food Type: <%= @match.recipe.food_type %></p>
           <p class="details">Cuisine: <%= @match.recipe.cuisine %></p>
           <p class="details">Duration: ~<%= @match.recipe.duration %> min.</p>
           <p class="details">Portion Size: <%= @match.recipe.portion_size %></p>
+        </div>
 
+      <%# @match.recipe.ingredients.each do |ingredient| %>
+        <%# <p><%#= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
+      <%# end %>
+        <div class="show-instructions">
+          <h2 class="mb-3">Ingredients</h2>
+          <% ingredients = @match.recipe.ingredients.is_a?(String) ? JSON.parse(@match.recipe.ingredients) : @match.recipe.ingredients %>
+          <% ingredients.each do |ingredient| %>
+            <p style="font-size: 18px;"><%= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
+          <% end %>
+        </div>
+
+      <%# @match.recipe.instructions.each do |instruction| %>
+        <%# <p>= "#{instruction['title']} - #{instruction['description']}"</p> %>
+      <%# end %>
+        <div class="instructions">
+          <h2 class="mb-3">Instructions</h2>
+          <% instructions = @match.recipe.instructions.is_a?(String) ? JSON.parse(@match.recipe.instructions) : @match.recipe.instructions %>
+          <ol>
+          <% instructions.each do |instruction| %>
+            <li><strong style="font-size:18px;"><%= "#{instruction['title']}" %></strong> <p style="font-size:18px"><%= "#{instruction['description']}" %></p></li>
+          <% end %>
+          </ol>
         </div>
       </div>
-
+      <div class="col-2"></div>
       <div class="col-4">
         <% if @match.music_suggestion.present? %>
           <% embed_type = @match.music_suggestion.album ? "album" : "playlist" %>
           <% embed_url = "https://open.spotify.com/embed/#{embed_type}/#{@match.music_suggestion.spotify_id}" %>
 
-          <iframe class="" style="border-radius:12px;"
+          <iframe class="sticky-top" style="border-radius:12px; top:250px;"
                   src="<%= embed_url %>?utm_source=generator&theme=0"
                   width="100%"
-                  height="75%"
+                  height="425px"
                   frameborder="0"
                   allowfullscreen=""
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -67,37 +83,6 @@
           <p>No Spotify match available.</p>
         <% end %>
       </div>
-    </div>
-    <div class="col-10 justify-content-between d-flex mt-5">
-
-    <div class="show-instructions row">
-      <div class="col-md-4">
-      <h2>Ingredients</h2>
-      <%# @match.recipe.ingredients.each do |ingredient| %>
-        <%# <p><%#= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
-      <%# end %>
-
-      <% ingredients = @match.recipe.ingredients.is_a?(String) ? JSON.parse(@match.recipe.ingredients) : @match.recipe.ingredients %>
-        <% ingredients.each do |ingredient| %>
-          <p><%= "#{ingredient['quantity']} #{ingredient['name']}" %></p>
-        <% end %>
-      </div>
-
-    <%# </div>
-    <div class="col-6"> %>
-
-    <%# <div class="col-md-8"> %>
-      <div class="instructions"> <h2>Instructions</h2>
-      <%# @match.recipe.instructions.each do |instruction| %>
-        <%# <p>= "#{instruction['title']} - #{instruction['description']}"</p> %>
-      <%# end %>
-      <% instructions = @match.recipe.instructions.is_a?(String) ? JSON.parse(@match.recipe.instructions) : @match.recipe.instructions %>
-        <% instructions.each do |instruction| %>
-          <p><%= "#{instruction['title']} - #{instruction['description']}" %></p>
-        <% end %>
-        </div>
-        </div>
-    </div>
-  </div>
 </div>
+
 </div>
