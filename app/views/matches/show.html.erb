@@ -1,3 +1,7 @@
+<% content_for :meta_title, "#{@match.recipe.name} is on #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, @match.recipe.description %>
+<% content_for :meta_image, (@match.recipe.image_url) %>
+
 <div class="container full-height-with-footer">
   <div class="row justify-content-center">
     <div class="col-12 justify-content-between">
