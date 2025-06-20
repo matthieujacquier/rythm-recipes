@@ -92,59 +92,56 @@
 }
 
 .btn-save{
-  background: rgb(255, 255, 255);
+  margin: 1rem 0;
+  background: $green;
   // box-shadow: #000000 0.1em 0.1em;
-  font-weight: 900;
-  padding: 5px 10px 5px 10px;
-  // border: 2px solid black;
+  font-weight: 500;
+  padding: 0.6em 1.3em;
   border-radius: 0.4em;
   cursor: pointer;
   text-decoration: none;
-  color: black;
-  bottom: 10px;
+  color: $light_gray
 }
 
 .btn-save:hover {
-  background-color: $green;
-  // box-shadow: 0.1em 0.1em black;
-  color: white
+  background-color: $flashy_yellow;
+  color: $gray;
 }
 
 .btn-unsave{
-  background: $green;
+  background: $warning;
   // box-shadow: #000000 0.1em 0.1em;
-  font-weight: 900;
-  padding: 5px 10px 5px 10px;
-  // border: 2px solid black;
+  font-weight: 500;
+  padding: 0.6em 1.3em;
   border-radius: 0.4em;
   cursor: pointer;
   text-decoration: none;
-  color: white;
-  bottom: 10px;
+  color: $gray;
 }
 
 .btn-unsave:hover {
-  background-color: white;
+  background-color: $danger;
+  font-weight: 500;
   // box-shadow: 0.1em 0.1em black;
-  color: black
+  color: $light_gray;
 }
 
 .btn-share {
+  margin: 1rem 0;
   background: $blue;
   // box-shadow: #000000 0.1em 0.1em;
-  font-weight: 900;
-  padding: 5px 10px 5px 10px;
-  // border: 2px solid black;
+  font-weight: 500;
+  padding: 0.6em 1.3em;
   border-radius: 0.4em;
   cursor: pointer;
   text-decoration: none;
-  color: white;
+  color: $light_gray;
 }
 
 .btn-share:hover {
-  background-color: white;
+  background-color: $flashy_yellow;
   // box-shadow: 0.1em 0.1em black;
-  color: $blue
+  color: black;
 }
 
 .btn-link {
