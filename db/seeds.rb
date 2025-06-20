@@ -4,7 +4,7 @@ require 'json'
 file_path = Rails.root.join('db', 'album_desc_seeds.json')
 albums_by_genre = JSON.parse(File.read(file_path))
 
-# Match.delete_all
+Match.delete_all
 # Recipe.delete_all
 # User.delete_all
 MusicSuggestion.delete_all
