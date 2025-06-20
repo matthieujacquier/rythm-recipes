@@ -106,7 +106,7 @@
               </div>
 
               <div class="mx-2">
-                <% genre = "Hip-Hop" %><label class="option-card-genre sm" id="hiphop">
+                <% genre = "Hip Hop" %><label class="option-card-genre sm" id="hiphop">
                   <%= check_box_tag "music_genres[]", genre, selected_genres.include?(genre),
                     data: { action: "click->form#goToStep", step: "2" },
                     class: "hidden-radio" %>
