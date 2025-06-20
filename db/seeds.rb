@@ -12,7 +12,7 @@ MusicSuggestion.delete_all
 puts "Defining genres"
 
 GENRES = [
-  'Pop','Rock', 'Hip-Hop', 'Rap', 'R&B', 'Indie',
+  'Pop','Rock', 'Hip Hop', 'Rap', 'R&B', 'Indie',
   'Electronic', 'Dance', 'Alternative', 'Jazz', 'Classical',
   'Folk', 'Country', 'Metal', 'Punk', 'Blues', 'Reggae', 'Soul', 'Funk', 'Techno', 'Afro'
 ]
